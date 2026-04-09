@@ -102,6 +102,37 @@ def _build_timeline_data(meta_lookup: dict, title_lookup: dict) -> list[dict]:
 # Inline markup helpers
 # ---------------------------------------------------------------------------
 
+def _join_hyphen(prev_text: str, next_text: str) -> str:
+    """Join two lines where prev_text ends with '-'.
+
+    Rules:
+    1. If the word after the hyphen starts with an uppercase letter it is a
+       genuine compound (Noord-Holland, Sint-Oedenrode) — keep the hyphen.
+    2. Otherwise ask pyphen whether the join point is a valid syllable break
+       in the reconstructed word.  If yes → remove hyphen (line-wrap).
+       If not → keep hyphen (true compound or unknown word).
+    """
+    stem = prev_text[:-1]          # strip trailing '-'
+    first_word_next = next_text.split()[0] if next_text else ""
+    if not first_word_next:
+        return prev_text + " " + next_text
+
+    # Rule 1: uppercase continuation = real compound hyphen
+    if first_word_next[0].isupper():
+        return prev_text + " " + next_text
+
+    # Rule 2: check pyphen
+    candidate = stem.split()[-1] + first_word_next  # last token of prev + first of next
+    join_pos   = len(stem.split()[-1])
+    if join_pos in _PYPHEN.positions(candidate):
+        # valid syllable break → this was a line-wrap hyphen → remove it
+        rest = next_text[len(first_word_next):]
+        return stem + first_word_next + rest
+    else:
+        # not a syllable break → keep hyphen (true compound or name)
+        return prev_text + " " + next_text
+
+
 def _group_lines(lines: list[dict]) -> list[dict]:
     """Group consecutive same-zone lines into a single text block.
 
@@ -113,7 +144,7 @@ def _group_lines(lines: list[dict]) -> list[dict]:
         if blocks and blocks[-1]["zone"] == ln["zone"]:
             prev = blocks[-1]["text"]
             if prev.endswith("-"):
-                blocks[-1]["text"] = prev[:-1] + ln["text"]
+                blocks[-1]["text"] = _join_hyphen(prev, ln["text"])
             else:
                 blocks[-1]["text"] = prev + " " + ln["text"]
         else:
