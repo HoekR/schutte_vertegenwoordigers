@@ -50,22 +50,48 @@
     .lemma-header h2 { margin: 0 0 0.2rem; font-size: 1.6rem; }
     .lemma-meta { font-size: 0.85rem; color: #555; }
     .lemma-meta span { margin-right: 1.2rem; }
-    .zone-body { margin-bottom: 0.3rem; }
-    .zone-genealogy { margin-left: 2rem; font-size: 0.92rem; color: #444; }
+    /* Text zones */
+    .lemma-body p { margin: 0 0 0.15rem; }
+    .zone-entry { font-weight: bold; margin-bottom: 0.6rem !important; }
+    .zone-body { }
+    .zone-genealogy { margin-left: 1.5rem; font-size: 0.92rem; color: #333; }
     .zone-sub_note {
-      margin-left: 3rem; font-size: 0.88rem; font-style: italic; color: #555;
-      border-left: 3px solid #ccc; padding-left: 0.8rem; margin-top: 0.4rem;
+      margin-left: 2rem; font-size: 0.88rem; font-style: italic; color: #555;
+      border-left: 3px solid #bbb; padding-left: 0.8rem;
     }
-    .zone-entry { font-weight: bold; }
+    .zone-break { margin: 0.6rem 0 0.4rem; }
+    .zone-break--genealogy { border-top: 1px dashed #ccc; }
+    .zone-break--sub_note { margin-top: 1rem; }
+    /* Footnotes */
     section.footnotes {
       margin-top: 2rem; border-top: 1px solid #ccc; padding-top: 1rem;
       font-size: 0.88rem; color: #444;
     }
     section.footnotes h3 { font-size: 0.95rem; margin-bottom: 0.5rem; }
-    .fn-item { margin-bottom: 0.3rem; }
+    .fn-list { padding-left: 1.5rem; margin: 0; }
+    .fn-list li { margin-bottom: 0.4rem; }
+    .fn-back { font-size: 0.8em; margin-left: 0.3em; text-decoration: none; }
+    sup a { text-decoration: none; color: #2a5db0; font-size: 0.75em; }
+    /* Metadata block */
+    .meta-block {
+      margin-top: 2rem; border: 1px solid #ddd; border-radius: 4px;
+      padding: 0 0.8rem; font-size: 0.88rem;
+    }
+    .meta-block summary {
+      cursor: pointer; padding: 0.6rem 0; font-weight: bold;
+      color: #2a3f6f; list-style: none; user-select: none;
+    }
+    .meta-block summary::before { content: "▶ "; font-size: 0.75em; }
+    .meta-block[open] summary::before { content: "▼ "; }
+    .meta-dl { display: grid; grid-template-columns: max-content 1fr;
+               gap: 0.3rem 1rem; margin: 0.6rem 0 0.8rem; }
+    .meta-dl dt { font-weight: bold; color: #555; white-space: nowrap; }
+    .meta-dl dd { margin: 0; }
     section.cross-refs { margin-top: 2rem; }
     section.cross-refs h3 { font-size: 1rem; }
     section.cross-refs ul { padding-left: 1.2rem; }
+    /* Person / geo index */
+    .ref-label { font-size: 0.85rem; color: #555; margin-right: 0.3rem; }
     /* Index / listing pages */
     .index-list { list-style: none; padding: 0; margin: 0; }
     .index-list li { border-bottom: 1px solid #eee; padding: 0.4rem 0; }

@@ -43,26 +43,52 @@
 </div>
 
 <div class="lemma-body">
-  {% for ln in lemma.lines %}
-    {% if ln.zone == 'entry' %}
-      <p class="zone-entry">{{ ln.text }}</p>
-    {% elif ln.zone == 'body' %}
-      <p class="zone-body">{{ ln.text }}</p>
-    {% elif ln.zone == 'genealogy' %}
-      <p class="zone-genealogy">{{ ln.text }}</p>
-    {% elif ln.zone == 'sub_note' %}
-      <p class="zone-sub_note">{{ ln.text }}</p>
+  {% set ns = namespace(prev_zone=None) %}
+  {% for block in blocks %}
+    {% if ns.prev_zone and ns.prev_zone != block.zone %}
+      <div class="zone-break zone-break--{{ block.zone }}"></div>
     {% endif %}
+    <p class="zone-{{ block.zone }}">{{ block.html_text }}</p>
+    {% set ns.prev_zone = block.zone %}
   {% endfor %}
 </div>
 
 {% if lemma.footnotes %}
 <section class="footnotes">
   <h3>Noten</h3>
-  {% for nr, text in lemma.footnotes.items() | sort %}
-    <div class="fn-item"><sup>{{ nr }}</sup> {{ text }}</div>
-  {% endfor %}
+  <ol class="fn-list">
+    {% for key, text in lemma.footnotes.items() | sort %}
+      <li id="fn-{{ key }}" value="{{ key }}">
+        {{ text }}
+        <a href="#ref-{{ key }}" class="fn-back" aria-label="Terug naar tekst">↩</a>
+      </li>
+    {% endfor %}
+  </ol>
 </section>
+{% endif %}
+
+{% if meta %}
+<details class="meta-block">
+  <summary>Metadata</summary>
+  <dl class="meta-dl">
+    {% if meta.schutte_functie %}<dt>Functie</dt><dd>{{ meta.schutte_functie }}</dd>{% endif %}
+    {% if meta.category %}<dt>Categorie</dt><dd>{{ meta.category }}</dd>{% endif %}
+    {% if meta.schutte_beginjaar or meta.schutte_eindjaar %}
+      <dt>Periode (Schutte)</dt>
+      <dd>{{ meta.schutte_beginjaar | int if meta.schutte_beginjaar else '?' }}
+          –{{ meta.schutte_eindjaar | int if meta.schutte_eindjaar else '?' }}</dd>
+    {% endif %}
+    {% if meta.derived_beginjaar or meta.derived_eindjaar %}
+      <dt>Periode (afgeleid)</dt>
+      <dd>{{ meta.derived_beginjaar | int if meta.derived_beginjaar }}
+          –{{ meta.derived_eindjaar | int if meta.derived_eindjaar }}</dd>
+    {% endif %}
+    {% if meta.url %}
+      <dt>Huygens Repertorium</dt>
+      <dd><a href="{{ meta.url }}" target="_blank" rel="noopener">{{ meta.url }}</a></dd>
+    {% endif %}
+  </dl>
+</details>
 {% endif %}
 
 {% if lemma.mentioned_in %}

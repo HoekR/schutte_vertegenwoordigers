@@ -20,12 +20,11 @@
     <li data-name="{{ g.place | lower }}">
       <strong>{{ g.place }}</strong>
       {% if g.appears_in %}
+        <span class="ref-label">Ref.:</span>
         <ul class="appears-in">
           {% for ref in g.appears_in %}
             <li>
-              <a href="{{ root }}{{ ref.corpus }}/{{ '%04d' % ref.schutte_nr }}/index.html">
-                Zie lemma {{ ref.schutte_nr }}
-              </a>
+              <a href="{{ root }}{{ ref.corpus }}/{{ '%04d' % ref.schutte_nr }}/index.html">nr. {{ ref.schutte_nr }}</a>
             </li>
           {% endfor %}
         </ul>

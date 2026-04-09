@@ -12,12 +12,15 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import shutil
 import subprocess
 import sys
 from pathlib import Path
 
+import pandas as pd
 from jinja2 import Environment, FileSystemLoader, select_autoescape
+from markupsafe import Markup, escape as html_escape
 
 # ---------------------------------------------------------------------------
 # Paths (all relative to this script's directory)
@@ -34,12 +37,77 @@ PERSONS_NL = ROOT / "personen_index_nederland.xml"
 PERSONS_BL = ROOT / "personenindex_buitenland.xml"
 GEO_NL = ROOT / "geoindex_nederland.xml"
 GEO_BL = ROOT / "geoindex_buitenland.xml"
+DIJKSTRA_NL = ROOT / "dijkstra_bew" / "schutte_binnenland_met_lemma.xlsx"
+DIJKSTRA_BL = ROOT / "dijkstra_bew" / "schutte_buitenland_met_lemma.xlsx"
 
 # Corpus display labels
 CORPUS_LABELS = {
     "nl": "Nederlandse vertegenwoordigers in het buitenland",
     "bl": "Buitenlandse vertegenwoordigers in Nederland",
 }
+
+
+# ---------------------------------------------------------------------------
+# Metadata helpers
+# ---------------------------------------------------------------------------
+
+def _load_metadata() -> dict:
+    """Load Dijkstra Excel files and return {(corpus, schutte_nr): row_dict}."""
+    lookup: dict = {}
+    for path, corpus in [(DIJKSTRA_NL, "nl"), (DIJKSTRA_BL, "bl")]:
+        df = pd.read_excel(path)
+        for _, row in df.iterrows():
+            raw_nr = row.get("schutte_nr")
+            if pd.notna(raw_nr):
+                try:
+                    nr = int(raw_nr)
+                except (ValueError, TypeError):
+                    continue
+                lookup[(corpus, nr)] = {k: (None if pd.isna(v) else v)
+                                        for k, v in row.items()}
+    return lookup
+
+
+# ---------------------------------------------------------------------------
+# Inline markup helpers
+# ---------------------------------------------------------------------------
+
+def _group_lines(lines: list[dict]) -> list[dict]:
+    """Group consecutive same-zone lines into a single text block."""
+    blocks: list[dict] = []
+    for ln in lines:
+        if blocks and blocks[-1]["zone"] == ln["zone"]:
+            blocks[-1]["text"] += " " + ln["text"]
+        else:
+            blocks.append({"zone": ln["zone"], "text": ln["text"]})
+    return blocks
+
+
+def _inline_markup(text: str, corpus: str, root: str, footnotes: dict) -> Markup:
+    """Escape text and insert hyperlinks for nr. refs and footnote markers."""
+    s = str(html_escape(text))
+
+    # 1. "(zie sub nr. N)" and "nr. N" → hyperlinks
+    def repl_nr(m: re.Match) -> str:
+        prefix = m.group(1) or ""
+        nr = int(m.group(2))
+        link = (f'<a href="{root}{corpus}/{nr:04d}/index.html"'
+                f' title="Ga naar lemma {nr}">nr.\u00a0{nr}</a>')
+        return f"zie sub {link}" if prefix else link
+
+    s = re.sub(r"(zie sub\s+)?nr\.\s*(\d+)", repl_nr, s)
+
+    # 2. Footnote markers: digit(s) appearing immediately after a word character
+    #    (no intervening space) to avoid false matches inside dates.
+    if footnotes:
+        for key in sorted(footnotes.keys(), key=lambda k: len(str(k)), reverse=True):
+            ks = str(key)
+            s = re.sub(
+                rf"(?<=[a-zA-Z\u00C0-\u017E']){re.escape(ks)}(?![\da-zA-Z])",
+                f'<sup><a href="#fn-{ks}" id="ref-{ks}">{ks}</a></sup>',
+                s,
+            )
+    return Markup(s)
 
 
 # ---------------------------------------------------------------------------
@@ -72,7 +140,8 @@ def _root_url() -> str:
     return "/schutte_vertegenwoordigers/"
 
 
-def _render_lemma(tpl, lemma: dict, site_dir: Path, title_lookup: dict) -> None:
+def _render_lemma(tpl, lemma: dict, site_dir: Path, title_lookup: dict,
+                  meta_lookup: dict) -> None:
     corpus = lemma["corpus"]
     nr = lemma["schutte_nr"]
     slug = f"{nr:04d}"
@@ -82,15 +151,22 @@ def _render_lemma(tpl, lemma: dict, site_dir: Path, title_lookup: dict) -> None:
     def ref_title(c: str, n: int) -> str:
         return title_lookup.get((c, n), f"Nr. {n}")
 
-    # Determine prev/next using the sorted position stored during batch render
+    root = _root_url()
+    footnotes = lemma.get("footnotes") or {}
+    blocks = _group_lines(lemma.get("lines") or [])
+    for block in blocks:
+        block["html_text"] = _inline_markup(block["text"], corpus, root, footnotes)
+
     html = tpl.render(
         lemma=lemma,
-        root=_root_url(),
+        root=root,
         corpus=corpus,
         corpus_label=CORPUS_LABELS[corpus],
         prev_nr=lemma.get("_prev_nr"),
         next_nr=lemma.get("_next_nr"),
         ref_title=ref_title,
+        blocks=blocks,
+        meta=meta_lookup.get((corpus, nr)),
     )
     out_path.write_text(html, encoding="utf-8")
 
@@ -153,13 +229,17 @@ def build(site_dir: Path, run_pagefind: bool = False) -> None:
     _add_prev_next(nl_lemmas)
     _add_prev_next(bl_lemmas)
 
+    print("Loading Excel metadata…")
+    meta_lookup = _load_metadata()
+    print(f"  Metadata entries: {len(meta_lookup)}")
+
     print("Rendering NL lemma pages…")
     for lemma in nl_lemmas:
-        _render_lemma(lemma_tpl, lemma, site_dir, title_lookup)
+        _render_lemma(lemma_tpl, lemma, site_dir, title_lookup, meta_lookup)
 
     print("Rendering BL lemma pages…")
     for lemma in bl_lemmas:
-        _render_lemma(lemma_tpl, lemma, site_dir, title_lookup)
+        _render_lemma(lemma_tpl, lemma, site_dir, title_lookup, meta_lookup)
 
     # ------------------------------------------------------------------
     # Corpus index pages

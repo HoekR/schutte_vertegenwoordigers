@@ -23,12 +23,11 @@
         — <a href="{{ root }}{{ p.corpus }}/{{ '%04d' % p.schutte_nr }}/index.html">Lemma {{ p.schutte_nr }}</a>
       {% endif %}
       {% if p.appears_in %}
+        <span class="ref-label">Ref.:</span>
         <ul class="appears-in">
           {% for ref in p.appears_in %}
             <li>
-              <a href="{{ root }}{{ ref.corpus }}/{{ '%04d' % ref.schutte_nr }}/index.html">
-                Zie lemma {{ ref.schutte_nr }}
-              </a>
+              <a href="{{ root }}{{ ref.corpus }}/{{ '%04d' % ref.schutte_nr }}/index.html">nr. {{ ref.schutte_nr }}</a>
             </li>
           {% endfor %}
         </ul>
