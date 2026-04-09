@@ -68,16 +68,51 @@ def _load_metadata() -> dict:
     return lookup
 
 
+def _build_timeline_data(meta_lookup: dict, title_lookup: dict) -> list[dict]:
+    """Return list of dicts suitable for the JS timeline chart."""
+    rows = []
+    for (corpus, nr), meta in meta_lookup.items():
+        raw_start = meta.get("derived_beginjaar") or meta.get("schutte_beginjaar")
+        raw_end   = meta.get("derived_eindjaar")  or meta.get("schutte_eindjaar")
+        if raw_start is None:
+            continue
+        try:
+            start = int(raw_start)
+            end   = int(raw_end) if raw_end else None
+        except (ValueError, TypeError):
+            continue
+        name = title_lookup.get((corpus, nr), f'{meta.get("name", "")}')
+        rows.append({
+            "corpus":   corpus,
+            "nr":       nr,
+            "name":     name,
+            "start":    start,
+            "end":      end,
+            "category": meta.get("category") or "",
+            "functie":  str(meta.get("schutte_functie") or ""),
+        })
+    rows.sort(key=lambda r: (r["corpus"], r["category"], r["start"]))
+    return rows
+
+
 # ---------------------------------------------------------------------------
 # Inline markup helpers
 # ---------------------------------------------------------------------------
 
 def _group_lines(lines: list[dict]) -> list[dict]:
-    """Group consecutive same-zone lines into a single text block."""
+    """Group consecutive same-zone lines into a single text block.
+
+    Lines ending with a hyphen (word-break) are joined directly to the next
+    line (same zone) without a space, reconstructing the original word.
+    """
     blocks: list[dict] = []
     for ln in lines:
         if blocks and blocks[-1]["zone"] == ln["zone"]:
-            blocks[-1]["text"] += " " + ln["text"]
+            prev = blocks[-1]["text"]
+            if prev.endswith("-"):
+                blocks[-1]["text"] = prev[:-1] + ln["text"]
+            else:
+                blocks[-1]["text"] = prev + " " + ln["text"]
         else:
             blocks.append({"zone": ln["zone"], "text": ln["text"]})
     return blocks
@@ -303,6 +338,20 @@ def build(site_dir: Path, run_pagefind: bool = False) -> None:
         encoding="utf-8",
     )
     print("Home page written.")
+
+    # ------------------------------------------------------------------
+    # Timeline page
+    # ------------------------------------------------------------------
+    timeline_tpl = env.get_template("timeline.html")
+    timeline_data = _build_timeline_data(meta_lookup, title_lookup)
+    (site_dir / "timeline.html").write_text(
+        timeline_tpl.render(
+            root=_root_url(),
+            timeline_data=timeline_data,
+        ),
+        encoding="utf-8",
+    )
+    print(f"Timeline page written ({len(timeline_data)} entries).")
 
     # ------------------------------------------------------------------
     # Optional: Pagefind
