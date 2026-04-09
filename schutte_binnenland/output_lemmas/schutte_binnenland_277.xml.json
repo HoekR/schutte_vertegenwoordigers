@@ -1,0 +1,40 @@
+{
+    "schuttenr": "277",
+    "datum": [
+        {
+            "jaar": "1623",
+            "maand": "juni"
+        },
+        {
+            "jaar": "1623",
+            "dag": "6 november"
+        },
+        {
+            "jaar": "1624",
+            "dag": "30 juni"
+        },
+        {
+            "jaar": "1624",
+            "dag": "19 juli"
+        }
+    ],
+    "gebeurtenissen": [
+        {
+            "beschrijving": "Gecommitteerd tot het overbrengen van een brief aan de Koning",
+            "vervolg": "Joseph Pdache vergezelde hem naar Marokko"
+        },
+        {
+            "beschrijving": "Vertrok uit Marokko",
+            "vervolg": "en kwam 19 juli 1624 in Holland terug"
+        }
+    ],
+    "gezelschap": [
+        {
+            "naam": "Josepho Biscaino",
+            "titel": "ambassadeur van de Koning"
+        },
+        {
+            "naam": "Joseph Palache"
+        }
+    ]
+}

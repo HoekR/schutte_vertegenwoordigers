@@ -1,0 +1,58 @@
+<lemma lemma="1"> 
+    <bewoner> 
+        <jaren>1656-1687 resident</jaren>
+        <nummer />
+        <naam>Mr. Thomas van Sasburgh, heer van Mogarnie</naam>
+        <titel>heer</titel>
+        <geboorte> 
+            <plaats>Dordrecht</plaats>
+            <jaar>1611/1612</jaar>
+        </geboorte>
+        <opleiding> 
+            <status />
+            <universiteit>Leiden</universiteit>
+            <inschrijfdatum />
+        </opleiding>
+        <carrière> 
+            <jaar>1655</jaar>
+            <positie>resident te Brussel</positie>
+            <jaar>1656</jaar>
+            <positie>resident te Brussel</positie>
+            <jaar />
+            <positie>achtraad van Dordrecht</positie>
+        </carrière>
+        <overlijden> 
+            <plaats />
+            <datum>2 juli 1687</datum>
+        </overlijden>
+    </bewoner>
+    <familie> 
+        <vader>Damas van Sasburgh</vader>
+        <moeder>Jobina Mol</moeder>
+        <echtgenoot> 
+            <naam>Charlotta van Blijenburg</naam>
+            <geboorte> 
+                <jaar>1625</jaar>
+            </geboorte>
+            <huwelijk> 
+                <plaats>Sloten (N.-H.)</plaats>
+                <maand />
+                <aankondiging>16 febr. 1642 ondertr. Dordrecht</aankondiging>
+            </huwelijk>
+            <ouders> 
+                <vader>Mr. Adriaen van Blijenburg, ridder van St. Michiel</vader>
+                <vader_titel>heer van Naaldwijk, schepen</vader_titel>
+                <vader_carrière> 
+                    <jaar>1609</jaar>
+                    <positie>waardijn van de munt</positie>
+                    <jaar>1616</jaar>
+                    <positie>meester munter</positie>
+                </vader_carrière>
+                <moeder />
+            </ouders>
+        </echtgenoot>
+    </familie>
+    <bronnen> 
+        <item>Balen 964, 994; mededeling van Jhr. Mr. C. C. van Valkenburg.</item>
+    </bronnen>
+</lemma>

@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title %}Schutte Repertorium — Nederlandse vertegenwoordigers in het buitenland{% endblock %}
+{% block description %}Digitale editie van G.W. Schutte, Repertorium der Nederlandse vertegenwoordigers residerende in het buitenland 1584-1810.{% endblock %}
+
+{% block jsonld %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "name": "Repertorium der Nederlandse vertegenwoordigers residerende in het buitenland 1584-1810",
+  "author": {
+    "@type": "Person",
+    "name": "G.W. Schutte"
+  },
+  "description": "Digitale editie van het Repertorium der Nederlandse vertegenwoordigers residerende in het buitenland 1584-1810"
+}
+</script>
+{% endblock %}
+
+{% block content %}
+<section style="max-width:700px; margin:0 auto;">
+  <h2>Schutte Repertorium — digitale editie</h2>
+  <p>
+    Dit is een doorzoekbare digitale editie van:<br>
+    <strong>G.W. Schutte, <em>Repertorium der Nederlandse vertegenwoordigers residerende in het buitenland 1584–1810</em></strong><br>
+    Den Haag: Nijhoff, 1976.
+  </p>
+  <p>
+    Het werk bevat twee corpora:
+  </p>
+  <ul>
+    <li>
+      <strong><a href="{{ root }}nl/index.html">Nederlandse vertegenwoordigers in het buitenland</a></strong>
+      — {{ nl_count }} lemma's
+    </li>
+    <li>
+      <strong><a href="{{ root }}bl/index.html">Buitenlandse vertegenwoordigers in Nederland</a></strong>
+      — {{ bl_count }} lemma's
+    </li>
+  </ul>
+  <p>
+    Zie ook de registers:
+  </p>
+  <ul>
+    <li><a href="{{ root }}persons.html">Personenregister</a> ({{ persons_count }} personen)</li>
+    <li><a href="{{ root }}geo.html">Geografisch register</a> ({{ geo_count }} plaatsen)</li>
+  </ul>
+</section>
+{% endblock %}

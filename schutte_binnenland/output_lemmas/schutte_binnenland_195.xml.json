@@ -1,0 +1,58 @@
+{
+    "resident": {
+        "years": "195",
+        "number": null,
+        "name": "Jacob Ross",
+        "title": "koopman te Danzig",
+        "birth": {
+            "place": null,
+            "year": null
+        },
+        "education": {
+            "status": null,
+            "university": null,
+            "enrollment_date": null
+        },
+        "career": [
+            {
+                "year": "1775-1807",
+                "position": "commissaris"
+            }
+        ],
+        "death": {
+            "place": null,
+            "date": null
+        }
+    },
+    "family": {
+        "father": null,
+        "mother": null,
+        "spouse": {
+            "name": "null",
+            "birth": {
+                "year": null
+            },
+            "marriage": {
+                "place": "Warschau",
+                "month": "15 sept.",
+                "announcement": null
+            },
+            "parents": {
+                "father": "null",
+                "father_title": null,
+                "father_career": [
+                    {
+                        "year": "1807-1810",
+                        "position": "consul"
+                    }
+                ],
+                "mother": "null"
+            }
+        }
+    },
+    "sources": [
+        "res. 13 nov. 1775",
+        "f vÃÂ³ÃÂ³r 15 sept. 1807527",
+        "Warschau528"
+    ]
+}

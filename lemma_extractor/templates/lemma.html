@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{% block title %}{{ lemma.toc_title }} — Schutte Repertorium{% endblock %}
+{% block description %}{{ lemma.toc_title }}, {{ lemma.period }}. {{ lemma.toc_chapter }}. Schutte Repertorium nr. {{ lemma.schutte_nr }}.{% endblock %}
+
+{% block jsonld %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ lemma.toc_title | e }}",
+  "description": "{{ lemma.period | e }}. {{ lemma.toc_chapter | e }}.",
+  "identifier": "schutte-{{ lemma.corpus }}-{{ lemma.schutte_nr }}",
+  "sameAs": [],
+  "isPartOf": {
+    "@type": "Book",
+    "name": "Repertorium der Nederlandse vertegenwoordigers residerende in het buitenland 1584-1810",
+    "author": "G.W. Schutte"
+  }
+}
+</script>
+{% endblock %}
+
+{% block content %}
+<nav style="font-size:0.85rem; margin-bottom:1rem;">
+  <a href="{{ root }}{{ lemma.corpus }}/index.html">← Index {{ corpus_label }}</a>
+  {% if prev_nr %}
+    · <a href="{{ root }}{{ lemma.corpus }}/{{ '%04d' % prev_nr }}/index.html">‹ Vorige</a>
+  {% endif %}
+  {% if next_nr %}
+    · <a href="{{ root }}{{ lemma.corpus }}/{{ '%04d' % next_nr }}/index.html">Volgende ›</a>
+  {% endif %}
+</nav>
+
+<div class="lemma-header">
+  <h2>{{ lemma.toc_title }}</h2>
+  <div class="lemma-meta">
+    <span>Nr. {{ lemma.schutte_nr }}</span>
+    {% if lemma.period %}<span>{{ lemma.period }}</span>{% endif %}
+    <span>{{ lemma.toc_chapter }}</span>
+    {% if lemma.toc_page %}<span>Pagina {{ lemma.toc_page }}</span>{% endif %}
+  </div>
+</div>
+
+<div class="lemma-body">
+  {% for ln in lemma.lines %}
+    {% if ln.zone == 'entry' %}
+      <p class="zone-entry">{{ ln.text }}</p>
+    {% elif ln.zone == 'body' %}
+      <p class="zone-body">{{ ln.text }}</p>
+    {% elif ln.zone == 'genealogy' %}
+      <p class="zone-genealogy">{{ ln.text }}</p>
+    {% elif ln.zone == 'sub_note' %}
+      <p class="zone-sub_note">{{ ln.text }}</p>
+    {% endif %}
+  {% endfor %}
+</div>
+
+{% if lemma.footnotes %}
+<section class="footnotes">
+  <h3>Noten</h3>
+  {% for nr, text in lemma.footnotes.items() | sort %}
+    <div class="fn-item"><sup>{{ nr }}</sup> {{ text }}</div>
+  {% endfor %}
+</section>
+{% endif %}
+
+{% if lemma.mentioned_in %}
+<section class="cross-refs">
+  <h3>Ook vermeld in</h3>
+  <ul>
+    {% for ref in lemma.mentioned_in %}
+      <li>
+        <a href="{{ root }}{{ ref.corpus }}/{{ '%04d' % ref.schutte_nr }}/index.html">
+          {{ ref_title(ref.corpus, ref.schutte_nr) }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+{% endblock %}

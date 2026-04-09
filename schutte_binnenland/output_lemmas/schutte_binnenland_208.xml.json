@@ -1,0 +1,85 @@
+{
+    "bewoner": {
+        "jaren": "208",
+        "nummer": null,
+        "naam": "Ds. Johan Holton",
+        "titel": "predikant, student, secretaris, resident",
+        "geboorte": {
+            "plaats": "Amsterdam (Waalsek.)",
+            "jaar": "1635"
+        },
+        "opleiding": {
+            "status": null,
+            "universiteit": null,
+            "inschrijfdatum": "1 maart 1647, 26 febr. 1652, 2 nov. 1653"
+        },
+        "carrière": [
+            {
+                "jaar": "12 mei 1667",
+                "positie": "proponent bij de gemeente l'Olive"
+            },
+            {
+                "jaar": "11 sept. 1668",
+                "positie": "bevestigd"
+            },
+            {
+                "jaar": "dec. 1673 - 1674",
+                "positie": "secretaris van Dirck Schaep, extraordinaris envoyÃ© naar Zweden"
+            },
+            {
+                "jaar": "5 juni 1679",
+                "positie": "resident in Denemarken"
+            },
+            {
+                "jaar": "15 okt. 1679",
+                "positie": "afscheid van H.H.M."
+            }
+        ],
+        "overlijden": {
+            "plaats": "Eiseneur, Kopenhagen",
+            "datum": "2 dec. 1680, 4 dec. 1680"
+        }
+    },
+    "familie": {
+        "vader": "Ds. Godefroy Hotton",
+        "moeder": null,
+        "echtgenoot": {
+            "naam": "Anne Marie Rost",
+            "geboorte": {
+                "jaar": "1680-1686"
+            },
+            "huwelijk": {
+                "plaats": null,
+                "maand": null,
+                "aankondiging": null
+            },
+            "ouders": {
+                "vader": "Ds. Godefroy Hotton",
+                "vader_titel": null,
+                "vader_carrière": [
+                    {
+                        "jaar": "15 jan. 1620",
+                        "positie": "student te Heidelberg"
+                    },
+                    {
+                        "jaar": "1629",
+                        "positie": "predikant te Frankenthal, Aix, Bremen"
+                    },
+                    {
+                        "jaar": "1632",
+                        "positie": "predikant te Limburg (Overmaze)"
+                    },
+                    {
+                        "jaar": "1634-1655",
+                        "positie": "Waals predikant te Amsterdam"
+                    }
+                ]
+            }
+        }
+    },
+    "bronnen": [
+        "...",
+        "...",
+        "..."
+    ]
+}

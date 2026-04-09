@@ -1,0 +1,75 @@
+{
+    "bewoner": {
+        "jaren": "304",
+        "nummer": null,
+        "naam": "Mr. Johan Lodewijk Haganus van Wassenaer, heer van Ruyven",
+        "titel": "heer van Ruyven",
+        "geboorte": {
+            "plaats": "'s-Gravenhage",
+            "jaar": "1719"
+        },
+        "opleiding": {
+            "status": null,
+            "universiteit": null,
+            "inschrijfdatum": "16 sept. 1737"
+        },
+        "carrière": [
+            {
+                "jaar": "1740",
+                "positie": "promoveerde"
+            },
+            {
+                "positie": "ambassadeur"
+            },
+            {
+                "positie": "ontvanger-generaal van de Admiraliteit"
+            }
+        ],
+        "overlijden": {
+            "plaats": "'s-Gravenhage",
+            "datum": "6 april 1798"
+        }
+    },
+    "familie": {
+        "vader": "Wilhelm Lodewijk van Wassenoer, heer van Starrenburg en Ruyven",
+        "moeder": null,
+        "echtgenoot": {
+            "naam": null,
+            "geboorte": {
+                "jaar": null
+            },
+            "huwelijk": {
+                "plaats": null,
+                "maand": null,
+                "aankondiging": null
+            },
+            "ouders": {
+                "vader": "Wilhelm Lodewijk van Wassenoer, heer van Starrenburg en Ruyven",
+                "vader_titel": "heer van Starrenburg en Ruyven",
+                "vader_carrière": [
+                    {
+                        "jaar": null,
+                        "positie": null
+                    },
+                    {
+                        "positie": null
+                    }
+                ],
+                "moeder": null
+            }
+        }
+    },
+    "bronnen": [
+        "res. 304",
+        "res. 22 okt. 1748",
+        "res. 17 mei 1749",
+        "res. 1745,1, 564",
+        "res. van die datum",
+        "res. 1107",
+        "res. 1108",
+        "res. 1110",
+        "res. 1111",
+        "res. 14 aug. 1747-30 aug. 1762",
+        "inv. nrs. 8821-8822"
+    ]
+}

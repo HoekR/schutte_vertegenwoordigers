@@ -1,0 +1,30 @@
+{
+    "schuttenr": "89",
+    "datum": "1706/1707, sedert omstreeks 1727",
+    "functie": [
+        {
+            "titel": "predikant",
+            "aanvang": "res. 2 april 1731"
+        },
+        {
+            "titel": "zaakgelastigde",
+            "aanvang": "res. 21 april 1766"
+        }
+    ],
+    "afstand": [
+        {
+            "datum": "april 1767",
+            "betekenis": "aankomst van Von Degenfeld Schomburg"
+        },
+        {
+            "datum": "8 mei 1767",
+            "betekenis": "emeritus"
+        }
+    ],
+    "ambt": [
+        {
+            "titel": "extraordinaris envoyé en minister plenipotentiaris",
+            "aanvang": "1767-1781"
+        }
+    ]
+}

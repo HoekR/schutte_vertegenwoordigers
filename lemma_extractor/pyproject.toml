@@ -1,0 +1,24 @@
+[project]
+name = "lemma-extractor"
+version = "0.1.0"
+description = "Extract individual lemma files from Schutte RNVB XML corpora"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "openpyxl>=3.1",
+    "pandas>=2.0",
+    "jinja2>=3.1",
+]
+
+[project.scripts]
+lemma-extractor = "lemma_extractor.main:main"
+
+[tool.uv]
+package = true
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/lemma_extractor"]

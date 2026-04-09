@@ -1,0 +1,57 @@
+{
+    "bewoner": {
+        "jaren": "1633-1641",
+        "nummer": "333",
+        "naam": "Josua van Sonnevelt",
+        "titel": "consul, secretaris van ambassade (of resident?)",
+        "geboorte": {
+            "plaats": null,
+            "jaar": "1612"
+        },
+        "opleiding": {
+            "status": null,
+            "universiteit": null,
+            "inschrijfdatum": null
+        },
+        "carrière": [
+            {
+                "jaar": "1633-1641",
+                "positie": "consul, secretaris van ambassade (of resident?)"
+            }
+        ],
+        "overlijden": {
+            "plaats": null,
+            "datum": null
+        }
+    },
+    "familie": {
+        "vader": "Nicolaes Heymans",
+        "moeder": "Maria van Slingelandt Hendricksdr.",
+        "echtgenoot": {
+            "naam": "Anna van der Mijle",
+            "geboorte": {
+                "jaar": "1594"
+            },
+            "huwelijk": {
+                "plaats": null,
+                "maand": null,
+                "aankondiging": null
+            },
+            "ouders": {
+                "vader": "Abraham van der Mijle",
+                "vader_titel": null,
+                "vader_carrière": [
+                    {
+                        "jaar": null,
+                        "positie": null
+                    }
+                ],
+                "moeder": "Anna van Duymen"
+            }
+        }
+    },
+    "bronnen": [
+        "Christine von Hoiningen-Huene, Beiträge zur Geschichte der Beziehungen zwischen der Schweiz und Holland im XVII. Jahrhundert, Berlin, 1899.",
+        "M. Bokhorst, Nederlands-Zwitserse betrekkingen voor en na 1700, deel I (1685-1697), (ac. pr. Leiden), Amsterdam, 1930."
+    ]
+}

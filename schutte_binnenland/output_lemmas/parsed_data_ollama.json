@@ -1,0 +1,651 @@
+[
+    {
+        "resident": {
+            "years": "1628-1687",
+            "number": 242,
+            "name": "Coenraet des H.R. Rijks",
+            "title": null,
+            "birth": {
+                "place": "not provided",
+                "year": "1628-04-13"
+            },
+            "education": {
+                "status": null,
+                "university": null,
+                "enrollment_date": null
+            },
+            "career": [
+                {
+                    "year": "1660",
+                    "position": "not provided"
+                },
+                {
+                    "year": "1659",
+                    "position": "schepen, vredemaker"
+                },
+                {
+                    "year": "1668",
+                    "position": "regent of the Walenweeshuis"
+                }
+            ],
+            "wives": [
+                {
+                    "name": "Eliabeth Steenwijk",
+                    "marriage_date": "Amsterdam 3 jan. 1668",
+                    "death_date": "Rotterdam 2 febr. 1664"
+                },
+                {
+                    "name": "Judith van Son",
+                    "marriage_date": "Amsterdam 3 jan. 1668",
+                    "other_marriages": [
+                        {
+                            "spouse": "Mr. Guilhelmus Teeckman",
+                            "marriage_date": "Sloten 7 dec. 1694"
+                        }
+                    ]
+                }
+            ]
+        },
+        "diplomatic_mission": {
+            "country": "Rusland",
+            "appointment_date": "9 april and 8 mei 1675",
+            "envoy": "Richard Hendrik de Rijser"
+        }
+    },
+    {
+        "resident": {
+            "years": "1725-1747",
+            "number": 266,
+            "name": "Bastiaan Fagel",
+            "title": null,
+            "birth": {
+                "place": null,
+                "year": null
+            },
+            "education": {
+                "status": null,
+                "university": null,
+                "enrollment_date": null
+            },
+            "career": [
+                {
+                    "year": "1725",
+                    "position": "secretaris"
+                },
+                {
+                    "year": "19 okt. 1725",
+                    "position": "aangesteld tot secretaris van de ambassade"
+                },
+                {
+                    "year": "30 mei 1727",
+                    "position": "waarnemend resident"
+                },
+                {
+                    "year": "1 april 1730",
+                    "position": "ambassadeur"
+                },
+                {
+                    "year": "1732",
+                    "position": "extraordinaris ambassadeur"
+                },
+                {
+                    "year": "1744",
+                    "position": "agent ad interim"
+                }
+            ],
+            "death": {
+                "place": null,
+                "date": null
+            }
+        },
+        "family": {
+            "father": null,
+            "mother": null,
+            "spouse": {
+                "name": null,
+                "birth": {
+                    "year": null
+                },
+                "marriage": {
+                    "place": null,
+                    "month": null,
+                    "announcement": null
+                },
+                "parents": {
+                    "father": null,
+                    "father_title": null,
+                    "father_career": [],
+                    "mother": null
+                }
+            }
+        },
+        "sources": [
+            "res. 19 okt. 1725",
+            "12 daags",
+            "1727-1744 ambassadeur",
+            "extraordinaris ambassadeur 1732 Mr. Cornells Calkoen, nr. 198",
+            "1744-1747 agent ad interim"
+        ]
+    },
+    {
+        "resident": {
+            "years": "1656-1751",
+            "number": 133,
+            "name": "Hendrick van Bilderbeeck",
+            "title": null,
+            "birth": {
+                "place": null,
+                "year": "1640/1641"
+            },
+            "education": {
+                "status": null,
+                "university": null,
+                "enrollment_date": null
+            },
+            "career": [
+                {
+                    "year": "1672",
+                    "position": "correspondent te Keulen"
+                },
+                {
+                    "year": "1676-05-08",
+                    "position": "commissaris bij de keurvorst van Keulen"
+                },
+                {
+                    "year": "1676-12-04",
+                    "position": "commissaris bij de troepen van de bisschop van Osnabrück"
+                },
+                {
+                    "year": "1677-11-08",
+                    "position": "bevorderd tot resident"
+                }
+            ],
+            "death": {
+                "place": null,
+                "date": null
+            }
+        },
+        "family": {
+            "father": "Hendrik van Bilderbeeck, nr. 129",
+            "mother": null,
+            "spouse": {
+                "name": "Vincentia barones Kinsky von Wchinitz und Tettau",
+                "birth": {
+                    "year": null
+                },
+                "marriage": {
+                    "place": "Müllheim",
+                    "month": "aug.",
+                    "announcement": null
+                },
+                "parents": {
+                    "father": "Burkhard Moriz baron Kinsky von Wchinitz und Tettau",
+                    "father_title": null,
+                    "father_career": [],
+                    "mother": "Elisabeth von Heringen"
+                }
+            }
+        },
+        "sources": [
+            "Jahrbuch Adler 1875, 241."
+        ]
+    },
+    {
+        "resident": {
+            "years": "1755-1820",
+            "number": 337,
+            "name": "Jan de Witt",
+            "title": null,
+            "birth": {
+                "place": "Amsterdam",
+                "year": "1755"
+            },
+            "education": {
+                "status": null,
+                "university": "Utrecht",
+                "enrollment_date": "1776"
+            },
+            "career": [
+                {
+                    "year": "1779",
+                    "position": "commissaris van de desolate boedelkamer"
+                },
+                {
+                    "year": "1783",
+                    "position": "schepen"
+                },
+                {
+                    "year": "1784",
+                    "position": "commissaris van kleine zaken"
+                },
+                {
+                    "year": "1785",
+                    "position": "raad"
+                },
+                {
+                    "year": "1787",
+                    "position": "emigreerde naar Frankrijk"
+                },
+                {
+                    "year": "1795",
+                    "position": "lid der municipaliteit te Amster- dam"
+                },
+                {
+                    "year": "1795",
+                    "position": "benoemd tot minister plenipotentiaris in Zwitserland"
+                },
+                {
+                    "year": "1795",
+                    "position": "commissaris als minister in GraubÃÂ¼nden"
+                },
+                {
+                    "year": "1796",
+                    "position": "ontslagen uit zijn laatste functie"
+                },
+                {
+                    "year": "1796",
+                    "position": "vertrok uit Zwitserland"
+                },
+                {
+                    "year": "1809",
+                    "position": "vestigde zich in Frankrijk, f kasteel te CondÃÂ©-sur-Iton"
+                }
+            ],
+            "death": {
+                "place": null,
+                "date": "1820-04-20"
+            }
+        },
+        "family": {
+            "father": null,
+            "mother": null,
+            "spouse1": {
+                "name": "Alida Johanna de Graeff",
+                "marriage_year": "1779-04-01"
+            },
+            "spouse2": null,
+            "children": [
+                {
+                    "name": null,
+                    "birth_year": null,
+                    "death_year": null
+                }
+            ]
+        },
+        "ancestors": [
+            {
+                "name": "Jan Clifford",
+                "relation": "father-in-law"
+            },
+            {
+                "name": "Anna Wolters",
+                "relation": "mother-in-law"
+            }
+        ]
+    },
+    {
+        "resident": {
+            "years": "1734-1740",
+            "number": 150,
+            "name": "Johan Leyendecker",
+            "title": null,
+            "birth": {
+                "place": null,
+                "year": null
+            },
+            "education": {
+                "status": null,
+                "university": null,
+                "enrollment_date": null
+            },
+            "career": [
+                {
+                    "year": "1734-12-nov",
+                    "position": "commissie als agent te Aken"
+                },
+                {
+                    "year": "1734-12-dec",
+                    "position": null
+                },
+                {
+                    "year": "1740-08-01",
+                    "position": "gedemitteerd als zodanig"
+                }
+            ],
+            "death": {
+                "place": null,
+                "date": null
+            }
+        },
+        "family": {
+            "father": "Johannes Leyendecker",
+            "mother": "Helena van Coutten",
+            "spouse": {
+                "name": null,
+                "birth": {
+                    "year": null
+                },
+                "marriage": {
+                    "place": null,
+                    "month": null,
+                    "announcement": null
+                },
+                "parents": {
+                    "father": null,
+                    "father_title": null,
+                    "father_career": [],
+                    "mother": null
+                }
+            }
+        },
+        "sources": [
+            "H. F . Macco, BeitrÃÂ¤ge zur Genealogie Rheinischer Adels- und Patrizier Familien, Band I, 260",
+            "N.L. 1971, 155"
+        ]
+    },
+    {
+        "resident": {
+            "years": "1650-1687",
+            "number": 12,
+            "name": "Aert (Amoldus) de Meyer",
+            "title": null,
+            "birth": {
+                "place": null,
+                "year": null
+            },
+            "education": {
+                "status": null,
+                "university": null,
+                "enrollment_date": null
+            },
+            "career": [
+                {
+                    "year": "1643-1647",
+                    "position": "secretaris van Van Lyere"
+                },
+                {
+                    "year": "1650",
+                    "position": "ordinaris ambassadeur"
+                },
+                {
+                    "year": "1660-1662",
+                    "position": "extraordinaris ambassadeur"
+                }
+            ],
+            "death": {
+                "place": null,
+                "date": null
+            }
+        },
+        "family": {
+            "father": null,
+            "mother": null,
+            "spouse": null
+        },
+        "sources": [
+            "19/27 dec. 1643",
+            "nov. 1647",
+            "res. 1648 (sept, en 5 dec.)",
+            "res. 12 aug. 1650",
+            "1650-1668",
+            "1660-1662"
+        ]
+    },
+    {
+        "name": "Jean Charles (des H.R. Rijksgraaf) graaf van Bylandt",
+        "birth_date": "5 jan., ged. aldaar (Waalsek.) 1776",
+        "titles": [
+            "brigadier (1792)",
+            "ritmeester gardes du corps tot 1795",
+            "ridder in de Orde van Holland (later van de Unie) (1807)",
+            "minister plenipotentiaris in Beieren (1807)",
+            "ridder Orde van de Reunie (1812)",
+            "luitenant-kolonel bij de vrijwillige lijfwacht te paard (1814)",
+            "benoemd in de ridderschap van Holland (1815)",
+            "lid van provinciale (1815)",
+            "lid van gedeputeerde staten (1823) van Zuid-Holland",
+            "lid Eerste kamer (14 dec. 1831)",
+            "opperkamerheer en opperintendant der Koninklijke paleizen (1838)",
+            "commandeur Ned. Leeuw (1830)",
+            "commandeur Orde van de Rode Adelaar (1831)"
+        ],
+        "marriage": {
+            "spouse": "Otteline Agnes Catharina des H.R. Rijksgravin van Limburg Stir um",
+            "wedding_date": "'s-Gravenhage 28 okt. 1805"
+        },
+        "death_date": "k. Tilburg 4 nov. 1845",
+        "secretary": {
+            "appointed_as_secretary": "bij deer. 20 mei 1807 nr. 5 aangesteld tot secretaris van legatie in Beieren",
+            "assigned_to_secretary": "bij besl. 27 sept. 1808 nr. 27 tot secretaris der legatie te Kassei"
+        },
+        "charges_audience": {
+            "first_audience": "had als chargé d'affaires in Frankrijk zijn eerste audiència 19 juli 1814",
+            "duration": "tot 1 okt. 1814"
+        },
+        "participation_in_battles": {
+            "slag": "Waterloo",
+            "award": "ridder Mil. Willemsorde bij K.B. 18 juli 1815 nr. 68"
+        },
+        "ancestors": [
+            {
+                "name": "Mr. Diederik Johan FranÃÂ§ois des H.R. Rijksgraaf van Hogendorp",
+                "titles": [
+                    "vrijheer van Hofwegen, Tilburg en Goirle"
+                ],
+                "positions": [
+                    "commissaris tot de ontvangst van de honderdste en andere penningen (1776 tot (17 april )1778)",
+                    "van huwelijkse zaken (17 april) 1778 tot 1781",
+                    "schepen (1782, 1786, 1787)",
+                    "geremoveerd 27 nov.",
+                    "commissaris van de desolate boedelkamer (1783 tot 1785)",
+                    "kapitein (1777)"
+                ]
+            }
+        ],
+        "residency": {
+            "location": "Regensburg",
+            "years_of_service": "sedert 1664 is er een vanaf 1706 aaneensluitende vertegenwoordiging bij de Rijksdag te Regensburg"
+        }
+    },
+    {
+        "resident": {
+            "years": "1605-1614",
+            "number": 201,
+            "name": "Hendrick Hendricxsz. van Hoorn",
+            "title": null,
+            "birth": {
+                "place": null,
+                "year": null
+            },
+            "education": {
+                "status": null,
+                "university": null,
+                "enrollment_date": null
+            },
+            "career": [
+                {
+                    "year": "1605",
+                    "position": "commissaris"
+                },
+                {
+                    "year": "1609-1614",
+                    "position": "commissaris in de Sont"
+                }
+            ],
+            "death": {
+                "place": null,
+                "date": null
+            }
+        },
+        "family": {
+            "father": null,
+            "mother": null,
+            "spouse": null
+        },
+        "sources": [
+            "1605-1614 commissaris in de Sont mentioned",
+            "1609 additional payment of ÃÂ 400 mentioned"
+        ]
+    },
+    {
+        "resident": {
+            "years": "1665-1747",
+            "number": null,
+            "name": "Ernst des H.R. Rijksedele de",
+            "title": null,
+            "birth": {
+                "place": "Maastricht",
+                "year": "1665"
+            },
+            "education": {
+                "status": null,
+                "university": null,
+                "enrollment_date": null
+            },
+            "career": [
+                {
+                    "year": "1 febr. 1665",
+                    "position": "pensionaris en gevolmachtigde voor de oorlogszaken te Maastricht"
+                },
+                {
+                    "year": "14 juli 1695",
+                    "position": "schout van Daelhem"
+                },
+                {
+                    "year": "27 okt. 1717",
+                    "position": "ontving commissie als resident in de Zuidelijke Nederlanden"
+                },
+                {
+                    "year": "15 nov. 1717",
+                    "position": "had zijn eerste audiÃÂ«ntie"
+                },
+                {
+                    "year": null,
+                    "position": "gede- puteerde naar Groot-BrittaniÃÂ« (Hannover) voor de zaken van de Oost-Indische Compagnie"
+                },
+                {
+                    "year": "19 aug. 1723",
+                    "position": "kwam aldaar aan"
+                },
+                {
+                    "year": null,
+                    "position": "bleef tot 27 jan. 1724"
+                },
+                {
+                    "year": "26 mei 1727",
+                    "position": "was met Grovestins gecommitteerde te Parijs"
+                },
+                {
+                    "year": "8 mei 1727",
+                    "position": "beschikt tot chargÃÂ© d'affaires ad interim in Frankrijk"
+                },
+                {
+                    "year": "17 juni 1727",
+                    "position": "ontving zijn commissie"
+                },
+                {
+                    "year": "10 april 1728",
+                    "position": "vertrok uit Frankrijk"
+                },
+                {
+                    "year": "27 april",
+                    "position": "bracht rapport uit"
+                },
+                {
+                    "year": "28 april",
+                    "position": "bij res. 28 april bedankt en van zijn commissie ontslagen"
+                }
+            ],
+            "death": {
+                "place": null,
+                "date": null
+            }
+        },
+        "family": {
+            "father": "Mr. Johan Pesters",
+            "mother": "Maria Ghijsen",
+            "spouse": null
+        },
+        "sources": [
+            {
+                "year": "1949,427",
+                "source": "N.A."
+            },
+            {
+                "year": "1937, 397",
+                "source": "N.L."
+            },
+            {
+                "year": "1889,155",
+                "source": "Jb. N.A."
+            },
+            {
+                "year": "1921",
+                "source": "H. J. Tiele, De zending van Pesters naar Hannover (Aug.-Dec. 1723)"
+            }
+        ]
+    },
+    {
+        "resident": {
+            "years": "1656-1693",
+            "number": 148,
+            "name": "Arnout van Wachtendonck",
+            "title": null,
+            "birth": {
+                "place": null,
+                "year": null
+            },
+            "education": {
+                "status": null,
+                "university": null,
+                "enrollment_date": null
+            },
+            "career": [
+                {
+                    "year": "1679",
+                    "position": "commissie als griffier van de staten en de leenkamer van 's-Hertogenrade in den lande van Overmaze"
+                },
+                {
+                    "year": "1681",
+                    "position": "agent te Aken in de plaats van Godefridt van Wachtendonck"
+                }
+            ],
+            "death": {
+                "place": null,
+                "date": "f vÃ³Ã³r 13 febr. 1693"
+            }
+        },
+        "family": {
+            "father": "FranÃ§ois van Wachtendonck",
+            "mother": "Anna Bessels",
+            "spouse": {
+                "name": "Catharina van Lodesteyn",
+                "birth": {
+                    "year": null
+                },
+                "marriage": {
+                    "place": null,
+                    "month": "12 okt.",
+                    "announcement": null
+                },
+                "parents": {
+                    "father": "Pieter van Lodesteyn",
+                    "father_title": null,
+                    "father_career": [
+                        {
+                            "year": "1654",
+                            "position": "veertigraad"
+                        },
+                        {
+                            "position": "schepen 1656 tot 1660 te Delft"
+                        }
+                    ],
+                    "mother": "Machteld van Lodesteyn Jacobsdr. H. F. Macco"
+                }
+            }
+        },
+        "sources": [
+            "Hoge Raad van Adel, collectie Van der Lely van Oude- water, inv. nr. 1306."
+        ]
+    }
+]

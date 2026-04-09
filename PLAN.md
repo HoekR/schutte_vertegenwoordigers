@@ -1,0 +1,178 @@
+# Plan: Extracting Lemmas from Schutte XML Sources
+
+## Goal
+
+Produce a directory (`lemmas/`) of individual XML files, one per biographical entry (lemma),
+from the two Schutte RNVB corpora:
+
+- **binnenland** – *Repertorium der Nederlandse vertegenwoordigers residerende in het buitenland 1584-1810*  
+  (Dutch reps. abroad; source: `schutte_binnenland/schutte_binnenland_output_tagged.xml`)
+- **buitenland** – *Repertorium der buitenlandse vertegenwoordigers residerende in Nederland*  
+  (Foreign reps. in the Netherlands; source: `schutte_buitenland/schutte_buitenland_output.xml`)
+
+The lemma metadata (start page, start line, Schutte number, person name, dates, function, category)
+is already recorded in the Dijkstra Excel workbooks in `dijkstra_bew/`.
+
+---
+
+## Source inventory
+
+| File | Role |
+|---|---|
+| `dijkstra_bew/schutte_binnenland_met_lemma.xlsx` | Lemma metadata, binnenland corpus (342 entries) |
+| `dijkstra_bew/schutte_buitenland_met_lemma.xlsx` | Lemma metadata, buitenland corpus (690 entries) |
+| `schutte_binnenland/schutte_binnenland_output_tagged.xml` | Binnenland XML, partially tagged (~210 `<start>` markers exist) |
+| `schutte_binnenland/schutte_binnenland_output.xml` | Binnenland XML, untagged (source for re-tagging if needed) |
+| `schutte_buitenland/schutte_buitenland_output.xml` | Buitenland XML, untagged |
+
+### Structure of the tagged XML
+
+Each `<start>` marker wraps the **first line** of a lemma:
+
+```xml
+<start schuttenr="2">2.   Lieven Calvart, werd verbannen en ging naar Engeland, waar hij</start><br>
+```
+
+Pages are wrapped in `<page number="XXXX">` elements. A lemma often spans multiple pages.
+
+### Structure of the Excel lemma metadata (key columns)
+
+| Column | Meaning |
+|---|---|
+| `name` | Surname |
+| `givenname` | Given name |
+| `Intraposition` | Particle (e.g. "van") |
+| `pagenr` | Page number in XML (`<page number="XXXX">`) |
+| `schuttenr` | Lemma number (= sequential entry nr in `<start schuttenr="N">`) |
+| `schutte_beginjaar` / `schutte_eindjaar` | Date range of the post |
+| `schutte_functie` | Diplomatic function |
+| `category` | Country / region |
+| `startregel` | Line number within the page (1-based) |
+| `start` | Verbatim text of the **first line** of the lemma |
+
+---
+
+## Phase 1 — Complete XML tagging
+
+### 1a. Tag buitenland XML
+
+**Input:** `schutte_buitenland/schutte_buitenland_output.xml` + buitenland Excel  
+**Output:** `schutte_buitenland/schutte_buitenland_output_tagged.xml`
+
+Algorithm per lemma row:
+1. Find `<page number="{pagenr:04d}">` in the XML.
+2. Within that page, find the line that matches (or starts with) `start` text.
+3. Wrap that line: `<start schuttenr="{schuttenr}">{line}</start>`.
+4. Write the modified XML preserving all other content unchanged.
+
+Edge cases:
+- Lemma nr 1 — implied start at page 1, line 1; no tag needed (it starts the page).
+- Line may contain OCR artefacts differing from Excel text → use fuzzy matching
+  (try exact first, then strip leading/trailing whitespace, finally try the first ~40 chars).
+- `<br>` is the line separator; the `start` text is the content **between** two `<br>` tags.
+
+### 1b. Verify / complete binnenland tagging
+
+**Input:** `schutte_binnenland/schutte_binnenland_output_tagged.xml` (210 tags) + binnenland Excel (342 entries)  
+**Output:** updated `schutte_binnenland/schutte_binnenland_output_tagged.xml`
+
+Same algorithm as 1a; skip pages/lines that already have a `<start>` tag for that `schuttenr`.
+
+---
+
+## Phase 2 — Extract lemmas
+
+**Input:** both tagged XML files  
+**Output:** `lemmas/` directory with one XML file per lemma
+
+### Algorithm
+
+1. Parse the tagged XML as a string (not DOM, because pages span lemmas).
+2. Build a flat list of text/markup tokens using `<page>`, `<start>`, and `<br>` as delimiters.
+3. When a `<start schuttenr="N">` is encountered, start collecting a new lemma buffer.
+4. Stop collecting (close lemma) when the next `<start>` or end-of-document is reached.
+5. Wrap the collected tokens in a `<lemma>` element with metadata attributes sourced from Excel.
+6. Write to `lemmas/{corpus}_{schuttenr:04d}.xml`.
+
+### Output file format
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<lemma corpus="binnenland"
+       schuttenr="5"
+       name="Aerssen" givenname="François" intraposition="van"
+       postposition="baron van Sommelsdijk"
+       beginjaar="1598" eindjaar="1613"
+       functie="agent, ordinaris ambassadeur 1609"
+       category="Frankrijk"
+       startpage="0005">
+  5.   Mr. François (Frans) baron (juli 1636) van Aerssen, (Frans) ridder
+       1605), ridder van St. Michiel (1612), heer van Sommelsdijk (1611),
+       ...
+</lemma>
+```
+
+### Output naming
+
+- `lemmas/nl_{schuttenr:04d}.xml` — binnenland (NL reps. abroad)
+- `lemmas/bl_{schuttenr:04d}.xml` — buitenland (foreign reps. in NL)
+
+---
+
+## Phase 3 — Smoke test
+
+1. Count output files vs Excel row counts; report mismatches.
+2. Verify the first line of each lemma file matches the `start` field from Excel.
+3. Print a brief report: total lemmas, any skipped/failed, corpus breakdown.
+
+---
+
+## Execution order
+
+```
+cd lemma_extractor
+uv run python main.py tag   --corpus binnenland
+uv run python main.py tag   --corpus buitenland
+uv run python main.py extract --corpus binnenland
+uv run python main.py extract --corpus buitenland
+uv run python main.py verify
+```
+
+Or run all steps in one go:
+
+```
+uv run python main.py all
+```
+
+---
+
+## Project structure
+
+```
+lemma_extractor/
+  pyproject.toml          # uv project config + dependencies
+  main.py                 # CLI entry point
+  src/
+    read_excel.py         # parse Excel metadata → list[dict]
+    tag_xml.py            # insert <start> markers into XML
+    extract_lemmas.py     # extract lemma text from tagged XML
+    verify.py             # smoke tests / reporting
+lemmas/                   # output directory (created at runtime)
+```
+
+---
+
+## Open questions / decisions needed
+
+1. **Tagging completeness for binnenland**: the existing `_tagged.xml` has 210 of 342 markers.
+   We need to decide: re-tag from scratch using `_output.xml` (safer), or top-up the existing
+   `_tagged.xml` (faster but must not duplicate existing tags).  
+   → **Proposed**: top-up the existing tagged file; skip rows whose `schuttenr` is already present.
+
+2. **Text encoding**: source XML uses ISO-8859-1 (`Ã©` etc.) in the non-tagged version but 
+   the tagged version may have double-encoded characters (`ÃÂ©`). Need to detect encoding 
+   per file and normalise on output.
+
+3. **Lemma 1 in each corpus**: the very first lemma has no `<start>` tag — it begins at the 
+   start of page 0001. The extractor should treat the first lemma as starting implicitly at the 
+   first `<page>` element.

@@ -1,0 +1,58 @@
+{
+    "resident": {
+        "years": null,
+        "number": null,
+        "name": null,
+        "title": null,
+        "birth": {
+            "place": null,
+            "year": null
+        },
+        "education": {
+            "status": null,
+            "university": null,
+            "enrollment_date": null
+        },
+        "career": [
+            {
+                "year": null,
+                "position": null
+            }
+        ],
+        "death": {
+            "place": null,
+            "date": null
+        }
+    },
+    "family": {
+        "father": null,
+        "mother": null,
+        "spouse": {
+            "name": null,
+            "birth": {
+                "year": null
+            },
+            "marriage": {
+                "place": null,
+                "month": null,
+                "announcement": null
+            },
+            "parents": {
+                "father": null,
+                "father_title": null,
+                "father_career": [
+                    {
+                        "year": null,
+                        "position": null
+                    }
+                ],
+                "mother": null
+            }
+        }
+    },
+    "sources": [
+        null,
+        null,
+        null
+    ]
+}

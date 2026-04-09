@@ -1,0 +1,56 @@
+{
+    "resident": {
+        "years": null,
+        "number": null,
+        "name": "Willem van Wassenaer",
+        "title": "heer van Starrenburg, Ruyven, Maasland en Maassluis",
+        "birth": {
+            "place": " 's-Gravenhage (Kl.k.)",
+            "year": "1649"
+        },
+        "education": null,
+        "career": [
+            {
+                "year": "1680",
+                "position": "ordinaris ambassadeur in Frankrijk"
+            },
+            {
+                "year": "1686",
+                "position": "Hollandse gardes te voet"
+            },
+            {
+                "year": null,
+                "position": "commandeur Duitse Orde"
+            }
+        ],
+        "death": {
+            "place": null,
+            "date": null
+        }
+    },
+    "family": {
+        "father": "Pieter van Wassenaer",
+        "mother": "Anna van Cats",
+        "spouse": {
+            "name": "Josina van der Does",
+            "birth": {
+                "year": "1648"
+            },
+            "marriage": {
+                "place": null,
+                "month": null,
+                "announcement": null
+            },
+            "parents": {
+                "father": "Wigbold van der Does",
+                "mother": "Anna van den Kerckhove gezegd Polyander"
+            }
+        }
+    },
+    "sources": [
+        "res. van die datum",
+        "noot 72",
+        "noot 79",
+        "arch. S.G., inv. nr. 8624"
+    ]
+}

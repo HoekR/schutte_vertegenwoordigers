@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Schutte Repertorium{% endblock %}</title>
+  <meta name="description" content="{% block description %}Repertorium der Nederlandse vertegenwoordigers residerende in het buitenland 1584-1810{% endblock %}">
+  {% block jsonld %}{% endblock %}
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 0;
+      color: #1a1a1a;
+      background: #fafaf8;
+    }
+    a { color: #2a5db0; }
+    a:visited { color: #7b4fa0; }
+    header {
+      background: #2a3f6f;
+      color: #fff;
+      padding: 1rem 2rem;
+    }
+    header h1 { margin: 0; font-size: 1.3rem; font-weight: normal; }
+    header h1 a { color: #fff; text-decoration: none; }
+    header h1 a:visited { color: #fff; }
+    nav { font-size: 0.85rem; margin-top: 0.4rem; }
+    nav a { color: #b8cef0; text-decoration: none; margin-right: 1rem; }
+    nav a:hover { text-decoration: underline; }
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+    footer {
+      border-top: 1px solid #ddd;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #777;
+      padding: 1.5rem;
+      margin-top: 3rem;
+    }
+    /* Search */
+    #search-wrapper { margin-bottom: 2rem; }
+    #pagefind-ui input {
+      width: 100%; padding: 0.5rem 0.8rem;
+      border: 1px solid #bbb; border-radius: 4px;
+      font-size: 1rem;
+    }
+    /* Lemma page */
+    .lemma-header { border-bottom: 2px solid #2a3f6f; padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+    .lemma-header h2 { margin: 0 0 0.2rem; font-size: 1.6rem; }
+    .lemma-meta { font-size: 0.85rem; color: #555; }
+    .lemma-meta span { margin-right: 1.2rem; }
+    .zone-body { margin-bottom: 0.3rem; }
+    .zone-genealogy { margin-left: 2rem; font-size: 0.92rem; color: #444; }
+    .zone-sub_note {
+      margin-left: 3rem; font-size: 0.88rem; font-style: italic; color: #555;
+      border-left: 3px solid #ccc; padding-left: 0.8rem; margin-top: 0.4rem;
+    }
+    .zone-entry { font-weight: bold; }
+    section.footnotes {
+      margin-top: 2rem; border-top: 1px solid #ccc; padding-top: 1rem;
+      font-size: 0.88rem; color: #444;
+    }
+    section.footnotes h3 { font-size: 0.95rem; margin-bottom: 0.5rem; }
+    .fn-item { margin-bottom: 0.3rem; }
+    section.cross-refs { margin-top: 2rem; }
+    section.cross-refs h3 { font-size: 1rem; }
+    section.cross-refs ul { padding-left: 1.2rem; }
+    /* Index / listing pages */
+    .index-list { list-style: none; padding: 0; margin: 0; }
+    .index-list li { border-bottom: 1px solid #eee; padding: 0.4rem 0; }
+    .index-list li a { font-size: 1rem; }
+    .chapter-heading { margin-top: 2rem; font-size: 1.1rem; color: #2a3f6f;
+                        border-bottom: 1px solid #2a3f6f; padding-bottom: 0.2rem; }
+    .search-box {
+      display: flex; gap: 0.5rem; margin-bottom: 1.5rem;
+    }
+    .search-box input {
+      flex: 1; padding: 0.5rem 0.8rem; border: 1px solid #bbb;
+      border-radius: 4px; font-size: 1rem;
+    }
+    .search-box button {
+      padding: 0.5rem 1rem; background: #2a3f6f; color: #fff;
+      border: none; border-radius: 4px; cursor: pointer; font-size: 1rem;
+    }
+  </style>
+  {% block extra_head %}{% endblock %}
+</head>
+<body>
+  <header>
+    <h1><a href="{{ root }}index.html">Schutte Repertorium</a></h1>
+    <nav>
+      <a href="{{ root }}nl/index.html">Nederlandse vertegenwoordigers</a>
+      <a href="{{ root }}bl/index.html">Buitenlandse vertegenwoordigers</a>
+      <a href="{{ root }}persons.html">Personenindex</a>
+      <a href="{{ root }}geo.html">Geoindex</a>
+    </nav>
+  </header>
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+  <footer>
+    &copy; Schutte, <em>Repertorium der Nederlandse vertegenwoordigers residerende in het buitenland 1584–1810</em>.
+    Digitale editie.
+  </footer>
+</body>
+</html>
