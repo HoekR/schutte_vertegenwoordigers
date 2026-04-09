@@ -67,9 +67,9 @@ def _build_title_lookup(lemmas: list[dict]) -> dict[tuple[str, int], str]:
 # Render helpers
 # ---------------------------------------------------------------------------
 
-def _relative_root(depth: int) -> str:
-    """Return a '../' string to reach site root from a page N levels deep."""
-    return "../" * depth
+def _root_url() -> str:
+    """Return the base URL for GitHub Pages."""
+    return "/schutte_vertegenwoordigers/"
 
 
 def _render_lemma(tpl, lemma: dict, site_dir: Path, title_lookup: dict) -> None:
@@ -85,7 +85,7 @@ def _render_lemma(tpl, lemma: dict, site_dir: Path, title_lookup: dict) -> None:
     # Determine prev/next using the sorted position stored during batch render
     html = tpl.render(
         lemma=lemma,
-        root=_relative_root(3),          # _site/nl/0001/index.html → 3 levels
+        root=_root_url(),
         corpus=corpus,
         corpus_label=CORPUS_LABELS[corpus],
         prev_nr=lemma.get("_prev_nr"),
@@ -174,7 +174,7 @@ def build(site_dir: Path, run_pagefind: bool = False) -> None:
                 corpus=corpus,
                 corpus_label=CORPUS_LABELS[corpus],
                 lemmas=sorted_lemmas,
-                root=_relative_root(2),   # _site/nl/index.html → 2 levels
+                root=_root_url(),
             ),
             encoding="utf-8",
         )
@@ -188,7 +188,7 @@ def build(site_dir: Path, run_pagefind: bool = False) -> None:
     (site_dir / "persons.html").write_text(
         persons_tpl.render(
             persons=sorted_persons,
-            root=_relative_root(1),   # _site/persons.html → 1 level
+            root=_root_url(),
         ),
         encoding="utf-8",
     )
@@ -202,7 +202,7 @@ def build(site_dir: Path, run_pagefind: bool = False) -> None:
     (site_dir / "geo.html").write_text(
         geo_tpl.render(
             places=sorted_geo,
-            root=_relative_root(1),
+            root=_root_url(),
         ),
         encoding="utf-8",
     )
@@ -214,7 +214,7 @@ def build(site_dir: Path, run_pagefind: bool = False) -> None:
     home_tpl = env.get_template("index.html")
     (site_dir / "index.html").write_text(
         home_tpl.render(
-            root="",                   # already at root
+            root=_root_url(),
             nl_count=len(nl_lemmas),
             bl_count=len(bl_lemmas),
             persons_count=len(persons_index),
