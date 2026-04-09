@@ -21,6 +21,9 @@ from pathlib import Path
 import pandas as pd
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from markupsafe import Markup, escape as html_escape
+import pyphen as _pyphen_mod
+
+_PYPHEN = _pyphen_mod.Pyphen(lang="nl_NL")
 
 # ---------------------------------------------------------------------------
 # Paths (all relative to this script's directory)
