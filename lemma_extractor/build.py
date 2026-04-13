@@ -162,13 +162,20 @@ def _build_functie_index(meta_lookup: dict) -> list[dict]:
     """
     from collections import defaultdict, Counter as _Counter
 
-    _YEAR_RE = re.compile(r"\b1[0-9]{3}\.?\b")
+    _YEAR_RE   = re.compile(r"\b1[0-9]{3}\.?\b")
+    _PAREN_RE  = re.compile(r"\([^)]*\)")   # remove parenthetical qualifiers
+    _QUEST_RE  = re.compile(r"\?")          # stray question marks
 
     functie_map: dict[str, list] = defaultdict(list)
 
     for (corpus, nr), meta in meta_lookup.items():
         raw = meta.get("schutte_functie")
         if not raw:
+            continue
+
+        raw_str = str(raw)
+        # Skip data-entry errors: full lemma text concatenated into functie field
+        if len(raw_str) > 120:
             continue
 
         # Build readable name
@@ -187,8 +194,11 @@ def _build_functie_index(meta_lookup: dict) -> list[dict]:
         end   = _to_int(meta.get("derived_eindjaar")  or meta.get("schutte_eindjaar"))
         category = str(meta.get("category") or "")
 
-        for chunk in re.split(r"[,;]", str(raw)):
-            chunk = _YEAR_RE.sub("", chunk).strip().rstrip(" -").strip()
+        for chunk in re.split(r"[,;]", raw_str):
+            chunk = _PAREN_RE.sub("", chunk)   # strip (...) qualifiers
+            chunk = _YEAR_RE.sub("", chunk)    # strip bare years
+            chunk = _QUEST_RE.sub("", chunk)   # strip stray ?
+            chunk = chunk.strip().rstrip(" -").strip()
             if not chunk:
                 continue
             key = chunk.lower()
