@@ -52,6 +52,29 @@ _START_RE = re.compile(
 # Matches a closing </root> or </page> tag we want to stop before
 _END_RE = re.compile(r"</root\s*>", re.IGNORECASE)
 
+
+def _fix_mojibake(text: str) -> str:
+    """Reverse 3-layer encoding corruption (cp1252 + 2×latin-1 mangling).
+
+    The binnenland tagged XML was processed through cp1252/latin-1 decoding
+    multiple times, turning e.g. 'ü' into 'ÃƒÂƒÃ‚Â¼'.  Applying the reverse
+    three steps restores the original Unicode characters.  ASCII text is
+    unchanged.  U+FFFD (replacement chars from unrecoverable source bytes)
+    are preserved as '?' across the fix.
+    """
+    def _fix_segment(s: str) -> str:
+        for codec in ("cp1252", "latin-1", "latin-1"):
+            try:
+                s = s.encode(codec).decode("utf-8")
+            except (UnicodeEncodeError, UnicodeDecodeError):
+                break
+        return s
+
+    if "\ufffd" not in text:
+        return _fix_segment(text)
+    return "?".join(_fix_segment(part) for part in text.split("\ufffd"))
+
+
 # ---------------------------------------------------------------------------
 # Line classification (Dutch type names)
 # ---------------------------------------------------------------------------
@@ -165,7 +188,7 @@ def _parse_lines(raw: str) -> list[str]:
         # Remove residual XML tags (e.g. stray <start>, </start>)
         clean = re.sub(r"<[^>]+>", "", part).strip()
         if clean:
-            lines.append(clean)
+            lines.append(_fix_mojibake(clean))
     return lines
 
 
