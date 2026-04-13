@@ -29,6 +29,10 @@
     nav { font-size: 0.85rem; margin-top: 0.4rem; }
     nav a { color: #b8cef0; text-decoration: none; margin-right: 1rem; }
     nav a:hover { text-decoration: underline; }
+    /* Zone styles for enriched XML types */
+    .zone-period_header { font-weight: bold; margin: 0.8rem 0 0.2rem; color: #2a3f6f; }
+    .zone-bronnen { margin-left: 1.5rem; font-size: 0.9rem; color: #444; font-style: italic; }
+    .zone-hoofd { font-weight: bold; margin: 0.6rem 0 0.2rem; color: #2a3f6f; }
     main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
     footer {
       border-top: 1px solid #ddd;
@@ -121,14 +125,17 @@
       <a href="{{ root }}persons.html">Personenindex</a>
       <a href="{{ root }}geo.html">Geoindex</a>
       <a href="{{ root }}timeline.html">Tijdlijn</a>
+      <a href="{{ root }}colofon.html">Colofon</a>
     </nav>
   </header>
   <main>
     {% block content %}{% endblock %}
   </main>
   <footer>
-    &copy; Schutte, <em>Repertorium der Nederlandse vertegenwoordigers residerende in het buitenland 1584–1810</em>.
-    Digitale editie.
+    &copy; Huygens Instituut.
+    <em>Repertorium der Nederlandse vertegenwoordigers residerende in het buitenland 1584–1810</em>
+    &amp; <em>Repertorium der buitenlandse vertegenwoordigers residerende in Nederland 1584–1810</em>.
+    Digitale editie. <a href="{{ root }}colofon.html">Colofon</a>.
   </footer>
 </body>
 </html>

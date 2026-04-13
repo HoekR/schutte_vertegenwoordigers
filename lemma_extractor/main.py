@@ -21,6 +21,7 @@ ROOT = Path(__file__).resolve().parent.parent
 CORPORA = {
     "nl": {
         "excel":      ROOT / "dijkstra_bew" / "schutte_binnenland_met_lemma.xlsx",
+        "hocr_dir":   ROOT / "schutte_binnenland_ocr",
         "xml_src":    ROOT / "schutte_binnenland" / "schutte_binnenland_output_tagged.xml",
         "xml_tagged": ROOT / "schutte_binnenland" / "schutte_binnenland_output_tagged.xml",
         "out_dir":    ROOT / "lemmas" / "nl",
@@ -29,13 +30,26 @@ CORPORA = {
     },
     "bl": {
         "excel":      ROOT / "dijkstra_bew" / "schutte_buitenland_met_lemma.xlsx",
-        "xml_src":    ROOT / "schutte_buitenland" / "schutte_buitenland_output.xml",
+        "hocr_dir":   ROOT / "schutte_buitenland_ocr",
+        "xml_src":    ROOT / "schutte_buitenland" / "schutte_buitenland_output_raw.xml",
         "xml_tagged": ROOT / "schutte_buitenland" / "schutte_buitenland_output_tagged.xml",
         "out_dir":    ROOT / "lemmas" / "bl",
         "prefix":     "bl",
         "corpus":     "bl",
     },
 }
+
+
+def cmd_assemble(corpus_keys: list[str], verbose: bool) -> None:
+    from lemma_extractor.assemble_corpus import assemble
+
+    for key in corpus_keys:
+        c = CORPORA[key]
+        print(f"\n=== assemble [{key}] ===")
+        print(f"  hOCR dir : {c['hocr_dir']}")
+        print(f"  Output   : {c['xml_src']}")
+        stats = assemble(c["hocr_dir"], c["xml_src"], c["corpus"])
+        print(f"  Pages: {stats['pages']}  Lines: {stats['lines']}")
 
 
 def cmd_tag(corpus_keys: list[str], verbose: bool) -> None:
@@ -102,7 +116,7 @@ def main() -> None:
     )
     parser.add_argument(
         "command",
-        choices=["tag", "extract", "verify", "all"],
+        choices=["assemble", "tag", "extract", "verify", "all"],
         help="Action to perform",
     )
     parser.add_argument(
@@ -116,6 +130,8 @@ def main() -> None:
 
     keys = ["nl", "bl"] if args.corpus == "all" else [args.corpus]
 
+    if args.command in ("assemble", "all"):
+        cmd_assemble(keys, args.verbose)
     if args.command in ("tag", "all"):
         cmd_tag(keys, args.verbose)
     if args.command in ("extract", "all"):

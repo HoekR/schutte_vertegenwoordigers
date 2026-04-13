@@ -18,6 +18,8 @@ import subprocess
 import sys
 from pathlib import Path
 
+import xml.etree.ElementTree as ET
+
 import pandas as pd
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from markupsafe import Markup, escape as html_escape
@@ -42,6 +44,8 @@ GEO_NL = ROOT / "geoindex_nederland.xml"
 GEO_BL = ROOT / "geoindex_buitenland.xml"
 DIJKSTRA_NL = ROOT / "dijkstra_bew" / "schutte_binnenland_met_lemma.xlsx"
 DIJKSTRA_BL = ROOT / "dijkstra_bew" / "schutte_buitenland_met_lemma.xlsx"
+LEMMAS_NL = ROOT / "lemmas" / "nl"
+LEMMAS_BL = ROOT / "lemmas" / "bl"
 
 # Corpus display labels
 CORPUS_LABELS = {
@@ -53,6 +57,84 @@ CORPUS_LABELS = {
 # ---------------------------------------------------------------------------
 # Metadata helpers
 # ---------------------------------------------------------------------------
+
+# ---------------------------------------------------------------------------
+# Enriched lemma XML reader
+# ---------------------------------------------------------------------------
+
+# Map <line type="..."> to HTML zone class names used in the templates
+_XML_TYPE_TO_ZONE: dict[str, str] = {
+    "loopbaan":    "body",
+    "personalia":  "genealogy",
+    "bronnen":     "bronnen",
+    "hoofd":       "period_header",
+    # noot and paginahoofd are handled separately (not emitted as lines)
+}
+
+_FOOTNOTE_NL_RE = re.compile(r"^(\d+[a-z]?)\.\s{2,}(.+)")
+_FOOTNOTE_BL_RE = re.compile(r"^(\d+[a-z]?)\s([A-Z].+)")
+
+
+def _load_lemma_xml(xml_path: Path, corpus: str) -> tuple[list[dict], dict] | None:
+    """Parse a classified lemma XML and return (lines, footnotes), or None on error."""
+    try:
+        tree = ET.parse(xml_path)
+    except ET.ParseError:
+        return None
+
+    root = tree.getroot()
+    lines: list[dict] = []
+    footnotes: dict[str, str] = {}
+
+    for line_el in root.findall("line"):
+        ltype = line_el.get("type", "loopbaan")
+
+        if ltype == "paginahoofd":
+            continue
+
+        if ltype == "noot":
+            # Reconstruct full text from element (no child tags in noot lines)
+            text = (line_el.text or "").strip()
+            m = _FOOTNOTE_NL_RE.match(text)
+            if not m and corpus == "bl":
+                m = _FOOTNOTE_BL_RE.match(text)
+            if m:
+                footnotes[m.group(1)] = m.group(2).strip()
+            continue
+
+        zone = _XML_TYPE_TO_ZONE.get(ltype, "body")
+
+        if ltype == "bronnen":
+            # Inner content already contains <a> tags; get raw XML text
+            # ET.tostring re-escapes & → &amp; which is correct for HTML hrefs
+            raw = ET.tostring(line_el, encoding="unicode")
+            # strip outer <line ...> ... </line> wrapper
+            inner = raw.split(">", 1)[1].rsplit("</line>", 1)[0]
+            lines.append({"zone": zone, "text": inner, "pre_html": True})
+        else:
+            text = (line_el.text or "").strip()
+            lines.append({"zone": zone, "text": text, "pre_html": False})
+
+    return lines, footnotes
+
+
+def _overlay_enriched_lines(lemma: dict, lemmas_dir: Path) -> None:
+    """Replace lemma lines and footnotes with data from the classified XML file."""
+    corpus = lemma["corpus"]
+    nr = lemma["schutte_nr"]
+    prefix = corpus
+    xml_path = lemmas_dir / f"{prefix}_{nr:04d}.xml"
+    if not xml_path.exists():
+        return
+    result = _load_lemma_xml(xml_path, corpus)
+    if result is None:
+        return
+    xml_lines, xml_footnotes = result
+    if xml_lines:
+        lemma["lines"] = xml_lines
+    if xml_footnotes:
+        lemma["footnotes"] = xml_footnotes
+
 
 def _load_metadata() -> dict:
     """Load Dijkstra Excel files and return {(corpus, schutte_nr): row_dict}."""
@@ -138,17 +220,20 @@ def _group_lines(lines: list[dict]) -> list[dict]:
 
     Lines ending with a hyphen (word-break) are joined directly to the next
     line (same zone) without a space, reconstructing the original word.
+    pre_html lines are never merged with other lines.
     """
     blocks: list[dict] = []
     for ln in lines:
-        if blocks and blocks[-1]["zone"] == ln["zone"]:
+        pre = ln.get("pre_html", False)
+        if (blocks and blocks[-1]["zone"] == ln["zone"]
+                and not pre and not blocks[-1].get("pre_html")):
             prev = blocks[-1]["text"]
             if prev.endswith("-"):
                 blocks[-1]["text"] = _join_hyphen(prev, ln["text"])
             else:
                 blocks[-1]["text"] = prev + " " + ln["text"]
         else:
-            blocks.append({"zone": ln["zone"], "text": ln["text"]})
+            blocks.append({"zone": ln["zone"], "text": ln["text"], "pre_html": pre})
     return blocks
 
 
@@ -224,7 +309,10 @@ def _render_lemma(tpl, lemma: dict, site_dir: Path, title_lookup: dict,
     footnotes = lemma.get("footnotes") or {}
     blocks = _group_lines(lemma.get("lines") or [])
     for block in blocks:
-        block["html_text"] = _inline_markup(block["text"], corpus, root, footnotes)
+        if block.get("pre_html"):
+            block["html_text"] = Markup(block["text"])
+        else:
+            block["html_text"] = _inline_markup(block["text"], corpus, root, footnotes)
 
     html = tpl.render(
         lemma=lemma,
@@ -265,6 +353,13 @@ def build(site_dir: Path, run_pagefind: bool = False) -> None:
     nl_lemmas = group_lemmas(NL_HTML_DIR, TOC_NL, "nl")
     bl_lemmas = group_lemmas(BL_HTML_DIR, TOC_BL, "bl")
     print(f"  NL: {len(nl_lemmas)} lemmas, BL: {len(bl_lemmas)} lemmas")
+
+    print("Overlaying enriched lemma XML lines…")
+    for lemma in nl_lemmas:
+        _overlay_enriched_lines(lemma, LEMMAS_NL)
+    for lemma in bl_lemmas:
+        _overlay_enriched_lines(lemma, LEMMAS_BL)
+    print("  Done.")
 
     print("Parsing indexes…")
     nl_persons = parse_persons(PERSONS_NL, "nl")
@@ -386,6 +481,16 @@ def build(site_dir: Path, run_pagefind: bool = False) -> None:
         encoding="utf-8",
     )
     print(f"Timeline page written ({len(timeline_data)} entries).")
+
+    # ------------------------------------------------------------------
+    # Colofon page
+    # ------------------------------------------------------------------
+    colofon_tpl = env.get_template("colofon.html")
+    (site_dir / "colofon.html").write_text(
+        colofon_tpl.render(root=_root_url()),
+        encoding="utf-8",
+    )
+    print("Colofon page written.")
 
     # ------------------------------------------------------------------
     # Optional: Pagefind

@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ <head>
+  <title></title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <meta name='ocr-system' content='tesseract 5.5.1' />
+  <meta name='ocr-capabilities' content='ocr_page ocr_carea ocr_par ocr_line ocrx_word ocrp_dir ocrp_lang ocrp_wconf'/>
+ </head>
+ <body>
+  <div class='ocr_page' id='page_1' title='image "/Users/rikhoekstra/.vscode/tmp/tmp_vscode_1/tmp0ej3aecf/scaled.png"; bbox 0 0 1568 2586; ppageno 0; scan_res 70 70'>
+   <div class='ocr_carea' id='block_1_1' title="bbox 81 160 1253 192">
+    <p class='ocr_par' id='par_1_1' lang='nld' title="bbox 81 160 1253 192">
+     <span class='ocr_line' id='line_1_1' title="bbox 81 160 1253 192; baseline -0.002 0; x_size 35.377777; x_descenders 5.3777776; x_ascenders 8">
+      <span class='ocrx_word' id='word_1_1' title='bbox 81 169 518 192; x_wconf 91'>BRANDENBURG-ANSBACH</span>
+      <span class='ocrx_word' id='word_1_2' title='bbox 1195 160 1253 190; x_wconf 95'>379</span>
+     </span>
+    </p>
+   </div>
+   <div class='ocr_carea' id='block_1_2' title="bbox 179 248 1256 609">
+    <p class='ocr_par' id='par_1_2' lang='nld' title="bbox 180 248 1256 390">
+     <span class='ocr_line' id='line_1_2' title="bbox 180 248 1255 280; baseline 0 -8; x_size 31; x_descenders 7; x_ascenders 7">
+      <span class='ocrx_word' id='word_1_3' title='bbox 180 250 202 272; x_wconf 93'>4.</span>
+      <span class='ocrx_word' id='word_1_4' title='bbox 231 250 279 272; x_wconf 95'>Mr.</span>
+      <span class='ocrx_word' id='word_1_5' title='bbox 304 249 388 274; x_wconf 96'>Johan</span>
+      <span class='ocrx_word' id='word_1_6' title='bbox 414 249 488 274; x_wconf 96'>Carel</span>
+      <span class='ocrx_word' id='word_1_7' title='bbox 509 249 610 280; x_wconf 96'>Sontag,</span>
+      <span class='ocrx_word' id='word_1_8' title='bbox 634 250 688 280; x_wconf 96'>ged.</span>
+      <span class='ocrx_word' id='word_1_9' title='bbox 713 249 912 280; x_wconf 64'>‘s-Gravenhage</span>
+      <span class='ocrx_word' id='word_1_10' title='bbox 936 249 990 278; x_wconf 93'>(Ev.</span>
+      <span class='ocrx_word' id='word_1_11' title='bbox 1016 249 1127 277; x_wconf 92'>Luth.k.)</span>
+      <span class='ocrx_word' id='word_1_12' title='bbox 1152 249 1180 273; x_wconf 95'>25</span>
+      <span class='ocrx_word' id='word_1_13' title='bbox 1207 248 1255 272; x_wconf 96'>mei</span>
+     </span>
+     <span class='ocr_line' id='line_1_3' title="bbox 234 280 1255 316; baseline -0.001 -7; x_size 30; x_descenders 6; x_ascenders 7">
+      <span class='ocrx_word' id='word_1_14' title='bbox 234 280 330 314; x_wconf 56'>1756°®,</span>
+      <span class='ocrx_word' id='word_1_15' title='bbox 344 286 392 316; x_wconf 96'>jur.</span>
+      <span class='ocrx_word' id='word_1_16' title='bbox 408 286 509 310; x_wconf 96'>student</span>
+      <span class='ocrx_word' id='word_1_17' title='bbox 524 290 547 310; x_wconf 96'>te</span>
+      <span class='ocrx_word' id='word_1_18' title='bbox 563 286 655 310; x_wconf 96'>Leiden</span>
+      <span class='ocrx_word' id='word_1_19' title='bbox 671 286 697 310; x_wconf 94'>21</span>
+      <span class='ocrx_word' id='word_1_20' title='bbox 714 286 762 316; x_wconf 96'>juli</span>
+      <span class='ocrx_word' id='word_1_21' title='bbox 781 286 847 314; x_wconf 96'>1773,</span>
+      <span class='ocrx_word' id='word_1_22' title='bbox 862 286 1046 316; x_wconf 96'>promoveerde</span>
+      <span class='ocrx_word' id='word_1_23' title='bbox 1060 286 1146 310; x_wconf 96'>aldaar</span>
+      <span class='ocrx_word' id='word_1_24' title='bbox 1164 285 1190 310; x_wconf 96'>18</span>
+      <span class='ocrx_word' id='word_1_25' title='bbox 1204 285 1255 309; x_wconf 96'>okt.</span>
+     </span>
+     <span class='ocr_line' id='line_1_4' title="bbox 234 322 1256 353; baseline 0 -7; x_size 31; x_descenders 6; x_ascenders 8">
+      <span class='ocrx_word' id='word_1_26' title='bbox 234 322 300 350; x_wconf 94'>1777,</span>
+      <span class='ocrx_word' id='word_1_27' title='bbox 315 322 433 352; x_wconf 95'>opnieuw</span>
+      <span class='ocrx_word' id='word_1_28' title='bbox 450 322 629 353; x_wconf 96'>ingeschreven</span>
+      <span class='ocrx_word' id='word_1_29' title='bbox 644 323 680 347; x_wconf 96'>als</span>
+      <span class='ocrx_word' id='word_1_30' title='bbox 694 323 795 347; x_wconf 96'>student</span>
+      <span class='ocrx_word' id='word_1_31' title='bbox 810 328 833 347; x_wconf 96'>te</span>
+      <span class='ocrx_word' id='word_1_32' title='bbox 850 322 943 347; x_wconf 96'>Leiden</span>
+      <span class='ocrx_word' id='word_1_33' title='bbox 959 322 972 347; x_wconf 96'>2</span>
+      <span class='ocrx_word' id='word_1_34' title='bbox 986 322 1042 353; x_wconf 96'>juni</span>
+      <span class='ocrx_word' id='word_1_35' title='bbox 1062 322 1129 351; x_wconf 96'>1809,</span>
+      <span class='ocrx_word' id='word_1_36' title='bbox 1144 322 1256 347; x_wconf 96'>trouwde</span>
+     </span>
+     <span class='ocr_line' id='line_1_5' title="bbox 230 358 1014 390; baseline 0 -6; x_size 32; x_descenders 6; x_ascenders 8">
+      <span class='ocrx_word' id='word_1_37' title='bbox 230 358 429 390; x_wconf 41'>‘s-Gravenhage</span>
+      <span class='ocrx_word' id='word_1_38' title='bbox 444 359 592 390; x_wconf 90'>(Hoogd.k.)</span>
+      <span class='ocrx_word' id='word_1_39' title='bbox 611 359 636 384; x_wconf 96'>13</span>
+      <span class='ocrx_word' id='word_1_40' title='bbox 652 359 716 390; x_wconf 94'>april</span>
+      <span class='ocrx_word' id='word_1_41' title='bbox 736 359 794 384; x_wconf 94'>1783</span>
+      <span class='ocrx_word' id='word_1_42' title='bbox 812 360 896 384; x_wconf 96'>Maria</span>
+      <span class='ocrx_word' id='word_1_43' title='bbox 912 359 1014 384; x_wconf 95'>Damen.</span>
+     </span>
+    </p>
+
+    <p class='ocr_par' id='par_1_3' lang='nld' title="bbox 181 395 1256 574">
+     <span class='ocr_line' id='line_1_6' title="bbox 181 395 1256 428; baseline 0.001 -8; x_size 33; x_descenders 8; x_ascenders 8">
+      <span class='ocrx_word' id='word_1_44' title='bbox 181 396 201 420; x_wconf 43'>5.</span>
+      <span class='ocrx_word' id='word_1_45' title='bbox 232 397 305 420; x_wconf 93'>Anna</span>
+      <span class='ocrx_word' id='word_1_46' title='bbox 325 396 466 421; x_wconf 96'>Constance</span>
+      <span class='ocrx_word' id='word_1_47' title='bbox 482 396 582 428; x_wconf 96'>Sontag,</span>
+      <span class='ocrx_word' id='word_1_48' title='bbox 600 397 653 428; x_wconf 93'>geb.</span>
+      <span class='ocrx_word' id='word_1_49' title='bbox 672 396 871 428; x_wconf 51'>’s-Gravenhage</span>
+      <span class='ocrx_word' id='word_1_50' title='bbox 890 396 920 420; x_wconf 96'>28</span>
+      <span class='ocrx_word' id='word_1_51' title='bbox 937 396 998 427; x_wconf 21'>jan,</span>
+      <span class='ocrx_word' id='word_1_52' title='bbox 1014 396 1068 428; x_wconf 96'>ged.</span>
+      <span class='ocrx_word' id='word_1_53' title='bbox 1087 396 1174 421; x_wconf 92'>aldaar</span>
+      <span class='ocrx_word' id='word_1_54' title='bbox 1191 395 1256 426; x_wconf 92'>(Wa-</span>
+     </span>
+     <span class='ocr_line' id='line_1_7' title="bbox 231 428 1255 464; baseline -0.001 -7; x_size 28; x_descenders 4; x_ascenders 8">
+      <span class='ocrx_word' id='word_1_55' title='bbox 231 433 309 462; x_wconf 90'>lenk.)</span>
+      <span class='ocrx_word' id='word_1_56' title='bbox 320 434 334 457; x_wconf 95'>2</span>
+      <span class='ocrx_word' id='word_1_57' title='bbox 346 434 407 458; x_wconf 93'>febr.</span>
+      <span class='ocrx_word' id='word_1_58' title='bbox 423 428 520 462; x_wconf 40'>1758°®,</span>
+      <span class='ocrx_word' id='word_1_59' title='bbox 531 434 643 458; x_wconf 91'>trouwde</span>
+      <span class='ocrx_word' id='word_1_60' title='bbox 654 434 852 464; x_wconf 66'>’s-Gravenhage</span>
+      <span class='ocrx_word' id='word_1_61' title='bbox 863 434 1012 464; x_wconf 86'>(Hoogd.k.)</span>
+      <span class='ocrx_word' id='word_1_62' title='bbox 1026 434 1053 458; x_wconf 96'>16</span>
+      <span class='ocrx_word' id='word_1_63' title='bbox 1065 434 1126 458; x_wconf 95'>febr.</span>
+      <span class='ocrx_word' id='word_1_64' title='bbox 1142 434 1200 458; x_wconf 96'>1777</span>
+      <span class='ocrx_word' id='word_1_65' title='bbox 1214 433 1255 458; x_wconf 96'>Ds.</span>
+     </span>
+     <span class='ocr_line' id='line_1_8' title="bbox 233 470 1256 501; baseline 0 -7; x_size 28; x_descenders 4; x_ascenders 8">
+      <span class='ocrx_word' id='word_1_66' title='bbox 233 470 324 494; x_wconf 92'>Esdras</span>
+      <span class='ocrx_word' id='word_1_67' title='bbox 351 470 472 494; x_wconf 91'>Meinrich</span>
+      <span class='ocrx_word' id='word_1_68' title='bbox 501 470 698 498; x_wconf 68'>Mützenbecher,</span>
+      <span class='ocrx_word' id='word_1_69' title='bbox 724 471 778 501; x_wconf 96'>geb.</span>
+      <span class='ocrx_word' id='word_1_70' title='bbox 807 471 940 501; x_wconf 96'>Hamburg</span>
+      <span class='ocrx_word' id='word_1_71' title='bbox 967 470 992 494; x_wconf 95'>in</span>
+      <span class='ocrx_word' id='word_1_72' title='bbox 1024 471 1090 498; x_wconf 92'>1744,</span>
+      <span class='ocrx_word' id='word_1_73' title='bbox 1118 470 1256 494; x_wconf 91'>academie-</span>
+     </span>
+     <span class='ocr_line' id='line_1_9' title="bbox 231 506 1256 538; baseline 0 -8; x_size 31; x_descenders 7; x_ascenders 8">
+      <span class='ocrx_word' id='word_1_74' title='bbox 231 506 364 536; x_wconf 95'>predikant</span>
+      <span class='ocrx_word' id='word_1_75' title='bbox 380 512 403 531; x_wconf 95'>te</span>
+      <span class='ocrx_word' id='word_1_76' title='bbox 420 507 568 538; x_wconf 96'>Göttingen,</span>
+      <span class='ocrx_word' id='word_1_77' title='bbox 585 507 727 538; x_wconf 96'>Hoogduits</span>
+      <span class='ocrx_word' id='word_1_78' title='bbox 743 507 876 538; x_wconf 96'>predikant</span>
+      <span class='ocrx_word' id='word_1_79' title='bbox 893 512 916 531; x_wconf 92'>te</span>
+      <span class='ocrx_word' id='word_1_80' title='bbox 932 507 1131 538; x_wconf 33'>’s-Gravenhage</span>
+      <span class='ocrx_word' id='word_1_81' title='bbox 1151 508 1216 535; x_wconf 94'>1775,</span>
+      <span class='ocrx_word' id='word_1_82' title='bbox 1232 511 1256 530; x_wconf 96'>te</span>
+     </span>
+     <span class='ocr_line' id='line_1_10' title="bbox 230 544 806 574; baseline 0.003 -8; x_size 30; x_descenders 6; x_ascenders 7">
+      <span class='ocrx_word' id='word_1_83' title='bbox 230 544 392 567; x_wconf 96'>Amsterdam</span>
+      <span class='ocrx_word' id='word_1_84' title='bbox 413 544 472 567; x_wconf 93'>1780</span>
+      <span class='ocrx_word' id='word_1_85' title='bbox 486 550 518 567; x_wconf 96'>en</span>
+      <span class='ocrx_word' id='word_1_86' title='bbox 534 548 557 567; x_wconf 96'>te</span>
+      <span class='ocrx_word' id='word_1_87' title='bbox 573 544 722 574; x_wconf 96'>Oldenburg</span>
+      <span class='ocrx_word' id='word_1_88' title='bbox 740 544 806 568; x_wconf 96'>1789.</span>
+     </span>
+    </p>
+
+    <p class='ocr_par' id='par_1_4' lang='nld' title="bbox 179 580 1016 609">
+     <span class='ocr_line' id='line_1_11' title="bbox 179 580 1016 609; baseline 0 -7; x_size 26; x_descenders 4; x_ascenders 6">
+      <span class='ocrx_word' id='word_1_89' title='bbox 179 580 198 602; x_wconf 91'>J.</span>
+      <span class='ocrx_word' id='word_1_90' title='bbox 216 580 326 608; x_wconf 96'>Loosjes,</span>
+      <span class='ocrx_word' id='word_1_91' title='bbox 342 580 477 608; x_wconf 95'>Naamlijst</span>
+      <span class='ocrx_word' id='word_1_92' title='bbox 494 586 542 602; x_wconf 95'>van</span>
+      <span class='ocrx_word' id='word_1_93' title='bbox 558 580 725 609; x_wconf 96'>predikanten</span>
+      <span class='ocrx_word' id='word_1_94' title='bbox 742 580 862 602; x_wconf 96'>Lutherse</span>
+      <span class='ocrx_word' id='word_1_95' title='bbox 879 580 948 606; x_wconf 96'>kerk,</span>
+      <span class='ocrx_word' id='word_1_96' title='bbox 964 580 1016 602; x_wconf 95'>227.</span>
+     </span>
+    </p>
+   </div>
+   <div class='ocr_carea' id='block_1_3' title="bbox 82 662 1258 2000">
+    <p class='ocr_par' id='par_1_5' lang='nld' title="bbox 82 662 1258 2000">
+     <span class='ocr_line' id='line_1_12' title="bbox 86 662 396 699; baseline 0.003 -9; x_size 37; x_descenders 8; x_ascenders 10">
+      <span class='ocrx_word' id='word_1_97' title='bbox 86 662 256 691; x_wconf 96'>1770-1773</span>
+      <span class='ocrx_word' id='word_1_98' title='bbox 275 662 396 699; x_wconf 95'>envoyé</span>
+     </span>
+     <span class='ocr_line' id='line_1_13' title="bbox 82 706 1256 744; baseline 0.002 -10; x_size 38; x_descenders 8; x_ascenders 10">
+      <span class='ocrx_word' id='word_1_99' title='bbox 82 706 148 735; x_wconf 96'>405.</span>
+      <span class='ocrx_word' id='word_1_100' title='bbox 182 706 235 735; x_wconf 95'>Dr.</span>
+      <span class='ocrx_word' id='word_1_101' title='bbox 258 706 373 736; x_wconf 95'>Daniel</span>
+      <span class='ocrx_word' id='word_1_102' title='bbox 389 706 428 736; x_wconf 96'>de</span>
+      <span class='ocrx_word' id='word_1_103' title='bbox 444 706 620 744; x_wconf 96'>Superville,</span>
+      <span class='ocrx_word' id='word_1_104' title='bbox 638 707 705 744; x_wconf 95'>geb.</span>
+      <span class='ocrx_word' id='word_1_105' title='bbox 727 707 912 736; x_wconf 96'>Rotterdam</span>
+      <span class='ocrx_word' id='word_1_106' title='bbox 931 707 949 736; x_wconf 93'>2</span>
+      <span class='ocrx_word' id='word_1_107' title='bbox 967 708 1043 742; x_wconf 89'>dec.,</span>
+      <span class='ocrx_word' id='word_1_108' title='bbox 1061 708 1128 744; x_wconf 95'>ged.</span>
+      <span class='ocrx_word' id='word_1_109' title='bbox 1148 708 1256 736; x_wconf 96'>aldaar</span>
+     </span>
+     <span class='ocr_line' id='line_1_14' title="bbox 180 750 1250 788; baseline 0.001 -8; x_size 36; x_descenders 6; x_ascenders 9">
+      <span class='ocrx_word' id='word_1_110' title='bbox 180 750 352 786; x_wconf 91'>(Walenk.)</span>
+      <span class='ocrx_word' id='word_1_111' title='bbox 368 751 384 780; x_wconf 92'>5</span>
+      <span class='ocrx_word' id='word_1_112' title='bbox 402 751 467 780; x_wconf 96'>dec.</span>
+      <span class='ocrx_word' id='word_1_113' title='bbox 491 751 574 786; x_wconf 96'>1696,</span>
+      <span class='ocrx_word' id='word_1_114' title='bbox 592 750 722 781; x_wconf 96'>lidmaat</span>
+      <span class='ocrx_word' id='word_1_115' title='bbox 739 752 862 781; x_wconf 95'>Waalse</span>
+      <span class='ocrx_word' id='word_1_116' title='bbox 878 756 1043 788; x_wconf 95'>gemeente</span>
+      <span class='ocrx_word' id='word_1_117' title='bbox 1060 756 1089 781; x_wconf 96'>te</span>
+      <span class='ocrx_word' id='word_1_118' title='bbox 1107 751 1220 781; x_wconf 96'>Brielle</span>
+      <span class='ocrx_word' id='word_1_119' title='bbox 1242 752 1250 781; x_wconf 82'>1</span>
+     </span>
+     <span class='ocr_line' id='line_1_15' title="bbox 178 794 1255 834; baseline 0.002 -10; x_size 36; x_descenders 6; x_ascenders 9">
+      <span class='ocrx_word' id='word_1_120' title='bbox 178 794 242 832; x_wconf 95'>jan.</span>
+      <span class='ocrx_word' id='word_1_121' title='bbox 264 795 353 830; x_wconf 95'>1716;</span>
+      <span class='ocrx_word' id='word_1_122' title='bbox 366 795 493 825; x_wconf 95'>student</span>
+      <span class='ocrx_word' id='word_1_123' title='bbox 508 801 537 825; x_wconf 96'>te</span>
+      <span class='ocrx_word' id='word_1_124' title='bbox 553 796 684 825; x_wconf 95'>Utrecht</span>
+      <span class='ocrx_word' id='word_1_125' title='bbox 704 796 787 831; x_wconf 95'>1718,</span>
+      <span class='ocrx_word' id='word_1_126' title='bbox 803 796 1032 834; x_wconf 96'>promoveerde</span>
+      <span class='ocrx_word' id='word_1_127' title='bbox 1046 796 1155 826; x_wconf 96'>aldaar</span>
+      <span class='ocrx_word' id='word_1_128' title='bbox 1170 795 1202 826; x_wconf 96'>in</span>
+      <span class='ocrx_word' id='word_1_129' title='bbox 1217 796 1255 826; x_wconf 96'>de</span>
+     </span>
+     <span class='ocr_line' id='line_1_16' title="bbox 181 840 1253 878; baseline 0.001 -8; x_size 39; x_descenders 9; x_ascenders 9">
+      <span class='ocrx_word' id='word_1_130' title='bbox 181 840 374 878; x_wconf 93'>medicijnen</span>
+      <span class='ocrx_word' id='word_1_131' title='bbox 405 841 414 870; x_wconf 67'>l</span>
+      <span class='ocrx_word' id='word_1_132' title='bbox 445 849 515 870; x_wconf 96'>nov.</span>
+      <span class='ocrx_word' id='word_1_133' title='bbox 546 840 634 876; x_wconf 96'>1718;</span>
+      <span class='ocrx_word' id='word_1_134' title='bbox 658 841 738 871; x_wconf 95'>med.</span>
+      <span class='ocrx_word' id='word_1_135' title='bbox 764 842 891 871; x_wconf 94'>student</span>
+      <span class='ocrx_word' id='word_1_136' title='bbox 916 846 944 871; x_wconf 95'>te</span>
+      <span class='ocrx_word' id='word_1_137' title='bbox 971 841 1088 871; x_wconf 96'>Leiden</span>
+      <span class='ocrx_word' id='word_1_138' title='bbox 1118 841 1150 871; x_wconf 95'>13</span>
+      <span class='ocrx_word' id='word_1_139' title='bbox 1177 841 1253 871; x_wconf 95'>febr.</span>
+     </span>
+     <span class='ocr_line' id='line_1_17' title="bbox 185 884 1250 923; baseline 0.002 -9; x_size 38; x_descenders 8; x_ascenders 9">
+      <span class='ocrx_word' id='word_1_140' title='bbox 185 885 273 920; x_wconf 95'>1719;</span>
+      <span class='ocrx_word' id='word_1_141' title='bbox 287 884 416 915; x_wconf 95'>lidmaat</span>
+      <span class='ocrx_word' id='word_1_142' title='bbox 431 886 553 915; x_wconf 96'>Waalse</span>
+      <span class='ocrx_word' id='word_1_143' title='bbox 567 891 731 923; x_wconf 96'>gemeente</span>
+      <span class='ocrx_word' id='word_1_144' title='bbox 750 886 824 916; x_wconf 96'>1719</span>
+      <span class='ocrx_word' id='word_1_145' title='bbox 838 895 877 916; x_wconf 96'>en</span>
+      <span class='ocrx_word' id='word_1_146' title='bbox 892 886 1008 916; x_wconf 96'>diaken</span>
+      <span class='ocrx_word' id='word_1_147' title='bbox 1022 887 1161 916; x_wconf 96'>daarvan</span>
+      <span class='ocrx_word' id='word_1_148' title='bbox 1180 886 1250 916; x_wconf 96'>1721</span>
+     </span>
+     <span class='ocr_line' id='line_1_18' title="bbox 180 930 1254 969; baseline 0.001 -10; x_size 37; x_descenders 8; x_ascenders 9">
+      <span class='ocrx_word' id='word_1_149' title='bbox 180 936 209 959; x_wconf 96'>te</span>
+      <span class='ocrx_word' id='word_1_150' title='bbox 226 930 353 965; x_wconf 96'>Leiden,</span>
+      <span class='ocrx_word' id='word_1_151' title='bbox 368 930 502 968; x_wconf 96'>ontving</span>
+      <span class='ocrx_word' id='word_1_152' title='bbox 515 930 669 960; x_wconf 96'>attestatie</span>
+      <span class='ocrx_word' id='word_1_153' title='bbox 684 931 791 960; x_wconf 96'>aldaar</span>
+      <span class='ocrx_word' id='word_1_154' title='bbox 806 931 839 960; x_wconf 96'>21</span>
+      <span class='ocrx_word' id='word_1_155' title='bbox 857 931 928 968; x_wconf 96'>juni</span>
+      <span class='ocrx_word' id='word_1_156' title='bbox 949 931 1037 966; x_wconf 96'>1721;</span>
+      <span class='ocrx_word' id='word_1_157' title='bbox 1051 931 1179 969; x_wconf 96'>chirurg</span>
+      <span class='ocrx_word' id='word_1_158' title='bbox 1193 941 1254 961; x_wconf 96'>van</span>
+     </span>
+     <span class='ocr_line' id='line_1_19' title="bbox 179 975 1253 1012; baseline 0.002 -8; x_size 35; x_descenders 5; x_ascenders 9">
+      <span class='ocrx_word' id='word_1_159' title='bbox 179 975 218 1004; x_wconf 96'>de</span>
+      <span class='ocrx_word' id='word_1_160' title='bbox 240 976 363 1004; x_wconf 96'>Waalse</span>
+      <span class='ocrx_word' id='word_1_161' title='bbox 384 981 563 1012; x_wconf 93'>gemeente;</span>
+      <span class='ocrx_word' id='word_1_162' title='bbox 586 975 757 1006; x_wconf 90'>Pruissisch</span>
+      <span class='ocrx_word' id='word_1_163' title='bbox 781 976 914 1006; x_wconf 90'>hofraad</span>
+      <span class='ocrx_word' id='word_1_164' title='bbox 942 976 1030 1011; x_wconf 96'>1725;</span>
+      <span class='ocrx_word' id='word_1_165' title='bbox 1052 976 1094 1006; x_wconf 96'>lid</span>
+      <span class='ocrx_word' id='word_1_166' title='bbox 1118 986 1179 1006; x_wconf 96'>van</span>
+      <span class='ocrx_word' id='word_1_167' title='bbox 1203 977 1253 1006; x_wconf 96'>het</span>
+     </span>
+     <span class='ocr_line' id='line_1_20' title="bbox 180 1019 1255 1059; baseline 0.002 -10; x_size 40; x_descenders 9; x_ascenders 10">
+      <span class='ocrx_word' id='word_1_168' title='bbox 180 1019 360 1058; x_wconf 96'>Collegium</span>
+      <span class='ocrx_word' id='word_1_169' title='bbox 381 1020 545 1050; x_wconf 95'>Medicum</span>
+      <span class='ocrx_word' id='word_1_170' title='bbox 570 1020 640 1050; x_wconf 96'>1725</span>
+      <span class='ocrx_word' id='word_1_171' title='bbox 661 1029 701 1050; x_wconf 96'>en</span>
+      <span class='ocrx_word' id='word_1_172' title='bbox 721 1020 907 1059; x_wconf 96'>hoogleraar</span>
+      <span class='ocrx_word' id='word_1_173' title='bbox 926 1020 958 1050; x_wconf 95'>in</span>
+      <span class='ocrx_word' id='word_1_174' title='bbox 978 1021 1016 1051; x_wconf 96'>de</span>
+      <span class='ocrx_word' id='word_1_175' title='bbox 1036 1020 1197 1051; x_wconf 96'>anatomie</span>
+      <span class='ocrx_word' id='word_1_176' title='bbox 1216 1030 1255 1051; x_wconf 96'>en</span>
+     </span>
+     <span class='ocr_line' id='line_1_21' title="bbox 179 1064 1254 1103; baseline 0.002 -9; x_size 38; x_descenders 8; x_ascenders 9">
+      <span class='ocrx_word' id='word_1_177' title='bbox 179 1064 337 1102; x_wconf 96'>chirurgie</span>
+      <span class='ocrx_word' id='word_1_178' title='bbox 379 1074 439 1094; x_wconf 91'>aan</span>
+      <span class='ocrx_word' id='word_1_179' title='bbox 484 1066 536 1095; x_wconf 91'>het</span>
+      <span class='ocrx_word' id='word_1_180' title='bbox 578 1065 808 1096; x_wconf 96'>Academische</span>
+      <span class='ocrx_word' id='word_1_181' title='bbox 850 1066 1050 1103; x_wconf 91'>gymnasium</span>
+      <span class='ocrx_word' id='word_1_182' title='bbox 1099 1066 1174 1096; x_wconf 91'>1726</span>
+      <span class='ocrx_word' id='word_1_183' title='bbox 1216 1076 1254 1096; x_wconf 94'>en</span>
+     </span>
+     <span class='ocr_line' id='line_1_22' title="bbox 179 1109 1256 1148; baseline 0.002 -10; x_size 37; x_descenders 7; x_ascenders 9">
+      <span class='ocrx_word' id='word_1_184' title='bbox 179 1109 414 1146; x_wconf 89'>stadsphysicus</span>
+      <span class='ocrx_word' id='word_1_185' title='bbox 435 1110 509 1139; x_wconf 95'>1733</span>
+      <span class='ocrx_word' id='word_1_186' title='bbox 529 1115 558 1140; x_wconf 95'>te</span>
+      <span class='ocrx_word' id='word_1_187' title='bbox 576 1110 702 1145; x_wconf 96'>Stettin;</span>
+      <span class='ocrx_word' id='word_1_188' title='bbox 720 1110 763 1140; x_wconf 96'>lid</span>
+      <span class='ocrx_word' id='word_1_189' title='bbox 781 1120 842 1140; x_wconf 96'>van</span>
+      <span class='ocrx_word' id='word_1_190' title='bbox 861 1111 899 1140; x_wconf 96'>de</span>
+      <span class='ocrx_word' id='word_1_191' title='bbox 919 1110 1131 1148; x_wconf 92'>Koninklijke</span>
+      <span class='ocrx_word' id='word_1_192' title='bbox 1149 1112 1256 1141; x_wconf 92'>acade-</span>
+     </span>
+     <span class='ocr_line' id='line_1_23' title="bbox 182 1153 1256 1193; baseline 0.002 -10; x_size 38; x_descenders 8; x_ascenders 9">
+      <span class='ocrx_word' id='word_1_193' title='bbox 182 1153 244 1183; x_wconf 96'>mie</span>
+      <span class='ocrx_word' id='word_1_194' title='bbox 263 1162 323 1184; x_wconf 96'>van</span>
+      <span class='ocrx_word' id='word_1_195' title='bbox 343 1154 606 1192; x_wconf 96'>wetenschappen</span>
+      <span class='ocrx_word' id='word_1_196' title='bbox 625 1160 654 1184; x_wconf 96'>te</span>
+      <span class='ocrx_word' id='word_1_197' title='bbox 674 1154 806 1192; x_wconf 96'>Berlijn;</span>
+      <span class='ocrx_word' id='word_1_198' title='bbox 824 1155 1046 1185; x_wconf 96'>behandelend</span>
+      <span class='ocrx_word' id='word_1_199' title='bbox 1064 1156 1256 1193; x_wconf 96'>geneesheer</span>
+     </span>
+     <span class='ocr_line' id='line_1_24' title="bbox 181 1198 1254 1238; baseline 0.003 -11; x_size 38; x_descenders 8; x_ascenders 9">
+      <span class='ocrx_word' id='word_1_200' title='bbox 181 1208 241 1228; x_wconf 96'>van</span>
+      <span class='ocrx_word' id='word_1_201' title='bbox 262 1198 404 1228; x_wconf 96'>Frederik</span>
+      <span class='ocrx_word' id='word_1_202' title='bbox 426 1198 542 1229; x_wconf 92'>Willem</span>
+      <span class='ocrx_word' id='word_1_203' title='bbox 560 1200 575 1228; x_wconf 82'>I</span>
+      <span class='ocrx_word' id='word_1_204' title='bbox 587 1199 708 1237; x_wconf 96'>koning</span>
+      <span class='ocrx_word' id='word_1_205' title='bbox 726 1209 783 1230; x_wconf 92'>van</span>
+      <span class='ocrx_word' id='word_1_206' title='bbox 800 1200 941 1230; x_wconf 92'>Pruissen</span>
+      <span class='ocrx_word' id='word_1_207' title='bbox 960 1200 1048 1236; x_wconf 90'>1734;</span>
+      <span class='ocrx_word' id='word_1_208' title='bbox 1064 1200 1178 1238; x_wconf 94'>lijfarts</span>
+      <span class='ocrx_word' id='word_1_209' title='bbox 1194 1209 1254 1230; x_wconf 96'>van</span>
+     </span>
+     <span class='ocr_line' id='line_1_25' title="bbox 180 1244 1254 1282; baseline 0.003 -10; x_size 37; x_descenders 8; x_ascenders 8">
+      <span class='ocrx_word' id='word_1_210' title='bbox 180 1244 218 1272; x_wconf 96'>de</span>
+      <span class='ocrx_word' id='word_1_211' title='bbox 235 1244 416 1281; x_wconf 96'>markgraaf</span>
+      <span class='ocrx_word' id='word_1_212' title='bbox 429 1252 491 1274; x_wconf 93'>van</span>
+      <span class='ocrx_word' id='word_1_213' title='bbox 508 1244 904 1282; x_wconf 92'>Brandenburg-Bayreuth</span>
+      <span class='ocrx_word' id='word_1_214' title='bbox 925 1245 1008 1280; x_wconf 95'>1739,</span>
+      <span class='ocrx_word' id='word_1_215' title='bbox 1023 1245 1180 1275; x_wconf 96'>directeur</span>
+      <span class='ocrx_word' id='word_1_216' title='bbox 1194 1254 1254 1275; x_wconf 96'>van</span>
+     </span>
+     <span class='ocr_line' id='line_1_26' title="bbox 182 1288 1254 1327; baseline 0.003 -10; x_size 38; x_descenders 8; x_ascenders 9">
+      <span class='ocrx_word' id='word_1_217' title='bbox 182 1288 233 1317; x_wconf 93'>het</span>
+      <span class='ocrx_word' id='word_1_218' title='bbox 253 1288 435 1326; x_wconf 90'>bergwezen</span>
+      <span class='ocrx_word' id='word_1_219' title='bbox 456 1298 516 1318; x_wconf 96'>van</span>
+      <span class='ocrx_word' id='word_1_220' title='bbox 538 1289 589 1318; x_wconf 96'>het</span>
+      <span class='ocrx_word' id='word_1_221' title='bbox 609 1289 888 1327; x_wconf 96'>markgraafschap</span>
+      <span class='ocrx_word' id='word_1_222' title='bbox 912 1290 1000 1324; x_wconf 96'>1740;</span>
+      <span class='ocrx_word' id='word_1_223' title='bbox 1018 1289 1175 1320; x_wconf 96'>directeur</span>
+      <span class='ocrx_word' id='word_1_224' title='bbox 1194 1299 1254 1320; x_wconf 96'>van</span>
+     </span>
+     <span class='ocr_line' id='line_1_27' title="bbox 182 1333 1256 1372; baseline 0.002 -10; x_size 38; x_descenders 8; x_ascenders 10">
+      <span class='ocrx_word' id='word_1_225' title='bbox 182 1333 233 1362; x_wconf 96'>het</span>
+      <span class='ocrx_word' id='word_1_226' title='bbox 247 1333 448 1370; x_wconf 93'>gymnasium</span>
+      <span class='ocrx_word' id='word_1_227' title='bbox 465 1333 866 1364; x_wconf 91'>Christiano-Ernestinum</span>
+      <span class='ocrx_word' id='word_1_228' title='bbox 881 1334 919 1364; x_wconf 96'>28</span>
+      <span class='ocrx_word' id='word_1_229' title='bbox 936 1334 997 1364; x_wconf 96'>mei</span>
+      <span class='ocrx_word' id='word_1_230' title='bbox 1017 1335 1087 1364; x_wconf 96'>1741</span>
+      <span class='ocrx_word' id='word_1_231' title='bbox 1106 1344 1146 1364; x_wconf 92'>en</span>
+      <span class='ocrx_word' id='word_1_232' title='bbox 1162 1334 1256 1372; x_wconf 92'>presi-</span>
+     </span>
+     <span class='ocr_line' id='line_1_28' title="bbox 180 1378 1256 1417; baseline 0.002 -10; x_size 39; x_descenders 9; x_ascenders 10">
+      <span class='ocrx_word' id='word_1_233' title='bbox 180 1378 255 1407; x_wconf 96'>dent</span>
+      <span class='ocrx_word' id='word_1_234' title='bbox 273 1386 334 1407; x_wconf 95'>van</span>
+      <span class='ocrx_word' id='word_1_235' title='bbox 354 1378 405 1408; x_wconf 96'>het</span>
+      <span class='ocrx_word' id='word_1_236' title='bbox 425 1378 588 1408; x_wconf 93'>Medische</span>
+      <span class='ocrx_word' id='word_1_237' title='bbox 608 1379 817 1417; x_wconf 90'>raadscollege</span>
+      <span class='ocrx_word' id='word_1_238' title='bbox 840 1380 848 1408; x_wconf 86'>1</span>
+      <span class='ocrx_word' id='word_1_239' title='bbox 872 1385 972 1409; x_wconf 96'>maart</span>
+      <span class='ocrx_word' id='word_1_240' title='bbox 995 1380 1082 1415; x_wconf 96'>1742;</span>
+      <span class='ocrx_word' id='word_1_241' title='bbox 1099 1379 1256 1410; x_wconf 96'>directeur</span>
+     </span>
+     <span class='ocr_line' id='line_1_29' title="bbox 186 1422 1255 1462; baseline 0.003 -11; x_size 39; x_descenders 9; x_ascenders 10">
+      <span class='ocrx_word' id='word_1_242' title='bbox 186 1422 218 1451; x_wconf 91'>19</span>
+      <span class='ocrx_word' id='word_1_243' title='bbox 234 1431 301 1460; x_wconf 96'>aug.</span>
+      <span class='ocrx_word' id='word_1_244' title='bbox 324 1423 396 1452; x_wconf 96'>1743</span>
+      <span class='ocrx_word' id='word_1_245' title='bbox 413 1428 457 1453; x_wconf 96'>tot</span>
+      <span class='ocrx_word' id='word_1_246' title='bbox 478 1424 552 1452; x_wconf 96'>1746</span>
+      <span class='ocrx_word' id='word_1_247' title='bbox 567 1432 606 1453; x_wconf 95'>en</span>
+      <span class='ocrx_word' id='word_1_248' title='bbox 623 1424 780 1454; x_wconf 96'>kanselier</span>
+      <span class='ocrx_word' id='word_1_249' title='bbox 794 1432 862 1462; x_wconf 95'>aug.</span>
+      <span class='ocrx_word' id='word_1_250' title='bbox 883 1424 956 1454; x_wconf 95'>1743</span>
+      <span class='ocrx_word' id='word_1_251' title='bbox 973 1434 1034 1454; x_wconf 96'>van</span>
+      <span class='ocrx_word' id='word_1_252' title='bbox 1050 1425 1088 1454; x_wconf 93'>de</span>
+      <span class='ocrx_word' id='word_1_253' title='bbox 1104 1424 1255 1454; x_wconf 92'>universi-</span>
+     </span>
+     <span class='ocr_line' id='line_1_30' title="bbox 180 1467 1254 1506; baseline 0.003 -10; x_size 38; x_descenders 8; x_ascenders 10">
+      <span class='ocrx_word' id='word_1_254' title='bbox 180 1467 233 1496; x_wconf 93'>teit</span>
+      <span class='ocrx_word' id='word_1_255' title='bbox 256 1473 284 1497; x_wconf 93'>te</span>
+      <span class='ocrx_word' id='word_1_256' title='bbox 307 1468 478 1506; x_wconf 95'>Erlangen;</span>
+      <span class='ocrx_word' id='word_1_257' title='bbox 499 1468 598 1498; x_wconf 96'>reisde</span>
+      <span class='ocrx_word' id='word_1_258' title='bbox 619 1468 698 1506; x_wconf 95'>april</span>
+      <span class='ocrx_word' id='word_1_259' title='bbox 720 1474 764 1498; x_wconf 96'>tot</span>
+      <span class='ocrx_word' id='word_1_260' title='bbox 784 1468 843 1506; x_wconf 96'>juli</span>
+      <span class='ocrx_word' id='word_1_261' title='bbox 870 1469 942 1498; x_wconf 96'>1743</span>
+      <span class='ocrx_word' id='word_1_262' title='bbox 965 1478 1005 1499; x_wconf 96'>en</span>
+      <span class='ocrx_word' id='word_1_263' title='bbox 1027 1469 1088 1499; x_wconf 95'>mei</span>
+      <span class='ocrx_word' id='word_1_264' title='bbox 1115 1470 1190 1499; x_wconf 96'>1744</span>
+      <span class='ocrx_word' id='word_1_265' title='bbox 1210 1475 1254 1499; x_wconf 96'>tot</span>
+     </span>
+     <span class='ocr_line' id='line_1_31' title="bbox 185 1512 1255 1552; baseline 0.003 -11; x_size 38; x_descenders 8; x_ascenders 9">
+      <span class='ocrx_word' id='word_1_266' title='bbox 185 1512 256 1542; x_wconf 93'>1745</span>
+      <span class='ocrx_word' id='word_1_267' title='bbox 275 1521 351 1542; x_wconf 96'>naar</span>
+      <span class='ocrx_word' id='word_1_268' title='bbox 366 1513 404 1542; x_wconf 96'>de</span>
+      <span class='ocrx_word' id='word_1_269' title='bbox 421 1512 612 1550; x_wconf 96'>Republiek;</span>
+      <span class='ocrx_word' id='word_1_270' title='bbox 628 1514 711 1543; x_wconf 96'>werd</span>
+      <span class='ocrx_word' id='word_1_271' title='bbox 728 1513 771 1551; x_wconf 93'>bij</span>
+      <span class='ocrx_word' id='word_1_272' title='bbox 789 1513 871 1544; x_wconf 95'>miss.</span>
+      <span class='ocrx_word' id='word_1_273' title='bbox 889 1522 950 1544; x_wconf 96'>van</span>
+      <span class='ocrx_word' id='word_1_274' title='bbox 966 1514 1004 1544; x_wconf 96'>de</span>
+      <span class='ocrx_word' id='word_1_275' title='bbox 1021 1514 1203 1552; x_wconf 96'>markgraaf</span>
+      <span class='ocrx_word' id='word_1_276' title='bbox 1222 1515 1255 1544; x_wconf 96'>14</span>
+     </span>
+     <span class='ocr_line' id='line_1_32' title="bbox 181 1558 1254 1596; baseline 0.002 -10; x_size 39; x_descenders 9; x_ascenders 10">
+      <span class='ocrx_word' id='word_1_277' title='bbox 181 1562 280 1586; x_wconf 96'>maart</span>
+      <span class='ocrx_word' id='word_1_278' title='bbox 300 1558 371 1586; x_wconf 96'>1745</span>
+      <span class='ocrx_word' id='word_1_279' title='bbox 387 1558 545 1587; x_wconf 96'>benoemd</span>
+      <span class='ocrx_word' id='word_1_280' title='bbox 560 1563 604 1587; x_wconf 95'>tot</span>
+      <span class='ocrx_word' id='word_1_281' title='bbox 618 1558 738 1596; x_wconf 96'>envoyé</span>
+      <span class='ocrx_word' id='word_1_282' title='bbox 753 1558 796 1596; x_wconf 95'>bij</span>
+      <span class='ocrx_word' id='word_1_283' title='bbox 811 1558 849 1588; x_wconf 96'>de</span>
+      <span class='ocrx_word' id='word_1_284' title='bbox 865 1558 1052 1596; x_wconf 96'>Republiek,</span>
+      <span class='ocrx_word' id='word_1_285' title='bbox 1066 1568 1142 1588; x_wconf 96'>over</span>
+      <span class='ocrx_word' id='word_1_286' title='bbox 1155 1559 1254 1588; x_wconf 96'>welke</span>
+     </span>
+     <span class='ocr_line' id='line_1_33' title="bbox 180 1602 1255 1640; baseline 0.003 -10; x_size 39; x_descenders 9; x_ascenders 10">
+      <span class='ocrx_word' id='word_1_287' title='bbox 180 1602 373 1640; x_wconf 96'>benoeming</span>
+      <span class='ocrx_word' id='word_1_288' title='bbox 394 1602 437 1639; x_wconf 96'>bij</span>
+      <span class='ocrx_word' id='word_1_289' title='bbox 462 1611 516 1632; x_wconf 96'>res.</span>
+      <span class='ocrx_word' id='word_1_290' title='bbox 539 1602 576 1632; x_wconf 96'>28</span>
+      <span class='ocrx_word' id='word_1_291' title='bbox 595 1602 655 1640; x_wconf 95'>juli</span>
+      <span class='ocrx_word' id='word_1_292' title='bbox 682 1603 756 1632; x_wconf 96'>1746</span>
+      <span class='ocrx_word' id='word_1_293' title='bbox 776 1603 1010 1640; x_wconf 96'>gedelibereerd</span>
+      <span class='ocrx_word' id='word_1_294' title='bbox 1032 1604 1115 1633; x_wconf 95'>werd</span>
+      <span class='ocrx_word' id='word_1_295' title='bbox 1136 1604 1255 1634; x_wconf 96'>zonder</span>
+     </span>
+     <span class='ocr_line' id='line_1_34' title="bbox 179 1646 1254 1686; baseline 0.003 -11; x_size 37; x_descenders 8; x_ascenders 8">
+      <span class='ocrx_word' id='word_1_296' title='bbox 179 1646 231 1675; x_wconf 96'>dat</span>
+      <span class='ocrx_word' id='word_1_297' title='bbox 251 1655 309 1675; x_wconf 96'>een</span>
+      <span class='ocrx_word' id='word_1_298' title='bbox 331 1646 477 1676; x_wconf 96'>resolutie</span>
+      <span class='ocrx_word' id='word_1_299' title='bbox 496 1656 654 1684; x_wconf 95'>genomen</span>
+      <span class='ocrx_word' id='word_1_300' title='bbox 674 1648 772 1683; x_wconf 95'>werd;</span>
+      <span class='ocrx_word' id='word_1_301' title='bbox 790 1656 852 1678; x_wconf 96'>was</span>
+      <span class='ocrx_word' id='word_1_302' title='bbox 872 1648 904 1677; x_wconf 96'>in</span>
+      <span class='ocrx_word' id='word_1_303' title='bbox 924 1653 999 1686; x_wconf 96'>sept.</span>
+      <span class='ocrx_word' id='word_1_304' title='bbox 1024 1649 1099 1678; x_wconf 96'>1746</span>
+      <span class='ocrx_word' id='word_1_305' title='bbox 1118 1653 1207 1686; x_wconf 96'>terug</span>
+      <span class='ocrx_word' id='word_1_306' title='bbox 1225 1654 1254 1678; x_wconf 96'>te</span>
+     </span>
+     <span class='ocr_line' id='line_1_35' title="bbox 181 1691 1252 1731; baseline 0.002 -11; x_size 38; x_descenders 8; x_ascenders 9">
+      <span class='ocrx_word' id='word_1_307' title='bbox 181 1691 351 1728; x_wconf 96'>Erlangen;</span>
+      <span class='ocrx_word' id='word_1_308' title='bbox 370 1700 443 1721; x_wconf 96'>nam</span>
+      <span class='ocrx_word' id='word_1_309' title='bbox 463 1692 480 1721; x_wconf 96'>2</span>
+      <span class='ocrx_word' id='word_1_310' title='bbox 500 1697 599 1722; x_wconf 96'>maart</span>
+      <span class='ocrx_word' id='word_1_311' title='bbox 622 1692 695 1722; x_wconf 96'>1748</span>
+      <span class='ocrx_word' id='word_1_312' title='bbox 714 1693 838 1730; x_wconf 96'>ontslag</span>
+      <span class='ocrx_word' id='word_1_313' title='bbox 855 1693 900 1722; x_wconf 96'>als</span>
+      <span class='ocrx_word' id='word_1_314' title='bbox 919 1693 1089 1728; x_wconf 95'>kanselier;</span>
+      <span class='ocrx_word' id='word_1_315' title='bbox 1106 1694 1190 1723; x_wconf 94'>werd</span>
+      <span class='ocrx_word' id='word_1_316' title='bbox 1210 1693 1252 1731; x_wconf 94'>bij</span>
+     </span>
+     <span class='ocr_line' id='line_1_36' title="bbox 181 1735 1254 1776; baseline 0.003 -11; x_size 38; x_descenders 8; x_ascenders 10">
+      <span class='ocrx_word' id='word_1_317' title='bbox 181 1735 263 1765; x_wconf 96'>miss.</span>
+      <span class='ocrx_word' id='word_1_318' title='bbox 290 1745 351 1765; x_wconf 96'>van</span>
+      <span class='ocrx_word' id='word_1_319' title='bbox 376 1737 415 1766; x_wconf 96'>de</span>
+      <span class='ocrx_word' id='word_1_320' title='bbox 442 1736 622 1774; x_wconf 95'>markgraaf</span>
+      <span class='ocrx_word' id='word_1_321' title='bbox 646 1737 664 1766; x_wconf 92'>9</span>
+      <span class='ocrx_word' id='word_1_322' title='bbox 688 1737 808 1774; x_wconf 92'>juli/28</span>
+      <span class='ocrx_word' id='word_1_323' title='bbox 833 1746 901 1775; x_wconf 95'>aug.</span>
+      <span class='ocrx_word' id='word_1_324' title='bbox 932 1738 1006 1767; x_wconf 96'>1748</span>
+      <span class='ocrx_word' id='word_1_325' title='bbox 1032 1737 1180 1776; x_wconf 92'>opnieuw</span>
+      <span class='ocrx_word' id='word_1_326' title='bbox 1205 1738 1254 1768; x_wconf 92'>be-</span>
+     </span>
+     <span class='ocr_line' id='line_1_37' title="bbox 181 1781 1252 1820; baseline 0.002 -10; x_size 38; x_descenders 8; x_ascenders 9">
+      <span class='ocrx_word' id='word_1_327' title='bbox 181 1781 296 1810; x_wconf 96'>noemd</span>
+      <span class='ocrx_word' id='word_1_328' title='bbox 314 1786 358 1810; x_wconf 96'>tot</span>
+      <span class='ocrx_word' id='word_1_329' title='bbox 374 1781 464 1811; x_wconf 96'>diens</span>
+      <span class='ocrx_word' id='word_1_330' title='bbox 480 1781 600 1819; x_wconf 96'>envoyé</span>
+      <span class='ocrx_word' id='word_1_331' title='bbox 617 1790 656 1811; x_wconf 96'>en</span>
+      <span class='ocrx_word' id='word_1_332' title='bbox 673 1782 718 1812; x_wconf 96'>als</span>
+      <span class='ocrx_word' id='word_1_333' title='bbox 733 1782 869 1820; x_wconf 96'>zodanig</span>
+      <span class='ocrx_word' id='word_1_334' title='bbox 884 1783 1004 1812; x_wconf 96'>erkend</span>
+      <span class='ocrx_word' id='word_1_335' title='bbox 1020 1782 1064 1820; x_wconf 96'>bij</span>
+      <span class='ocrx_word' id='word_1_336' title='bbox 1083 1792 1138 1812; x_wconf 96'>res.</span>
+      <span class='ocrx_word' id='word_1_337' title='bbox 1156 1784 1173 1812; x_wconf 96'>7</span>
+      <span class='ocrx_word' id='word_1_338' title='bbox 1190 1783 1252 1813; x_wconf 96'>okt.</span>
+     </span>
+     <span class='ocr_line' id='line_1_38' title="bbox 184 1824 1254 1863; baseline 0.003 -9; x_size 38; x_descenders 8; x_ascenders 9">
+      <span class='ocrx_word' id='word_1_339' title='bbox 184 1824 266 1860; x_wconf 95'>1748,</span>
+      <span class='ocrx_word' id='word_1_340' title='bbox 288 1825 477 1863; x_wconf 95'>“aangezien</span>
+      <span class='ocrx_word' id='word_1_341' title='bbox 501 1826 545 1863; x_wconf 96'>hij</span>
+      <span class='ocrx_word' id='word_1_342' title='bbox 569 1826 632 1856; x_wconf 96'>niet</span>
+      <span class='ocrx_word' id='word_1_343' title='bbox 655 1835 741 1856; x_wconf 96'>meer</span>
+      <span class='ocrx_word' id='word_1_344' title='bbox 762 1827 951 1856; x_wconf 96'>beschouwd</span>
+      <span class='ocrx_word' id='word_1_345' title='bbox 975 1827 1037 1857; x_wconf 96'>kon</span>
+      <span class='ocrx_word' id='word_1_346' title='bbox 1059 1828 1187 1857; x_wconf 96'>worden</span>
+      <span class='ocrx_word' id='word_1_347' title='bbox 1209 1828 1254 1858; x_wconf 96'>als</span>
+     </span>
+     <span class='ocr_line' id='line_1_39' title="bbox 178 1870 1254 1910; baseline 0.003 -11; x_size 38; x_descenders 8; x_ascenders 9">
+      <span class='ocrx_word' id='word_1_348' title='bbox 178 1870 362 1899; x_wconf 96'>onderdaan</span>
+      <span class='ocrx_word' id='word_1_349' title='bbox 382 1879 443 1900; x_wconf 96'>van</span>
+      <span class='ocrx_word' id='word_1_350' title='bbox 462 1870 501 1900; x_wconf 96'>de</span>
+      <span class='ocrx_word' id='word_1_351' title='bbox 519 1870 602 1900; x_wconf 96'>Staat</span>
+      <span class='ocrx_word' id='word_1_352' title='bbox 623 1880 662 1900; x_wconf 96'>na</span>
+      <span class='ocrx_word' id='word_1_353' title='bbox 681 1871 719 1900; x_wconf 96'>26</span>
+      <span class='ocrx_word' id='word_1_354' title='bbox 736 1871 804 1908; x_wconf 96'>jaar</span>
+      <span class='ocrx_word' id='word_1_355' title='bbox 824 1871 855 1901; x_wconf 96'>in</span>
+      <span class='ocrx_word' id='word_1_356' title='bbox 874 1871 977 1902; x_wconf 96'>dienst</span>
+      <span class='ocrx_word' id='word_1_357' title='bbox 996 1880 1057 1902; x_wconf 96'>van</span>
+      <span class='ocrx_word' id='word_1_358' title='bbox 1076 1872 1114 1902; x_wconf 96'>de</span>
+      <span class='ocrx_word' id='word_1_359' title='bbox 1134 1872 1254 1910; x_wconf 96'>koning</span>
+     </span>
+     <span class='ocr_line' id='line_1_40' title="bbox 179 1914 1254 1954; baseline 0.004 -11; x_size 38; x_descenders 8; x_ascenders 10">
+      <span class='ocrx_word' id='word_1_360' title='bbox 179 1923 239 1944; x_wconf 93'>van</span>
+      <span class='ocrx_word' id='word_1_361' title='bbox 256 1914 400 1944; x_wconf 91'>Pruissen</span>
+      <span class='ocrx_word' id='word_1_362' title='bbox 415 1924 454 1944; x_wconf 96'>en</span>
+      <span class='ocrx_word' id='word_1_363' title='bbox 469 1915 534 1944; x_wconf 96'>tien</span>
+      <span class='ocrx_word' id='word_1_364' title='bbox 546 1915 615 1953; x_wconf 96'>jaar</span>
+      <span class='ocrx_word' id='word_1_365' title='bbox 630 1915 661 1944; x_wconf 96'>in</span>
+      <span class='ocrx_word' id='word_1_366' title='bbox 675 1916 778 1946; x_wconf 96'>dienst</span>
+      <span class='ocrx_word' id='word_1_367' title='bbox 792 1925 852 1946; x_wconf 96'>van</span>
+      <span class='ocrx_word' id='word_1_368' title='bbox 867 1917 906 1946; x_wconf 96'>de</span>
+      <span class='ocrx_word' id='word_1_369' title='bbox 921 1917 1102 1954; x_wconf 96'>markgraaf</span>
+      <span class='ocrx_word' id='word_1_370' title='bbox 1114 1922 1144 1946; x_wconf 96'>te</span>
+      <span class='ocrx_word' id='word_1_371' title='bbox 1157 1916 1254 1954; x_wconf 94'>zijn”;</span>
+     </span>
+     <span class='ocr_line' id='line_1_41' title="bbox 178 1959 1258 2000; baseline 0.004 -12; x_size 40; x_descenders 9; x_ascenders 11">
+      <span class='ocrx_word' id='word_1_372' title='bbox 178 1960 246 1988; x_wconf 96'>trad</span>
+      <span class='ocrx_word' id='word_1_373' title='bbox 265 1959 296 1988; x_wconf 95'>in</span>
+      <span class='ocrx_word' id='word_1_374' title='bbox 314 1959 416 1990; x_wconf 96'>dienst</span>
+      <span class='ocrx_word' id='word_1_375' title='bbox 434 1968 494 1989; x_wconf 96'>van</span>
+      <span class='ocrx_word' id='word_1_376' title='bbox 515 1960 609 1990; x_wconf 96'>Karel</span>
+      <span class='ocrx_word' id='word_1_377' title='bbox 623 1961 732 1998; x_wconf 96'>hertog</span>
+      <span class='ocrx_word' id='word_1_378' title='bbox 752 1970 808 1990; x_wconf 93'>van</span>
+      <span class='ocrx_word' id='word_1_379' title='bbox 825 1960 1258 2000; x_wconf 90'>Brunswijk-Wolffenbüttel</span>
+     </span>
+    </p>
+   </div>
+   <div class='ocr_carea' id='block_1_4' title="bbox 78 2142 803 2210">
+    <p class='ocr_par' id='par_1_6' lang='nld' title="bbox 78 2142 803 2210">
+     <span class='ocr_line' id='line_1_42' title="bbox 78 2142 404 2173; baseline 0 -7; x_size 31; x_descenders 7; x_ascenders 8">
+      <span class='ocrx_word' id='word_1_380' title='bbox 78 2142 126 2166; x_wconf 95'>900</span>
+      <span class='ocrx_word' id='word_1_381' title='bbox 144 2142 258 2173; x_wconf 96'>Getuige:</span>
+      <span class='ocrx_word' id='word_1_382' title='bbox 274 2143 306 2166; x_wconf 94'>de</span>
+      <span class='ocrx_word' id='word_1_383' title='bbox 321 2144 404 2167; x_wconf 94'>vader.</span>
+     </span>
+     <span class='ocr_line' id='line_1_43' title="bbox 78 2178 803 2210; baseline 0.003 -7; x_size 32; x_descenders 7; x_ascenders 8">
+      <span class='ocrx_word' id='word_1_384' title='bbox 78 2178 121 2203; x_wconf 92'>901</span>
+      <span class='ocrx_word' id='word_1_385' title='bbox 144 2178 276 2210; x_wconf 96'>Getuigen:</span>
+      <span class='ocrx_word' id='word_1_386' title='bbox 296 2179 386 2204; x_wconf 93'>Daniel</span>
+      <span class='ocrx_word' id='word_1_387' title='bbox 401 2180 487 2204; x_wconf 93'>Friard</span>
+      <span class='ocrx_word' id='word_1_388' title='bbox 498 2188 528 2204; x_wconf 96'>en</span>
+      <span class='ocrx_word' id='word_1_389' title='bbox 548 2180 688 2205; x_wconf 92'>Constance</span>
+      <span class='ocrx_word' id='word_1_390' title='bbox 704 2181 803 2206; x_wconf 92'>Rouillé.</span>
+     </span>
+    </p>
+   </div>
+  </div>
+ </body>
+</html>
+tml>

@@ -83,10 +83,6 @@
       <dd>{{ meta.derived_beginjaar | int if meta.derived_beginjaar }}
           –{{ meta.derived_eindjaar | int if meta.derived_eindjaar }}</dd>
     {% endif %}
-    {% if meta.url %}
-      <dt>Huygens Repertorium</dt>
-      <dd><a href="{{ meta.url }}" target="_blank" rel="noopener">{{ meta.url }}</a></dd>
-    {% endif %}
   </dl>
 </details>
 {% endif %}

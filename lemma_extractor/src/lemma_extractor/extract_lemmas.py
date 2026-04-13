@@ -23,6 +23,15 @@ Each file is a well-formed XML fragment:
 
 Lines are split on ``<br>`` boundaries and stripped of leading/trailing space.
 Empty lines (``<br><br>`` runs) are dropped.
+
+Each ``<line>`` carries a Dutch ``type`` attribute:
+
+    loopbaan    — career biography text (default)
+    personalia  — genealogical / personal data (Zoon van …)
+    bronnen     — bibliographic references (N.N.B.W., Van der Aa, …)
+    noot        — footnotes (numbered references)
+    hoofd       — sub-entry heading (year range + function)
+    paginahoofd — OCR page header (page number + chapter title)
 """
 from __future__ import annotations
 
@@ -30,6 +39,8 @@ import re
 import xml.sax.saxutils as sax
 from pathlib import Path
 from typing import Any
+
+from lemma_extractor.linkify_refs import linkify_all
 
 
 # Regex that matches an opening <start> tag and captures schuttenr + inner text
@@ -40,6 +51,76 @@ _START_RE = re.compile(
 
 # Matches a closing </root> or </page> tag we want to stop before
 _END_RE = re.compile(r"</root\s*>", re.IGNORECASE)
+
+# ---------------------------------------------------------------------------
+# Line classification (Dutch type names)
+# ---------------------------------------------------------------------------
+
+# Bibliographic reference prefixes
+_REFS_RE = re.compile(
+    r"^(N\.N?\.B\.W\.|Van der Aa|Nagtglas|Elias|N\.P\.|N\.A\.|"
+    r"N\.L\.|Jb\.|Wap\.|Boreel|Engelbrecht|De Haan\b|Dek,|"
+    r"Van Limburg Brouwer|Feenstra|Leemans|Sicco van Goslinga,)"
+)
+
+# Footnote: digit(s), period, two or more spaces (original indentation artefact)
+_FOOTNOTE_RE = re.compile(r"^\d+\.\s{2,}")
+
+# Page header: page number followed by 5+ spaces (chapter title fills the rest)
+_PAGEHEADER_RE = re.compile(r"^\d+\s{5,}")
+
+# Personalia opener
+_PERSONALIA_RE = re.compile(r"^(Zoon van|Dochter van)")
+
+# Sub-entry heading: year[-year] followed by a word (function title)
+_HEADING_RE = re.compile(r"^\d{4}(-\d{4})?\s+\w")
+
+
+def _classify_lines(lines: list[str]) -> list[tuple[str, str]]:
+    """Return [(line, type), …] using Dutch section-type names.
+
+    A simple state machine: once we enter 'personalia' we stay there until a
+    reference line or sub-heading resets the state.
+    """
+    result: list[tuple[str, str]] = []
+    state = "loopbaan"
+
+    for line in lines:
+        # Page header (OCR artefact: page number + lots of whitespace)
+        if _PAGEHEADER_RE.match(line):
+            result.append((line, "paginahoofd"))
+            continue
+
+        # Footnote (numbered, multi-space indent)
+        if _FOOTNOTE_RE.match(line):
+            result.append((line, "noot"))
+            continue
+
+        # Bibliographic reference
+        if _REFS_RE.match(line):
+            state = "bronnen"
+            result.append((line, "bronnen"))
+            continue
+
+        # In bronnen state but this line is not a reference → back to loopbaan
+        if state == "bronnen":
+            state = "loopbaan"
+
+        # Personalia opener
+        if _PERSONALIA_RE.match(line):
+            state = "personalia"
+            result.append((line, "personalia"))
+            continue
+
+        # Sub-entry heading resets to loopbaan
+        if _HEADING_RE.match(line) and state in ("personalia", "loopbaan"):
+            state = "loopbaan"
+            result.append((line, "hoofd"))
+            continue
+
+        result.append((line, state))
+
+    return result
 
 
 def _split_at_starts(content: str) -> list[tuple[int, str]]:
@@ -169,8 +250,14 @@ def extract_lemmas(
                 print(f"  [no-meta] nr {schuttenr}")
 
         attrs = _lemma_attrs(schuttenr, meta, corpus)
+        classified = _classify_lines(lines)
+        def _render_line(line: str, ltype: str) -> str:
+            escaped = sax.escape(line)
+            if ltype == "bronnen":
+                escaped = linkify_all(escaped)
+            return f'<line type="{ltype}">{escaped}</line>'
         lines_xml = "\n  ".join(
-            f"<line>{sax.escape(line)}</line>" for line in lines
+            _render_line(line, ltype) for line, ltype in classified
         )
         xml_out = (
             '<?xml version="1.0" encoding="utf-8"?>\n'
