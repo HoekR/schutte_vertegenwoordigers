@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% block title %}Functieregister — Schutte Repertorium{% endblock %}
+{% block description %}Register van diplomatieke functies en titels in de Schutte Repertoria (Nederlandse en buitenlandse vertegenwoordigers).{% endblock %}
+
+{% block content %}
+<h2>Functieregister</h2>
+<p>{{ functies | length }} functies, {{ functies | sum(attribute='count') }} vermeldingen</p>
+
+<input
+  type="search"
+  id="filter-input"
+  placeholder="Zoek op functie of naam…"
+  style="width:100%; max-width:400px; padding:0.4rem 0.6rem; margin-bottom:1.5rem; font-size:1rem; border:1px solid #ccc; border-radius:3px;"
+  aria-label="Filter functies"
+>
+
+{% set ns = namespace(current_letter='') %}
+<div id="functie-list">
+{% for f in functies %}
+  {% set letter = f.functie[0] | upper %}
+  {% if letter != ns.current_letter %}
+    {% set ns.current_letter = letter %}
+    <h3 class="chapter-heading" data-letter="{{ letter }}">{{ letter }}</h3>
+  {% endif %}
+
+  <details class="functie-entry" data-key="{{ f.key }}" data-names="{{ f.persons | map(attribute='name') | join(' ') | lower }}">
+    <summary>
+      <strong>{{ f.functie }}</strong>
+      <span class="ref-label">({{ f.count }})</span>
+    </summary>
+    <ul class="index-list" style="margin-top:0.5rem; padding-left:1.5rem;">
+      {% for p in f.persons %}
+      <li>
+        <a href="{{ root }}{{ p.corpus }}/{{ '%04d' % p.nr }}/index.html">{{ p.name }}</a>
+        {% if p.begin or p.end %}
+          <span class="ref-label">
+            {{ p.begin or '?' }}–{{ p.end or '?' }}
+          </span>
+        {% endif %}
+        {% if p.category %}
+          <span class="ref-label">({{ p.category }})</span>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </details>
+{% endfor %}
+</div>
+
+<script>
+(function () {
+  var input  = document.getElementById('filter-input');
+  var entries = Array.from(document.querySelectorAll('.functie-entry'));
+  var headings = Array.from(document.querySelectorAll('.chapter-heading'));
+
+  input.addEventListener('input', function () {
+    var q = this.value.toLowerCase().trim();
+    entries.forEach(function (el) {
+      var match = !q
+        || el.dataset.key.includes(q)
+        || el.dataset.names.includes(q);
+      el.style.display = match ? '' : 'none';
+      if (match && q) el.open = true;
+    });
+    // hide letter headings with no visible entries
+    headings.forEach(function (h) {
+      var letter = h.dataset.letter;
+      var visible = entries.some(function (el) {
+        return el.style.display !== 'none'
+          && el.querySelector('summary strong').textContent[0].toUpperCase() === letter;
+      });
+      h.style.display = visible ? '' : 'none';
+    });
+  });
+})();
+</script>
+{% endblock %}

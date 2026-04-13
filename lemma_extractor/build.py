@@ -153,6 +153,69 @@ def _load_metadata() -> dict:
     return lookup
 
 
+def _build_functie_index(meta_lookup: dict) -> list[dict]:
+    """Build a function/title index from the Excel metadata.
+
+    Splits composite ``schutte_functie`` values (e.g. 'zonder rang, ambassadeur
+    1592, gedeputeerde 1607') into individual roles and groups persons under
+    each normalised role label.  Returns a list sorted alphabetically by role.
+    """
+    from collections import defaultdict, Counter as _Counter
+
+    _YEAR_RE = re.compile(r"\b1[0-9]{3}\.?\b")
+
+    functie_map: dict[str, list] = defaultdict(list)
+
+    for (corpus, nr), meta in meta_lookup.items():
+        raw = meta.get("schutte_functie")
+        if not raw:
+            continue
+
+        # Build readable name
+        name_parts = [meta.get("givenname"), meta.get("Intraposition"), meta.get("name")]
+        name = " ".join(p for p in name_parts if p)
+
+        def _to_int(v):
+            if v is None:
+                return None
+            try:
+                return int(float(str(v)))
+            except (ValueError, TypeError):
+                return None
+
+        begin = _to_int(meta.get("derived_beginjaar") or meta.get("schutte_beginjaar"))
+        end   = _to_int(meta.get("derived_eindjaar")  or meta.get("schutte_eindjaar"))
+        category = str(meta.get("category") or "")
+
+        for chunk in re.split(r"[,;]", str(raw)):
+            chunk = _YEAR_RE.sub("", chunk).strip().rstrip(" -").strip()
+            if not chunk:
+                continue
+            key = chunk.lower()
+            functie_map[key].append({
+                "name":            name,
+                "nr":              nr,
+                "corpus":          corpus,
+                "begin":           begin,
+                "end":             end,
+                "category":        category,
+                "functie_display": chunk,
+            })
+
+    result = []
+    for key in sorted(functie_map.keys()):
+        persons = sorted(functie_map[key],
+                         key=lambda p: (p["begin"] or 9999, p["nr"]))
+        display = _Counter(p["functie_display"] for p in persons).most_common(1)[0][0]
+        result.append({
+            "functie": display,
+            "key":     key,
+            "count":   len(persons),
+            "persons": persons,
+        })
+    return result
+
+
 def _build_timeline_data(meta_lookup: dict, title_lookup: dict) -> list[dict]:
     """Return list of dicts suitable for the JS timeline chart."""
     rows = []
@@ -481,6 +544,21 @@ def build(site_dir: Path, run_pagefind: bool = False) -> None:
         encoding="utf-8",
     )
     print(f"Timeline page written ({len(timeline_data)} entries).")
+
+    # ------------------------------------------------------------------
+    # Functie index page
+    # ------------------------------------------------------------------
+    print("Building functie index…")
+    functie_index = _build_functie_index(meta_lookup)
+    functie_tpl = env.get_template("functie.html")
+    (site_dir / "functie.html").write_text(
+        functie_tpl.render(
+            functies=functie_index,
+            root=_root_url(),
+        ),
+        encoding="utf-8",
+    )
+    print(f"Functie page written ({len(functie_index)} functies).")
 
     # ------------------------------------------------------------------
     # Colofon page
