@@ -165,6 +165,37 @@ def _build_functie_index(meta_lookup: dict) -> list[dict]:
     _YEAR_RE   = re.compile(r"\b1[0-9]{3}\.?\b")
     _PAREN_RE  = re.compile(r"\([^)]*\)")   # remove parenthetical qualifiers
     _QUEST_RE  = re.compile(r"\?")          # stray question marks
+    _LEAD_DASH = re.compile(r"^[\s\-–]+")   # leading dashes
+
+    # Known diplomatic role keywords — a chunk must contain at least one
+    _ROLE_WORDS = re.compile(
+        r"\b(agent|ambassadeur|envoy[eé]|resident|minister|commissaris|consul|"
+        r"secretaris|zaakgelastigde|zaakwaarnemer|charg[eé]|correspondent|"
+        r"gedeputeerde|plenipotentiaris|gezant|gevolmachtigde|gemachtigde|"
+        r"geauthoriseerde|lasthebber|orateur|raad|diplomatiek|protector|"
+        r"legatiesecretaris|legatieraad|reissecretaris|gezantschapssecretaris|"
+        r"hoofdconsul|oorlogscommissaris)\b",
+        re.IGNORECASE,
+    )
+
+    # Spelling normalisation: OCR errors and typos → canonical form
+    _NORMALISE: list[tuple[re.Pattern, str]] = [
+        (re.compile(r"\bextraordinairs\b",  re.I), "extraordinaris"),
+        (re.compile(r"\bextraordinans\b",   re.I), "extraordinaris"),
+        (re.compile(r"\bextraordinär is\b", re.I), "extraordinaris"),
+        (re.compile(r"\bextraordinar\b",    re.I), "extraordinaris"),
+        (re.compile(r"\bminster\b",         re.I), "minister"),
+        (re.compile(r"\bplenipotentiaiis\b",re.I), "plenipotentiaris"),
+        (re.compile(r"\bplenipoteniar\b",   re.I), "plenipotentiaris"),
+        # fix hyphenated line-break in multi-country roles (e.g. 'grau- bünden')
+        (re.compile(r"(\w)-\s+(\w)"),              r"\1\2"),
+        # strip qualifier prefixes like 'later ', 'waarnemend '
+        (re.compile(r"^\s*(later|voorlopig)\s+",   re.I), ""),
+        # strip stray unmatched closing parens
+        (re.compile(r"\)\s*$"),                    ""),
+        # collapse extra internal whitespace after other fixes
+        (re.compile(r"  +"),                       " "),
+    ]
 
     functie_map: dict[str, list] = defaultdict(list)
 
@@ -198,9 +229,21 @@ def _build_functie_index(meta_lookup: dict) -> list[dict]:
             chunk = _PAREN_RE.sub("", chunk)   # strip (...) qualifiers
             chunk = _YEAR_RE.sub("", chunk)    # strip bare years
             chunk = _QUEST_RE.sub("", chunk)   # strip stray ?
-            chunk = chunk.strip().rstrip(" -").strip()
+            chunk = _LEAD_DASH.sub("", chunk)  # strip leading dashes
+            chunk = chunk.strip().rstrip(" -.").strip()
+
+            # Apply spelling normalisations
+            for pattern, replacement in _NORMALISE:
+                chunk = pattern.sub(replacement, chunk)
+            chunk = chunk.strip()
+
             if not chunk:
                 continue
+
+            # Discard chunks that contain no recognisable diplomatic role word
+            if not _ROLE_WORDS.search(chunk):
+                continue
+
             key = chunk.lower()
             functie_map[key].append({
                 "name":            name,
