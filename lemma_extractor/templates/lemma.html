@@ -37,9 +37,20 @@
   <div class="lemma-meta">
     <span>Nr. {{ lemma.schutte_nr }}</span>
     {% if lemma.period %}<span>{{ lemma.period }}</span>{% endif %}
+    {% if meta and meta.schutte_functie %}<span class="meta-functie">{{ meta.schutte_functie }}</span>{% endif %}
     <span>{{ lemma.toc_chapter }}</span>
-    {% if lemma.toc_page %}<span>Pagina {{ lemma.toc_page }}</span>{% endif %}
+    {% if lemma.toc_page %}<span>Pag. {{ lemma.toc_page }}</span>{% endif %}
   </div>
+  {% if meta %}
+  <dl class="meta-summary">
+    {% if meta.schutte_functie %}<dt>Functie</dt><dd>{{ meta.schutte_functie }}</dd>{% endif %}
+    {% if meta.category %}<dt>Categorie</dt><dd>{{ meta.category }}</dd>{% endif %}
+    {% if meta.schutte_beginjaar or meta.schutte_eindjaar %}
+      <dt>Periode</dt>
+      <dd>{{ meta.schutte_beginjaar | int if meta.schutte_beginjaar else '?' }}–{{ meta.schutte_eindjaar | int if meta.schutte_eindjaar else '?' }}</dd>
+    {% endif %}
+  </dl>
+  {% endif %}
 </div>
 
 <div class="lemma-body">
@@ -65,26 +76,6 @@
     {% endfor %}
   </ol>
 </section>
-{% endif %}
-
-{% if meta %}
-<details class="meta-block">
-  <summary>Metadata</summary>
-  <dl class="meta-dl">
-    {% if meta.schutte_functie %}<dt>Functie</dt><dd>{{ meta.schutte_functie }}</dd>{% endif %}
-    {% if meta.category %}<dt>Categorie</dt><dd>{{ meta.category }}</dd>{% endif %}
-    {% if meta.schutte_beginjaar or meta.schutte_eindjaar %}
-      <dt>Periode (Schutte)</dt>
-      <dd>{{ meta.schutte_beginjaar | int if meta.schutte_beginjaar else '?' }}
-          –{{ meta.schutte_eindjaar | int if meta.schutte_eindjaar else '?' }}</dd>
-    {% endif %}
-    {% if meta.derived_beginjaar or meta.derived_eindjaar %}
-      <dt>Periode (afgeleid)</dt>
-      <dd>{{ meta.derived_beginjaar | int if meta.derived_beginjaar }}
-          –{{ meta.derived_eindjaar | int if meta.derived_eindjaar }}</dd>
-    {% endif %}
-  </dl>
-</details>
 {% endif %}
 
 {% if lemma.mentioned_in %}

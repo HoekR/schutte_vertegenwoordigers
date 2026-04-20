@@ -79,7 +79,24 @@ dijkstra_bew/*.xlsx         ──→ metadata / timeline
 ```
 
 Outputs: `_site/{nl,bl}/NNNN/index.html`, corpus index pages, persons, geo,
-timeline, home page, and JSON data exports.
+timeline, landen (per-country), search, home page, and JSON data exports.
+
+| Page | URL | Description |
+|------|-----|-------------|
+| Home | `index.html` | Summary counts and links |
+| Per land | `landen/index.html` | Book-order country/chapter browse (NL + BL tabs) |
+| Zoeken | `search.html` | Client-side filtered search: name, corpus, country, function, period |
+| NL index | `nl/index.html` | All NL lemmas sorted by number |
+| BL index | `bl/index.html` | All BL lemmas sorted by number |
+| Personen | `persons.html` | Combined person register, alphabetical |
+| Plaatsen | `geo.html` | Geographic index |
+| Functies | `functie.html` | Diplomatic-role register |
+| Tijdlijn | `timeline.html` | Interactive JS timeline chart |
+| Colofon | `colofon.html` | Credits and sources |
+| Lemma | `{nl,bl}/NNNN/index.html` | Individual biography page |
+
+Search uses a compact `data/search_index.json` built at site-build time
+(~1 000 records, loaded once, filtered entirely in the browser).
 
 Target URL: `https://[owner].github.io/schutte_vertegenwoordigers/`
 

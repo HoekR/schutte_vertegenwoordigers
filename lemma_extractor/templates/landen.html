@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+
+{% block title %}Per land — Schutte Repertorium{% endblock %}
+{% block description %}Overzicht van alle vertegenwoordigers per land, in de volgorde van de boeken.{% endblock %}
+
+{% block content %}
+<h2>Vertegenwoordigers per land</h2>
+<p>Boekindeling van beide repertoria.  Klik op een land om de lijst te openen.</p>
+
+<div class="corpus-tabs" role="tablist" style="margin-bottom:1.5rem;">
+  <button class="tab-btn active" role="tab" aria-selected="true"  data-corpus="nl">NL — Nederlandse vertegenwoordigers</button>
+  <button class="tab-btn"        role="tab" aria-selected="false" data-corpus="bl">BL — Buitenlandse vertegenwoordigers</button>
+</div>
+
+<section id="corpus-nl" class="corpus-section" aria-label="{{ corpus_labels.nl }}">
+{% for ch in nl_chapters %}
+  <details class="landen-chapter" id="nl-{{ ch.slug }}">
+    <summary>
+      <strong>{{ ch.title }}</strong>
+      {% if ch.schuttenummers %}
+        <span class="ref-label">&nbsp;nr. {{ ch.schuttenummers }}</span>
+      {% endif %}
+      <span class="ref-label">({{ ch.entries | length }})</span>
+    </summary>
+    <ol class="landen-list">
+      {% for e in ch.entries %}
+      <li>
+        <a href="{{ root }}nl/{{ '%04d' % e.nr }}/index.html">{{ e.title }}</a>
+        {% if e.begin or e.end %}
+          <span class="ref-label"> {{ e.begin or '?' }}–{{ e.end or '' }}</span>
+        {% endif %}
+        {% if e.functie %}
+          <span class="ref-label"> · {{ e.functie }}</span>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ol>
+  </details>
+{% endfor %}
+</section>
+
+<section id="corpus-bl" class="corpus-section" aria-label="{{ corpus_labels.bl }}" hidden>
+{% for ch in bl_chapters %}
+  <details class="landen-chapter" id="bl-{{ ch.slug }}">
+    <summary>
+      <strong>{{ ch.title }}</strong>
+      {% if ch.schuttenummers %}
+        <span class="ref-label">&nbsp;nr. {{ ch.schuttenummers }}</span>
+      {% endif %}
+      <span class="ref-label">({{ ch.entries | length }})</span>
+    </summary>
+    <ol class="landen-list">
+      {% for e in ch.entries %}
+      <li>
+        <a href="{{ root }}bl/{{ '%04d' % e.nr }}/index.html">{{ e.title }}</a>
+        {% if e.begin or e.end %}
+          <span class="ref-label"> {{ e.begin or '?' }}–{{ e.end or '' }}</span>
+        {% endif %}
+        {% if e.functie %}
+          <span class="ref-label"> · {{ e.functie }}</span>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ol>
+  </details>
+{% endfor %}
+</section>
+
+<style>
+.corpus-tabs { display: flex; gap: 0.5rem; }
+.tab-btn {
+  padding: 0.45rem 1.1rem;
+  border: 1px solid #bbb; border-radius: 4px;
+  background: #f0f0ee; cursor: pointer; font-size: 0.9rem;
+}
+.tab-btn.active { background: #2a3f6f; color: #fff; border-color: #2a3f6f; }
+.landen-chapter { border-bottom: 1px solid #e8e8e4; padding: 0.3rem 0; }
+.landen-chapter > summary {
+  cursor: pointer; padding: 0.4rem 0.2rem; list-style: none;
+  display: flex; align-items: baseline; gap: 0.3rem;
+}
+.landen-chapter > summary::marker,
+.landen-chapter > summary::-webkit-details-marker { display: none; }
+.landen-chapter > summary::before { content: "▶ "; font-size: 0.7em; color: #888; flex-shrink: 0; }
+.landen-chapter[open] > summary::before { content: "▼ "; }
+.landen-list { margin: 0.4rem 0 0.6rem 1.8rem; padding: 0; list-style: decimal; }
+.landen-list li { padding: 0.15rem 0; border-bottom: none; }
+</style>
+
+<script>
+(function () {
+  // Tab switching
+  var tabs = Array.from(document.querySelectorAll('.tab-btn'));
+  var sections = Array.from(document.querySelectorAll('.corpus-section'));
+  tabs.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var corpus = this.dataset.corpus;
+      tabs.forEach(function (t) { t.classList.remove('active'); t.setAttribute('aria-selected','false'); });
+      this.classList.add('active'); this.setAttribute('aria-selected','true');
+      sections.forEach(function (s) { s.hidden = (s.id !== 'corpus-' + corpus); });
+    });
+  });
+
+  // If URL hash matches a chapter, open that corpus tab and expand chapter
+  var hash = location.hash.slice(1); // e.g. "nl-frankrijk"
+  if (hash) {
+    var el = document.getElementById(hash);
+    if (el) {
+      var corpus = hash.split('-')[0];
+      tabs.forEach(function (t) {
+        var active = t.dataset.corpus === corpus;
+        t.classList.toggle('active', active);
+        t.setAttribute('aria-selected', String(active));
+      });
+      sections.forEach(function (s) { s.hidden = (s.id !== 'corpus-' + corpus); });
+      el.open = true;
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+})();
+</script>
+{% endblock %}

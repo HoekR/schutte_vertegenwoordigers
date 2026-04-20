@@ -99,11 +99,15 @@ _PERSONALIA_RE = re.compile(r"^(Zoon van|Dochter van)")
 _HEADING_RE = re.compile(r"^\d{4}(-\d{4})?\s+\w")
 
 
-def _classify_lines(lines: list[str]) -> list[tuple[str, str]]:
+def _classify_lines(lines: list[str], schuttenr: int = 0) -> list[tuple[str, str]]:
     """Return [(line, type), …] using Dutch section-type names.
 
     A simple state machine: once we enter 'personalia' we stay there until a
     reference line or sub-heading resets the state.
+
+    *schuttenr* is used to distinguish representative-sequence numbers
+    (e.g. ``2.   Lieven Calvart…``) from true footnotes: a line whose leading
+    digit matches *schuttenr* is the entry header, not a footnote.
     """
     result: list[tuple[str, str]] = []
     state = "loopbaan"
@@ -114,9 +118,16 @@ def _classify_lines(lines: list[str]) -> list[tuple[str, str]]:
             result.append((line, "paginahoofd"))
             continue
 
-        # Footnote (numbered, multi-space indent)
+        # Footnote (numbered, multi-space indent) — but NOT a representative
+        # sequence number such as "2.   Lieven Calvart…" whose leading digit
+        # equals this lemma's own schuttenr.
         if _FOOTNOTE_RE.match(line):
-            result.append((line, "noot"))
+            leading = re.match(r"^(\d+)\.", line)
+            if schuttenr and leading and int(leading.group(1)) == schuttenr:
+                # This is the entry header, not a footnote
+                result.append((line, "loopbaan"))
+            else:
+                result.append((line, "noot"))
             continue
 
         # Bibliographic reference
@@ -273,7 +284,13 @@ def extract_lemmas(
                 print(f"  [no-meta] nr {schuttenr}")
 
         attrs = _lemma_attrs(schuttenr, meta, corpus)
-        classified = _classify_lines(lines)
+        classified = _classify_lines(lines, schuttenr=schuttenr)
+
+        # Strip trailing orphaned period-headers (hoofd lines at the very end
+        # of a block): these belong to the *next* entry's intro but fell before
+        # its <start> marker due to page layout.
+        while classified and classified[-1][1] == "hoofd":
+            classified.pop()
         def _render_line(line: str, ltype: str) -> str:
             escaped = sax.escape(line)
             if ltype == "bronnen":

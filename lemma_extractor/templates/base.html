@@ -54,8 +54,23 @@
     .lemma-header h2 { margin: 0 0 0.2rem; font-size: 1.6rem; }
     .lemma-meta { font-size: 0.85rem; color: #555; }
     .lemma-meta span { margin-right: 1.2rem; }
-    /* Text zones */
-    .lemma-body p { margin: 0 0 0.15rem; }
+    /* Lemma metadata summary (top of page) */
+    .meta-summary {
+      display: grid; grid-template-columns: max-content 1fr;
+      gap: 0.2rem 1rem; margin: 0.6rem 0 0; font-size: 0.85rem;
+    }
+    .meta-summary dt { font-weight: bold; color: #555; white-space: nowrap; }
+    .meta-summary dd { margin: 0; color: #333; }
+    /* Text zones — single consistent palette */
+    .lemma-body p { margin: 0 0 0.25rem; }
+    .zone-loopbaan { }
+    .zone-hoofd { font-weight: bold; margin: 1rem 0 0.25rem; color: #2a3f6f; }
+    .zone-personalia { margin-left: 1.5rem; font-size: 0.92rem; color: #333; }
+    .zone-bronnen { margin-left: 1.5rem; font-size: 0.88rem; color: #444; font-style: italic; }
+    .zone-noot { margin-left: 1.5rem; font-size: 0.88rem; color: #555; }
+    .zone-paginahoofd { display: none; }
+    .zone-period_header { font-weight: bold; margin: 0.8rem 0 0.2rem; color: #2a3f6f; }
+    /* Legacy zone names retained for backwards-compat */
     .zone-entry { font-weight: bold; margin-bottom: 0.6rem !important; }
     .zone-body { }
     .zone-genealogy { margin-left: 1.5rem; font-size: 0.92rem; color: #333; }
@@ -120,12 +135,16 @@
   <header>
     <h1><a href="{{ root }}index.html">Schutte Repertorium</a></h1>
     <nav>
-      <a href="{{ root }}nl/index.html">Nederlandse vertegenwoordigers</a>
-      <a href="{{ root }}bl/index.html">Buitenlandse vertegenwoordigers</a>
-      <a href="{{ root }}persons.html">Personenindex</a>
-      <a href="{{ root }}geo.html">Geoindex</a>
+      <a href="{{ root }}landen/index.html">Per land</a>
+      <a href="{{ root }}search.html">Zoeken</a>
+      <a href="{{ root }}nl/index.html">NL repr.</a>
+      <a href="{{ root }}bl/index.html">BL repr.</a>
+      <a href="{{ root }}persons.html">Personen</a>
+      <a href="{{ root }}geo.html">Plaatsen</a>
       <a href="{{ root }}functie.html">Functies</a>
       <a href="{{ root }}timeline.html">Tijdlijn</a>
+      <a href="{{ root }}heatmap.html">Activiteit</a>
+      <a href="{{ root }}swimlane.html">Zwembanen</a>
       <a href="{{ root }}colofon.html">Colofon</a>
     </nav>
   </header>

@@ -153,6 +153,128 @@ def _load_metadata() -> dict:
     return lookup
 
 
+def _parse_toc(toc_path: Path, corpus: str, meta_lookup: dict) -> list[dict]:
+    """Parse a toc_*.xml and return a list of country chapters.
+
+    Each chapter dict::
+
+        {
+          "title":        "I. Frankrijk",
+          "slug":         "frankrijk",
+          "schuttenummers": "1-43",
+          "corpus":       "nl",
+          "entries": [
+              {"nr": 2, "title": "2. Calvart, Lieven",
+               "begin": 1598, "end": 1599,
+               "functie": "gedeputeerde", "corpus": "nl"},
+              …
+          ],
+        }
+    """
+    try:
+        tree = ET.parse(toc_path)
+    except ET.ParseError:
+        return []
+
+    # Strip Roman-numeral prefix + dot for the URL slug
+    _roman = re.compile(r"^[IVXLCDM]+\.\s*", re.IGNORECASE)
+    def _slugify(title: str) -> str:
+        s = _roman.sub("", title).lower()
+        s = re.sub(r"[^\w]+", "-", s, flags=re.UNICODE).strip("-")
+        return s or "onbekend"
+
+    def _to_int(v) -> int | None:
+        if v is None:
+            return None
+        try:
+            return int(float(str(v)))
+        except (ValueError, TypeError):
+            return None
+
+    chapters: list[dict] = []
+    current: dict | None = None
+
+    for item in tree.getroot().findall("item"):
+        level = item.get("level", "0")
+        title_el = item.find("title")
+        title = (title_el.text or "").strip() if title_el is not None else ""
+
+        if level == "0":
+            current = {
+                "title": title,
+                "slug": _slugify(title),
+                "schuttenummers": item.get("schuttenummers", ""),
+                "corpus": corpus,
+                "entries": [],
+            }
+            chapters.append(current)
+
+        elif level == "1" and current is not None:
+            try:
+                nr = int(item.get("schutte_nr", 0))
+            except (ValueError, TypeError):
+                nr = 0
+            if nr == 0:
+                continue
+            meta = meta_lookup.get((corpus, nr), {})
+            begin = _to_int(meta.get("derived_beginjaar") or meta.get("schutte_beginjaar"))
+            end   = _to_int(meta.get("derived_eindjaar")  or meta.get("schutte_eindjaar"))
+            raw_f = str(meta.get("schutte_functie") or "")
+            functie = raw_f[:80] if len(raw_f) <= 120 else ""
+            current["entries"].append({
+                "nr":      nr,
+                "title":   title,
+                "begin":   begin,
+                "end":     end,
+                "functie": functie,
+                "corpus":  corpus,
+            })
+
+    # Sort entries within each chapter chronologically
+    for ch in chapters:
+        ch["entries"].sort(key=lambda e: (e["begin"] or 9999, e["nr"]))
+
+    return chapters
+
+
+def _build_search_index(lemmas: list[dict], meta_lookup: dict) -> list[dict]:
+    """Build a compact search index for client-side JS filtering.
+
+    Each record::
+
+        {"nr": int, "corpus": str, "title": str, "land": str,
+         "begin": int|null, "end": int|null, "functie": str}
+    """
+    def _to_int(v):
+        if v is None:
+            return None
+        try:
+            return int(float(str(v)))
+        except (ValueError, TypeError):
+            return None
+
+    records = []
+    for lemma in lemmas:
+        corpus = lemma["corpus"]
+        nr     = lemma["schutte_nr"]
+        meta   = meta_lookup.get((corpus, nr), {})
+        raw_f  = str(meta.get("schutte_functie") or "")
+        functie = raw_f[:100] if len(raw_f) <= 120 else ""
+        begin = _to_int(meta.get("derived_beginjaar") or meta.get("schutte_beginjaar"))
+        end   = _to_int(meta.get("derived_eindjaar")  or meta.get("schutte_eindjaar"))
+        records.append({
+            "nr":      nr,
+            "corpus":  corpus,
+            "title":   lemma.get("toc_title", ""),
+            "land":    lemma.get("toc_chapter", ""),
+            "begin":   begin,
+            "end":     end,
+            "functie": functie,
+        })
+    records.sort(key=lambda r: (r["corpus"], r["nr"]))
+    return records
+
+
 def _build_functie_index(meta_lookup: dict) -> list[dict]:
     """Build a function/title index from the Excel metadata.
 
@@ -597,6 +719,77 @@ def build(site_dir: Path, run_pagefind: bool = False) -> None:
         encoding="utf-8",
     )
     print(f"Timeline page written ({len(timeline_data)} entries).")
+
+    # ------------------------------------------------------------------
+    # Landen (per-country book-order) pages
+    # ------------------------------------------------------------------
+    print("Building landen (country) pages…")
+    landen_tpl = env.get_template("landen.html")
+    nl_chapters = _parse_toc(TOC_NL, "nl", meta_lookup)
+    bl_chapters = _parse_toc(TOC_BL, "bl", meta_lookup)
+    landen_dir = site_dir / "landen"
+    landen_dir.mkdir(exist_ok=True)
+    (landen_dir / "index.html").write_text(
+        landen_tpl.render(
+            nl_chapters=nl_chapters,
+            bl_chapters=bl_chapters,
+            corpus_labels=CORPUS_LABELS,
+            root=_root_url(),
+        ),
+        encoding="utf-8",
+    )
+    print(f"Landen page written ({len(nl_chapters)} NL chapters, {len(bl_chapters)} BL chapters).")
+
+    # ------------------------------------------------------------------
+    # Search index + search page
+    # ------------------------------------------------------------------
+    print("Building search index…")
+    search_index = _build_search_index(nl_lemmas + bl_lemmas, meta_lookup)
+    (site_dir / "data").mkdir(exist_ok=True)
+    (site_dir / "data" / "search_index.json").write_text(
+        json.dumps(search_index, ensure_ascii=False, separators=(",", ":")),
+        encoding="utf-8",
+    )
+    search_tpl = env.get_template("search.html")
+    (site_dir / "search.html").write_text(
+        search_tpl.render(root=_root_url()),
+        encoding="utf-8",
+    )
+    print(f"Search index written ({len(search_index)} entries).")
+
+    # Ordered chapter title lists (book order) for JS-driven visualisations
+    nl_chapter_titles = [ch["title"] for ch in nl_chapters]
+    bl_chapter_titles = [ch["title"] for ch in bl_chapters]
+
+    # ------------------------------------------------------------------
+    # Heatmap page (country × decade activity grid)
+    # ------------------------------------------------------------------
+    print("Building heatmap page…")
+    heatmap_tpl = env.get_template("heatmap.html")
+    (site_dir / "heatmap.html").write_text(
+        heatmap_tpl.render(
+            nl_chapter_titles=nl_chapter_titles,
+            bl_chapter_titles=bl_chapter_titles,
+            root=_root_url(),
+        ),
+        encoding="utf-8",
+    )
+    print("Heatmap page written.")
+
+    # ------------------------------------------------------------------
+    # Swim-lane page (Gantt grouped by chapter)
+    # ------------------------------------------------------------------
+    print("Building swim-lane page…")
+    swimlane_tpl = env.get_template("swimlane.html")
+    (site_dir / "swimlane.html").write_text(
+        swimlane_tpl.render(
+            nl_chapter_titles=nl_chapter_titles,
+            bl_chapter_titles=bl_chapter_titles,
+            root=_root_url(),
+        ),
+        encoding="utf-8",
+    )
+    print("Swim-lane page written.")
 
     # ------------------------------------------------------------------
     # Functie index page
