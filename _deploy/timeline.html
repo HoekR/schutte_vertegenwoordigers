@@ -28,6 +28,7 @@
     header h1 a:visited { color: #fff; }
     nav { font-size: 0.85rem; margin-top: 0.4rem; }
     nav a { color: #b8cef0; text-decoration: none; margin-right: 1rem; }
+    nav a:visited { color: #b8cef0; }
     nav a:hover { text-decoration: underline; }
     /* Zone styles for enriched XML types */
     .zone-period_header { font-weight: bold; margin: 0.8rem 0 0.2rem; color: #2a3f6f; }
@@ -382,8 +383,12 @@
       });
     }
 
-    /* zoom */
+    /* zoom – require Ctrl/Cmd for wheel zoom so page can scroll normally */
     const zoom = d3.zoom()
+      .filter((event) => {
+        if (event.type === 'wheel') return event.ctrlKey || event.metaKey;
+        return !event.button;
+      })
       .scaleExtent([1, 30])
       .translateExtent([[-M.left, 0], [innerW + M.right, innerH]])
       .extent([[0, 0], [innerW, innerH]])

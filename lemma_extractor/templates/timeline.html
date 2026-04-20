@@ -237,8 +237,12 @@
       });
     }
 
-    /* zoom */
+    /* zoom – require Ctrl/Cmd for wheel zoom so page can scroll normally */
     const zoom = d3.zoom()
+      .filter((event) => {
+        if (event.type === 'wheel') return event.ctrlKey || event.metaKey;
+        return !event.button;
+      })
       .scaleExtent([1, 30])
       .translateExtent([[-M.left, 0], [innerW + M.right, innerH]])
       .extent([[0, 0], [innerW, innerH]])

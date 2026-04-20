@@ -246,8 +246,12 @@
       });
     }
 
-    /* zoom & pan */
+    /* zoom & pan – require Ctrl/Cmd for wheel zoom so page can scroll normally */
     var zoom = d3.zoom()
+      .filter(function(ev) {
+        if (ev.type === 'wheel') return ev.ctrlKey || ev.metaKey;
+        return !ev.button;
+      })
       .scaleExtent([1, 60])
       .translateExtent([[0, 0], [innerW, innerH]])
       .on("zoom", function (ev) {
