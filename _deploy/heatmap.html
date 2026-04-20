@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Activiteitsoverzicht — Schutte Repertorium</title>
+  <meta name="description" content="Diplomatieke activiteit per regio en decade, in de volgorde van de boekindeling.">
+  
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 0;
+      color: #1a1a1a;
+      background: #fafaf8;
+    }
+    a { color: #2a5db0; }
+    a:visited { color: #7b4fa0; }
+    header {
+      background: #2a3f6f;
+      color: #fff;
+      padding: 1rem 2rem;
+    }
+    header h1 { margin: 0; font-size: 1.3rem; font-weight: normal; }
+    header h1 a { color: #fff; text-decoration: none; }
+    header h1 a:visited { color: #fff; }
+    nav { font-size: 0.85rem; margin-top: 0.4rem; }
+    nav a { color: #b8cef0; text-decoration: none; margin-right: 1rem; }
+    nav a:hover { text-decoration: underline; }
+    /* Zone styles for enriched XML types */
+    .zone-period_header { font-weight: bold; margin: 0.8rem 0 0.2rem; color: #2a3f6f; }
+    .zone-bronnen { margin-left: 1.5rem; font-size: 0.9rem; color: #444; font-style: italic; }
+    .zone-hoofd { font-weight: bold; margin: 0.6rem 0 0.2rem; color: #2a3f6f; }
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+    footer {
+      border-top: 1px solid #ddd;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #777;
+      padding: 1.5rem;
+      margin-top: 3rem;
+    }
+    /* Search */
+    #search-wrapper { margin-bottom: 2rem; }
+    #pagefind-ui input {
+      width: 100%; padding: 0.5rem 0.8rem;
+      border: 1px solid #bbb; border-radius: 4px;
+      font-size: 1rem;
+    }
+    /* Lemma page */
+    .lemma-header { border-bottom: 2px solid #2a3f6f; padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+    .lemma-header h2 { margin: 0 0 0.2rem; font-size: 1.6rem; }
+    .lemma-meta { font-size: 0.85rem; color: #555; }
+    .lemma-meta span { margin-right: 1.2rem; }
+    /* Lemma metadata summary (top of page) */
+    .meta-summary {
+      display: grid; grid-template-columns: max-content 1fr;
+      gap: 0.2rem 1rem; margin: 0.6rem 0 0; font-size: 0.85rem;
+    }
+    .meta-summary dt { font-weight: bold; color: #555; white-space: nowrap; }
+    .meta-summary dd { margin: 0; color: #333; }
+    /* Text zones — single consistent palette */
+    .lemma-body p { margin: 0 0 0.25rem; }
+    .zone-loopbaan { }
+    .zone-hoofd { font-weight: bold; margin: 1rem 0 0.25rem; color: #2a3f6f; }
+    .zone-personalia { margin-left: 1.5rem; font-size: 0.92rem; color: #333; }
+    .zone-bronnen { margin-left: 1.5rem; font-size: 0.88rem; color: #444; font-style: italic; }
+    .zone-noot { margin-left: 1.5rem; font-size: 0.88rem; color: #555; }
+    .zone-paginahoofd { display: none; }
+    .zone-period_header { font-weight: bold; margin: 0.8rem 0 0.2rem; color: #2a3f6f; }
+    /* Legacy zone names retained for backwards-compat */
+    .zone-entry { font-weight: bold; margin-bottom: 0.6rem !important; }
+    .zone-body { }
+    .zone-genealogy { margin-left: 1.5rem; font-size: 0.92rem; color: #333; }
+    .zone-sub_note {
+      margin-left: 2rem; font-size: 0.88rem; font-style: italic; color: #555;
+      border-left: 3px solid #bbb; padding-left: 0.8rem;
+    }
+    .zone-break { margin: 0.6rem 0 0.4rem; }
+    .zone-break--genealogy { border-top: 1px dashed #ccc; }
+    .zone-break--sub_note { margin-top: 1rem; }
+    /* Footnotes */
+    section.footnotes {
+      margin-top: 2rem; border-top: 1px solid #ccc; padding-top: 1rem;
+      font-size: 0.88rem; color: #444;
+    }
+    section.footnotes h3 { font-size: 0.95rem; margin-bottom: 0.5rem; }
+    .fn-list { padding-left: 1.5rem; margin: 0; }
+    .fn-list li { margin-bottom: 0.4rem; }
+    .fn-back { font-size: 0.8em; margin-left: 0.3em; text-decoration: none; }
+    sup a { text-decoration: none; color: #2a5db0; font-size: 0.75em; }
+    /* Metadata block */
+    .meta-block {
+      margin-top: 2rem; border: 1px solid #ddd; border-radius: 4px;
+      padding: 0 0.8rem; font-size: 0.88rem;
+    }
+    .meta-block summary {
+      cursor: pointer; padding: 0.6rem 0; font-weight: bold;
+      color: #2a3f6f; list-style: none; user-select: none;
+    }
+    .meta-block summary::before { content: "▶ "; font-size: 0.75em; }
+    .meta-block[open] summary::before { content: "▼ "; }
+    .meta-dl { display: grid; grid-template-columns: max-content 1fr;
+               gap: 0.3rem 1rem; margin: 0.6rem 0 0.8rem; }
+    .meta-dl dt { font-weight: bold; color: #555; white-space: nowrap; }
+    .meta-dl dd { margin: 0; }
+    section.cross-refs { margin-top: 2rem; }
+    section.cross-refs h3 { font-size: 1rem; }
+    section.cross-refs ul { padding-left: 1.2rem; }
+    /* Person / geo index */
+    .ref-label { font-size: 0.85rem; color: #555; margin-right: 0.3rem; }
+    /* Index / listing pages */
+    .index-list { list-style: none; padding: 0; margin: 0; }
+    .index-list li { border-bottom: 1px solid #eee; padding: 0.4rem 0; }
+    .index-list li a { font-size: 1rem; }
+    .chapter-heading { margin-top: 2rem; font-size: 1.1rem; color: #2a3f6f;
+                        border-bottom: 1px solid #2a3f6f; padding-bottom: 0.2rem; }
+    .search-box {
+      display: flex; gap: 0.5rem; margin-bottom: 1.5rem;
+    }
+    .search-box input {
+      flex: 1; padding: 0.5rem 0.8rem; border: 1px solid #bbb;
+      border-radius: 4px; font-size: 1rem;
+    }
+    .search-box button {
+      padding: 0.5rem 1rem; background: #2a3f6f; color: #fff;
+      border: none; border-radius: 4px; cursor: pointer; font-size: 1rem;
+    }
+  </style>
+  
+</head>
+<body>
+  <header>
+    <h1><a href="/schutte_vertegenwoordigers/index.html">Schutte Repertorium</a></h1>
+    <nav>
+      <a href="/schutte_vertegenwoordigers/landen/index.html">Per land</a>
+      <a href="/schutte_vertegenwoordigers/search.html">Zoeken</a>
+      <a href="/schutte_vertegenwoordigers/nl/index.html">NL repr.</a>
+      <a href="/schutte_vertegenwoordigers/bl/index.html">BL repr.</a>
+      <a href="/schutte_vertegenwoordigers/persons.html">Personen</a>
+      <a href="/schutte_vertegenwoordigers/geo.html">Plaatsen</a>
+      <a href="/schutte_vertegenwoordigers/functie.html">Functies</a>
+      <a href="/schutte_vertegenwoordigers/timeline.html">Tijdlijn</a>
+      <a href="/schutte_vertegenwoordigers/heatmap.html">Activiteit</a>
+      <a href="/schutte_vertegenwoordigers/swimlane.html">Zwembanen</a>
+      <a href="/schutte_vertegenwoordigers/colofon.html">Colofon</a>
+    </nav>
+  </header>
+  <main>
+    
+<h2>Diplomatieke activiteit per regio en decade</h2>
+<p style="font-size:0.88rem; color:#555; max-width:700px; margin-bottom:1.2rem;">
+  Elke rij is een hoofdstuk uit het boek — in de boekindeling, <em>niet</em> op moderne landsgrenzen.
+  Elke kolom is een decade. De kleurintensiteit geeft het aantal actieve vertegenwoordigers weer.
+  Zweef over een cel voor namen; klik voor een gefilterd zoekresultaat.
+</p>
+
+<div class="corpus-tabs" role="tablist" style="margin-bottom:1rem;">
+  <button class="tab-btn active" role="tab" aria-selected="true"  data-corpus="nl">NL — Nederlandse vertegenwoordigers</button>
+  <button class="tab-btn"        role="tab" aria-selected="false" data-corpus="bl">BL — Buitenlandse vertegenwoordigers</button>
+</div>
+
+<div id="hm-legend" style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.8rem; font-size:0.8rem; color:#555;">
+  <span>0</span>
+  <div style="width:140px; height:12px; background:linear-gradient(to right,#eef2f9,#2a3f6f); border:1px solid #ccc; border-radius:2px;"></div>
+  <span id="hm-legend-max">…</span>
+</div>
+
+<div style="overflow-x: auto; -webkit-overflow-scrolling: touch;">
+  <table id="heatmap-table" class="heatmap-tbl" aria-label="Activiteitsoverzicht">
+    <thead>
+      <tr id="hm-head-row">
+        <th class="hm-lbl-th">Regio (boekindeling)</th>
+      </tr>
+    </thead>
+    <tbody id="hm-body"></tbody>
+  </table>
+</div>
+
+<div id="hm-tip" role="tooltip" aria-hidden="true"></div>
+
+<style>
+.corpus-tabs { display: flex; gap: 0.5rem; }
+.tab-btn {
+  padding: 0.4rem 1rem; border: 1px solid #bbb; border-radius: 4px;
+  background: #f0f0ee; cursor: pointer; font-size: 0.88rem;
+}
+.tab-btn.active { background: #2a3f6f; color: #fff; border-color: #2a3f6f; }
+
+.heatmap-tbl { border-collapse: collapse; font-size: 0.75rem; }
+.heatmap-tbl th {
+  padding: 0.25rem 0.4rem; background: #2a3f6f; color: #fff;
+  font-weight: normal; white-space: nowrap; border: 1px solid #1e2f55;
+}
+.heatmap-tbl td { padding: 0.2rem 0.3rem; border: 1px solid #e0e0dc; text-align: center; }
+.hm-lbl-th {
+  text-align: left !important; min-width: 12rem; max-width: 17rem;
+  white-space: normal; position: sticky; left: 0; z-index: 2;
+  background: #2a3f6f !important;
+}
+.hm-lbl {
+  text-align: left !important; white-space: normal;
+  position: sticky; left: 0; z-index: 1;
+  background: #fafaf8; font-size: 0.78rem;
+}
+.hm-lbl a { color: #2a5db0; text-decoration: none; }
+.hm-lbl a:hover { text-decoration: underline; }
+.hm-cell { cursor: default; }
+.hm-cell.has-data { cursor: pointer; }
+.hm-cell.has-data:hover { outline: 2px solid #2a5db0; outline-offset: -1px; }
+#hm-tip {
+  position: fixed; z-index: 9999; display: none;
+  background: #fff; border: 1px solid #bbb; border-radius: 4px;
+  padding: 0.5rem 0.7rem; font-size: 0.82rem; max-width: 250px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15); pointer-events: none;
+  line-height: 1.5;
+}
+</style>
+
+<script>
+(function () {
+  var ROOT = '/schutte_vertegenwoordigers/';
+
+  // Chapter titles in book order — injected at build time
+  var CHAPTER_ORDER = {
+    nl: ["Inleiding", "Summary of the Introduction", "Geraadpleegde werken", "Afkortingen, voor zover niet op de aangehaalde litteratuur betrekking hebbend (glossary)", "I. Frankrijk", "II. Zuidelijke Nederlanden", "III. Groot-Brittanni\u00eb", "IV. Duitsland", "V. Denemarken en Noorwegen", "VI. Zweden", "VII. Polen", "VIII. Rusland", "IX. Turkije", "X. Marokko", "XI. Spanje", "XII. Portugal", "XIII. Sardini\u00eb", "XIV. Genua", "XV. Toscane", "XVI. Kerkelijke Staat, consuls", "XVII. Napels en Sicili\u00eb", "XVIII. Malta, consuls", "XIX. Veneti\u00eb", "XX. Zwitserland", "XXI. Verenigde Staten van Amerika", "Addenda", "Indices"],
+    bl: ["Inleiding", "Summary of the Introduction", "Geraadpleegde werken", "Afkortingen, voor zover niet op de aangehaalde litteratuur betrekking hebbend (glossary)", "I. Frankrijk", "II. Zuidelijke Nederlanden", "III. Groot-Brittanni\u00eb", "IV. Duitse Rijk", "V. Denemarken en Noorwegen", "VI. Zweden", "VII. Polen", "VIII. Danzig", "IX. Koerland", "X. Rusland", "XI. Turkse Rijk", "XII. Marokko", "XIII. Spanje", "XIV. Portugal", "XV. Savoye/Sardini\u00eb", "XVI. Genua", "XVII. Cisalpijnse Republiek/Italiaanse Republiek/Koninkrijk Itali\u00eb", "XVIII. Parma en Piacenza", "XIX. Modena", "XX. Toskane", "XXI. Napels en Sicili\u00eb", "XXII. Malta", "XXIII. Veneti\u00eb", "XXIV. Zwitserland", "XXV. Verenigde Staten van Noord-Amerika", "Aanvullingen en verbeteringen op het Repertorium der Nederlandse vertegenwoordigers, residerende in het buitenland 1584-1810, samengesteld door Mr. O. Schutte, \u0027s-Gravenhage, 1976 (Rijks Geschiedkundige Publicati\u00ebn)", "Indices"],
+  };
+
+  var DECADES = [];
+  for (var d = 1580; d <= 1800; d += 10) DECADES.push(d);
+
+  var allData   = [];
+  var activeCorpus = 'nl';
+  var tip = document.getElementById('hm-tip');
+
+  // ---- slug matching Python _slugify ----
+  function slugify(corpus, title) {
+    var s = title.replace(/^[IVXLCDMivxlcdm]+\.\s*/, '').toLowerCase();
+    s = s.replace(/[^\w\u00c0-\u017e]+/g, '-').replace(/^-+|-+$/g, '');
+    return corpus + '-' + (s || 'onbekend');
+  }
+
+  function esc(s) {
+    return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+
+  // ---- Build column headers ----
+  (function buildHeader() {
+    var row = document.getElementById('hm-head-row');
+    DECADES.forEach(function (d) {
+      var th = document.createElement('th');
+      th.textContent = '\u2019' + String(d).slice(2) + 's';
+      th.title = d + '\u2013' + (d + 9);
+      row.appendChild(th);
+    });
+  })();
+
+  // ---- Compute grid for one corpus ----
+  function computeGrid(corpus) {
+    var chapters = CHAPTER_ORDER[corpus];
+    var grid = {};
+    chapters.forEach(function (ch) { grid[ch] = {}; });
+
+    allData.forEach(function (r) {
+      if (r.corpus !== corpus) return;
+      if (!r.land || !Object.prototype.hasOwnProperty.call(grid, r.land)) return;
+      var b = r.begin, e = r.end;
+      DECADES.forEach(function (d) {
+        var active;
+        if (b !== null && e !== null) {
+          active = b <= (d + 9) && e >= d;
+        } else if (b !== null) {
+          active = b >= d && b <= (d + 9);
+        } else {
+          active = false;
+        }
+        if (active) {
+          if (!grid[r.land][d]) grid[r.land][d] = [];
+          grid[r.land][d].push(r);
+        }
+      });
+    });
+    return grid;
+  }
+
+  // ---- Color interpolation (light blue → deep blue) ----
+  function cellStyle(count, maxCount) {
+    if (count === 0) return null;
+    var t = Math.pow(count / maxCount, 0.6); // power < 1 = more contrast at low end
+    var r = Math.round(238 + (42  - 238) * t);
+    var g = Math.round(242 + (63  - 242) * t);
+    var bv = Math.round(249 + (111 - 249) * t);
+    return {
+      bg:   'rgb(' + r + ',' + g + ',' + bv + ')',
+      fg:   t > 0.55 ? '#fff' : '#1a1a1a',
+    };
+  }
+
+  // ---- Render ----
+  function render(corpus) {
+    var grid     = computeGrid(corpus);
+    var chapters = CHAPTER_ORDER[corpus];
+
+    var maxCount = 1;
+    chapters.forEach(function (ch) {
+      DECADES.forEach(function (d) {
+        var cnt = grid[ch] && grid[ch][d] ? grid[ch][d].length : 0;
+        if (cnt > maxCount) maxCount = cnt;
+      });
+    });
+    document.getElementById('hm-legend-max').textContent = maxCount + ' vertegenwoordigers';
+
+    var tbody = document.getElementById('hm-body');
+    tbody.innerHTML = '';
+
+    chapters.forEach(function (ch) {
+      var tr = document.createElement('tr');
+
+      // Row label
+      var lbl = document.createElement('td');
+      lbl.className = 'hm-lbl';
+      var anchor = slugify(corpus, ch);
+      lbl.innerHTML = '<a href="' + ROOT + 'landen/index.html#' + anchor + '">' + esc(ch) + '</a>';
+      tr.appendChild(lbl);
+
+      // Data cells
+      DECADES.forEach(function (d) {
+        var persons = (grid[ch] && grid[ch][d]) ? grid[ch][d] : [];
+        var cnt = persons.length;
+        var td = document.createElement('td');
+        td.className = cnt > 0 ? 'hm-cell has-data' : 'hm-cell';
+
+        if (cnt > 0) {
+          var cs = cellStyle(cnt, maxCount);
+          td.style.background = cs.bg;
+          td.style.color = cs.fg;
+          td.textContent = cnt;
+
+          // Tooltip payload
+          td.dataset.ch = ch;
+          td.dataset.d  = d;
+          td.dataset.names = persons.slice(0, 10).map(function (p) {
+            var yr = p.begin ? ' (' + p.begin + (p.end ? '\u2013' + p.end : '') + ')' : '';
+            return p.title + yr;
+          }).join('|');
+          td.dataset.more = Math.max(0, cnt - 10);
+
+          // Click → search
+          (function (ch_, d_) {
+            td.addEventListener('click', function () {
+              var q = new URLSearchParams({
+                corpus: corpus, land: ch_, van: d_, tot: d_ + 9,
+              });
+              window.location.href = ROOT + 'search.html?' + q.toString();
+            });
+          }(ch, d));
+        }
+        tr.appendChild(td);
+      });
+      tbody.appendChild(tr);
+    });
+  }
+
+  // ---- Tooltip ----
+  document.addEventListener('mouseover', function (e) {
+    var td = e.target.closest('.has-data');
+    if (!td || !td.dataset.ch) { tip.style.display = 'none'; tip.setAttribute('aria-hidden','true'); return; }
+    var names = td.dataset.names ? td.dataset.names.split('|') : [];
+    var more  = parseInt(td.dataset.more, 10) || 0;
+    var html  = '<strong>' + esc(td.dataset.ch) + ' ' + td.dataset.d + 's</strong>';
+    html += '<ul style="margin:0.3rem 0 0; padding-left:1.1rem;">';
+    names.forEach(function (n) { html += '<li>' + esc(n) + '</li>'; });
+    if (more > 0) html += '<li style="color:#888">en ' + more + ' meer\u2026</li>';
+    html += '</ul><p style="margin:0.4rem 0 0;font-size:0.75rem;color:#888;">Klik om te zoeken</p>';
+    tip.innerHTML = html;
+    tip.style.display = 'block';
+    tip.setAttribute('aria-hidden', 'false');
+  });
+  document.addEventListener('mousemove', function (e) {
+    var x = Math.min(e.clientX + 16, window.innerWidth - 270);
+    var y = e.clientY + 16;
+    if (y + 200 > window.innerHeight) y = e.clientY - 20;
+    tip.style.left = x + 'px';
+    tip.style.top  = y + 'px';
+  });
+  document.addEventListener('mouseout', function (e) {
+    if (!e.target.closest('.has-data')) {
+      tip.style.display = 'none';
+      tip.setAttribute('aria-hidden', 'true');
+    }
+  });
+
+  // ---- Tab switching ----
+  Array.from(document.querySelectorAll('.tab-btn')).forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      activeCorpus = this.dataset.corpus;
+      Array.from(document.querySelectorAll('.tab-btn')).forEach(function (b) {
+        b.classList.toggle('active', b === btn);
+        b.setAttribute('aria-selected', String(b === btn));
+      });
+      render(activeCorpus);
+    });
+  });
+
+  // ---- Load data ----
+  fetch(ROOT + 'data/search_index.json')
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      allData = data;
+      render(activeCorpus);
+    })
+    .catch(function (err) {
+      document.getElementById('hm-body').innerHTML =
+        '<tr><td colspan="24" style="color:#c00; padding:1rem;">Kon data niet laden.</td></tr>';
+      console.error(err);
+    });
+})();
+</script>
+
+  </main>
+  <footer>
+    &copy; Huygens Instituut.
+    <em>Repertorium der Nederlandse vertegenwoordigers residerende in het buitenland 1584–1810</em>
+    &amp; <em>Repertorium der buitenlandse vertegenwoordigers residerende in Nederland 1584–1810</em>.
+    Digitale editie. <a href="/schutte_vertegenwoordigers/colofon.html">Colofon</a>.
+  </footer>
+</body>
+</html>

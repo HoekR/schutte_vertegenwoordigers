@@ -1,0 +1,4393 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Geografisch register — Schutte Repertorium</title>
+  <meta name="description" content="Geografisch register van de Schutte Repertorium.">
+  
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 0;
+      color: #1a1a1a;
+      background: #fafaf8;
+    }
+    a { color: #2a5db0; }
+    a:visited { color: #7b4fa0; }
+    header {
+      background: #2a3f6f;
+      color: #fff;
+      padding: 1rem 2rem;
+    }
+    header h1 { margin: 0; font-size: 1.3rem; font-weight: normal; }
+    header h1 a { color: #fff; text-decoration: none; }
+    header h1 a:visited { color: #fff; }
+    nav { font-size: 0.85rem; margin-top: 0.4rem; }
+    nav a { color: #b8cef0; text-decoration: none; margin-right: 1rem; }
+    nav a:hover { text-decoration: underline; }
+    /* Zone styles for enriched XML types */
+    .zone-period_header { font-weight: bold; margin: 0.8rem 0 0.2rem; color: #2a3f6f; }
+    .zone-bronnen { margin-left: 1.5rem; font-size: 0.9rem; color: #444; font-style: italic; }
+    .zone-hoofd { font-weight: bold; margin: 0.6rem 0 0.2rem; color: #2a3f6f; }
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+    footer {
+      border-top: 1px solid #ddd;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #777;
+      padding: 1.5rem;
+      margin-top: 3rem;
+    }
+    /* Search */
+    #search-wrapper { margin-bottom: 2rem; }
+    #pagefind-ui input {
+      width: 100%; padding: 0.5rem 0.8rem;
+      border: 1px solid #bbb; border-radius: 4px;
+      font-size: 1rem;
+    }
+    /* Lemma page */
+    .lemma-header { border-bottom: 2px solid #2a3f6f; padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+    .lemma-header h2 { margin: 0 0 0.2rem; font-size: 1.6rem; }
+    .lemma-meta { font-size: 0.85rem; color: #555; }
+    .lemma-meta span { margin-right: 1.2rem; }
+    /* Lemma metadata summary (top of page) */
+    .meta-summary {
+      display: grid; grid-template-columns: max-content 1fr;
+      gap: 0.2rem 1rem; margin: 0.6rem 0 0; font-size: 0.85rem;
+    }
+    .meta-summary dt { font-weight: bold; color: #555; white-space: nowrap; }
+    .meta-summary dd { margin: 0; color: #333; }
+    /* Text zones — single consistent palette */
+    .lemma-body p { margin: 0 0 0.25rem; }
+    .zone-loopbaan { }
+    .zone-hoofd { font-weight: bold; margin: 1rem 0 0.25rem; color: #2a3f6f; }
+    .zone-personalia { margin-left: 1.5rem; font-size: 0.92rem; color: #333; }
+    .zone-bronnen { margin-left: 1.5rem; font-size: 0.88rem; color: #444; font-style: italic; }
+    .zone-noot { margin-left: 1.5rem; font-size: 0.88rem; color: #555; }
+    .zone-paginahoofd { display: none; }
+    .zone-period_header { font-weight: bold; margin: 0.8rem 0 0.2rem; color: #2a3f6f; }
+    /* Legacy zone names retained for backwards-compat */
+    .zone-entry { font-weight: bold; margin-bottom: 0.6rem !important; }
+    .zone-body { }
+    .zone-genealogy { margin-left: 1.5rem; font-size: 0.92rem; color: #333; }
+    .zone-sub_note {
+      margin-left: 2rem; font-size: 0.88rem; font-style: italic; color: #555;
+      border-left: 3px solid #bbb; padding-left: 0.8rem;
+    }
+    .zone-break { margin: 0.6rem 0 0.4rem; }
+    .zone-break--genealogy { border-top: 1px dashed #ccc; }
+    .zone-break--sub_note { margin-top: 1rem; }
+    /* Footnotes */
+    section.footnotes {
+      margin-top: 2rem; border-top: 1px solid #ccc; padding-top: 1rem;
+      font-size: 0.88rem; color: #444;
+    }
+    section.footnotes h3 { font-size: 0.95rem; margin-bottom: 0.5rem; }
+    .fn-list { padding-left: 1.5rem; margin: 0; }
+    .fn-list li { margin-bottom: 0.4rem; }
+    .fn-back { font-size: 0.8em; margin-left: 0.3em; text-decoration: none; }
+    sup a { text-decoration: none; color: #2a5db0; font-size: 0.75em; }
+    /* Metadata block */
+    .meta-block {
+      margin-top: 2rem; border: 1px solid #ddd; border-radius: 4px;
+      padding: 0 0.8rem; font-size: 0.88rem;
+    }
+    .meta-block summary {
+      cursor: pointer; padding: 0.6rem 0; font-weight: bold;
+      color: #2a3f6f; list-style: none; user-select: none;
+    }
+    .meta-block summary::before { content: "▶ "; font-size: 0.75em; }
+    .meta-block[open] summary::before { content: "▼ "; }
+    .meta-dl { display: grid; grid-template-columns: max-content 1fr;
+               gap: 0.3rem 1rem; margin: 0.6rem 0 0.8rem; }
+    .meta-dl dt { font-weight: bold; color: #555; white-space: nowrap; }
+    .meta-dl dd { margin: 0; }
+    section.cross-refs { margin-top: 2rem; }
+    section.cross-refs h3 { font-size: 1rem; }
+    section.cross-refs ul { padding-left: 1.2rem; }
+    /* Person / geo index */
+    .ref-label { font-size: 0.85rem; color: #555; margin-right: 0.3rem; }
+    /* Index / listing pages */
+    .index-list { list-style: none; padding: 0; margin: 0; }
+    .index-list li { border-bottom: 1px solid #eee; padding: 0.4rem 0; }
+    .index-list li a { font-size: 1rem; }
+    .chapter-heading { margin-top: 2rem; font-size: 1.1rem; color: #2a3f6f;
+                        border-bottom: 1px solid #2a3f6f; padding-bottom: 0.2rem; }
+    .search-box {
+      display: flex; gap: 0.5rem; margin-bottom: 1.5rem;
+    }
+    .search-box input {
+      flex: 1; padding: 0.5rem 0.8rem; border: 1px solid #bbb;
+      border-radius: 4px; font-size: 1rem;
+    }
+    .search-box button {
+      padding: 0.5rem 1rem; background: #2a3f6f; color: #fff;
+      border: none; border-radius: 4px; cursor: pointer; font-size: 1rem;
+    }
+  </style>
+  
+</head>
+<body>
+  <header>
+    <h1><a href="/schutte_vertegenwoordigers/index.html">Schutte Repertorium</a></h1>
+    <nav>
+      <a href="/schutte_vertegenwoordigers/landen/index.html">Per land</a>
+      <a href="/schutte_vertegenwoordigers/search.html">Zoeken</a>
+      <a href="/schutte_vertegenwoordigers/nl/index.html">NL repr.</a>
+      <a href="/schutte_vertegenwoordigers/bl/index.html">BL repr.</a>
+      <a href="/schutte_vertegenwoordigers/persons.html">Personen</a>
+      <a href="/schutte_vertegenwoordigers/geo.html">Plaatsen</a>
+      <a href="/schutte_vertegenwoordigers/functie.html">Functies</a>
+      <a href="/schutte_vertegenwoordigers/timeline.html">Tijdlijn</a>
+      <a href="/schutte_vertegenwoordigers/heatmap.html">Activiteit</a>
+      <a href="/schutte_vertegenwoordigers/swimlane.html">Zwembanen</a>
+      <a href="/schutte_vertegenwoordigers/colofon.html">Colofon</a>
+    </nav>
+  </header>
+  <main>
+    
+<h2>Geografisch register</h2>
+<p>403 plaatsen</p>
+
+<input
+  type="search"
+  id="filter-input"
+  placeholder="Zoek op plaatsnaam…"
+  style="width:100%; max-width:400px; padding:0.4rem 0.6rem; margin-bottom:1rem; font-size:1rem; border:1px solid #ccc; border-radius:3px;"
+  aria-label="Filter plaatsen"
+>
+
+<ul class="geo-list" id="geo-list">
+  
+    <li data-name="abbeville">
+      <strong>Abbeville</strong>
+      
+      
+    </li>
+  
+    <li data-name="adrianopel (edirne)">
+      <strong>Adrianopel (Edirne)</strong>
+      
+      
+    </li>
+  
+    <li data-name="aken">
+      <strong>Aken</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0271/index.html">nr. 271</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0272/index.html">nr. 272</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="aken (aachen)">
+      <strong>Aken (Aachen)</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0144/index.html">nr. 144</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0145/index.html">nr. 145</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0146/index.html">nr. 146</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="akka (st. jean d&#39;acre)">
+      <strong>Akka (St. Jean d&#39;Acre)</strong>
+      
+      
+    </li>
+  
+    <li data-name="alderney">
+      <strong>Alderney</strong>
+      
+      
+        <span class="see-also">Zie ook: Kanaaleilanden</span>
+      
+    </li>
+  
+    <li data-name="aleppo">
+      <strong>Aleppo</strong>
+      
+      
+    </li>
+  
+    <li data-name="alexandrette (scandrona, iskenderun)">
+      <strong>Alexandrette (Scandrona, Iskenderun)</strong>
+      
+      
+    </li>
+  
+    <li data-name="algerië">
+      <strong>Algerië</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0552/index.html">nr. 552</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="algerië (algerije)">
+      <strong>Algerië (Algerije)</strong>
+      
+      
+    </li>
+  
+    <li data-name="alicante">
+      <strong>Alicante</strong>
+      
+      
+    </li>
+  
+    <li data-name="amsterdam">
+      <strong>Amsterdam</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0163/index.html">nr. 163</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0186/index.html">nr. 186</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0187/index.html">nr. 187</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0188/index.html">nr. 188</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0197/index.html">nr. 197</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0198/index.html">nr. 198</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0213/index.html">nr. 213</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0221/index.html">nr. 221</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0224/index.html">nr. 224</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0225/index.html">nr. 225</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0269/index.html">nr. 269</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0288/index.html">nr. 288</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0289/index.html">nr. 289</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0364/index.html">nr. 364</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0365/index.html">nr. 365</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0406/index.html">nr. 406</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0435/index.html">nr. 435</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0513/index.html">nr. 513</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0550/index.html">nr. 550</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0551/index.html">nr. 551</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0552/index.html">nr. 552</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0649/index.html">nr. 649</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0687/index.html">nr. 687</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="ancona">
+      <strong>Ancona</strong>
+      
+      
+    </li>
+  
+    <li data-name="andros">
+      <strong>Andros</strong>
+      
+      
+    </li>
+  
+    <li data-name="anhalt">
+      <strong>Anhalt</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0406/index.html">nr. 406</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="anklam">
+      <strong>Anklam</strong>
+      
+      
+    </li>
+  
+    <li data-name="antimilos">
+      <strong>Antimilos</strong>
+      
+      
+    </li>
+  
+    <li data-name="antwerpen">
+      <strong>Antwerpen</strong>
+      
+      
+    </li>
+  
+    <li data-name="apulië">
+      <strong>Apulië</strong>
+      
+      
+    </li>
+  
+    <li data-name="archangel">
+      <strong>Archangel</strong>
+      
+      
+    </li>
+  
+    <li data-name="argentiera">
+      <strong>Argentiera</strong>
+      
+      
+        <span class="see-also">Zie ook: Kimolos</span>
+      
+    </li>
+  
+    <li data-name="arta">
+      <strong>Arta</strong>
+      
+      
+    </li>
+  
+    <li data-name="athene">
+      <strong>Athene</strong>
+      
+      
+    </li>
+  
+    <li data-name="azoren">
+      <strong>Azoren</strong>
+      
+      
+    </li>
+  
+    <li data-name="baden">
+      <strong>Baden</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0179/index.html">nr. 179</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="baden, hertogdom">
+      <strong>Baden, hertogdom</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0112/index.html">nr. 112</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="baden-durlach">
+      <strong>Baden-Durlach</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0179/index.html">nr. 179</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="baltimore">
+      <strong>Baltimore</strong>
+      
+      
+    </li>
+  
+    <li data-name="bamberg">
+      <strong>Bamberg</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0189/index.html">nr. 189</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="barcelona">
+      <strong>Barcelona</strong>
+      
+      
+    </li>
+  
+    <li data-name="basra (bassorah)">
+      <strong>Basra (Bassorah)</strong>
+      
+      
+    </li>
+  
+    <li data-name="bayonne">
+      <strong>Bayonne</strong>
+      
+      
+    </li>
+  
+    <li data-name="beieren">
+      <strong>Beieren</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0098/index.html">nr. 98</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="beieren">
+      <strong>Beieren</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0150/index.html">nr. 150</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="belgië">
+      <strong>België</strong>
+      
+      
+        <span class="see-also">Zie ook: Nederlanden (Zuidelijke)</span>
+      
+    </li>
+  
+    <li data-name="belgië">
+      <strong>België</strong>
+      
+      
+        <span class="see-also">Zie ook: Nederlanden, Zuidelijke</span>
+      
+    </li>
+  
+    <li data-name="bentheim">
+      <strong>Bentheim</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0295/index.html">nr. 295</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0296/index.html">nr. 296</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0297/index.html">nr. 297</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="bergen (in noorwegen)">
+      <strong>Bergen (in Noorwegen)</strong>
+      
+      
+    </li>
+  
+    <li data-name="biscaje">
+      <strong>Biscaje</strong>
+      
+      
+    </li>
+  
+    <li data-name="bohemen">
+      <strong>Bohemen</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0149/index.html">nr. 149</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="bordeaux">
+      <strong>Bordeaux</strong>
+      
+      
+    </li>
+  
+    <li data-name="boston">
+      <strong>Boston</strong>
+      
+      
+    </li>
+  
+    <li data-name="boulogne-sur-mer (boulogne pas de calais)">
+      <strong>Boulogne-sur-Mer (Boulogne Pas de Calais)</strong>
+      
+      
+    </li>
+  
+    <li data-name="bozca ada">
+      <strong>Bozca Ada</strong>
+      
+      
+        <span class="see-also">Zie ook: Tenedos</span>
+      
+    </li>
+  
+    <li data-name="brandenburg">
+      <strong>Brandenburg</strong>
+      
+      
+        <span class="see-also">Zie ook: Pruissen</span>
+      
+    </li>
+  
+    <li data-name="brandenburg">
+      <strong>Brandenburg</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0365/index.html">nr. 365</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="brandenburg-ansbach">
+      <strong>Brandenburg-Ansbach</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0400/index.html">nr. 400</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0401/index.html">nr. 401</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0402/index.html">nr. 402</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="brandenburg-bayreuth">
+      <strong>Brandenburg-Bayreuth</strong>
+      
+      
+    </li>
+  
+    <li data-name="braunsberg (braniewo)">
+      <strong>Braunsberg (Braniewo)</strong>
+      
+      
+    </li>
+  
+    <li data-name="bremen">
+      <strong>Bremen</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0152/index.html">nr. 152</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0167/index.html">nr. 167</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="bremen, aartsbisdom">
+      <strong>Bremen, aartsbisdom</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0336/index.html">nr. 336</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="bremen, stad">
+      <strong>Bremen, stad</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0336/index.html">nr. 336</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="brest">
+      <strong>Brest</strong>
+      
+      
+    </li>
+  
+    <li data-name="brunswijk, stad">
+      <strong>Brunswijk, stad</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0335/index.html">nr. 335</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="brunswijk-lünenburg-calenberg">
+      <strong>Brunswijk-Lünenburg-Calenberg</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0150/index.html">nr. 150</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0151/index.html">nr. 151</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="brunswijk-lünenburg-calenberg">
+      <strong>Brunswijk-Lünenburg-Calenberg</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0313/index.html">nr. 313</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="brunswijk-lünenburg-celle">
+      <strong>Brunswijk-Lünenburg-Celle</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0150/index.html">nr. 150</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0151/index.html">nr. 151</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="brunswijk-lünenburg-celle">
+      <strong>Brunswijk-Lünenburg-Celle</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0330/index.html">nr. 330</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="brunswijk-wolffenbüttel">
+      <strong>Brunswijk-Wolffenbüttel</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0150/index.html">nr. 150</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0151/index.html">nr. 151</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="brunswijk-wolffenbüttel">
+      <strong>Brunswijk-Wolffenbüttel</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0331/index.html">nr. 331</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="brunswijk-wolffenbüttel-bevern">
+      <strong>Brunswijk-Wolffenbüttel-Bevern</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0331/index.html">nr. 331</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="brussel">
+      <strong>Brussel</strong>
+      
+      
+    </li>
+  
+    <li data-name="cadiz">
+      <strong>Cadiz</strong>
+      
+      
+    </li>
+  
+    <li data-name="caen">
+      <strong>Caen</strong>
+      
+      
+    </li>
+  
+    <li data-name="calais">
+      <strong>Calais</strong>
+      
+      
+    </li>
+  
+    <li data-name="canarische eilanden">
+      <strong>Canarische eilanden</strong>
+      
+      
+    </li>
+  
+    <li data-name="candia">
+      <strong>Candia</strong>
+      
+      
+        <span class="see-also">Zie ook: Kreta</span>
+      
+    </li>
+  
+    <li data-name="carthagena (cartagena)">
+      <strong>Carthagena (Cartagena)</strong>
+      
+      
+    </li>
+  
+    <li data-name="cefalonia">
+      <strong>Cefalonia</strong>
+      
+      
+        <span class="see-also">Zie ook: Kephalinnia</span>
+      
+    </li>
+  
+    <li data-name="charleston (s.ca.)">
+      <strong>Charleston (S.Ca.)</strong>
+      
+      
+    </li>
+  
+    <li data-name="cherbourg">
+      <strong>Cherbourg</strong>
+      
+      
+    </li>
+  
+    <li data-name="chios(scio)">
+      <strong>Chios(Scio)</strong>
+      
+      
+    </li>
+  
+    <li data-name="christiansand (kristiansand)">
+      <strong>Christiansand (Kristiansand)</strong>
+      
+      
+    </li>
+  
+    <li data-name="cisalpijnse republiek">
+      <strong>Cisalpijnse Republiek</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0646/index.html">nr. 646</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="concarneau">
+      <strong>Concarneau</strong>
+      
+      
+    </li>
+  
+    <li data-name="constantinopel (istanbul)">
+      <strong>Constantinopel (Istanbul)</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0275/index.html">nr. 275</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="corfu (kerkyra)">
+      <strong>Corfu (Kerkyra)</strong>
+      
+      
+    </li>
+  
+    <li data-name="cork">
+      <strong>Cork</strong>
+      
+      
+    </li>
+  
+    <li data-name="corsica">
+      <strong>Corsica</strong>
+      
+      
+    </li>
+  
+    <li data-name="curacao">
+      <strong>Curacao</strong>
+      
+      
+    </li>
+  
+    <li data-name="cyprus">
+      <strong>Cyprus</strong>
+      
+      
+    </li>
+  
+    <li data-name="danzig">
+      <strong>Danzig</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0520/index.html">nr. 520</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="danzig (gdansk)">
+      <strong>Danzig (Gdansk)</strong>
+      
+      
+    </li>
+  
+    <li data-name="dardanellen">
+      <strong>Dardanellen</strong>
+      
+      
+    </li>
+  
+    <li data-name="deal">
+      <strong>Deal</strong>
+      
+      
+    </li>
+  
+    <li data-name="delft">
+      <strong>Delft</strong>
+      
+      
+    </li>
+  
+    <li data-name="denemarken">
+      <strong>Denemarken</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0199/index.html">nr. 199</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="denemarken">
+      <strong>Denemarken</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0436/index.html">nr. 436</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0437/index.html">nr. 437</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="dieppe">
+      <strong>Dieppe</strong>
+      
+      
+    </li>
+  
+    <li data-name="dordrecht">
+      <strong>Dordrecht</strong>
+      
+      
+    </li>
+  
+    <li data-name="dover">
+      <strong>Dover</strong>
+      
+      
+    </li>
+  
+    <li data-name="dubrovnik">
+      <strong>Dubrovnik</strong>
+      
+      
+        <span class="see-also">Zie ook: Ragusa</span>
+      
+    </li>
+  
+    <li data-name="duinkerken (dunkerque)">
+      <strong>Duinkerken (Dunkerque)</strong>
+      
+      
+    </li>
+  
+    <li data-name="duitse orde">
+      <strong>Duitse Orde</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0183/index.html">nr. 183</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="duitse rijk">
+      <strong>Duitse Rijk</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0123/index.html">nr. 123</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="duitsland">
+      <strong>Duitsland</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0082/index.html">nr. 82</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="durazzo (durrës)">
+      <strong>Durazzo (Durrës)</strong>
+      
+      
+    </li>
+  
+    <li data-name="edinburgh">
+      <strong>Edinburgh</strong>
+      
+      
+    </li>
+  
+    <li data-name="edirne">
+      <strong>Edirne</strong>
+      
+      
+        <span class="see-also">Zie ook: Adrianopel</span>
+      
+    </li>
+  
+    <li data-name="egersund">
+      <strong>Egersund</strong>
+      
+      
+    </li>
+  
+    <li data-name="egypte">
+      <strong>Egypte</strong>
+      
+      
+    </li>
+  
+    <li data-name="elbing (elblag)">
+      <strong>Elbing (Elblag)</strong>
+      
+      
+    </li>
+  
+    <li data-name="elseneur (helsingor)">
+      <strong>Elseneur (Helsingor)</strong>
+      
+      
+    </li>
+  
+    <li data-name="emden">
+      <strong>Emden</strong>
+      
+      
+    </li>
+  
+    <li data-name="emden">
+      <strong>Emden</strong>
+      
+      
+    </li>
+  
+    <li data-name="engeland">
+      <strong>Engeland</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0068/index.html">nr. 68</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="euboia (negroponte, evvoia)">
+      <strong>Euboia (Negroponte, Evvoia)</strong>
+      
+      
+    </li>
+  
+    <li data-name="falmouth">
+      <strong>Falmouth</strong>
+      
+      
+    </li>
+  
+    <li data-name="formentera">
+      <strong>Formentera</strong>
+      
+      
+    </li>
+  
+    <li data-name="frankfort aan de main">
+      <strong>Frankfort aan de Main</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0120/index.html">nr. 120</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="frankrijk">
+      <strong>Frankrijk</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0001/index.html">nr. 1</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="frankrijk">
+      <strong>Frankrijk</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0001/index.html">nr. 1</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="fécamp">
+      <strong>Fécamp</strong>
+      
+      
+    </li>
+  
+    <li data-name="gallipoli (gelibolu)">
+      <strong>Gallipoli (Gelibolu)</strong>
+      
+      
+    </li>
+  
+    <li data-name="gdansk">
+      <strong>Gdansk</strong>
+      
+      
+        <span class="see-also">Zie ook: Danzig</span>
+      
+    </li>
+  
+    <li data-name="genua">
+      <strong>Genua</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0641/index.html">nr. 641</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="genua (genova)">
+      <strong>Genua (Genova)</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0329/index.html">nr. 329</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="gibraltar">
+      <strong>Gibraltar</strong>
+      
+      
+    </li>
+  
+    <li data-name="gotenburg (göteborg)">
+      <strong>Gotenburg (Göteborg)</strong>
+      
+      
+    </li>
+  
+    <li data-name="granville">
+      <strong>Granville</strong>
+      
+      
+    </li>
+  
+    <li data-name="greifswald">
+      <strong>Greifswald</strong>
+      
+      
+    </li>
+  
+    <li data-name="grevelingen (gravelines)">
+      <strong>Grevelingen (Gravelines)</strong>
+      
+      
+    </li>
+  
+    <li data-name="groningen">
+      <strong>Groningen</strong>
+      
+      
+    </li>
+  
+    <li data-name="groot-brittannië">
+      <strong>Groot-Brittannië</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0055/index.html">nr. 55</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="groot-brittannië">
+      <strong>Groot-Brittannië</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0068/index.html">nr. 68</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="guernsey">
+      <strong>Guernsey</strong>
+      
+      
+        <span class="see-also">Zie ook: Kanaaleilanden</span>
+      
+    </li>
+  
+    <li data-name="hamburg">
+      <strong>Hamburg</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0152/index.html">nr. 152</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0167/index.html">nr. 167</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="hamburg">
+      <strong>Hamburg</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0340/index.html">nr. 340</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="hannover">
+      <strong>Hannover</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0313/index.html">nr. 313</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="hanzesteden">
+      <strong>Hanzesteden</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0152/index.html">nr. 152</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="harlingen">
+      <strong>Harlingen</strong>
+      
+      
+    </li>
+  
+    <li data-name="helgoland">
+      <strong>Helgoland</strong>
+      
+      
+    </li>
+  
+    <li data-name="helsingor">
+      <strong>Helsingor</strong>
+      
+      
+        <span class="see-also">Zie ook: Elseneur</span>
+      
+    </li>
+  
+    <li data-name="herford">
+      <strong>Herford</strong>
+      
+      
+    </li>
+  
+    <li data-name="hessen-darmstadt">
+      <strong>Hessen-Darmstadt</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0235/index.html">nr. 235</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="hessen-homburg">
+      <strong>Hessen-Homburg</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0239/index.html">nr. 239</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="hessen-kassel">
+      <strong>Hessen-Kassel</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0118/index.html">nr. 118</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="hessen-kassel">
+      <strong>Hessen-Kassel</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0240/index.html">nr. 240</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="hohenlohe-waldenburg">
+      <strong>Hohenlohe-Waldenburg</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0183/index.html">nr. 183</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="holstein-gottorp">
+      <strong>Holstein-Gottorp</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0342/index.html">nr. 342</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="holstein-oldenburg">
+      <strong>Holstein-Oldenburg</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0342/index.html">nr. 342</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="honfleur">
+      <strong>Honfleur</strong>
+      
+      
+    </li>
+  
+    <li data-name="hull">
+      <strong>Hull</strong>
+      
+      
+    </li>
+  
+    <li data-name="ibiza">
+      <strong>Ibiza</strong>
+      
+      
+    </li>
+  
+    <li data-name="ile d&#39;oléron">
+      <strong>Ile d&#39;Oléron</strong>
+      
+      
+        <span class="see-also">Zie ook: Oléron</span>
+      
+    </li>
+  
+    <li data-name="ile de ré">
+      <strong>Ile de Ré</strong>
+      
+      
+        <span class="see-also">Zie ook: Ré</span>
+      
+    </li>
+  
+    <li data-name="ioannina">
+      <strong>Ioannina</strong>
+      
+      
+        <span class="see-also">Zie ook: Janina</span>
+      
+    </li>
+  
+    <li data-name="iskenderun">
+      <strong>Iskenderun</strong>
+      
+      
+        <span class="see-also">Zie ook: Alexandrette</span>
+      
+    </li>
+  
+    <li data-name="isle of wight">
+      <strong>Isle of Wight</strong>
+      
+      
+        <span class="see-also">Zie ook: Wight</span>
+      
+    </li>
+  
+    <li data-name="istanbul">
+      <strong>Istanbul</strong>
+      
+      
+        <span class="see-also">Zie ook: Constantinopel</span>
+      
+    </li>
+  
+    <li data-name="italiaanse republiek">
+      <strong>Italiaanse Republiek</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0646/index.html">nr. 646</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="italië, koninkrijk">
+      <strong>Italië, Koninkrijk</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0646/index.html">nr. 646</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="izmir">
+      <strong>Izmir</strong>
+      
+      
+        <span class="see-also">Zie ook: Smyrna</span>
+      
+    </li>
+  
+    <li data-name="janina (ioannina)">
+      <strong>Janina (Ioannina)</strong>
+      
+      
+    </li>
+  
+    <li data-name="java">
+      <strong>Java</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0149/index.html">nr. 149</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="jelgava">
+      <strong>Jelgava</strong>
+      
+      
+        <span class="see-also">Zie ook: Mitau</span>
+      
+    </li>
+  
+    <li data-name="jersey">
+      <strong>Jersey</strong>
+      
+      
+        <span class="see-also">Zie ook: Kanaaleilanden</span>
+      
+    </li>
+  
+    <li data-name="kaliningrad">
+      <strong>Kaliningrad</strong>
+      
+      
+        <span class="see-also">Zie ook: Koningsbergen</span>
+      
+    </li>
+  
+    <li data-name="kanaaleilanden (guernsey, jersey, alderney)">
+      <strong>Kanaaleilanden (Guernsey, Jersey, Alderney)</strong>
+      
+      
+    </li>
+  
+    <li data-name="karlshamn">
+      <strong>Karlshamn</strong>
+      
+      
+    </li>
+  
+    <li data-name="keizer">
+      <strong>Keizer</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0123/index.html">nr. 123</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="keos (zea)">
+      <strong>Keos (Zea)</strong>
+      
+      
+    </li>
+  
+    <li data-name="kephalinnia (cefalonia)">
+      <strong>Kephalinnia (Cefalonia)</strong>
+      
+      
+    </li>
+  
+    <li data-name="kerkelijke staat (vaticaan, rome)">
+      <strong>Kerkelijke Staat (Vaticaan, Rome)</strong>
+      
+      
+    </li>
+  
+    <li data-name="keulen, keur-">
+      <strong>Keulen, Keur-</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0127/index.html">nr. 127</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="keulen, keurvorstendom">
+      <strong>Keulen, keurvorstendom</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0260/index.html">nr. 260</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0261/index.html">nr. 261</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0262/index.html">nr. 262</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="keulen, stad">
+      <strong>Keulen, stad</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0270/index.html">nr. 270</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="kimolos (argentiera)">
+      <strong>Kimolos (Argentiera)</strong>
+      
+      
+    </li>
+  
+    <li data-name="klaipeda">
+      <strong>Klaipeda</strong>
+      
+      
+        <span class="see-also">Zie ook: Memel</span>
+      
+    </li>
+  
+    <li data-name="kleef">
+      <strong>Kleef</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0286/index.html">nr. 286</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="kniphuizen">
+      <strong>Kniphuizen</strong>
+      
+      
+    </li>
+  
+    <li data-name="koerland">
+      <strong>Koerland</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0521/index.html">nr. 521</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0522/index.html">nr. 522</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="kolberg (kolobrzeg)">
+      <strong>Kolberg (Kolobrzeg)</strong>
+      
+      
+    </li>
+  
+    <li data-name="koningsbergen (kaliningrad)">
+      <strong>Koningsbergen (Kaliningrad)</strong>
+      
+      
+    </li>
+  
+    <li data-name="kopenhagen">
+      <strong>Kopenhagen</strong>
+      
+      
+    </li>
+  
+    <li data-name="kos">
+      <strong>Kos</strong>
+      
+      
+    </li>
+  
+    <li data-name="kragerö">
+      <strong>Kragerö</strong>
+      
+      
+    </li>
+  
+    <li data-name="kreta (candia)">
+      <strong>Kreta (Candia)</strong>
+      
+      
+    </li>
+  
+    <li data-name="kristiansand">
+      <strong>Kristiansand</strong>
+      
+      
+        <span class="see-also">Zie ook: Christiansand</span>
+      
+    </li>
+  
+    <li data-name="kroonstad">
+      <strong>Kroonstad</strong>
+      
+      
+    </li>
+  
+    <li data-name="la coruna">
+      <strong>La Coruna</strong>
+      
+      
+    </li>
+  
+    <li data-name="la rochelle">
+      <strong>La Rochelle</strong>
+      
+      
+    </li>
+  
+    <li data-name="larache">
+      <strong>Larache</strong>
+      
+      
+    </li>
+  
+    <li data-name="latakia">
+      <strong>Latakia</strong>
+      
+      
+    </li>
+  
+    <li data-name="le croisic">
+      <strong>Le Croisic</strong>
+      
+      
+    </li>
+  
+    <li data-name="le havre (havre de grace)">
+      <strong>Le Havre (Havre de Grace)</strong>
+      
+      
+    </li>
+  
+    <li data-name="le pouliguen">
+      <strong>Le Pouliguen</strong>
+      
+      
+    </li>
+  
+    <li data-name="leeuwarden">
+      <strong>Leeuwarden</strong>
+      
+      
+    </li>
+  
+    <li data-name="leningrad">
+      <strong>Leningrad</strong>
+      
+      
+        <span class="see-also">Zie ook: St. Petersburg</span>
+      
+    </li>
+  
+    <li data-name="les sables-d&#39;olonne">
+      <strong>Les Sables-d&#39;Olonne</strong>
+      
+      
+    </li>
+  
+    <li data-name="lesbos">
+      <strong>Lesbos</strong>
+      
+      
+        <span class="see-also">Zie ook: Mytilini</span>
+      
+    </li>
+  
+    <li data-name="libau (in koerland, liepaja)">
+      <strong>Libau (in Koerland, Liepaja)</strong>
+      
+      
+    </li>
+  
+    <li data-name="lingen">
+      <strong>Lingen</strong>
+      
+      
+    </li>
+  
+    <li data-name="lippe">
+      <strong>Lippe</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0293/index.html">nr. 293</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="lissabon">
+      <strong>Lissabon</strong>
+      
+      
+    </li>
+  
+    <li data-name="livorno">
+      <strong>Livorno</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0330/index.html">nr. 330</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="londen">
+      <strong>Londen</strong>
+      
+      
+    </li>
+  
+    <li data-name="lorient">
+      <strong>Lorient</strong>
+      
+      
+    </li>
+  
+    <li data-name="lotharingen">
+      <strong>Lotharingen</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0190/index.html">nr. 190</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="luik">
+      <strong>Luik</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0273/index.html">nr. 273</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0275/index.html">nr. 275</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="luik (liège)">
+      <strong>Luik (Liège)</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0140/index.html">nr. 140</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0141/index.html">nr. 141</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="lübeck">
+      <strong>Lübeck</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0152/index.html">nr. 152</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="lübeck">
+      <strong>Lübeck</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0341/index.html">nr. 341</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="maagdenburg">
+      <strong>Maagdenburg</strong>
+      
+      
+    </li>
+  
+    <li data-name="maastricht">
+      <strong>Maastricht</strong>
+      
+      
+    </li>
+  
+    <li data-name="madeira">
+      <strong>Madeira</strong>
+      
+      
+    </li>
+  
+    <li data-name="madrid">
+      <strong>Madrid</strong>
+      
+      
+    </li>
+  
+    <li data-name="mainz">
+      <strong>Mainz</strong>
+      
+      
+    </li>
+  
+    <li data-name="mainz">
+      <strong>Mainz</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0224/index.html">nr. 224</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0225/index.html">nr. 225</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="malaga">
+      <strong>Malaga</strong>
+      
+      
+    </li>
+  
+    <li data-name="mallorca">
+      <strong>Mallorca</strong>
+      
+      
+    </li>
+  
+    <li data-name="malta">
+      <strong>Malta</strong>
+      
+      
+    </li>
+  
+    <li data-name="malta">
+      <strong>Malta</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0660/index.html">nr. 660</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="marennes">
+      <strong>Marennes</strong>
+      
+      
+    </li>
+  
+    <li data-name="margate">
+      <strong>Margate</strong>
+      
+      
+    </li>
+  
+    <li data-name="marokko">
+      <strong>Marokko</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0276/index.html">nr. 276</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="marokko">
+      <strong>Marokko</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0553/index.html">nr. 553</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0554/index.html">nr. 554</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="marseille">
+      <strong>Marseille</strong>
+      
+      
+    </li>
+  
+    <li data-name="marstrand">
+      <strong>Marstrand</strong>
+      
+      
+    </li>
+  
+    <li data-name="mecklenburg">
+      <strong>Mecklenburg</strong>
+      
+      
+    </li>
+  
+    <li data-name="mecklenburg-güstrow">
+      <strong>Mecklenburg-Güstrow</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0356/index.html">nr. 356</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0357/index.html">nr. 357</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0358/index.html">nr. 358</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0359/index.html">nr. 359</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="mecklenburg-schwerin">
+      <strong>Mecklenburg-Schwerin</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0356/index.html">nr. 356</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0357/index.html">nr. 357</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0358/index.html">nr. 358</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0359/index.html">nr. 359</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="mecklenburg-strelitz">
+      <strong>Mecklenburg-Strelitz</strong>
+      
+      
+    </li>
+  
+    <li data-name="memel (klaipeda)">
+      <strong>Memel (Klaipeda)</strong>
+      
+      
+    </li>
+  
+    <li data-name="menorca">
+      <strong>Menorca</strong>
+      
+      
+    </li>
+  
+    <li data-name="mergentheim">
+      <strong>Mergentheim</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0183/index.html">nr. 183</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="messina">
+      <strong>Messina</strong>
+      
+      
+    </li>
+  
+    <li data-name="meurs">
+      <strong>Meurs</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0284/index.html">nr. 284</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0285/index.html">nr. 285</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="middelburg">
+      <strong>Middelburg</strong>
+      
+      
+    </li>
+  
+    <li data-name="milos">
+      <strong>Milos</strong>
+      
+      
+    </li>
+  
+    <li data-name="mitau (in koerland, jelgava)">
+      <strong>Mitau (in Koerland, Jelgava)</strong>
+      
+      
+    </li>
+  
+    <li data-name="modena">
+      <strong>Modena</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0650/index.html">nr. 650</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="morea (peloponnesos)">
+      <strong>Morea (Peloponnesos)</strong>
+      
+      
+    </li>
+  
+    <li data-name="morlaix">
+      <strong>Morlaix</strong>
+      
+      
+    </li>
+  
+    <li data-name="moskou">
+      <strong>Moskou</strong>
+      
+      
+    </li>
+  
+    <li data-name="munster">
+      <strong>Munster</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0287/index.html">nr. 287</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="mytilini (lesbos)">
+      <strong>Mytilini (Lesbos)</strong>
+      
+      
+    </li>
+  
+    <li data-name="nantes">
+      <strong>Nantes</strong>
+      
+      
+    </li>
+  
+    <li data-name="napels">
+      <strong>Napels</strong>
+      
+      
+    </li>
+  
+    <li data-name="napels">
+      <strong>Napels</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0653/index.html">nr. 653</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0654/index.html">nr. 654</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="napels en sicilië (beide siciliën)">
+      <strong>Napels en Sicilië (Beide Siciliën)</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0331/index.html">nr. 331</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="nassau- (diez-) oranje">
+      <strong>Nassau- (Diez-) Oranje</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0226/index.html">nr. 226</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0227/index.html">nr. 227</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="nassau-dillenburg">
+      <strong>Nassau-Dillenburg</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0226/index.html">nr. 226</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0227/index.html">nr. 227</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="nassau-saarbrücken">
+      <strong>Nassau-Saarbrücken</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0228/index.html">nr. 228</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="nassau-siegen">
+      <strong>Nassau-Siegen</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0229/index.html">nr. 229</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0230/index.html">nr. 230</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0231/index.html">nr. 231</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0232/index.html">nr. 232</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="nassau-usingen">
+      <strong>Nassau-Usingen</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0229/index.html">nr. 229</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0230/index.html">nr. 230</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0231/index.html">nr. 231</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0232/index.html">nr. 232</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="nassau-weilburg">
+      <strong>Nassau-Weilburg</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0233/index.html">nr. 233</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0234/index.html">nr. 234</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="naxos">
+      <strong>Naxos</strong>
+      
+      
+    </li>
+  
+    <li data-name="nederlanden, zuidelijke (spaanse, oostenrijkse nederlanden, belgië)">
+      <strong>Nederlanden, Zuidelijke (Spaanse, Oostenrijkse Nederlanden, België)</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0044/index.html">nr. 44</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0045/index.html">nr. 45</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="nederlanden, zuidelijke (spaanse, oostenrijkse nederlanden, belgië)">
+      <strong>Nederlanden, Zuidelijke (Spaanse, Oostenrijkse Nederlanden, België)</strong>
+      
+      
+    </li>
+  
+    <li data-name="nederrijns-westfaalse kreits">
+      <strong>Nederrijns-Westfaalse Kreits</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0127/index.html">nr. 127</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="nedersaksische kreits">
+      <strong>Nedersaksische Kreits</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0152/index.html">nr. 152</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="negroponte">
+      <strong>Negroponte</strong>
+      
+      
+        <span class="see-also">Zie ook: Euboia</span>
+      
+    </li>
+  
+    <li data-name="new york">
+      <strong>New York</strong>
+      
+      
+    </li>
+  
+    <li data-name="nice (nizza)">
+      <strong>Nice (Nizza)</strong>
+      
+      
+    </li>
+  
+    <li data-name="noirmoutier">
+      <strong>Noirmoutier</strong>
+      
+      
+    </li>
+  
+    <li data-name="noorwegen">
+      <strong>Noorwegen</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0199/index.html">nr. 199</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="noorwegen">
+      <strong>Noorwegen</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0436/index.html">nr. 436</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0437/index.html">nr. 437</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="oldenburg">
+      <strong>Oldenburg</strong>
+      
+      
+    </li>
+  
+    <li data-name="oléron (ile d&#39;oléron)">
+      <strong>Oléron (Ile d&#39;Oléron)</strong>
+      
+      
+    </li>
+  
+    <li data-name="oneglia">
+      <strong>Oneglia</strong>
+      
+      
+    </li>
+  
+    <li data-name="oost-friesland">
+      <strong>Oost-Friesland</strong>
+      
+      
+    </li>
+  
+    <li data-name="oostende">
+      <strong>Oostende</strong>
+      
+      
+    </li>
+  
+    <li data-name="oostenrijk">
+      <strong>Oostenrijk</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0082/index.html">nr. 82</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="oostenrijk">
+      <strong>Oostenrijk</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0123/index.html">nr. 123</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="oporto (porto)">
+      <strong>Oporto (Porto)</strong>
+      
+      
+    </li>
+  
+    <li data-name="opperrijnse kreits">
+      <strong>Opperrijnse Kreits</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0116/index.html">nr. 116</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="osnabrück">
+      <strong>Osnabrück</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0289/index.html">nr. 289</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="paderborn">
+      <strong>Paderborn</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0289/index.html">nr. 289</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="palermo">
+      <strong>Palermo</strong>
+      
+      
+    </li>
+  
+    <li data-name="palts, keur-">
+      <strong>Palts, Keur-</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0113/index.html">nr. 113</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0114/index.html">nr. 114</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="palts, keurvorstendom">
+      <strong>Palts, keurvorstendom</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0199/index.html">nr. 199</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0200/index.html">nr. 200</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="palts-neuburg">
+      <strong>Palts-Neuburg</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0213/index.html">nr. 213</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="palts-sulzbach">
+      <strong>Palts-Sulzbach</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0218/index.html">nr. 218</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0219/index.html">nr. 219</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0220/index.html">nr. 220</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="palts-zweibrücken">
+      <strong>Palts-Zweibrücken</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0221/index.html">nr. 221</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="parijs">
+      <strong>Parijs</strong>
+      
+      
+    </li>
+  
+    <li data-name="parma">
+      <strong>Parma</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0647/index.html">nr. 647</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0648/index.html">nr. 648</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="paros">
+      <strong>Paros</strong>
+      
+      
+    </li>
+  
+    <li data-name="patmos">
+      <strong>Patmos</strong>
+      
+      
+    </li>
+  
+    <li data-name="peloponnesos">
+      <strong>Peloponnesos</strong>
+      
+      
+        <span class="see-also">Zie ook: Morea</span>
+      
+    </li>
+  
+    <li data-name="perpignan">
+      <strong>Perpignan</strong>
+      
+      
+    </li>
+  
+    <li data-name="philadelphia">
+      <strong>Philadelphia</strong>
+      
+      
+    </li>
+  
+    <li data-name="piacenza">
+      <strong>Piacenza</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0647/index.html">nr. 647</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0648/index.html">nr. 648</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="plymouth">
+      <strong>Plymouth</strong>
+      
+      
+    </li>
+  
+    <li data-name="polen">
+      <strong>Polen</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0239/index.html">nr. 239</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="polen">
+      <strong>Polen</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0514/index.html">nr. 514</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="porto">
+      <strong>Porto</strong>
+      
+      
+        <span class="see-also">Zie ook: Oporto</span>
+      
+    </li>
+  
+    <li data-name="portsmouth">
+      <strong>Portsmouth</strong>
+      
+      
+    </li>
+  
+    <li data-name="portugal">
+      <strong>Portugal</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0314/index.html">nr. 314</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0315/index.html">nr. 315</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0316/index.html">nr. 316</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="portugal">
+      <strong>Portugal</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0588/index.html">nr. 588</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0589/index.html">nr. 589</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="pruissen">
+      <strong>Pruissen</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0365/index.html">nr. 365</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="pruissen (brandenburg)">
+      <strong>Pruissen (Brandenburg)</strong>
+      
+      
+    </li>
+  
+    <li data-name="ragusa (dubrovnik)">
+      <strong>Ragusa (Dubrovnik)</strong>
+      
+      
+    </li>
+  
+    <li data-name="regensburg">
+      <strong>Regensburg</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0100/index.html">nr. 100</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="rendsburg (in holstein)">
+      <strong>Rendsburg (in Holstein)</strong>
+      
+      
+    </li>
+  
+    <li data-name="reus">
+      <strong>Reus</strong>
+      
+      
+    </li>
+  
+    <li data-name="reval (tallin)">
+      <strong>Reval (Tallin)</strong>
+      
+      
+    </li>
+  
+    <li data-name="rhodos">
+      <strong>Rhodos</strong>
+      
+      
+    </li>
+  
+    <li data-name="riga">
+      <strong>Riga</strong>
+      
+      
+    </li>
+  
+    <li data-name="rijnbond">
+      <strong>Rijnbond</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0117/index.html">nr. 117</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="risör">
+      <strong>Risör</strong>
+      
+      
+        <span class="see-also">Zie ook: Österrisör</span>
+      
+    </li>
+  
+    <li data-name="rochefort(-sur-mer)">
+      <strong>Rochefort(-sur-Mer)</strong>
+      
+      
+    </li>
+  
+    <li data-name="rome (zie ook kerkelijke staat)">
+      <strong>Rome (zie ook Kerkelijke Staat)</strong>
+      
+      
+    </li>
+  
+    <li data-name="rostock">
+      <strong>Rostock</strong>
+      
+      
+    </li>
+  
+    <li data-name="rotterdam">
+      <strong>Rotterdam</strong>
+      
+      
+    </li>
+  
+    <li data-name="rouaan (rouen)">
+      <strong>Rouaan (Rouen)</strong>
+      
+      
+    </li>
+  
+    <li data-name="rusland">
+      <strong>Rusland</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0242/index.html">nr. 242</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="rusland">
+      <strong>Rusland</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0529/index.html">nr. 529</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0530/index.html">nr. 530</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="ré (ile de ré)">
+      <strong>Ré (Ile de Ré)</strong>
+      
+      
+    </li>
+  
+    <li data-name="safi">
+      <strong>Safi</strong>
+      
+      
+    </li>
+  
+    <li data-name="saksen">
+      <strong>Saksen</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0197/index.html">nr. 197</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="saksen, keurvorstendom">
+      <strong>Saksen, keurvorstendom</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0406/index.html">nr. 406</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="saksen- (weimar-) eisenach">
+      <strong>Saksen- (Weimar-) Eisenach</strong>
+      
+      
+    </li>
+  
+    <li data-name="saksen-coburg (-saalfeld)">
+      <strong>Saksen-Coburg (-Saalfeld)</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0417/index.html">nr. 417</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="saksen-gotha (-altenburg)">
+      <strong>Saksen-Gotha (-Altenburg)</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0425/index.html">nr. 425</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0426/index.html">nr. 426</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="saksen-hildburghausen">
+      <strong>Saksen-Hildburghausen</strong>
+      
+      
+    </li>
+  
+    <li data-name="saksen-meiningen">
+      <strong>Saksen-Meiningen</strong>
+      
+      
+    </li>
+  
+    <li data-name="salee">
+      <strong>Salee</strong>
+      
+      
+    </li>
+  
+    <li data-name="saloniki (thessaloniki)">
+      <strong>Saloniki (Thessaloniki)</strong>
+      
+      
+    </li>
+  
+    <li data-name="san lucar (sanlucar de barrameda)">
+      <strong>San Lucar (Sanlucar de Barrameda)</strong>
+      
+      
+    </li>
+  
+    <li data-name="santorini (thira)">
+      <strong>Santorini (Thira)</strong>
+      
+      
+    </li>
+  
+    <li data-name="sardinië">
+      <strong>Sardinië</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0621/index.html">nr. 621</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0622/index.html">nr. 622</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="sardinië (sardegna)">
+      <strong>Sardinië (Sardegna)</strong>
+      
+      
+    </li>
+  
+    <li data-name="sardinië, koninkrijk (savoye)">
+      <strong>Sardinië, Koninkrijk (Savoye)</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0327/index.html">nr. 327</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0328/index.html">nr. 328</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="savoye">
+      <strong>Savoye</strong>
+      
+      
+        <span class="see-also">Zie ook: Sardinië</span>
+      
+    </li>
+  
+    <li data-name="savoye">
+      <strong>Savoye</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0621/index.html">nr. 621</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0622/index.html">nr. 622</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="scandrona">
+      <strong>Scandrona</strong>
+      
+      
+        <span class="see-also">Zie ook: Alexandrette</span>
+      
+    </li>
+  
+    <li data-name="schiedam">
+      <strong>Schiedam</strong>
+      
+      
+    </li>
+  
+    <li data-name="schotland">
+      <strong>Schotland</strong>
+      
+      
+        <span class="see-also">Zie ook: Edinburgh</span>
+      
+    </li>
+  
+    <li data-name="schotland">
+      <strong>Schotland</strong>
+      
+      
+    </li>
+  
+    <li data-name="scio">
+      <strong>Scio</strong>
+      
+      
+        <span class="see-also">Zie ook: Chios</span>
+      
+    </li>
+  
+    <li data-name="sevilla">
+      <strong>Sevilla</strong>
+      
+      
+    </li>
+  
+    <li data-name="sicilië">
+      <strong>Sicilië</strong>
+      
+      
+    </li>
+  
+    <li data-name="sicilië">
+      <strong>Sicilië</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0653/index.html">nr. 653</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0654/index.html">nr. 654</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="siciliën, beide">
+      <strong>Siciliën, Beide</strong>
+      
+      
+        <span class="see-also">Zie ook: Napels en Sicilië</span>
+      
+    </li>
+  
+    <li data-name="smyrna (izmir)">
+      <strong>Smyrna (Izmir)</strong>
+      
+      
+    </li>
+  
+    <li data-name="solms-braunfels">
+      <strong>Solms-Braunfels</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0233/index.html">nr. 233</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0234/index.html">nr. 234</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="spanje">
+      <strong>Spanje</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0293/index.html">nr. 293</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0294/index.html">nr. 294</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="spanje">
+      <strong>Spanje</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0558/index.html">nr. 558</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="st. cruz">
+      <strong>St. Cruz</strong>
+      
+      
+    </li>
+  
+    <li data-name="st. jean d&#39;acre">
+      <strong>St. Jean d&#39;Acre</strong>
+      
+      
+        <span class="see-also">Zie ook: Akka</span>
+      
+    </li>
+  
+    <li data-name="st. malo">
+      <strong>St. Malo</strong>
+      
+      
+    </li>
+  
+    <li data-name="st. petersburg (leningrad)">
+      <strong>St. Petersburg (Leningrad)</strong>
+      
+      
+    </li>
+  
+    <li data-name="st. valery-sur-somme">
+      <strong>St. Valery-sur-Somme</strong>
+      
+      
+    </li>
+  
+    <li data-name="sta. cruz de tenerife">
+      <strong>Sta. Cruz de Tenerife</strong>
+      
+      
+    </li>
+  
+    <li data-name="stettin (szczecin)">
+      <strong>Stettin (Szczecin)</strong>
+      
+      
+    </li>
+  
+    <li data-name="stockholm">
+      <strong>Stockholm</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0238/index.html">nr. 238</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="straatsburg">
+      <strong>Straatsburg</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0189/index.html">nr. 189</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="stralsund">
+      <strong>Stralsund</strong>
+      
+      
+    </li>
+  
+    <li data-name="sète">
+      <strong>Sète</strong>
+      
+      
+    </li>
+  
+    <li data-name="tallin">
+      <strong>Tallin</strong>
+      
+      
+        <span class="see-also">Zie ook: Reval</span>
+      
+    </li>
+  
+    <li data-name="tanger">
+      <strong>Tanger</strong>
+      
+      
+    </li>
+  
+    <li data-name="tenedos (bozca ada)">
+      <strong>Tenedos (Bozca Ada)</strong>
+      
+      
+    </li>
+  
+    <li data-name="tetuan">
+      <strong>Tetuan</strong>
+      
+      
+    </li>
+  
+    <li data-name="thessaloniki">
+      <strong>Thessaloniki</strong>
+      
+      
+        <span class="see-also">Zie ook: Saloniki</span>
+      
+    </li>
+  
+    <li data-name="thira">
+      <strong>Thira</strong>
+      
+      
+        <span class="see-also">Zie ook: Santorini</span>
+      
+    </li>
+  
+    <li data-name="thorn">
+      <strong>Thorn</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0284/index.html">nr. 284</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0285/index.html">nr. 285</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="thurn en taxis">
+      <strong>Thurn en Taxis</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0163/index.html">nr. 163</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="tinos">
+      <strong>Tinos</strong>
+      
+      
+    </li>
+  
+    <li data-name="toscane">
+      <strong>Toscane</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0330/index.html">nr. 330</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="toskane">
+      <strong>Toskane</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0651/index.html">nr. 651</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0652/index.html">nr. 652</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="toulon">
+      <strong>Toulon</strong>
+      
+      
+    </li>
+  
+    <li data-name="trier">
+      <strong>Trier</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0116/index.html">nr. 116</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="trier">
+      <strong>Trier</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0221/index.html">nr. 221</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="tripoli (in libië)">
+      <strong>Tripoli (in Libië)</strong>
+      
+      
+    </li>
+  
+    <li data-name="tripoli di soria (in libanon)">
+      <strong>Tripoli di Soria (in Libanon)</strong>
+      
+      
+    </li>
+  
+    <li data-name="triëst">
+      <strong>Triëst</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0098/index.html">nr. 98</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="trontheim (trondheim)">
+      <strong>Trontheim (Trondheim)</strong>
+      
+      
+    </li>
+  
+    <li data-name="tunis">
+      <strong>Tunis</strong>
+      
+      
+    </li>
+  
+    <li data-name="turkije">
+      <strong>Turkije</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0256/index.html">nr. 256</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="turkije">
+      <strong>Turkije</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0552/index.html">nr. 552</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="turkse rijk">
+      <strong>Turkse Rijk</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0552/index.html">nr. 552</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="varberg">
+      <strong>Varberg</strong>
+      
+      
+    </li>
+  
+    <li data-name="vaticaan">
+      <strong>Vaticaan</strong>
+      
+      
+        <span class="see-also">Zie ook: Kerkelijke Staat</span>
+      
+    </li>
+  
+    <li data-name="veere">
+      <strong>Veere</strong>
+      
+      
+    </li>
+  
+    <li data-name="venetië">
+      <strong>Venetië</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0333/index.html">nr. 333</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="venetië">
+      <strong>Venetië</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0661/index.html">nr. 661</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="venetië, republiek">
+      <strong>Venetië, republiek</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0332/index.html">nr. 332</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="ventspils">
+      <strong>Ventspils</strong>
+      
+      
+        <span class="see-also">Zie ook: Windau</span>
+      
+    </li>
+  
+    <li data-name="verenigde staten van amerika">
+      <strong>Verenigde Staten van Amerika</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0339/index.html">nr. 339</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="verenigde staten van noord-amerika">
+      <strong>Verenigde Staten van Noord-Amerika</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0683/index.html">nr. 683</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="vlissingen">
+      <strong>Vlissingen</strong>
+      
+      
+    </li>
+  
+    <li data-name="volos">
+      <strong>Volos</strong>
+      
+      
+    </li>
+  
+    <li data-name="waldeck">
+      <strong>Waldeck</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0256/index.html">nr. 256</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="wenen">
+      <strong>Wenen</strong>
+      
+      
+    </li>
+  
+    <li data-name="westfaalse kreits">
+      <strong>Westfaalse Kreits</strong>
+      
+      
+        <span class="see-also">Zie ook: Nederrijns-Westfaalse Kreits</span>
+      
+    </li>
+  
+    <li data-name="westfalen">
+      <strong>Westfalen</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0119/index.html">nr. 119</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="westfalen">
+      <strong>Westfalen</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0254/index.html">nr. 254</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0255/index.html">nr. 255</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="wied">
+      <strong>Wied</strong>
+      
+      
+    </li>
+  
+    <li data-name="wight (isle of wight)">
+      <strong>Wight (Isle of Wight)</strong>
+      
+      
+    </li>
+  
+    <li data-name="windau (in koerland, ventspils)">
+      <strong>Windau (in Koerland, Ventspils)</strong>
+      
+      
+    </li>
+  
+    <li data-name="wolgast">
+      <strong>Wolgast</strong>
+      
+      
+    </li>
+  
+    <li data-name="württemberg">
+      <strong>Württemberg</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0105/index.html">nr. 105</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="württemberg">
+      <strong>Württemberg</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0164/index.html">nr. 164</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0165/index.html">nr. 165</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0166/index.html">nr. 166</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="würzburg">
+      <strong>Würzburg</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0186/index.html">nr. 186</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0187/index.html">nr. 187</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0188/index.html">nr. 188</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="zante (zakinthos)">
+      <strong>Zante (Zakinthos)</strong>
+      
+      
+    </li>
+  
+    <li data-name="zea">
+      <strong>Zea</strong>
+      
+      
+        <span class="see-also">Zie ook: Keos</span>
+      
+    </li>
+  
+    <li data-name="zierikzee">
+      <strong>Zierikzee</strong>
+      
+      
+    </li>
+  
+    <li data-name="zweden">
+      <strong>Zweden</strong>
+      
+      
+    </li>
+  
+    <li data-name="zweden">
+      <strong>Zweden</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0486/index.html">nr. 486</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0487/index.html">nr. 487</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="zwitserland">
+      <strong>Zwitserland</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/nl/0334/index.html">nr. 334</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="zwitserland">
+      <strong>Zwitserland</strong>
+      
+        <span class="ref-label">Ref.:</span>
+        <ul class="appears-in">
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0679/index.html">nr. 679</a>
+            </li>
+          
+            <li>
+              <a href="/schutte_vertegenwoordigers/bl/0680/index.html">nr. 680</a>
+            </li>
+          
+        </ul>
+      
+      
+    </li>
+  
+    <li data-name="österrisör">
+      <strong>Österrisör</strong>
+      
+      
+    </li>
+  
+</ul>
+
+<script>
+(function() {
+  var input = document.getElementById('filter-input');
+  var items = Array.from(document.querySelectorAll('#geo-list > li'));
+  input.addEventListener('input', function() {
+    var q = this.value.toLowerCase().trim();
+    items.forEach(function(li) {
+      li.style.display = (!q || li.dataset.name.includes(q)) ? '' : 'none';
+    });
+  });
+})();
+</script>
+
+  </main>
+  <footer>
+    &copy; Huygens Instituut.
+    <em>Repertorium der Nederlandse vertegenwoordigers residerende in het buitenland 1584–1810</em>
+    &amp; <em>Repertorium der buitenlandse vertegenwoordigers residerende in Nederland 1584–1810</em>.
+    Digitale editie. <a href="/schutte_vertegenwoordigers/colofon.html">Colofon</a>.
+  </footer>
+</body>
+</html>

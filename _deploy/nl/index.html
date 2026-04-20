@@ -1,0 +1,2241 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nederlandse vertegenwoordigers in het buitenland — Schutte Repertorium</title>
+  <meta name="description" content="Lijst van alle lemma's in Nederlandse vertegenwoordigers in het buitenland, Schutte Repertorium.">
+  
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 0;
+      color: #1a1a1a;
+      background: #fafaf8;
+    }
+    a { color: #2a5db0; }
+    a:visited { color: #7b4fa0; }
+    header {
+      background: #2a3f6f;
+      color: #fff;
+      padding: 1rem 2rem;
+    }
+    header h1 { margin: 0; font-size: 1.3rem; font-weight: normal; }
+    header h1 a { color: #fff; text-decoration: none; }
+    header h1 a:visited { color: #fff; }
+    nav { font-size: 0.85rem; margin-top: 0.4rem; }
+    nav a { color: #b8cef0; text-decoration: none; margin-right: 1rem; }
+    nav a:hover { text-decoration: underline; }
+    /* Zone styles for enriched XML types */
+    .zone-period_header { font-weight: bold; margin: 0.8rem 0 0.2rem; color: #2a3f6f; }
+    .zone-bronnen { margin-left: 1.5rem; font-size: 0.9rem; color: #444; font-style: italic; }
+    .zone-hoofd { font-weight: bold; margin: 0.6rem 0 0.2rem; color: #2a3f6f; }
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+    footer {
+      border-top: 1px solid #ddd;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #777;
+      padding: 1.5rem;
+      margin-top: 3rem;
+    }
+    /* Search */
+    #search-wrapper { margin-bottom: 2rem; }
+    #pagefind-ui input {
+      width: 100%; padding: 0.5rem 0.8rem;
+      border: 1px solid #bbb; border-radius: 4px;
+      font-size: 1rem;
+    }
+    /* Lemma page */
+    .lemma-header { border-bottom: 2px solid #2a3f6f; padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+    .lemma-header h2 { margin: 0 0 0.2rem; font-size: 1.6rem; }
+    .lemma-meta { font-size: 0.85rem; color: #555; }
+    .lemma-meta span { margin-right: 1.2rem; }
+    /* Lemma metadata summary (top of page) */
+    .meta-summary {
+      display: grid; grid-template-columns: max-content 1fr;
+      gap: 0.2rem 1rem; margin: 0.6rem 0 0; font-size: 0.85rem;
+    }
+    .meta-summary dt { font-weight: bold; color: #555; white-space: nowrap; }
+    .meta-summary dd { margin: 0; color: #333; }
+    /* Text zones — single consistent palette */
+    .lemma-body p { margin: 0 0 0.25rem; }
+    .zone-loopbaan { }
+    .zone-hoofd { font-weight: bold; margin: 1rem 0 0.25rem; color: #2a3f6f; }
+    .zone-personalia { margin-left: 1.5rem; font-size: 0.92rem; color: #333; }
+    .zone-bronnen { margin-left: 1.5rem; font-size: 0.88rem; color: #444; font-style: italic; }
+    .zone-noot { margin-left: 1.5rem; font-size: 0.88rem; color: #555; }
+    .zone-paginahoofd { display: none; }
+    .zone-period_header { font-weight: bold; margin: 0.8rem 0 0.2rem; color: #2a3f6f; }
+    /* Legacy zone names retained for backwards-compat */
+    .zone-entry { font-weight: bold; margin-bottom: 0.6rem !important; }
+    .zone-body { }
+    .zone-genealogy { margin-left: 1.5rem; font-size: 0.92rem; color: #333; }
+    .zone-sub_note {
+      margin-left: 2rem; font-size: 0.88rem; font-style: italic; color: #555;
+      border-left: 3px solid #bbb; padding-left: 0.8rem;
+    }
+    .zone-break { margin: 0.6rem 0 0.4rem; }
+    .zone-break--genealogy { border-top: 1px dashed #ccc; }
+    .zone-break--sub_note { margin-top: 1rem; }
+    /* Footnotes */
+    section.footnotes {
+      margin-top: 2rem; border-top: 1px solid #ccc; padding-top: 1rem;
+      font-size: 0.88rem; color: #444;
+    }
+    section.footnotes h3 { font-size: 0.95rem; margin-bottom: 0.5rem; }
+    .fn-list { padding-left: 1.5rem; margin: 0; }
+    .fn-list li { margin-bottom: 0.4rem; }
+    .fn-back { font-size: 0.8em; margin-left: 0.3em; text-decoration: none; }
+    sup a { text-decoration: none; color: #2a5db0; font-size: 0.75em; }
+    /* Metadata block */
+    .meta-block {
+      margin-top: 2rem; border: 1px solid #ddd; border-radius: 4px;
+      padding: 0 0.8rem; font-size: 0.88rem;
+    }
+    .meta-block summary {
+      cursor: pointer; padding: 0.6rem 0; font-weight: bold;
+      color: #2a3f6f; list-style: none; user-select: none;
+    }
+    .meta-block summary::before { content: "▶ "; font-size: 0.75em; }
+    .meta-block[open] summary::before { content: "▼ "; }
+    .meta-dl { display: grid; grid-template-columns: max-content 1fr;
+               gap: 0.3rem 1rem; margin: 0.6rem 0 0.8rem; }
+    .meta-dl dt { font-weight: bold; color: #555; white-space: nowrap; }
+    .meta-dl dd { margin: 0; }
+    section.cross-refs { margin-top: 2rem; }
+    section.cross-refs h3 { font-size: 1rem; }
+    section.cross-refs ul { padding-left: 1.2rem; }
+    /* Person / geo index */
+    .ref-label { font-size: 0.85rem; color: #555; margin-right: 0.3rem; }
+    /* Index / listing pages */
+    .index-list { list-style: none; padding: 0; margin: 0; }
+    .index-list li { border-bottom: 1px solid #eee; padding: 0.4rem 0; }
+    .index-list li a { font-size: 1rem; }
+    .chapter-heading { margin-top: 2rem; font-size: 1.1rem; color: #2a3f6f;
+                        border-bottom: 1px solid #2a3f6f; padding-bottom: 0.2rem; }
+    .search-box {
+      display: flex; gap: 0.5rem; margin-bottom: 1.5rem;
+    }
+    .search-box input {
+      flex: 1; padding: 0.5rem 0.8rem; border: 1px solid #bbb;
+      border-radius: 4px; font-size: 1rem;
+    }
+    .search-box button {
+      padding: 0.5rem 1rem; background: #2a3f6f; color: #fff;
+      border: none; border-radius: 4px; cursor: pointer; font-size: 1rem;
+    }
+  </style>
+  
+</head>
+<body>
+  <header>
+    <h1><a href="/schutte_vertegenwoordigers/index.html">Schutte Repertorium</a></h1>
+    <nav>
+      <a href="/schutte_vertegenwoordigers/landen/index.html">Per land</a>
+      <a href="/schutte_vertegenwoordigers/search.html">Zoeken</a>
+      <a href="/schutte_vertegenwoordigers/nl/index.html">NL repr.</a>
+      <a href="/schutte_vertegenwoordigers/bl/index.html">BL repr.</a>
+      <a href="/schutte_vertegenwoordigers/persons.html">Personen</a>
+      <a href="/schutte_vertegenwoordigers/geo.html">Plaatsen</a>
+      <a href="/schutte_vertegenwoordigers/functie.html">Functies</a>
+      <a href="/schutte_vertegenwoordigers/timeline.html">Tijdlijn</a>
+      <a href="/schutte_vertegenwoordigers/heatmap.html">Activiteit</a>
+      <a href="/schutte_vertegenwoordigers/swimlane.html">Zwembanen</a>
+      <a href="/schutte_vertegenwoordigers/colofon.html">Colofon</a>
+    </nav>
+  </header>
+  <main>
+    
+<h2>Nederlandse vertegenwoordigers in het buitenland</h2>
+<p>342 lemma's</p>
+
+<input
+  type="search"
+  id="filter-input"
+  placeholder="Zoek op naam…"
+  style="width:100%; max-width:400px; padding:0.4rem 0.6rem; margin-bottom:1rem; font-size:1rem; border:1px solid #ccc; border-radius:3px;"
+  aria-label="Filter lemma's"
+>
+
+<ol class="lemma-list" id="lemma-list">
+  
+    
+    <li data-name="taffin, quintin">
+      <a href="/schutte_vertegenwoordigers/nl/0001/index.html">Taffin, Quintin</a>
+      <span class="lemma-meta-inline"> (1587-1593 commissaris)</span>
+    </li>
+  
+    
+    <li data-name="calvart, lieven">
+      <a href="/schutte_vertegenwoordigers/nl/0002/index.html">Calvart, Lieven</a>
+      <span class="lemma-meta-inline"> (1593-1597 agent)</span>
+    </li>
+  
+    
+    <li data-name="nassau, justinus van">
+      <a href="/schutte_vertegenwoordigers/nl/0003/index.html">Nassau, Justinus van</a>
+      <span class="lemma-meta-inline"> (1598 gedeputeerde)</span>
+    </li>
+  
+    
+    <li data-name="oldenbarnevelt, johan van">
+      <a href="/schutte_vertegenwoordigers/nl/0004/index.html">Oldenbarnevelt, Johan van</a>
+      <span class="lemma-meta-inline"> (1598 gedeputeerde)</span>
+    </li>
+  
+    
+    <li data-name="aerssen, françois van">
+      <a href="/schutte_vertegenwoordigers/nl/0005/index.html">Aerssen, François van</a>
+      <span class="lemma-meta-inline"> (1598-1613 agent, ordinaris ambassadeur 1609)</span>
+    </li>
+  
+    
+    <li data-name="mijle, cornelis van der">
+      <a href="/schutte_vertegenwoordigers/nl/0006/index.html">Mijle, Cornelis van der</a>
+      <span class="lemma-meta-inline"> (1614 extraordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="boetzelaer, gideon van den">
+      <a href="/schutte_vertegenwoordigers/nl/0007/index.html">Boetzelaer, Gideon van den</a>
+      
+    </li>
+  
+    
+    <li data-name="euskercken, johan van">
+      <a href="/schutte_vertegenwoordigers/nl/0008/index.html">Euskercken, Johan van</a>
+      <span class="lemma-meta-inline"> (1634 secretaris van de ambassade)</span>
+    </li>
+  
+    
+    <li data-name="pauw, adriaen">
+      <a href="/schutte_vertegenwoordigers/nl/0009/index.html">Pauw, Adriaen</a>
+      <span class="lemma-meta-inline"> (1634-1635 extraordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="knuyt, johan de">
+      <a href="/schutte_vertegenwoordigers/nl/0010/index.html">Knuyt, Johan de</a>
+      <span class="lemma-meta-inline"> (1634-1635 extraordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="lyere, willem van">
+      <a href="/schutte_vertegenwoordigers/nl/0011/index.html">Lyere, Willem van</a>
+      <span class="lemma-meta-inline"> (1637-1648 ordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="meyer, aert (arnoldus) de">
+      <a href="/schutte_vertegenwoordigers/nl/0012/index.html">Meyer, Aert (Arnoldus) de</a>
+      
+    </li>
+  
+    
+    <li data-name="boreel, willem">
+      <a href="/schutte_vertegenwoordigers/nl/0013/index.html">Boreel, Willem</a>
+      <span class="lemma-meta-inline"> (1650-1668 ordinaris ambassadeur, extraordinaris ambassadeur 1660-1662)</span>
+    </li>
+  
+    
+    <li data-name="rumpf, christiaan constantijn">
+      <a href="/schutte_vertegenwoordigers/nl/0014/index.html">Rumpf, Christiaan Constantijn</a>
+      <span class="lemma-meta-inline"> (1668-1670 secretaris van de ambassade)</span>
+    </li>
+  
+    
+    <li data-name="groot, pieter de">
+      <a href="/schutte_vertegenwoordigers/nl/0015/index.html">Groot, Pieter de</a>
+      
+    </li>
+  
+    
+    <li data-name="boreel, jacob">
+      <a href="/schutte_vertegenwoordigers/nl/0016/index.html">Boreel, Jacob</a>
+      <span class="lemma-meta-inline"> (1678-1680 extraordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="weede, everhard van">
+      <a href="/schutte_vertegenwoordigers/nl/0017/index.html">Weede, Everhard van</a>
+      <span class="lemma-meta-inline"> (1678-1680 extraordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="nassau(-odijk), willem hadriaan van">
+      <a href="/schutte_vertegenwoordigers/nl/0018/index.html">Nassau(-Odijk), Willem Hadriaan van</a>
+      <span class="lemma-meta-inline"> (1678-1679 extraordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="wassenaer(-starrenburg), willem van">
+      <a href="/schutte_vertegenwoordigers/nl/0019/index.html">Wassenaer(-Starrenburg), Willem van</a>
+      <span class="lemma-meta-inline"> (1680-1688 ordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="mouwen, christoffer">
+      <a href="/schutte_vertegenwoordigers/nl/0020/index.html">Mouwen, Christoffer</a>
+      <span class="lemma-meta-inline"> (1688-1689 (?) zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="heemskerck, coenraad van">
+      <a href="/schutte_vertegenwoordigers/nl/0021/index.html">Heemskerck, Coenraad van</a>
+      <span class="lemma-meta-inline"> (1698-1701 extraordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="vroesen, jan">
+      <a href="/schutte_vertegenwoordigers/nl/0022/index.html">Vroesen, Jan</a>
+      <span class="lemma-meta-inline"> (1701-1702 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="goslinga, sicco van">
+      <a href="/schutte_vertegenwoordigers/nl/0023/index.html">Goslinga, Sicco van</a>
+      <span class="lemma-meta-inline"> (1714 extraordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="buys, willem">
+      <a href="/schutte_vertegenwoordigers/nl/0024/index.html">Buys, Willem</a>
+      <span class="lemma-meta-inline"> (1712-1715 extraordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="scheltus paulus">
+      <a href="/schutte_vertegenwoordigers/nl/0025/index.html">Scheltus Paulus</a>
+      <span class="lemma-meta-inline"> (1715-1718 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="hop, cornelis">
+      <a href="/schutte_vertegenwoordigers/nl/0026/index.html">Hop, Cornelis</a>
+      <span class="lemma-meta-inline"> (1718-1725 ordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="paravicini, paulus (de)">
+      <a href="/schutte_vertegenwoordigers/nl/0027/index.html">Paravicini, Paulus (de)</a>
+      <span class="lemma-meta-inline"> (1725-1726 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="boreel, willem">
+      <a href="/schutte_vertegenwoordigers/nl/0028/index.html">Boreel, Willem</a>
+      <span class="lemma-meta-inline"> (1726-1727 ordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="pesters, ernst de">
+      <a href="/schutte_vertegenwoordigers/nl/0029/index.html">Pesters, Ernst de</a>
+      <span class="lemma-meta-inline"> (1727 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="hoey, abraham van">
+      <a href="/schutte_vertegenwoordigers/nl/0030/index.html">Hoey, Abraham van</a>
+      <span class="lemma-meta-inline"> (1727-1747 ordinaris ambassadeur, 1729 extraordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="deurse, c. van">
+      <a href="/schutte_vertegenwoordigers/nl/0031/index.html">Deurse, C. van</a>
+      <span class="lemma-meta-inline"> (1747-1748 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="larrey, thomas isaac de">
+      <a href="/schutte_vertegenwoordigers/nl/0032/index.html">Larrey, Thomas Isaac de</a>
+      <span class="lemma-meta-inline"> (1748-1750 minister sine caractère)</span>
+    </li>
+  
+    
+    <li data-name="marselis, dirk (theodore) van">
+      <a href="/schutte_vertegenwoordigers/nl/0033/index.html">Marselis, Dirk (Theodore) van</a>
+      <span class="lemma-meta-inline"> (1748-1750 minister)</span>
+    </li>
+  
+    
+    <li data-name="lestevenon, mattheus">
+      <a href="/schutte_vertegenwoordigers/nl/0034/index.html">Lestevenon, Mattheus</a>
+      <span class="lemma-meta-inline"> (1750-1792 ordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="blaauw, jacobus">
+      <a href="/schutte_vertegenwoordigers/nl/0035/index.html">Blaauw, Jacobus</a>
+      <span class="lemma-meta-inline"> (1795-1796 minister plenipotentiaris)</span>
+    </li>
+  
+    
+    <li data-name="meyer, casparus">
+      <a href="/schutte_vertegenwoordigers/nl/0036/index.html">Meyer, Casparus</a>
+      <span class="lemma-meta-inline"> (1634-1635 extraordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="hoeven, robertus valerius van der">
+      <a href="/schutte_vertegenwoordigers/nl/0037/index.html">Hoeven, Robertus Valerius van der</a>
+      <span class="lemma-meta-inline"> (1798 secretaris van legatie)</span>
+    </li>
+  
+    
+    <li data-name="buys, willem">
+      <a href="/schutte_vertegenwoordigers/nl/0038/index.html">Buys, Willem</a>
+      <span class="lemma-meta-inline"> (1798 extraordinaris minister plenipotentiaris)</span>
+    </li>
+  
+    
+    <li data-name="schimmelpenninck, rutger jan">
+      <a href="/schutte_vertegenwoordigers/nl/0039/index.html">Schimmelpenninck, Rutger Jan</a>
+      <span class="lemma-meta-inline"> (1798-1802 extraordinaris minister plenipotentiaris, extraordinaris am-)</span>
+    </li>
+  
+    
+    <li data-name="vos van steenwijk, carel de">
+      <a href="/schutte_vertegenwoordigers/nl/0040/index.html">Vos van Steenwijk, Carel de</a>
+      <span class="lemma-meta-inline"> (1802-1803 ordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="smits, jan matthijs">
+      <a href="/schutte_vertegenwoordigers/nl/0041/index.html">Smits, Jan Matthijs</a>
+      <span class="lemma-meta-inline"> (1805 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="brantsen, gerard">
+      <a href="/schutte_vertegenwoordigers/nl/0042/index.html">Brantsen, Gerard</a>
+      <span class="lemma-meta-inline"> (1805-1808 ordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="verhuell van sevenaer, carel hendrik">
+      <a href="/schutte_vertegenwoordigers/nl/0043/index.html">Verhuell van Sevenaer, Carel Hendrik</a>
+      <span class="lemma-meta-inline"> (1808-1810 ordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="sasburgh, thomas van">
+      <a href="/schutte_vertegenwoordigers/nl/0044/index.html">Sasburgh, Thomas van</a>
+      <span class="lemma-meta-inline"> (1656-1687 resident)</span>
+    </li>
+  
+    
+    <li data-name="hulft, johan">
+      <a href="/schutte_vertegenwoordigers/nl/0045/index.html">Hulft, Johan</a>
+      <span class="lemma-meta-inline"> (1688-1709 resident)</span>
+    </li>
+  
+    
+    <li data-name="gallieris, marinus">
+      <a href="/schutte_vertegenwoordigers/nl/0046/index.html">Gallieris, Marinus</a>
+      <span class="lemma-meta-inline"> (1709-1717 secretaris)</span>
+    </li>
+  
+    
+    <li data-name="travest, dirk willem">
+      <a href="/schutte_vertegenwoordigers/nl/0047/index.html">Travest, Dirk Willem</a>
+      <span class="lemma-meta-inline"> (1728-1729 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="assendelft, willem van">
+      <a href="/schutte_vertegenwoordigers/nl/0048/index.html">Assendelft, Willem van</a>
+      <span class="lemma-meta-inline"> (1729-1740 resident)</span>
+    </li>
+  
+    
+    <li data-name="kinschot, johan anthonie van">
+      <a href="/schutte_vertegenwoordigers/nl/0049/index.html">Kinschot, Johan Anthonie van</a>
+      <span class="lemma-meta-inline"> (1741-1749 resident)</span>
+    </li>
+  
+    
+    <li data-name="haren, willem van">
+      <a href="/schutte_vertegenwoordigers/nl/0050/index.html">Haren, Willem van</a>
+      <span class="lemma-meta-inline"> (1749-1768 minister resident)</span>
+    </li>
+  
+    
+    <li data-name="ernst, johan arnold">
+      <a href="/schutte_vertegenwoordigers/nl/0051/index.html">Ernst, Johan Arnold</a>
+      <span class="lemma-meta-inline"> (1768-1769 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="geelvinck, johan">
+      <a href="/schutte_vertegenwoordigers/nl/0052/index.html">Geelvinck, Johan</a>
+      <span class="lemma-meta-inline"> (1769-1773 minister resident, minister plenipotentiaris 1769)</span>
+    </li>
+  
+    
+    <li data-name="hop, hendrik">
+      <a href="/schutte_vertegenwoordigers/nl/0053/index.html">Hop, Hendrik</a>
+      <span class="lemma-meta-inline"> (1773-1794 minister plenipotentiaris)</span>
+    </li>
+  
+    
+    <li data-name="ortel, joachim">
+      <a href="/schutte_vertegenwoordigers/nl/0054/index.html">Ortel, Joachim</a>
+      <span class="lemma-meta-inline"> (1584-1590 agent)</span>
+    </li>
+  
+    
+    <li data-name="caron, noel de">
+      <a href="/schutte_vertegenwoordigers/nl/0055/index.html">Caron, Noel de</a>
+      <span class="lemma-meta-inline"> (1591-1624 agent, ordinaris ambassadeur 1609)</span>
+    </li>
+  
+    
+    <li data-name="joachimi, albert">
+      <a href="/schutte_vertegenwoordigers/nl/0056/index.html">Joachimi, Albert</a>
+      <span class="lemma-meta-inline"> (1625-1650 ordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="cats, jacob">
+      <a href="/schutte_vertegenwoordigers/nl/0057/index.html">Cats, Jacob</a>
+      <span class="lemma-meta-inline"> (1651-1652 extraordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="schaep, gerard pietersz.">
+      <a href="/schutte_vertegenwoordigers/nl/0058/index.html">Schaep, Gerard Pietersz.</a>
+      
+    </li>
+  
+    
+    <li data-name="perre, paulus van de">
+      <a href="/schutte_vertegenwoordigers/nl/0059/index.html">Perre, Paulus van de</a>
+      <span class="lemma-meta-inline"> (1651-1652 extraordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="nieupoort, willem">
+      <a href="/schutte_vertegenwoordigers/nl/0060/index.html">Nieupoort, Willem</a>
+      <span class="lemma-meta-inline"> (1654-1660 extraordinaris ambassadeur, ordinaris ambassadeur 1657)</span>
+    </li>
+  
+    
+    <li data-name="hoboken, niclaes">
+      <a href="/schutte_vertegenwoordigers/nl/0061/index.html">Hoboken, Niclaes</a>
+      <span class="lemma-meta-inline"> (1660 secretaris)</span>
+    </li>
+  
+    
+    <li data-name="nassau, lowys (lodewijk) van">
+      <a href="/schutte_vertegenwoordigers/nl/0062/index.html">Nassau, Lowys (Lodewijk) van</a>
+      <span class="lemma-meta-inline"> (1660-1662 extraordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="hoorn, simon van">
+      <a href="/schutte_vertegenwoordigers/nl/0063/index.html">Hoorn, Simon van</a>
+      <span class="lemma-meta-inline"> (1660-1662 extraordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="gogh, michiel van">
+      <a href="/schutte_vertegenwoordigers/nl/0064/index.html">Gogh, Michiel van</a>
+      <span class="lemma-meta-inline"> (1660-1662 extraordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="ripperda, joachim">
+      <a href="/schutte_vertegenwoordigers/nl/0065/index.html">Ripperda, Joachim</a>
+      <span class="lemma-meta-inline"> (1668-1670 secretaris van de ambassade)</span>
+    </li>
+  
+    
+    <li data-name="cunaeus, pieter">
+      <a href="/schutte_vertegenwoordigers/nl/0066/index.html">Cunaeus, Pieter</a>
+      <span class="lemma-meta-inline"> (1662-1664 secretaris)</span>
+    </li>
+  
+    
+    <li data-name="boreel, johan">
+      <a href="/schutte_vertegenwoordigers/nl/0067/index.html">Boreel, Johan</a>
+      <span class="lemma-meta-inline"> (1667-1672 extraordinaris ambassadeur, ordinaris ambassadeur 1669)</span>
+    </li>
+  
+    
+    <li data-name="beuningen, coenraad van">
+      <a href="/schutte_vertegenwoordigers/nl/0068/index.html">Beuningen, Coenraad van</a>
+      <span class="lemma-meta-inline"> (1674-1679 extraordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="leeuwen, diederik van leyden van">
+      <a href="/schutte_vertegenwoordigers/nl/0069/index.html">Leeuwen, Diederik van Leyden van</a>
+      <span class="lemma-meta-inline"> (1678-1680 extraordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="citters, arnout van">
+      <a href="/schutte_vertegenwoordigers/nl/0070/index.html">Citters, Arnout van</a>
+      <span class="lemma-meta-inline"> (1680-1695 ordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="saunière, rené de">
+      <a href="/schutte_vertegenwoordigers/nl/0071/index.html">Saunière, René de</a>
+      <span class="lemma-meta-inline"> (1695 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="brande, johan pieter van den">
+      <a href="/schutte_vertegenwoordigers/nl/0072/index.html">Brande, Johan Pieter van den</a>
+      <span class="lemma-meta-inline"> (1695-1699 ordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="borssele van der hooghe, adriaan van">
+      <a href="/schutte_vertegenwoordigers/nl/0073/index.html">Borssele van der Hooghe, Adriaan van</a>
+      <span class="lemma-meta-inline"> (1699-1701 extraordinaris envoyé)</span>
+    </li>
+  
+    
+    <li data-name="vrijberghe, marinus van">
+      <a href="/schutte_vertegenwoordigers/nl/0074/index.html">Vrijberghe, Marinus van</a>
+      <span class="lemma-meta-inline"> (1701-1711 resident, extraordinaris envoyé 1703)</span>
+    </li>
+  
+    
+    <li data-name="ravens, jan pieter">
+      <a href="/schutte_vertegenwoordigers/nl/0075/index.html">Ravens, Jan Pieter</a>
+      <span class="lemma-meta-inline"> (1711 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="borssele van der hooghe, philip jacob van">
+      <a href="/schutte_vertegenwoordigers/nl/0076/index.html">Borssele van der Hooghe, Philip Jacob van</a>
+      <span class="lemma-meta-inline"> (1712-1722 extraordinaris envoyé, extraordinaris ambassadeur 1714-1716)</span>
+    </li>
+  
+    
+    <li data-name="hop, henrick">
+      <a href="/schutte_vertegenwoordigers/nl/0077/index.html">Hop, Henrick</a>
+      <span class="lemma-meta-inline"> (1724-1761 extraordinaris envoyé, extraordinaris envoyé en minister ple-)</span>
+    </li>
+  
+    
+    <li data-name="boreel jansz., jacob">
+      <a href="/schutte_vertegenwoordigers/nl/0078/index.html">Boreel Jansz., Jacob</a>
+      <span class="lemma-meta-inline"> (1761-1762 extraordinaris ambassadeur en plenipotentiaris)</span>
+    </li>
+  
+    
+    <li data-name="welderen, jan walraad van">
+      <a href="/schutte_vertegenwoordigers/nl/0079/index.html">Welderen, Jan Walraad van</a>
+      <span class="lemma-meta-inline"> (1761-1780 extraordinaris envoyé en minister plenipotentiaris)</span>
+    </li>
+  
+    
+    <li data-name="lynden, dirck wolter van">
+      <a href="/schutte_vertegenwoordigers/nl/0080/index.html">Lynden, Dirck Wolter van</a>
+      <span class="lemma-meta-inline"> (1784-1788 extraordinaris envoyé en minister plenipotentiaris)</span>
+    </li>
+  
+    
+    <li data-name="nagell, anne willem carel van">
+      <a href="/schutte_vertegenwoordigers/nl/0081/index.html">Nagell, Anne Willem Carel van</a>
+      <span class="lemma-meta-inline"> (1788-1795 extraordinaris ambassadeur en plenipotentiaris, extraordinaris)</span>
+    </li>
+  
+    
+    <li data-name="hamel, gerard">
+      <a href="/schutte_vertegenwoordigers/nl/0082/index.html">Hamel, Gerard</a>
+      <span class="lemma-meta-inline"> (1664 agent; 1665 commissaris; 1670-1690 resident, extraordinaris en-)</span>
+    </li>
+  
+    
+    <li data-name="hop, jacob">
+      <a href="/schutte_vertegenwoordigers/nl/0083/index.html">Hop, Jacob</a>
+      <span class="lemma-meta-inline"> (1688-1689 extraordinaris envoyé)</span>
+    </li>
+  
+    
+    <li data-name="sutton, robert">
+      <a href="/schutte_vertegenwoordigers/nl/0084/index.html">Sutton, Robert</a>
+      <span class="lemma-meta-inline"> (1698 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="hamel, jacob jan">
+      <a href="/schutte_vertegenwoordigers/nl/0085/index.html">Hamel, Jacob Jan</a>
+      <span class="lemma-meta-inline"> (1700-1738 extraordinaris envoyé)</span>
+    </li>
+  
+    
+    <li data-name="hagenbach, j.c.">
+      <a href="/schutte_vertegenwoordigers/nl/0086/index.html">Hagenbach, J.C.</a>
+      <span class="lemma-meta-inline"> (1738-1739 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="burmania, barthold douma van">
+      <a href="/schutte_vertegenwoordigers/nl/0087/index.html">Burmania, Barthold Douma van</a>
+      <span class="lemma-meta-inline"> (1739-1766 extraordinär is envoyé bij de Keizer, 1740-1766 extraordi naris)</span>
+    </li>
+  
+    
+    <li data-name="mangeot">
+      <a href="/schutte_vertegenwoordigers/nl/0088/index.html">Mangeot</a>
+      <span class="lemma-meta-inline"> (1766 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="haltmeyer (holtmeyer), nathanael">
+      <a href="/schutte_vertegenwoordigers/nl/0089/index.html">Haltmeyer (Holtmeyer), Nathanael</a>
+      <span class="lemma-meta-inline"> (1766-1767 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="degenfeld schomburg, friedrich christoph von">
+      <a href="/schutte_vertegenwoordigers/nl/0090/index.html">Degenfeld Schomburg, Friedrich Christoph von</a>
+      <span class="lemma-meta-inline"> (1767-1781 extraordinaris envoyé en minister plenipotentiaris)</span>
+    </li>
+  
+    
+    <li data-name="kroll, george ferdinand">
+      <a href="/schutte_vertegenwoordigers/nl/0091/index.html">Kroll, George Ferdinand</a>
+      <span class="lemma-meta-inline"> (1781-1782 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="wassenaer, carel george van">
+      <a href="/schutte_vertegenwoordigers/nl/0092/index.html">Wassenaer, Carel George van</a>
+      <span class="lemma-meta-inline"> (1782-1784 extraordinaris envoyé en minister plenipotentiaris; 1785-1786)</span>
+    </li>
+  
+    
+    <li data-name="eem, j. van der">
+      <a href="/schutte_vertegenwoordigers/nl/0093/index.html">Eem, J. van der</a>
+      <span class="lemma-meta-inline"> (1786 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="haeften, reinier van">
+      <a href="/schutte_vertegenwoordigers/nl/0094/index.html">Haeften, Reinier van</a>
+      <span class="lemma-meta-inline"> (1786-1797 extraordinaris envoyé en minister plenipotentiaris)</span>
+    </li>
+  
+    
+    <li data-name="spaen, gerrit carel van">
+      <a href="/schutte_vertegenwoordigers/nl/0095/index.html">Spaen, Gerrit Carel van</a>
+      <span class="lemma-meta-inline"> (1802-1807 extraordinaris envoyé en minister plenipotentiaris)</span>
+    </li>
+  
+    
+    <li data-name="silliman, j.l.">
+      <a href="/schutte_vertegenwoordigers/nl/0096/index.html">Silliman, J.L.</a>
+      
+    </li>
+  
+    
+    <li data-name="hogendorp, dirk van">
+      <a href="/schutte_vertegenwoordigers/nl/0097/index.html">Hogendorp, Dirk van</a>
+      <span class="lemma-meta-inline"> (1718-1725 ordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="kinkel, heinrich august von">
+      <a href="/schutte_vertegenwoordigers/nl/0098/index.html">Kinkel, Heinrich August von</a>
+      <span class="lemma-meta-inline"> (1718-1725 ordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="bylandt, jean charles van">
+      <a href="/schutte_vertegenwoordigers/nl/0099/index.html">Bylandt, Jean Charles van</a>
+      <span class="lemma-meta-inline"> (1807-1808 minister plenipotentiaris)</span>
+    </li>
+  
+    
+    <li data-name="valckenier, petrus">
+      <a href="/schutte_vertegenwoordigers/nl/0100/index.html">Valckenier, Petrus</a>
+      <span class="lemma-meta-inline"> (1683-1690 commissaris, extraordinaris envoyé 1687)</span>
+    </li>
+  
+    
+    <li data-name="spanheim, frederik (von)">
+      <a href="/schutte_vertegenwoordigers/nl/0101/index.html">Spanheim, Frederik (von)</a>
+      <span class="lemma-meta-inline"> (1697-1703 commissaris, resident 1701)</span>
+    </li>
+  
+    
+    <li data-name="mortaigne (roussillon), mozes (de)">
+      <a href="/schutte_vertegenwoordigers/nl/0102/index.html">Mortaigne (Roussillon), Mozes (de)</a>
+      <span class="lemma-meta-inline"> (1706-1719 resident, envoyé)</span>
+    </li>
+  
+    
+    <li data-name="gallieris, jacob jan">
+      <a href="/schutte_vertegenwoordigers/nl/0103/index.html">Gallieris, Jacob Jan</a>
+      <span class="lemma-meta-inline"> (1738-1794 minister)</span>
+    </li>
+  
+    
+    <li data-name="bangeman huijgens, christiaan diederik emerens johan">
+      <a href="/schutte_vertegenwoordigers/nl/0104/index.html">Bangeman Huijgens, Christiaan Diederik Emerens Johan</a>
+      <span class="lemma-meta-inline"> (1794 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="meer, albert van der">
+      <a href="/schutte_vertegenwoordigers/nl/0105/index.html">Meer, Albert van der</a>
+      <span class="lemma-meta-inline"> (1726-1727 ordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="rechteren, adolf hendrik van">
+      <a href="/schutte_vertegenwoordigers/nl/0106/index.html">Rechteren, Adolf Hendrik van</a>
+      <span class="lemma-meta-inline"> (1726-1727 ordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="aylva, tjaard van">
+      <a href="/schutte_vertegenwoordigers/nl/0107/index.html">Aylva, Tjaard van</a>
+      <span class="lemma-meta-inline"> (1744-1747 (?) envoyé)</span>
+    </li>
+  
+    
+    <li data-name="strick van linschoten, paul hubert adriaan jan">
+      <a href="/schutte_vertegenwoordigers/nl/0108/index.html">Strick van Linschoten, Paul Hubert Adriaan Jan</a>
+      <span class="lemma-meta-inline"> (1797-1801 minister plenipotentiaris)</span>
+    </li>
+  
+    
+    <li data-name="dedem, anthony boldewijn gijsbert van">
+      <a href="/schutte_vertegenwoordigers/nl/0109/index.html">Dedem, Anthony Boldewijn Gijsbert van</a>
+      <span class="lemma-meta-inline"> (1801-1803 minister plenipotentiaris)</span>
+    </li>
+  
+    
+    <li data-name="spaen, alexander diederik van">
+      <a href="/schutte_vertegenwoordigers/nl/0110/index.html">Spaen, Alexander Diederik van</a>
+      <span class="lemma-meta-inline"> (1803-1805 minister plenipotentiaris)</span>
+    </li>
+  
+    
+    <li data-name="dedel, salomon">
+      <a href="/schutte_vertegenwoordigers/nl/0111/index.html">Dedel, Salomon</a>
+      <span class="lemma-meta-inline"> (1795-1796 minister plenipotentiaris)</span>
+    </li>
+  
+    
+    <li data-name="gronovius, samuel ulricus">
+      <a href="/schutte_vertegenwoordigers/nl/0112/index.html">Gronovius, Samuel Ulricus</a>
+      <span class="lemma-meta-inline"> (1798-1802 extraordinaris minister plenipotentiaris, extraordinaris am-)</span>
+    </li>
+  
+    
+    <li data-name="bilderbeeck, frederik hendrik van">
+      <a href="/schutte_vertegenwoordigers/nl/0113/index.html">Bilderbeeck, Frederik Hendrik van</a>
+      <span class="lemma-meta-inline"> (1715-1733 resident)</span>
+    </li>
+  
+    
+    <li data-name="wartensleben, carl friedrich von">
+      <a href="/schutte_vertegenwoordigers/nl/0114/index.html">Wartensleben, Carl Friedrich von</a>
+      <span class="lemma-meta-inline"> (1715-1733 resident)</span>
+    </li>
+  
+    
+    <li data-name="lucius, georg ernst">
+      <a href="/schutte_vertegenwoordigers/nl/0115/index.html">Lucius, Georg Ernst</a>
+      <span class="lemma-meta-inline"> (1805-1808 ordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="lansberge, jacob van">
+      <a href="/schutte_vertegenwoordigers/nl/0116/index.html">Lansberge, Jacob van</a>
+      <span class="lemma-meta-inline"> (1805-1808 ordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="jacobson, gerrit jan">
+      <a href="/schutte_vertegenwoordigers/nl/0117/index.html">Jacobson, Gerrit Jan</a>
+      <span class="lemma-meta-inline"> (1808-1809 extraordinaris envoyé)</span>
+    </li>
+  
+    
+    <li data-name="raet, clemens august anton maria nepomuk von">
+      <a href="/schutte_vertegenwoordigers/nl/0118/index.html">Raet, Clemens August Anton Maria Nepomuk von</a>
+      <span class="lemma-meta-inline"> (1797-1804 minister plenipotentiaris)</span>
+    </li>
+  
+    
+    <li data-name="mollerus, willem">
+      <a href="/schutte_vertegenwoordigers/nl/0119/index.html">Mollerus, Willem</a>
+      <span class="lemma-meta-inline"> (1809-1810 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="brederode, pieter cornelisz. van">
+      <a href="/schutte_vertegenwoordigers/nl/0120/index.html">Brederode, Pieter Cornelisz. van</a>
+      <span class="lemma-meta-inline"> (1602-1637 agent)</span>
+    </li>
+  
+    
+    <li data-name="pauw, cornelis (cornelio)">
+      <a href="/schutte_vertegenwoordigers/nl/0121/index.html">Pauw, Cornelis (Cornelio)</a>
+      <span class="lemma-meta-inline"> (1632-1635 gedeputeerde, gezant 1633)</span>
+    </li>
+  
+    
+    <li data-name="schelkens, johan abraham">
+      <a href="/schutte_vertegenwoordigers/nl/0122/index.html">Schelkens, Johan Abraham</a>
+      <span class="lemma-meta-inline"> (1635-1653 agent)</span>
+    </li>
+  
+    
+    <li data-name="malapert, abraham">
+      <a href="/schutte_vertegenwoordigers/nl/0123/index.html">Malapert, Abraham</a>
+      <span class="lemma-meta-inline"> (1669-1672 resident)</span>
+    </li>
+  
+    
+    <li data-name="mortaigne, johan bertram de">
+      <a href="/schutte_vertegenwoordigers/nl/0124/index.html">Mortaigne, Johan Bertram de</a>
+      <span class="lemma-meta-inline"> (1683-1688 correspondent)</span>
+    </li>
+  
+    
+    <li data-name="spina von grossenhagen, petrus de">
+      <a href="/schutte_vertegenwoordigers/nl/0125/index.html">Spina von Grossenhagen, Petrus de</a>
+      <span class="lemma-meta-inline"> (1697-1741 resident)</span>
+    </li>
+  
+    
+    <li data-name="bosch, otto">
+      <a href="/schutte_vertegenwoordigers/nl/0126/index.html">Bosch, Otto</a>
+      <span class="lemma-meta-inline"> (1741-1770 secretaris en zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="pellicorne, engbert">
+      <a href="/schutte_vertegenwoordigers/nl/0127/index.html">Pellicorne, Engbert</a>
+      <span class="lemma-meta-inline"> (1789-1795 minister plenipotentiaris)</span>
+    </li>
+  
+    
+    <li data-name="bilderbeke, hendrik van">
+      <a href="/schutte_vertegenwoordigers/nl/0128/index.html">Bilderbeke, Hendrik van</a>
+      <span class="lemma-meta-inline"> (1591-1608 agent)</span>
+    </li>
+  
+    
+    <li data-name="bilderbeeck, hendrik van">
+      <a href="/schutte_vertegenwoordigers/nl/0129/index.html">Bilderbeeck, Hendrik van</a>
+      <span class="lemma-meta-inline"> (1608-1653 agent)</span>
+    </li>
+  
+    
+    <li data-name="hoff, lucas van">
+      <a href="/schutte_vertegenwoordigers/nl/0130/index.html">Hoff, Lucas van</a>
+      <span class="lemma-meta-inline"> (1653-1659 agent)</span>
+    </li>
+  
+    
+    <li data-name="sypesteyn, cornelis ascanius van">
+      <a href="/schutte_vertegenwoordigers/nl/0131/index.html">Sypesteyn, Cornelis Ascanius van</a>
+      <span class="lemma-meta-inline"> (1671 commissaris)</span>
+    </li>
+  
+    
+    <li data-name="doncker (duncker), arnault">
+      <a href="/schutte_vertegenwoordigers/nl/0132/index.html">Doncker (Duncker), Arnault</a>
+      <span class="lemma-meta-inline"> (1671-1677 correspondent, agent 1673, resident 1673)</span>
+    </li>
+  
+    
+    <li data-name="bilderbeeck, hendrick van">
+      <a href="/schutte_vertegenwoordigers/nl/0133/index.html">Bilderbeeck, Hendrick van</a>
+      <span class="lemma-meta-inline"> (1671-1677 correspondent, agent 1673, resident 1673)</span>
+    </li>
+  
+    
+    <li data-name="lansberge, marinus van">
+      <a href="/schutte_vertegenwoordigers/nl/0134/index.html">Lansberge, Marinus van</a>
+      <span class="lemma-meta-inline"> (1738-1751 resident)</span>
+    </li>
+  
+    
+    <li data-name="til, jan rochus van">
+      <a href="/schutte_vertegenwoordigers/nl/0135/index.html">Til, Jan Rochus van</a>
+      <span class="lemma-meta-inline"> (1751-1755 minister resident)</span>
+    </li>
+  
+    
+    <li data-name="til, salomon van">
+      <a href="/schutte_vertegenwoordigers/nl/0136/index.html">Til, Salomon van</a>
+      <span class="lemma-meta-inline"> (1755 secretaris)</span>
+    </li>
+  
+    
+    <li data-name="peuchen, j.j.">
+      <a href="/schutte_vertegenwoordigers/nl/0137/index.html">Peuchen, J.J.</a>
+      <span class="lemma-meta-inline"> (1780-1796 minister plenipotentiaris)</span>
+    </li>
+  
+    
+    <li data-name="peuchen, f.">
+      <a href="/schutte_vertegenwoordigers/nl/0138/index.html">Peuchen, F.</a>
+      <span class="lemma-meta-inline"> (1805-? correspondent)</span>
+    </li>
+  
+    
+    <li data-name="damen, h.h.">
+      <a href="/schutte_vertegenwoordigers/nl/0139/index.html">Damen, H.H.</a>
+      <span class="lemma-meta-inline"> (1806-1808 commissaris voor de navigatie op de Rijn)</span>
+    </li>
+  
+    
+    <li data-name="falckenburch, robbrecht">
+      <a href="/schutte_vertegenwoordigers/nl/0140/index.html">Falckenburch, Robbrecht</a>
+      <span class="lemma-meta-inline"> (1632-? agent)</span>
+    </li>
+  
+    
+    <li data-name="burch, jacob van der">
+      <a href="/schutte_vertegenwoordigers/nl/0141/index.html">Burch, Jacob van der</a>
+      <span class="lemma-meta-inline"> (1642-1652 agent)</span>
+    </li>
+  
+    
+    <li data-name="braconier, abraham corneille de">
+      <a href="/schutte_vertegenwoordigers/nl/0142/index.html">Braconier, Abraham Corneille de</a>
+      
+    </li>
+  
+    
+    <li data-name="borch, jan carel van der">
+      <a href="/schutte_vertegenwoordigers/nl/0143/index.html">Borch, Jan Carel van der</a>
+      <span class="lemma-meta-inline"> (1780-1781 minister)</span>
+    </li>
+  
+    
+    <li data-name="hoop, hendrik van der">
+      <a href="/schutte_vertegenwoordigers/nl/0144/index.html">Hoop, Hendrik van der</a>
+      <span class="lemma-meta-inline"> (1783-1795 minister)</span>
+    </li>
+  
+    
+    <li data-name="lonhienne">
+      <a href="/schutte_vertegenwoordigers/nl/0145/index.html">Lonhienne</a>
+      <span class="lemma-meta-inline"> (1783-1795 minister)</span>
+    </li>
+  
+    
+    <li data-name="wachtendonck, françois van">
+      <a href="/schutte_vertegenwoordigers/nl/0146/index.html">Wachtendonck, François van</a>
+      <span class="lemma-meta-inline"> (1664-1670 agent)</span>
+    </li>
+  
+    
+    <li data-name="wachtendonck, godefridt (gotthard) van">
+      <a href="/schutte_vertegenwoordigers/nl/0147/index.html">Wachtendonck, Godefridt (Gotthard) van</a>
+      <span class="lemma-meta-inline"> (1688-1709 resident)</span>
+    </li>
+  
+    
+    <li data-name="wachtendonck, arnout van">
+      <a href="/schutte_vertegenwoordigers/nl/0148/index.html">Wachtendonck, Arnout van</a>
+      <span class="lemma-meta-inline"> (1681-1693 agent)</span>
+    </li>
+  
+    
+    <li data-name="schadrinel, (johann) gotthard (godefried)">
+      <a href="/schutte_vertegenwoordigers/nl/0149/index.html">Schadrinel, (Johann) Gotthard (Godefried)</a>
+      <span class="lemma-meta-inline"> (1709-1717 secretaris)</span>
+    </li>
+  
+    
+    <li data-name="leyendecker, johan">
+      <a href="/schutte_vertegenwoordigers/nl/0150/index.html">Leyendecker, Johan</a>
+      <span class="lemma-meta-inline"> (1734-1740 agent)</span>
+    </li>
+  
+    
+    <li data-name="brasser, theodore">
+      <a href="/schutte_vertegenwoordigers/nl/0151/index.html">Brasser, Theodore</a>
+      <span class="lemma-meta-inline"> (1671-1674 commissaris, extraordinaris gedeputeerde 1671)</span>
+    </li>
+  
+    
+    <li data-name="aitzema, foppe van">
+      <a href="/schutte_vertegenwoordigers/nl/0152/index.html">Aitzema, Foppe van</a>
+      <span class="lemma-meta-inline"> (1617-1637 agent, resident 1619)</span>
+    </li>
+  
+    
+    <li data-name="holte, georg van">
+      <a href="/schutte_vertegenwoordigers/nl/0153/index.html">Holte, Georg van</a>
+      <span class="lemma-meta-inline"> (1617-1637 agent, resident 1619)</span>
+    </li>
+  
+    
+    <li data-name="schrassert, hendrick">
+      <a href="/schutte_vertegenwoordigers/nl/0154/index.html">Schrassert, Hendrick</a>
+      <span class="lemma-meta-inline"> (1640-1651 resident te Hamburg en Lübeck)</span>
+    </li>
+  
+    
+    <li data-name="römer, matthias">
+      <a href="/schutte_vertegenwoordigers/nl/0155/index.html">Römer, Matthias</a>
+      <span class="lemma-meta-inline"> (1653-1675 resident te Hamburg en Lübeck)</span>
+    </li>
+  
+    
+    <li data-name="kuisten, gerard">
+      <a href="/schutte_vertegenwoordigers/nl/0156/index.html">Kuisten, Gerard</a>
+      <span class="lemma-meta-inline"> (1675-1708 resident te Hamburg en Lübeck)</span>
+    </li>
+  
+    
+    <li data-name="bosch, jan van den">
+      <a href="/schutte_vertegenwoordigers/nl/0157/index.html">Bosch, Jan van den</a>
+      <span class="lemma-meta-inline"> (1708-1725 resident te Hamburg, Lübeck en Bremen)</span>
+    </li>
+  
+    
+    <li data-name="engelenburg, lucas">
+      <a href="/schutte_vertegenwoordigers/nl/0158/index.html">Engelenburg, Lucas</a>
+      <span class="lemma-meta-inline"> (1725 zaakwaarnemer)</span>
+    </li>
+  
+    
+    <li data-name="mauricius, jacob johan">
+      <a href="/schutte_vertegenwoordigers/nl/0159/index.html">Mauricius, Jacob Johan</a>
+      <span class="lemma-meta-inline"> (1725-1742 resident bij de Hanzesteden, minister bij de Nedersaksische)</span>
+    </li>
+  
+    
+    <li data-name="buys, berend willem">
+      <a href="/schutte_vertegenwoordigers/nl/0160/index.html">Buys, Berend Willem</a>
+      <span class="lemma-meta-inline"> (1584-1590 agent)</span>
+    </li>
+  
+    
+    <li data-name="sittig, carel">
+      <a href="/schutte_vertegenwoordigers/nl/0161/index.html">Sittig, Carel</a>
+      <span class="lemma-meta-inline"> (1584-1590 agent)</span>
+    </li>
+  
+    
+    <li data-name="hogguer, daniel">
+      <a href="/schutte_vertegenwoordigers/nl/0162/index.html">Hogguer, Daniel</a>
+      <span class="lemma-meta-inline"> (1591-1624 agent, ordinaris ambassadeur 1609)</span>
+    </li>
+  
+    
+    <li data-name="hogguer, jacob christoph">
+      <a href="/schutte_vertegenwoordigers/nl/0163/index.html">Hogguer, Jacob Christoph</a>
+      <span class="lemma-meta-inline"> (1793 zaakgelastigde bij de Nedersaksische Kreits en de Hanzesteden)</span>
+    </li>
+  
+    
+    <li data-name="hartsinck, jan caspar">
+      <a href="/schutte_vertegenwoordigers/nl/0164/index.html">Hartsinck, Jan Caspar</a>
+      <span class="lemma-meta-inline"> (1794-1795 minister plenipotentiaris bij de Nedersaksische Kreits en de)</span>
+    </li>
+  
+    
+    <li data-name="abbema, balthasar elias">
+      <a href="/schutte_vertegenwoordigers/nl/0165/index.html">Abbema, Balthasar Elias</a>
+      <span class="lemma-meta-inline"> (1795-1800 minister plenipotentiaris bij (de Nedersaksische Kreits en) de)</span>
+    </li>
+  
+    
+    <li data-name="reinhold, johan godard">
+      <a href="/schutte_vertegenwoordigers/nl/0166/index.html">Reinhold, Johan Godard</a>
+      <span class="lemma-meta-inline"> (1800-1809 zaakgelastigde bij de Nedersaksische Kreits en de Hanzesteden)</span>
+    </li>
+  
+    
+    <li data-name="isbrants, johan">
+      <a href="/schutte_vertegenwoordigers/nl/0167/index.html">Isbrants, Johan</a>
+      
+    </li>
+  
+    
+    <li data-name="eyck(el)bergh, gijsbert">
+      <a href="/schutte_vertegenwoordigers/nl/0168/index.html">Eyck(el)bergh, Gijsbert</a>
+      <span class="lemma-meta-inline"> (1659-1660 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="reede, godard adriaan van">
+      <a href="/schutte_vertegenwoordigers/nl/0169/index.html">Reede, Godard Adriaan van</a>
+      <span class="lemma-meta-inline"> (1679-1685 extraordinaris gedeputeerde, extraordinaris envoyé)</span>
+    </li>
+  
+    
+    <li data-name="ham, johan">
+      <a href="/schutte_vertegenwoordigers/nl/0170/index.html">Ham, Johan</a>
+      <span class="lemma-meta-inline"> (1683-1699 secretaris en commissaris, resident 1689, extraordinaris envoyé)</span>
+    </li>
+  
+    
+    <li data-name="wassenaer, jacob van">
+      <a href="/schutte_vertegenwoordigers/nl/0171/index.html">Wassenaer, Jacob van</a>
+      <span class="lemma-meta-inline"> (1699-1700 extraordinaris envoyé)</span>
+    </li>
+  
+    
+    <li data-name="lintelo, christiaan carel van">
+      <a href="/schutte_vertegenwoordigers/nl/0172/index.html">Lintelo, Christiaan Carel van</a>
+      <span class="lemma-meta-inline"> (1704-1716 extraordinaris envoyé)</span>
+    </li>
+  
+    
+    <li data-name="ancillon, louis">
+      <a href="/schutte_vertegenwoordigers/nl/0173/index.html">Ancillon, Louis</a>
+      
+    </li>
+  
+    
+    <li data-name="hompesch, reinhard vincent von">
+      <a href="/schutte_vertegenwoordigers/nl/0174/index.html">Hompesch, Reinhard Vincent von</a>
+      
+    </li>
+  
+    
+    <li data-name="rumpf, carel">
+      <a href="/schutte_vertegenwoordigers/nl/0175/index.html">Rumpf, Carel</a>
+      <span class="lemma-meta-inline"> (1723-1743 secretaris, resident 1725, minister sine caractère 1734)</span>
+    </li>
+  
+    
+    <li data-name="keppel, jan rabo van">
+      <a href="/schutte_vertegenwoordigers/nl/0176/index.html">Keppel, Jan Rabo van</a>
+      <span class="lemma-meta-inline"> (1625-1650 ordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="reede, reinhard van">
+      <a href="/schutte_vertegenwoordigers/nl/0177/index.html">Reede, Reinhard van</a>
+      <span class="lemma-meta-inline"> (1625-1650 ordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="marteville de st. souverain, anton christian ludwig (lodewijk van)">
+      <a href="/schutte_vertegenwoordigers/nl/0178/index.html">Marteville de St. Souverain, Anton Christian Ludwig (Lodewijk van)</a>
+      <span class="lemma-meta-inline"> (1742-1746 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="horst, c.h.">
+      <a href="/schutte_vertegenwoordigers/nl/0179/index.html">Horst, C.H.</a>
+      <span class="lemma-meta-inline"> (1747 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="diepenbroeck, bertram philip sigismund albrecht van gronsfeld">
+      <a href="/schutte_vertegenwoordigers/nl/0180/index.html">Diepenbroeck, Bertram Philip Sigismund Albrecht van Gronsfeld</a>
+      <span class="lemma-meta-inline"> (1747-1758 extraordinaris envoyé en minister plenipotentiaris)</span>
+    </li>
+  
+    
+    <li data-name="jargow">
+      <a href="/schutte_vertegenwoordigers/nl/0181/index.html">Jargow</a>
+      <span class="lemma-meta-inline"> (1758 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="verelst, dirk huybert">
+      <a href="/schutte_vertegenwoordigers/nl/0182/index.html">Verelst, Dirk Huybert</a>
+      <span class="lemma-meta-inline"> (1758-1774 extraordinaris envoyé en minister plenipotentiaris)</span>
+    </li>
+  
+    
+    <li data-name="bonhomme, j.">
+      <a href="/schutte_vertegenwoordigers/nl/0183/index.html">Bonhomme, J.</a>
+      <span class="lemma-meta-inline"> (1774 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="heiden, reinhard adriaan carel wilhelm van">
+      <a href="/schutte_vertegenwoordigers/nl/0184/index.html">Heiden, Reinhard Adriaan Carel Wilhelm van</a>
+      <span class="lemma-meta-inline"> (1625-1650 ordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="reede, arend willem van">
+      <a href="/schutte_vertegenwoordigers/nl/0185/index.html">Reede, Arend Willem van</a>
+      <span class="lemma-meta-inline"> (1782-1795 extraordinaris envoyé en minister plenipotentiaris)</span>
+    </li>
+  
+    
+    <li data-name="bourdeaux, pierre etienne">
+      <a href="/schutte_vertegenwoordigers/nl/0186/index.html">Bourdeaux, Pierre Etienne</a>
+      <span class="lemma-meta-inline"> (1795-1802 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="hultman, carel gerard">
+      <a href="/schutte_vertegenwoordigers/nl/0187/index.html">Hultman, Carel Gerard</a>
+      <span class="lemma-meta-inline"> (1802 minister plenipotentiaris)</span>
+    </li>
+  
+    
+    <li data-name="goldberg, johannes">
+      <a href="/schutte_vertegenwoordigers/nl/0188/index.html">Goldberg, Johannes</a>
+      <span class="lemma-meta-inline"> (1808-1809 extraordinaris envoyé en chargé d&#39;affaires)</span>
+    </li>
+  
+    
+    <li data-name="pels, pauwels">
+      <a href="/schutte_vertegenwoordigers/nl/0189/index.html">Pels, Pauwels</a>
+      
+    </li>
+  
+    
+    <li data-name="pels, philips">
+      <a href="/schutte_vertegenwoordigers/nl/0190/index.html">Pels, Philips</a>
+      <span class="lemma-meta-inline"> (1659-1682 commissaris)</span>
+    </li>
+  
+    
+    <li data-name="scholten, coenraad">
+      <a href="/schutte_vertegenwoordigers/nl/0191/index.html">Scholten, Coenraad</a>
+      <span class="lemma-meta-inline"> (1682-1697 commissaris)</span>
+    </li>
+  
+    
+    <li data-name="domburgh, dirck van">
+      <a href="/schutte_vertegenwoordigers/nl/0192/index.html">Domburgh, Dirck van</a>
+      <span class="lemma-meta-inline"> (1697-1712 commissaris)</span>
+    </li>
+  
+    
+    <li data-name="bleyswijk, dirck van">
+      <a href="/schutte_vertegenwoordigers/nl/0193/index.html">Bleyswijk, Dirck van</a>
+      <span class="lemma-meta-inline"> (1712-1753 commissaris)</span>
+    </li>
+  
+    
+    <li data-name="soermans, hendrik">
+      <a href="/schutte_vertegenwoordigers/nl/0194/index.html">Soermans, Hendrik</a>
+      <span class="lemma-meta-inline"> (1754-1775 commissaris)</span>
+    </li>
+  
+    
+    <li data-name="ross, jacob">
+      <a href="/schutte_vertegenwoordigers/nl/0195/index.html">Ross, Jacob</a>
+      <span class="lemma-meta-inline"> (1775-1807 commissaris)</span>
+    </li>
+  
+    
+    <li data-name="ijzendoorn, k. van">
+      <a href="/schutte_vertegenwoordigers/nl/0196/index.html">IJzendoorn, K. van</a>
+      <span class="lemma-meta-inline"> (1807-1810 consul)</span>
+    </li>
+  
+    
+    <li data-name="heeckeren, walraven van">
+      <a href="/schutte_vertegenwoordigers/nl/0197/index.html">Heeckeren, Walraven van</a>
+      <span class="lemma-meta-inline"> (1691-1692 extraordinaris envoyé)</span>
+    </li>
+  
+    
+    <li data-name="calkoen, cornelis">
+      <a href="/schutte_vertegenwoordigers/nl/0198/index.html">Calkoen, Cornelis</a>
+      <span class="lemma-meta-inline"> (1744-1747 minister sine caractère)</span>
+    </li>
+  
+    
+    <li data-name="pietersz., isaac">
+      <a href="/schutte_vertegenwoordigers/nl/0199/index.html">Pietersz., Isaac</a>
+      <span class="lemma-meta-inline"> (1605 (1596)-1615 commissaris in de Sont)</span>
+    </li>
+  
+    
+    <li data-name="olfferts, bart">
+      <a href="/schutte_vertegenwoordigers/nl/0200/index.html">Olfferts, Bart</a>
+      <span class="lemma-meta-inline"> (1605 (1596)-1615 commissaris in de Sont)</span>
+    </li>
+  
+    
+    <li data-name="hoorn, hendrick hendricksz. van">
+      <a href="/schutte_vertegenwoordigers/nl/0201/index.html">Hoorn, Hendrick Hendricksz. van</a>
+      <span class="lemma-meta-inline"> (1605-(1610) commissaris in de Sont)</span>
+    </li>
+  
+    
+    <li data-name="cocq, willem adriaensz.">
+      <a href="/schutte_vertegenwoordigers/nl/0202/index.html">Cocq, Willem Adriaensz.</a>
+      <span class="lemma-meta-inline"> (1610-1614 commissaris in de Sont)</span>
+    </li>
+  
+    
+    <li data-name="isaacsz., pieter">
+      <a href="/schutte_vertegenwoordigers/nl/0203/index.html">Isaacsz., Pieter</a>
+      <span class="lemma-meta-inline"> (1617-1625 commissaris in de Sont)</span>
+    </li>
+  
+    
+    <li data-name="cracauw (cracou, cracouw), carel carelsz. van">
+      <a href="/schutte_vertegenwoordigers/nl/0204/index.html">Cracauw (Cracou, Cracouw), Carel Carelsz. van</a>
+      <span class="lemma-meta-inline"> (1627-1646 commissaris in de Sont, resident 1632)</span>
+    </li>
+  
+    
+    <li data-name="vries, frederick de">
+      <a href="/schutte_vertegenwoordigers/nl/0205/index.html">Vries, Frederick de</a>
+      <span class="lemma-meta-inline"> (1647-1656 resident)</span>
+    </li>
+  
+    
+    <li data-name="vierssen, matthijs van">
+      <a href="/schutte_vertegenwoordigers/nl/0206/index.html">Vierssen, Matthijs van</a>
+      <span class="lemma-meta-inline"> (1656-1657 extraordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="le maire, jacob">
+      <a href="/schutte_vertegenwoordigers/nl/0207/index.html">le Maire, Jacob</a>
+      <span class="lemma-meta-inline"> (1657-1659, 1660-1679 resident)</span>
+    </li>
+  
+    
+    <li data-name="hotton, johan">
+      <a href="/schutte_vertegenwoordigers/nl/0208/index.html">Hotton, Johan</a>
+      <span class="lemma-meta-inline"> (1680-1684 resident)</span>
+    </li>
+  
+    
+    <li data-name="moeringh, cornelis">
+      <a href="/schutte_vertegenwoordigers/nl/0209/index.html">Moeringh, Cornelis</a>
+      <span class="lemma-meta-inline"> (1680-1686 extraordinaris envoyé)</span>
+    </li>
+  
+    
+    <li data-name="goes, robert">
+      <a href="/schutte_vertegenwoordigers/nl/0210/index.html">Goes, Robert</a>
+      <span class="lemma-meta-inline"> (1654-1660 extraordinaris ambassadeur, ordinaris ambassadeur 1657)</span>
+    </li>
+  
+    
+    <li data-name="opdorp, willem">
+      <a href="/schutte_vertegenwoordigers/nl/0211/index.html">Opdorp, Willem</a>
+      <span class="lemma-meta-inline"> (1654-1660 extraordinaris ambassadeur, ordinaris ambassadeur 1657)</span>
+    </li>
+  
+    
+    <li data-name="coymans, gillis">
+      <a href="/schutte_vertegenwoordigers/nl/0212/index.html">Coymans, Gillis</a>
+      <span class="lemma-meta-inline"> (1729-1757 resident, extraordinaris envoyé 1753)</span>
+    </li>
+  
+    
+    <li data-name="grimmelius, georgius theodorus">
+      <a href="/schutte_vertegenwoordigers/nl/0213/index.html">Grimmelius, Georgius Theodorus</a>
+      <span class="lemma-meta-inline"> (1757-1759 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="bosc de la calmette, charles françois">
+      <a href="/schutte_vertegenwoordigers/nl/0214/index.html">Bosc de la Calmette, Charles François</a>
+      <span class="lemma-meta-inline"> (1759-1781 resident, minister 1766, extraordinaris envoyé 1768)</span>
+    </li>
+  
+    
+    <li data-name="arbin (arbien), nicolai eric">
+      <a href="/schutte_vertegenwoordigers/nl/0215/index.html">Arbin (Arbien), Nicolai Eric</a>
+      <span class="lemma-meta-inline"> (1781-1782 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="recbteren, christiaan albrecht van">
+      <a href="/schutte_vertegenwoordigers/nl/0216/index.html">Recbteren, Christiaan Albrecht van</a>
+      <span class="lemma-meta-inline"> (1660-1662 extraordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="goes, maarten van der">
+      <a href="/schutte_vertegenwoordigers/nl/0217/index.html">Goes, Maarten van der</a>
+      <span class="lemma-meta-inline"> (1785-1793 extraordinaris envoyé)</span>
+    </li>
+  
+    
+    <li data-name="coninck, frederik de">
+      <a href="/schutte_vertegenwoordigers/nl/0218/index.html">Coninck, Frederik de</a>
+      <span class="lemma-meta-inline"> (1793 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="fagel, jacob">
+      <a href="/schutte_vertegenwoordigers/nl/0219/index.html">Fagel, Jacob</a>
+      <span class="lemma-meta-inline"> (1793-1795 extraordinär is envoyé)</span>
+    </li>
+  
+    
+    <li data-name="johnson (de le becq), johannes gualterus">
+      <a href="/schutte_vertegenwoordigers/nl/0220/index.html">Johnson (de le Becq), Johannes Gualterus</a>
+      <span class="lemma-meta-inline"> (1804-(1806) zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="(aller), joost jacob van">
+      <a href="/schutte_vertegenwoordigers/nl/0221/index.html">(Aller), Joost Jacob van</a>
+      <span class="lemma-meta-inline"> (1804-(1806) zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="meyners, gerrit cornelis">
+      <a href="/schutte_vertegenwoordigers/nl/0222/index.html">Meyners, Gerrit Cornelis</a>
+      <span class="lemma-meta-inline"> (1807-1809 minister plenipotentiaris)</span>
+    </li>
+  
+    
+    <li data-name="oste, johan">
+      <a href="/schutte_vertegenwoordigers/nl/0223/index.html">Oste, Johan</a>
+      <span class="lemma-meta-inline"> (1654 correspondent)</span>
+    </li>
+  
+    
+    <li data-name="heinsius, nicolaas">
+      <a href="/schutte_vertegenwoordigers/nl/0224/index.html">Heinsius, Nicolaas</a>
+      <span class="lemma-meta-inline"> (1654-1655 resident)</span>
+    </li>
+  
+    
+    <li data-name="cletcher, hendrik">
+      <a href="/schutte_vertegenwoordigers/nl/0225/index.html">Cletcher, Hendrik</a>
+      <span class="lemma-meta-inline"> (1671-1672 secretaris van ambassade)</span>
+    </li>
+  
+    
+    <li data-name="wolfsen, johan">
+      <a href="/schutte_vertegenwoordigers/nl/0226/index.html">Wolfsen, Johan</a>
+      <span class="lemma-meta-inline"> (1672-1674 secretaris van ambassade)</span>
+    </li>
+  
+    
+    <li data-name="rumpf, hendrik willem">
+      <a href="/schutte_vertegenwoordigers/nl/0227/index.html">Rumpf, Hendrik Willem</a>
+      <span class="lemma-meta-inline"> (1706-1743 resident, extraordinaris envoyé 1723)</span>
+    </li>
+  
+    
+    <li data-name="sanden, andries van">
+      <a href="/schutte_vertegenwoordigers/nl/0228/index.html">Sanden, Andries van</a>
+      <span class="lemma-meta-inline"> (1743-1744 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="peill, johannes godefridus">
+      <a href="/schutte_vertegenwoordigers/nl/0229/index.html">Peill, Johannes Godefridus</a>
+      <span class="lemma-meta-inline"> (1749-1752 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="letocart, david">
+      <a href="/schutte_vertegenwoordigers/nl/0230/index.html">Letocart, David</a>
+      <span class="lemma-meta-inline"> (1760 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="doublet, françois">
+      <a href="/schutte_vertegenwoordigers/nl/0231/index.html">Doublet, François</a>
+      <span class="lemma-meta-inline"> (1760-1762 extraordinaris envoyé)</span>
+    </li>
+  
+    
+    <li data-name="kretschmar, hendrik van">
+      <a href="/schutte_vertegenwoordigers/nl/0232/index.html">Kretschmar, Hendrik van</a>
+      <span class="lemma-meta-inline"> (1763-1768 extraordinaris envoyé)</span>
+    </li>
+  
+    
+    <li data-name="wasmuth, emanuel">
+      <a href="/schutte_vertegenwoordigers/nl/0233/index.html">Wasmuth, Emanuel</a>
+      <span class="lemma-meta-inline"> (1768-1769 secretaris)</span>
+    </li>
+  
+    
+    <li data-name="schenck (de winterstedt), a.j. (van)">
+      <a href="/schutte_vertegenwoordigers/nl/0234/index.html">Schenck (de Winterstedt), A.J. (van)</a>
+      <span class="lemma-meta-inline"> (1777 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="duker, petrus gerardus">
+      <a href="/schutte_vertegenwoordigers/nl/0235/index.html">Duker, Petrus Gerardus</a>
+      <span class="lemma-meta-inline"> (1781-1782 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="loofs, anthony abraham">
+      <a href="/schutte_vertegenwoordigers/nl/0236/index.html">Loofs, Anthony Abraham</a>
+      <span class="lemma-meta-inline"> (1795 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="westreenen, pieter hieronimus van">
+      <a href="/schutte_vertegenwoordigers/nl/0237/index.html">Westreenen, Pieter Hieronimus van</a>
+      <span class="lemma-meta-inline"> (1802-1805 minister plenipotentiaris)</span>
+    </li>
+  
+    
+    <li data-name="rhemen, gerrit jan van">
+      <a href="/schutte_vertegenwoordigers/nl/0238/index.html">Rhemen, Gerrit Jan van</a>
+      <span class="lemma-meta-inline"> (1805-1806 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="haersolte, johan van">
+      <a href="/schutte_vertegenwoordigers/nl/0239/index.html">Haersolte, Johan van</a>
+      <span class="lemma-meta-inline"> (1701-1707, 1710-1716 extraordinaris envoyé)</span>
+    </li>
+  
+    
+    <li data-name="brais, samuel de">
+      <a href="/schutte_vertegenwoordigers/nl/0240/index.html">Brais, Samuel de</a>
+      <span class="lemma-meta-inline"> (1716 secretaris)</span>
+    </li>
+  
+    
+    <li data-name="griesheim, c.t.l. von">
+      <a href="/schutte_vertegenwoordigers/nl/0241/index.html">Griesheim, C.T.L. von</a>
+      <span class="lemma-meta-inline"> (1791 extraordinaris envoyé)</span>
+    </li>
+  
+    
+    <li data-name="klenck, coenraet van">
+      <a href="/schutte_vertegenwoordigers/nl/0242/index.html">Klenck, Coenraet van</a>
+      <span class="lemma-meta-inline"> (1675-1676 extraordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="keller, johan willem van">
+      <a href="/schutte_vertegenwoordigers/nl/0243/index.html">Keller, Johan Willem van</a>
+      <span class="lemma-meta-inline"> (1676-1698 resident 1677)</span>
+    </li>
+  
+    
+    <li data-name="hulst, hendrick jacobsz. van de">
+      <a href="/schutte_vertegenwoordigers/nl/0244/index.html">Hulst, Hendrick Jacobsz. van de</a>
+      <span class="lemma-meta-inline"> (1700-1710 resident)</span>
+    </li>
+  
+    
+    <li data-name="bie, jacob de">
+      <a href="/schutte_vertegenwoordigers/nl/0245/index.html">Bie, Jacob de</a>
+      <span class="lemma-meta-inline"> (1711-1718 resident)</span>
+    </li>
+  
+    
+    <li data-name="wilde, willem de">
+      <a href="/schutte_vertegenwoordigers/nl/0246/index.html">Wilde, Willem de</a>
+      
+    </li>
+  
+    
+    <li data-name="swart, marcelis de">
+      <a href="/schutte_vertegenwoordigers/nl/0247/index.html">Swart, Marcelis de</a>
+      <span class="lemma-meta-inline"> (1729-1760 secretaris, resident 1733, extraordinaris envoyé en minister)</span>
+    </li>
+  
+    
+    <li data-name="dieu, daniël de">
+      <a href="/schutte_vertegenwoordigers/nl/0248/index.html">Dieu, Daniël de</a>
+      <span class="lemma-meta-inline"> (1730-1732 extraordinaris envoyé)</span>
+    </li>
+  
+    
+    <li data-name="swart, johan isaac de">
+      <a href="/schutte_vertegenwoordigers/nl/0249/index.html">Swart, Johan Isaac de</a>
+      <span class="lemma-meta-inline"> (1760 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="meinertshagen, jacob daniel">
+      <a href="/schutte_vertegenwoordigers/nl/0250/index.html">Meinertshagen, Jacob Daniel</a>
+      <span class="lemma-meta-inline"> (1760-1764 extraordinaris envoyé)</span>
+    </li>
+  
+    
+    <li data-name="rechteren, jacob godefroy van">
+      <a href="/schutte_vertegenwoordigers/nl/0251/index.html">Rechteren, Jacob Godefroy van</a>
+      <span class="lemma-meta-inline"> (1765-1772 extraordinaris envoyé)</span>
+    </li>
+  
+    
+    <li data-name="wassenaer, willem lodewijk van">
+      <a href="/schutte_vertegenwoordigers/nl/0252/index.html">Wassenaer, Willem Lodewijk van</a>
+      <span class="lemma-meta-inline"> (1780-1785 minister plenipotentiaris, extraordinaris ambassadeur en pleni-)</span>
+    </li>
+  
+    
+    <li data-name="hogguer, jan willem">
+      <a href="/schutte_vertegenwoordigers/nl/0253/index.html">Hogguer, Jan Willem</a>
+      <span class="lemma-meta-inline"> (1791-1795 extraordinaris envoyé)</span>
+    </li>
+  
+    
+    <li data-name="bagge, carl johan">
+      <a href="/schutte_vertegenwoordigers/nl/0254/index.html">Bagge, Carl Johan</a>
+      <span class="lemma-meta-inline"> (1805-1806 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="six, willem">
+      <a href="/schutte_vertegenwoordigers/nl/0255/index.html">Six, Willem</a>
+      <span class="lemma-meta-inline"> (1808-1810 extraordinaris envoyé en minister plenipotentiaris)</span>
+    </li>
+  
+    
+    <li data-name="haga, cornelis">
+      <a href="/schutte_vertegenwoordigers/nl/0256/index.html">Haga, Cornelis</a>
+      <span class="lemma-meta-inline"> (1612-1639 orateur)</span>
+    </li>
+  
+    
+    <li data-name="cops, henrico">
+      <a href="/schutte_vertegenwoordigers/nl/0257/index.html">Cops, Henrico</a>
+      <span class="lemma-meta-inline"> (1639-1647 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="croll, theodoor">
+      <a href="/schutte_vertegenwoordigers/nl/0258/index.html">Croll, Theodoor</a>
+      <span class="lemma-meta-inline"> (1647 provisioneel protector)</span>
+    </li>
+  
+    
+    <li data-name="abenyacar, moise">
+      <a href="/schutte_vertegenwoordigers/nl/0259/index.html">Abenyacar, Moise</a>
+      <span class="lemma-meta-inline"> (1647 provisioneel protector)</span>
+    </li>
+  
+    
+    <li data-name="ghijsberti, nicolo">
+      <a href="/schutte_vertegenwoordigers/nl/0260/index.html">Ghijsberti, Nicolo</a>
+      <span class="lemma-meta-inline"> (1647-1654 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="warnerus, levinus">
+      <a href="/schutte_vertegenwoordigers/nl/0261/index.html">Warnerus, Levinus</a>
+      <span class="lemma-meta-inline"> (1712-1722 extraordinaris envoyé, extraordinaris ambassadeur 1714-1716)</span>
+    </li>
+  
+    
+    <li data-name="brosses, francesco de">
+      <a href="/schutte_vertegenwoordigers/nl/0262/index.html">Brosses, Francesco de</a>
+      <span class="lemma-meta-inline"> (1712-1722 extraordinaris envoyé, extraordinaris ambassadeur 1714-1716)</span>
+    </li>
+  
+    
+    <li data-name="colyer, justinus">
+      <a href="/schutte_vertegenwoordigers/nl/0263/index.html">Colyer, Justinus</a>
+      <span class="lemma-meta-inline"> (1724-1761 extraordinaris envoyé, extraordinaris envoyé en minister ple-)</span>
+    </li>
+  
+    
+    <li data-name="colyer, jacob">
+      <a href="/schutte_vertegenwoordigers/nl/0264/index.html">Colyer, Jacob</a>
+      <span class="lemma-meta-inline"> (1682-1725 zaakgelastigde, secretaris 1683, resident 1684, ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="la fontaine, pietro de">
+      <a href="/schutte_vertegenwoordigers/nl/0265/index.html">la Fontaine, Pietro de</a>
+      <span class="lemma-meta-inline"> (1725 secretaris)</span>
+    </li>
+  
+    
+    <li data-name="fagel, bastiaan">
+      <a href="/schutte_vertegenwoordigers/nl/0266/index.html">Fagel, Bastiaan</a>
+      <span class="lemma-meta-inline"> (1725-1727 secretaris van de ambassade)</span>
+    </li>
+  
+    
+    <li data-name="bordes, jan carel (steven) des">
+      <a href="/schutte_vertegenwoordigers/nl/0267/index.html">Bordes, Jan Carel (Steven) des</a>
+      <span class="lemma-meta-inline"> (1744-1747 agent ad interim)</span>
+    </li>
+  
+    
+    <li data-name="hochepied, elbert de">
+      <a href="/schutte_vertegenwoordigers/nl/0268/index.html">Hochepied, Elbert de</a>
+      <span class="lemma-meta-inline"> (1747-1763 ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="asten, matthias van">
+      <a href="/schutte_vertegenwoordigers/nl/0269/index.html">Asten, Matthias van</a>
+      <span class="lemma-meta-inline"> (1763-1764 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="schutz, conrad godard nicolas">
+      <a href="/schutte_vertegenwoordigers/nl/0270/index.html">Schutz, Conrad Godard Nicolas</a>
+      <span class="lemma-meta-inline"> (1764-1765 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="dedel, willem gerrit">
+      <a href="/schutte_vertegenwoordigers/nl/0271/index.html">Dedel, Willem Gerrit</a>
+      <span class="lemma-meta-inline"> (1765-1768 ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="weiler, frederik johan robert de">
+      <a href="/schutte_vertegenwoordigers/nl/0272/index.html">Weiler, Frederik Johan Robert de</a>
+      <span class="lemma-meta-inline"> (1768-1776 zaakgelastigde, ambassadeur 1775)</span>
+    </li>
+  
+    
+    <li data-name="tor, joost frederik">
+      <a href="/schutte_vertegenwoordigers/nl/0273/index.html">Tor, Joost Frederik</a>
+      <span class="lemma-meta-inline"> (1776-1778 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="dedem, frederik gijsbert van">
+      <a href="/schutte_vertegenwoordigers/nl/0274/index.html">Dedem, Frederik Gijsbert van</a>
+      <span class="lemma-meta-inline"> (1785-1808 ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="testa, gaspard">
+      <a href="/schutte_vertegenwoordigers/nl/0275/index.html">Testa, Gaspard</a>
+      <span class="lemma-meta-inline"> (1808-1810 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="coy, pieter martensz.">
+      <a href="/schutte_vertegenwoordigers/nl/0276/index.html">Coy, Pieter Martensz.</a>
+      <span class="lemma-meta-inline"> (1605-1609 agent)</span>
+    </li>
+  
+    
+    <li data-name="ruyl, albert">
+      <a href="/schutte_vertegenwoordigers/nl/0277/index.html">Ruyl, Albert</a>
+      <span class="lemma-meta-inline"> (1623-1624 commissaris)</span>
+    </li>
+  
+    
+    <li data-name="bijstervelt, jurriaen van">
+      <a href="/schutte_vertegenwoordigers/nl/0278/index.html">Bijstervelt, Jurriaen van</a>
+      <span class="lemma-meta-inline"> (1636-1638 consul)</span>
+    </li>
+  
+    
+    <li data-name="dopper, hendrick">
+      <a href="/schutte_vertegenwoordigers/nl/0279/index.html">Dopper, Hendrick</a>
+      <span class="lemma-meta-inline"> (1643-1644 hoofdconsul)</span>
+    </li>
+  
+    
+    <li data-name="sautijn, jan">
+      <a href="/schutte_vertegenwoordigers/nl/0280/index.html">Sautijn, Jan</a>
+      <span class="lemma-meta-inline"> (1648 consul)</span>
+    </li>
+  
+    
+    <li data-name="vries, david de">
+      <a href="/schutte_vertegenwoordigers/nl/0281/index.html">Vries, David de</a>
+      <span class="lemma-meta-inline"> (1651-1662 hoofdconsul)</span>
+    </li>
+  
+    
+    <li data-name="kersteman, lieve">
+      <a href="/schutte_vertegenwoordigers/nl/0282/index.html">Kersteman, Lieve</a>
+      <span class="lemma-meta-inline"> (1663-1668 consul)</span>
+    </li>
+  
+    
+    <li data-name="heppendorp, johannes smits">
+      <a href="/schutte_vertegenwoordigers/nl/0283/index.html">Heppendorp, Johannes Smits</a>
+      <span class="lemma-meta-inline"> (1669-1695 consul)</span>
+    </li>
+  
+    
+    <li data-name="smits, cornelis">
+      <a href="/schutte_vertegenwoordigers/nl/0284/index.html">Smits, Cornelis</a>
+      <span class="lemma-meta-inline"> (1696-1699 commissaris)</span>
+    </li>
+  
+    
+    <li data-name="mendez, gideon">
+      <a href="/schutte_vertegenwoordigers/nl/0285/index.html">Mendez, Gideon</a>
+      <span class="lemma-meta-inline"> (1700-1702 consul)</span>
+    </li>
+  
+    
+    <li data-name="beurs, gerrit">
+      <a href="/schutte_vertegenwoordigers/nl/0286/index.html">Beurs, Gerrit</a>
+      <span class="lemma-meta-inline"> (1704-1705 consul)</span>
+    </li>
+  
+    
+    <li data-name="francken, matthijs">
+      <a href="/schutte_vertegenwoordigers/nl/0287/index.html">Francken, Matthijs</a>
+      <span class="lemma-meta-inline"> (1708-1715 consul)</span>
+    </li>
+  
+    
+    <li data-name="justamond, pierre">
+      <a href="/schutte_vertegenwoordigers/nl/0288/index.html">Justamond, Pierre</a>
+      <span class="lemma-meta-inline"> (1735 consul)</span>
+    </li>
+  
+    
+    <li data-name="colletty, demetry">
+      <a href="/schutte_vertegenwoordigers/nl/0289/index.html">Colletty, Demetry</a>
+      <span class="lemma-meta-inline"> (1753-1766 consul-generaal)</span>
+    </li>
+  
+    
+    <li data-name="councler, lorenzo">
+      <a href="/schutte_vertegenwoordigers/nl/0290/index.html">Councler, Lorenzo</a>
+      <span class="lemma-meta-inline"> (1766-1771 consul-generaal)</span>
+    </li>
+  
+    
+    <li data-name="rossignol, françois">
+      <a href="/schutte_vertegenwoordigers/nl/0291/index.html">Rossignol, François</a>
+      <span class="lemma-meta-inline"> (1771-1777 consul-generaal)</span>
+    </li>
+  
+    
+    <li data-name="(blound), webster">
+      <a href="/schutte_vertegenwoordigers/nl/0292/index.html">(Blound), Webster</a>
+      <span class="lemma-meta-inline"> (1778-1810 consul-generaal)</span>
+    </li>
+  
+    
+    <li data-name="reede, hendrik van">
+      <a href="/schutte_vertegenwoordigers/nl/0293/index.html">Reede, Hendrik van</a>
+      <span class="lemma-meta-inline"> (1656-1669 minister, ambassadeur 1664)</span>
+    </li>
+  
+    
+    <li data-name="valckenier, frederik">
+      <a href="/schutte_vertegenwoordigers/nl/0294/index.html">Valckenier, Frederik</a>
+      <span class="lemma-meta-inline"> (1671-1672 secretaris)</span>
+    </li>
+  
+    
+    <li data-name="paets, adriaen">
+      <a href="/schutte_vertegenwoordigers/nl/0295/index.html">Paets, Adriaen</a>
+      <span class="lemma-meta-inline"> (1672-1675 extraordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="chièze, sébastien de">
+      <a href="/schutte_vertegenwoordigers/nl/0296/index.html">Chièze, Sébastien de</a>
+      <span class="lemma-meta-inline"> (1675-1679 extraordinaris envoyé)</span>
+    </li>
+  
+    
+    <li data-name="battier, pieter">
+      <a href="/schutte_vertegenwoordigers/nl/0297/index.html">Battier, Pieter</a>
+      <span class="lemma-meta-inline"> (1686-1690 extraordinaris envoyé)</span>
+    </li>
+  
+    
+    <li data-name="schonenberg, francisco de (jacob (de) abraham belmonte)">
+      <a href="/schutte_vertegenwoordigers/nl/0298/index.html">Schonenberg, Francisco de (Jacob (de) Abraham Belmonte)</a>
+      <span class="lemma-meta-inline"> (1690-1695 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="ripperda, jan willem">
+      <a href="/schutte_vertegenwoordigers/nl/0299/index.html">Ripperda, Jan Willem</a>
+      <span class="lemma-meta-inline"> (1715-1718 extraordinaris envoyé, extraordinaris ambassadeur 1715)</span>
+    </li>
+  
+    
+    <li data-name="ham, françois">
+      <a href="/schutte_vertegenwoordigers/nl/0300/index.html">Ham, François</a>
+      <span class="lemma-meta-inline"> (1718-1719 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="cats, willem maurits van">
+      <a href="/schutte_vertegenwoordigers/nl/0301/index.html">Cats, Willem Maurits van</a>
+      <span class="lemma-meta-inline"> (1719-1722 extraordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="meer, frans van der">
+      <a href="/schutte_vertegenwoordigers/nl/0302/index.html">Meer, Frans van der</a>
+      <span class="lemma-meta-inline"> (1724-1743 ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="grefle(i)n, maurits">
+      <a href="/schutte_vertegenwoordigers/nl/0303/index.html">Grefle(i)n, Maurits</a>
+      <span class="lemma-meta-inline"> (1743-1747 zaakwaarnemer)</span>
+    </li>
+  
+    
+    <li data-name="wassenaer, johan lodewijk haganus van">
+      <a href="/schutte_vertegenwoordigers/nl/0304/index.html">Wassenaer, Johan Lodewijk Haganus van</a>
+      <span class="lemma-meta-inline"> (1747-1762 ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="eyland, g.">
+      <a href="/schutte_vertegenwoordigers/nl/0305/index.html">Eyland, G.</a>
+      <span class="lemma-meta-inline"> (1769-1770 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="heeckeren, derk jan van">
+      <a href="/schutte_vertegenwoordigers/nl/0306/index.html">Heeckeren, Derk Jan van</a>
+      <span class="lemma-meta-inline"> (1770-1772 extraordinaris envoyé en plenipotentiaris)</span>
+    </li>
+  
+    
+    <li data-name="aubert, jean">
+      <a href="/schutte_vertegenwoordigers/nl/0307/index.html">Aubert, Jean</a>
+      <span class="lemma-meta-inline"> (1795-1796 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="valckenaer, johan">
+      <a href="/schutte_vertegenwoordigers/nl/0308/index.html">Valckenaer, Johan</a>
+      <span class="lemma-meta-inline"> (1796-1798 extraordinaris envoyé en minister plenipotentiaris)</span>
+    </li>
+  
+    
+    <li data-name="stuck, leonard">
+      <a href="/schutte_vertegenwoordigers/nl/0309/index.html">Stuck, Leonard</a>
+      <span class="lemma-meta-inline"> (1798-1799 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="nieuwerkerke, willem hendrik van">
+      <a href="/schutte_vertegenwoordigers/nl/0310/index.html">Nieuwerkerke, Willem Hendrik van</a>
+      <span class="lemma-meta-inline"> (1799 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="oskamp, j.">
+      <a href="/schutte_vertegenwoordigers/nl/0311/index.html">Oskamp, J.</a>
+      <span class="lemma-meta-inline"> (1806-1807 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="verhuell, christiaan anthonie">
+      <a href="/schutte_vertegenwoordigers/nl/0312/index.html">Verhuell, Christiaan Anthonie</a>
+      <span class="lemma-meta-inline"> (1807-1808 minister plenipotentiaris)</span>
+    </li>
+  
+    
+    <li data-name="zuylen van nyevelt, hugo van">
+      <a href="/schutte_vertegenwoordigers/nl/0313/index.html">Zuylen van Nyevelt, Hugo van</a>
+      <span class="lemma-meta-inline"> (1808-1810 secretaris van legatie)</span>
+    </li>
+  
+    
+    <li data-name="barlaeus, casper">
+      <a href="/schutte_vertegenwoordigers/nl/0314/index.html">Barlaeus, Casper</a>
+      <span class="lemma-meta-inline"> (1664-1672 resident)</span>
+    </li>
+  
+    
+    <li data-name="barlaeus, caspar">
+      <a href="/schutte_vertegenwoordigers/nl/0315/index.html">Barlaeus, Caspar</a>
+      <span class="lemma-meta-inline"> (1672-1675 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="barlaeus, louis">
+      <a href="/schutte_vertegenwoordigers/nl/0316/index.html">Barlaeus, Louis</a>
+      <span class="lemma-meta-inline"> (1695-1696 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="esweiler, abraham van">
+      <a href="/schutte_vertegenwoordigers/nl/0317/index.html">Esweiler, Abraham van</a>
+      <span class="lemma-meta-inline"> (1695-1697 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="famars, jacob daniel de">
+      <a href="/schutte_vertegenwoordigers/nl/0318/index.html">Famars, Jacob Daniel de</a>
+      <span class="lemma-meta-inline"> (1697-1704 resident)</span>
+    </li>
+  
+    
+    <li data-name="houwens, louis">
+      <a href="/schutte_vertegenwoordigers/nl/0319/index.html">Houwens, Louis</a>
+      <span class="lemma-meta-inline"> (1718-1731 resident)</span>
+    </li>
+  
+    
+    <li data-name="heysterman, abraham">
+      <a href="/schutte_vertegenwoordigers/nl/0320/index.html">Heysterman, Abraham</a>
+      <span class="lemma-meta-inline"> (1731-1732 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="gildemeester, daniel">
+      <a href="/schutte_vertegenwoordigers/nl/0321/index.html">Gildemeester, Daniel</a>
+      <span class="lemma-meta-inline"> (1769-1770 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="saurin, philip">
+      <a href="/schutte_vertegenwoordigers/nl/0322/index.html">Saurin, Philip</a>
+      <span class="lemma-meta-inline"> (1688-1689 extraordinaris envoyé)</span>
+    </li>
+  
+    
+    <li data-name="smissaert, balthasar constantijn">
+      <a href="/schutte_vertegenwoordigers/nl/0323/index.html">Smissaert, Balthasar Constantijn</a>
+      <span class="lemma-meta-inline"> (1780-1782 minister)</span>
+    </li>
+  
+    
+    <li data-name="gildemeester, daniel">
+      <a href="/schutte_vertegenwoordigers/nl/0324/index.html">Gildemeester, Daniel</a>
+      <span class="lemma-meta-inline"> (1782-1783 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="grasveld, charles henri van">
+      <a href="/schutte_vertegenwoordigers/nl/0325/index.html">Grasveld, Charles Henri van</a>
+      <span class="lemma-meta-inline"> (1802-1806 minister plenipotentiaris)</span>
+    </li>
+  
+    
+    <li data-name="dohrman, jacob">
+      <a href="/schutte_vertegenwoordigers/nl/0326/index.html">Dohrman, Jacob</a>
+      <span class="lemma-meta-inline"> (1806-1809 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="ommeren, roelof van">
+      <a href="/schutte_vertegenwoordigers/nl/0327/index.html">Ommeren, Roelof van</a>
+      <span class="lemma-meta-inline"> (1656 extraordinaris envoyé)</span>
+    </li>
+  
+    
+    <li data-name="le plat, adriaan françois">
+      <a href="/schutte_vertegenwoordigers/nl/0328/index.html">le Plat, Adriaan François</a>
+      <span class="lemma-meta-inline"> (1713-1726 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="muylman, hendrick">
+      <a href="/schutte_vertegenwoordigers/nl/0329/index.html">Muylman, Hendrick</a>
+      <span class="lemma-meta-inline"> (1633-1648 agent)</span>
+    </li>
+  
+    
+    <li data-name="straten, francisco van der">
+      <a href="/schutte_vertegenwoordigers/nl/0330/index.html">Straten, Francisco van der</a>
+      <span class="lemma-meta-inline"> (1643 agent)</span>
+    </li>
+  
+    
+    <li data-name="egmond van der nijenburg, jan aegidius van">
+      <a href="/schutte_vertegenwoordigers/nl/0331/index.html">Egmond van der Nijenburg, Jan Aegidius van</a>
+      <span class="lemma-meta-inline"> (1738-1742 extraordinaris envoyé en plenipotentiaris)</span>
+    </li>
+  
+    
+    <li data-name="berck, johan">
+      <a href="/schutte_vertegenwoordigers/nl/0332/index.html">Berck, Johan</a>
+      <span class="lemma-meta-inline"> (1622-1627 ordinaris ambassadeur)</span>
+    </li>
+  
+    
+    <li data-name="sonnevelt, josua van">
+      <a href="/schutte_vertegenwoordigers/nl/0333/index.html">Sonnevelt, Josua van</a>
+      <span class="lemma-meta-inline"> (1636-1637 secretaris van ambassade, resident?)</span>
+    </li>
+  
+    
+    <li data-name="runckel, johann ludwig">
+      <a href="/schutte_vertegenwoordigers/nl/0334/index.html">Runckel, Johann Ludwig</a>
+      <span class="lemma-meta-inline"> (1704-1720 gezantschapssecretaris te Schaffhausen)</span>
+    </li>
+  
+    
+    <li data-name="raboulet, daniel">
+      <a href="/schutte_vertegenwoordigers/nl/0335/index.html">Raboulet, Daniel</a>
+      <span class="lemma-meta-inline"> (1707-1709 commissaris te Neuchâtel en Basel)</span>
+    </li>
+  
+    
+    <li data-name="hirzel (von wülflingen), salomon">
+      <a href="/schutte_vertegenwoordigers/nl/0336/index.html">Hirzel (von Wülflingen), Salomon</a>
+      <span class="lemma-meta-inline"> (1740-(1747) zaakwaarnemer)</span>
+    </li>
+  
+    
+    <li data-name="witt, jan de">
+      <a href="/schutte_vertegenwoordigers/nl/0337/index.html">Witt, Jan de</a>
+      <span class="lemma-meta-inline"> (1795-1796 minister plenipotentiaris in Zwitserland en minister in Grau-)</span>
+    </li>
+  
+    
+    <li data-name="mestrezat">
+      <a href="/schutte_vertegenwoordigers/nl/0338/index.html">Mestrezat</a>
+      <span class="lemma-meta-inline"> (1796-1799 correspondent te Basel)</span>
+    </li>
+  
+    
+    <li data-name="berckel, pieter johan van">
+      <a href="/schutte_vertegenwoordigers/nl/0339/index.html">Berckel, Pieter Johan van</a>
+      <span class="lemma-meta-inline"> (1783-1788 minister plenipotentiaris)</span>
+    </li>
+  
+    
+    <li data-name="dorsten, rudolph van">
+      <a href="/schutte_vertegenwoordigers/nl/0340/index.html">Dorsten, Rudolph van</a>
+      <span class="lemma-meta-inline"> (1788-1789 zaakgelastigde)</span>
+    </li>
+  
+    
+    <li data-name="berckel, franco petrus van">
+      <a href="/schutte_vertegenwoordigers/nl/0341/index.html">Berckel, Franco Petrus van</a>
+      <span class="lemma-meta-inline"> (1782-1784 extraordinaris envoyé en minister plenipotentiaris; 1785-1786)</span>
+    </li>
+  
+    
+    <li data-name="polanen, rogier gerard van">
+      <a href="/schutte_vertegenwoordigers/nl/0342/index.html">Polanen, Rogier Gerard van</a>
+      <span class="lemma-meta-inline"> (1782-1784 extraordinaris envoyé en minister plenipotentiaris; 1785-1786)</span>
+    </li>
+  
+</ol>
+
+<script>
+(function() {
+  var input = document.getElementById('filter-input');
+  var items = Array.from(document.querySelectorAll('#lemma-list li'));
+  input.addEventListener('input', function() {
+    var q = this.value.toLowerCase().trim();
+    items.forEach(function(li) {
+      li.style.display = (!q || li.dataset.name.includes(q)) ? '' : 'none';
+    });
+  });
+})();
+</script>
+
+  </main>
+  <footer>
+    &copy; Huygens Instituut.
+    <em>Repertorium der Nederlandse vertegenwoordigers residerende in het buitenland 1584–1810</em>
+    &amp; <em>Repertorium der buitenlandse vertegenwoordigers residerende in Nederland 1584–1810</em>.
+    Digitale editie. <a href="/schutte_vertegenwoordigers/colofon.html">Colofon</a>.
+  </footer>
+</body>
+</html>

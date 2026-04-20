@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meyer, Christiaan Frederik — Schutte Repertorium</title>
+  <meta name="description" content="Meyer, Christiaan Frederik, 1760-1807 agent. J. Würzburg. Schutte Repertorium nr. 188.">
+  
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Meyer, Christiaan Frederik",
+  "description": "1760-1807 agent. J. Würzburg.",
+  "identifier": "schutte-bl-188",
+  "sameAs": [],
+  "isPartOf": {
+    "@type": "Book",
+    "name": "Repertorium der Nederlandse vertegenwoordigers residerende in het buitenland 1584-1810",
+    "author": "G.W. Schutte"
+  }
+}
+</script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 0;
+      color: #1a1a1a;
+      background: #fafaf8;
+    }
+    a { color: #2a5db0; }
+    a:visited { color: #7b4fa0; }
+    header {
+      background: #2a3f6f;
+      color: #fff;
+      padding: 1rem 2rem;
+    }
+    header h1 { margin: 0; font-size: 1.3rem; font-weight: normal; }
+    header h1 a { color: #fff; text-decoration: none; }
+    header h1 a:visited { color: #fff; }
+    nav { font-size: 0.85rem; margin-top: 0.4rem; }
+    nav a { color: #b8cef0; text-decoration: none; margin-right: 1rem; }
+    nav a:hover { text-decoration: underline; }
+    /* Zone styles for enriched XML types */
+    .zone-period_header { font-weight: bold; margin: 0.8rem 0 0.2rem; color: #2a3f6f; }
+    .zone-bronnen { margin-left: 1.5rem; font-size: 0.9rem; color: #444; font-style: italic; }
+    .zone-hoofd { font-weight: bold; margin: 0.6rem 0 0.2rem; color: #2a3f6f; }
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+    footer {
+      border-top: 1px solid #ddd;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #777;
+      padding: 1.5rem;
+      margin-top: 3rem;
+    }
+    /* Search */
+    #search-wrapper { margin-bottom: 2rem; }
+    #pagefind-ui input {
+      width: 100%; padding: 0.5rem 0.8rem;
+      border: 1px solid #bbb; border-radius: 4px;
+      font-size: 1rem;
+    }
+    /* Lemma page */
+    .lemma-header { border-bottom: 2px solid #2a3f6f; padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+    .lemma-header h2 { margin: 0 0 0.2rem; font-size: 1.6rem; }
+    .lemma-meta { font-size: 0.85rem; color: #555; }
+    .lemma-meta span { margin-right: 1.2rem; }
+    /* Lemma metadata summary (top of page) */
+    .meta-summary {
+      display: grid; grid-template-columns: max-content 1fr;
+      gap: 0.2rem 1rem; margin: 0.6rem 0 0; font-size: 0.85rem;
+    }
+    .meta-summary dt { font-weight: bold; color: #555; white-space: nowrap; }
+    .meta-summary dd { margin: 0; color: #333; }
+    /* Text zones — single consistent palette */
+    .lemma-body p { margin: 0 0 0.25rem; }
+    .zone-loopbaan { }
+    .zone-hoofd { font-weight: bold; margin: 1rem 0 0.25rem; color: #2a3f6f; }
+    .zone-personalia { margin-left: 1.5rem; font-size: 0.92rem; color: #333; }
+    .zone-bronnen { margin-left: 1.5rem; font-size: 0.88rem; color: #444; font-style: italic; }
+    .zone-noot { margin-left: 1.5rem; font-size: 0.88rem; color: #555; }
+    .zone-paginahoofd { display: none; }
+    .zone-period_header { font-weight: bold; margin: 0.8rem 0 0.2rem; color: #2a3f6f; }
+    /* Legacy zone names retained for backwards-compat */
+    .zone-entry { font-weight: bold; margin-bottom: 0.6rem !important; }
+    .zone-body { }
+    .zone-genealogy { margin-left: 1.5rem; font-size: 0.92rem; color: #333; }
+    .zone-sub_note {
+      margin-left: 2rem; font-size: 0.88rem; font-style: italic; color: #555;
+      border-left: 3px solid #bbb; padding-left: 0.8rem;
+    }
+    .zone-break { margin: 0.6rem 0 0.4rem; }
+    .zone-break--genealogy { border-top: 1px dashed #ccc; }
+    .zone-break--sub_note { margin-top: 1rem; }
+    /* Footnotes */
+    section.footnotes {
+      margin-top: 2rem; border-top: 1px solid #ccc; padding-top: 1rem;
+      font-size: 0.88rem; color: #444;
+    }
+    section.footnotes h3 { font-size: 0.95rem; margin-bottom: 0.5rem; }
+    .fn-list { padding-left: 1.5rem; margin: 0; }
+    .fn-list li { margin-bottom: 0.4rem; }
+    .fn-back { font-size: 0.8em; margin-left: 0.3em; text-decoration: none; }
+    sup a { text-decoration: none; color: #2a5db0; font-size: 0.75em; }
+    /* Metadata block */
+    .meta-block {
+      margin-top: 2rem; border: 1px solid #ddd; border-radius: 4px;
+      padding: 0 0.8rem; font-size: 0.88rem;
+    }
+    .meta-block summary {
+      cursor: pointer; padding: 0.6rem 0; font-weight: bold;
+      color: #2a3f6f; list-style: none; user-select: none;
+    }
+    .meta-block summary::before { content: "▶ "; font-size: 0.75em; }
+    .meta-block[open] summary::before { content: "▼ "; }
+    .meta-dl { display: grid; grid-template-columns: max-content 1fr;
+               gap: 0.3rem 1rem; margin: 0.6rem 0 0.8rem; }
+    .meta-dl dt { font-weight: bold; color: #555; white-space: nowrap; }
+    .meta-dl dd { margin: 0; }
+    section.cross-refs { margin-top: 2rem; }
+    section.cross-refs h3 { font-size: 1rem; }
+    section.cross-refs ul { padding-left: 1.2rem; }
+    /* Person / geo index */
+    .ref-label { font-size: 0.85rem; color: #555; margin-right: 0.3rem; }
+    /* Index / listing pages */
+    .index-list { list-style: none; padding: 0; margin: 0; }
+    .index-list li { border-bottom: 1px solid #eee; padding: 0.4rem 0; }
+    .index-list li a { font-size: 1rem; }
+    .chapter-heading { margin-top: 2rem; font-size: 1.1rem; color: #2a3f6f;
+                        border-bottom: 1px solid #2a3f6f; padding-bottom: 0.2rem; }
+    .search-box {
+      display: flex; gap: 0.5rem; margin-bottom: 1.5rem;
+    }
+    .search-box input {
+      flex: 1; padding: 0.5rem 0.8rem; border: 1px solid #bbb;
+      border-radius: 4px; font-size: 1rem;
+    }
+    .search-box button {
+      padding: 0.5rem 1rem; background: #2a3f6f; color: #fff;
+      border: none; border-radius: 4px; cursor: pointer; font-size: 1rem;
+    }
+  </style>
+  
+</head>
+<body>
+  <header>
+    <h1><a href="/schutte_vertegenwoordigers/index.html">Schutte Repertorium</a></h1>
+    <nav>
+      <a href="/schutte_vertegenwoordigers/landen/index.html">Per land</a>
+      <a href="/schutte_vertegenwoordigers/search.html">Zoeken</a>
+      <a href="/schutte_vertegenwoordigers/nl/index.html">NL repr.</a>
+      <a href="/schutte_vertegenwoordigers/bl/index.html">BL repr.</a>
+      <a href="/schutte_vertegenwoordigers/persons.html">Personen</a>
+      <a href="/schutte_vertegenwoordigers/geo.html">Plaatsen</a>
+      <a href="/schutte_vertegenwoordigers/functie.html">Functies</a>
+      <a href="/schutte_vertegenwoordigers/timeline.html">Tijdlijn</a>
+      <a href="/schutte_vertegenwoordigers/heatmap.html">Activiteit</a>
+      <a href="/schutte_vertegenwoordigers/swimlane.html">Zwembanen</a>
+      <a href="/schutte_vertegenwoordigers/colofon.html">Colofon</a>
+    </nav>
+  </header>
+  <main>
+    
+<nav style="font-size:0.85rem; margin-bottom:1rem;">
+  <a href="/schutte_vertegenwoordigers/bl/index.html">← Index Buitenlandse vertegenwoordigers in Nederland</a>
+  
+    · <a href="/schutte_vertegenwoordigers/bl/0187/index.html">‹ Vorige</a>
+  
+  
+    · <a href="/schutte_vertegenwoordigers/bl/0189/index.html">Volgende ›</a>
+  
+</nav>
+
+<div class="lemma-header">
+  <h2>Meyer, Christiaan Frederik</h2>
+  <div class="lemma-meta">
+    <span>Nr. 188</span>
+    <span>1760-1807 agent</span>
+    <span class="meta-functie">agent</span>
+    <span>J. Würzburg</span>
+    <span>Pag. 207</span>
+  </div>
+  
+  <dl class="meta-summary">
+    <dt>Functie</dt><dd>agent</dd>
+    <dt>Categorie</dt><dd>Würzburg</dd>
+    
+      <dt>Periode</dt>
+      <dd>1760–1807</dd>
+    
+  </dl>
+  
+</div>
+
+<div class="lemma-body">
+  
+  
+    
+    <p class="zone-body">188. Christiaan Frederik Meyer, ged. &#39;s-Gravenhage (Ev. Luth.k.) 16 aug. 1726410, solliciteur militair 1758; werd 28 juli 1760 benoemd tot agent van de vorst-bisschop van Bamberg en Würzburg; woonde 1760 tot 1763 in de Raamstraat, 1764 ten huize van de weduwe DannenbergAU in de Spuistraat, 1765 tot 1768 in de Spuistraat en sedert 1769 in de (Eerste) Wa- 410 Getuigen: Christian Havich en Anna Margareta Havich. 411 Anna Margaretha Havick, weduwe van Quirinus Dannenberg (N.L. 1977, 452). genstraat (in 1807 op nr. S 83), f 21 april, (aang.) &#39;s-Gravenhage 23 april, begr. Leiden 24 april 1807.</p>
+    
+  
+    
+      <div class="zone-break zone-break--genealogy"></div>
+    
+    <p class="zone-genealogy">Zoon van Johannes Frederich Meyer en Hanna Geertruijd Havick; trouwde VGravenhage (Scheveningse k.) 5 febr. 1769 Paulina Antonia Mesplet, ged. Haarlem (Waalse k.) 30 maart 1738, ontving attestatie naar &#39;s-Gravenhage 9 juli 1769, f (imp. bet.) &#39;s-Gravenhage 27 dec. en Leiden 29 dec. 1800, begr. aldaar (P.k.) lussen 27 dec. 1800 en 3 jan. 1801, dochter van Joseph Mesplet en Catharina Freher. Uit dit huwelijk: 1. Catharina Anna Christina Meyer, ged. &#39;s-Gravenhage (Gr.k.) 5 jan. 1772412, trouwde aldaar (stadh. en Eng.k.) 6 dec. 1808 Alexander Balneavis, geb. Steenbergen 22 jan., ged. aldaar 24 jan. 1765, kapitein in het regiment Nationalen Nr. 24 (Schotten Nr. 2) (1794); gepensioneerd als majoor; kolonel in Nederlandse dienst, f Stompwijk, h. Vischlust, 8 dec. 1839, zoon van (Maryland) Henry Balneavis, kolonel-commandant in het regiment Schotten Nr.3 (Nationalen Nr. 23) in Staatse dienst 15 okt. 1787, en Charlotte Stuart; hij hertrouwde Leidschendam 21 juni 1817 Alagonda ld erna. 2. Johan Fredrik Meyer, ged. &#39;s-Gravenhage (Gr.k.) 27 juli 1774413, f na 1807. G.N. 1968, 16, 93 en 1969, 68. K. BAMBERG</p>
+    
+  
+    
+      <div class="zone-break zone-break--period_header"></div>
+    
+    <p class="zone-period_header">1760-1803 agent</p>
+    
+  
+    
+      <div class="zone-break zone-break--body"></div>
+    
+    <p class="zone-body">Christiaan Frederik Meyer, nr. L. STRAATSBURG (1671-1680) agent</p>
+    
+  
+</div>
+
+
+<section class="footnotes">
+  <h3>Noten</h3>
+  <ol class="fn-list">
+    
+      <li id="fn-410" value="410">
+        Getuigen: Christian Havich en Anna Margareta Havich.
+        <a href="#ref-410" class="fn-back" aria-label="Terug naar tekst">↩</a>
+      </li>
+    
+      <li id="fn-411" value="411">
+        Anna Margaretha Havick, weduwe van Quirinus Dannenberg (N.L. 1977, 452).
+        <a href="#ref-411" class="fn-back" aria-label="Terug naar tekst">↩</a>
+      </li>
+    
+  </ol>
+</section>
+
+
+
+<section class="cross-refs">
+  <h3>Ook vermeld in</h3>
+  <ul>
+    
+      <li>
+        <a href="/schutte_vertegenwoordigers/bl/0186/index.html">
+          Pahman, Balthasar
+        </a>
+      </li>
+    
+      <li>
+        <a href="/schutte_vertegenwoordigers/bl/0187/index.html">
+          Schmiedberg
+        </a>
+      </li>
+    
+      <li>
+        <a href="/schutte_vertegenwoordigers/bl/0189/index.html">
+          Heck, Gillis van der
+        </a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+  </main>
+  <footer>
+    &copy; Huygens Instituut.
+    <em>Repertorium der Nederlandse vertegenwoordigers residerende in het buitenland 1584–1810</em>
+    &amp; <em>Repertorium der buitenlandse vertegenwoordigers residerende in Nederland 1584–1810</em>.
+    Digitale editie. <a href="/schutte_vertegenwoordigers/colofon.html">Colofon</a>.
+  </footer>
+</body>
+</html>
