@@ -617,6 +617,9 @@ def build(site_dir: Path, run_pagefind: bool = False) -> None:
         shutil.rmtree(site_dir)
     site_dir.mkdir(parents=True)
 
+    # Copy static assets
+    shutil.copy(HERE / "static" / "style.css", site_dir / "style.css")
+
     print(f"Exporting JSON to {site_dir / 'data'}…")
     export(nl_lemmas, bl_lemmas, persons_index, geo_index, site_dir / "data")
 

@@ -1,6 +1,6 @@
 {% extends "base.html" %}
-{% block title %}Zwembanen — Schutte Repertorium{% endblock %}
-{% block description %}Gantt-diagram van diplomatieke activiteit per regio, in de boekindeling.{% endblock %}
+{% block title %}Tijdlijn per land — Schutte Repertorium{% endblock %}
+{% block description %}Tijdlijn van vertegenwoordigers geordend per land, in de boekindeling.{% endblock %}
 
 {% block extra_head %}
 <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
@@ -32,10 +32,10 @@
 {% endblock %}
 
 {% block content %}
-<h2>Zwembanen per regio</h2>
+<h2>Tijdlijn per land</h2>
 <p style="font-size:0.88rem; color:#555; max-width:700px; margin-bottom:1rem;">
-  Gantt-diagram in boekindeling: elke rij is één vertegenwoordiger, gegroepeerd per hoofdstuk.
-  Scroll verticaal om door de regio's te bladeren; scroll/sleep op de balk om in te zoomen.
+  Elke rij is één vertegenwoordiger, gegroepeerd per land in boekindeling.
+  Scroll verticaal om door de landen te bladeren; gebruik Ctrl+scroll om in te zoomen op de tijdas.
   Klik op een balk om het lemma te openen.
 </p>
 
@@ -64,7 +64,7 @@
   };
 
   /* ── layout constants ────────────────────────────────────── */
-  var M      = { top: 8, right: 30, bottom: 40, left: 215 };
+  var M      = { top: 28, right: 30, bottom: 40, left: 215 };
   var YEAR0  = 1580;
   var YEAR1  = 1815;
   var ROW_H  = 14;
@@ -147,10 +147,11 @@
 
     var g = svg.append("g").attr("transform", "translate(" + M.left + "," + M.top + ")");
 
-    var gridG  = g.append("g").attr("clip-path", "url(#sl-clip)");
-    var barsG  = g.append("g").attr("clip-path", "url(#sl-clip)");
-    var axisG  = g.append("g").attr("transform", "translate(0," + innerH + ")");
-    var namesG = g.append("g");
+    var gridG   = g.append("g").attr("clip-path", "url(#sl-clip)");
+    var barsG   = g.append("g").attr("clip-path", "url(#sl-clip)");
+    var axisTopG = g.append("g");
+    var axisG   = g.append("g").attr("transform", "translate(0," + innerH + ")");
+    var namesG  = g.append("g");
 
     /* base x scale */
     var xBase = d3.scaleLinear().domain([YEAR0, YEAR1]).range([0, innerW]);
@@ -163,9 +164,12 @@
         .attr("y1", 0).attr("y2", innerH)
         .attr("stroke", "#ebebeb").attr("stroke-dasharray", "2,3");
 
+      var nTicks = Math.max(4, Math.round(innerW / 65));
+      axisTopG.call(
+        d3.axisTop(xNow).tickFormat(d3.format("d")).ticks(nTicks)
+      );
       axisG.call(
-        d3.axisBottom(xNow).tickFormat(d3.format("d"))
-          .ticks(Math.max(4, Math.round(innerW / 65)))
+        d3.axisBottom(xNow).tickFormat(d3.format("d")).ticks(nTicks)
       );
 
       barsG.selectAll("*").remove();
@@ -236,12 +240,16 @@
 
           /* name label inside or beside bar */
           var label = d.title.replace(/^\d+\.\s*/, "");
+          var period = d.begin
+            ? (d.end && d.end !== d.begin ? " (" + d.begin + "–" + d.end + ")" : " (" + d.begin + ")")
+            : "";
+          var shortName = label.length > 22 ? label.slice(0, 20) + "…" : label;
           namesG.append("text")
             .attr("x", -4).attr("y", r.y + ROW_H - 3)
             .attr("text-anchor", "end")
             .attr("font-size", "10px").attr("fill", "#444")
             .style("pointer-events", "none")
-            .text(label.length > 30 ? label.slice(0, 28) + "…" : label);
+            .text(shortName + period);
         }
       });
     }
