@@ -12,6 +12,19 @@ build/
 # Site output (published via gh-pages branch, not committed to main)
 lemma_extractor/_site/
 
+# Per-page HTML/hOCR parse cache (build.py / group_lemmas)
+lemma_extractor/.cache/
+
+# LLM structured extraction output
+parsed/
+
+# PDF exploration cache / preview artefacts
+pdf_sourcs/cache/
+pdf_sourcs/schuttepdfs.tar.gz
+lemma_extractor/preview/
+.restore_tmp/
+*.log
+
 # macOS
 .DS_Store
 

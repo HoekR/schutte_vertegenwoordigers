@@ -3,10 +3,10 @@ Phase 1 (hOCR variant) — Parse Tesseract hOCR output into annotated line objec
 
 Tesseract does not preserve the leading-space indentation convention used in the
 original HTML files.  Instead, each ``ocr_line`` span carries a ``bbox`` attribute
-with the pixel x-coordinate of the line's left edge.  This module converts those
+with the pixel coordinates of the line.  This module converts left-edge
 x-coordinates back into a synthetic leading-space count via per-page calibration,
-then delegates classification to the same ``_classify_line`` / ``parse_page``
-logic used by ``parse_html``.
+then delegates classification to the same ``_classify_line`` logic used by
+``parse_html``.
 
 Indentation levels (measured as x-offset from the page's left-margin baseline):
 
@@ -14,26 +14,24 @@ Indentation levels (measured as x-offset from the page's left-margin baseline):
     offset 30–130 px  →  indent  6   (body narrative + genealogy — visually merged)
     offset ≥ 130 px   →  indent 10   (sub-notes: secretaries, staff)
 
-The body / genealogy distinction (indent 5 vs 6–7 in parse_html) is not
-recoverable from x-coordinates alone, because both zones have essentially the same
-visual indentation in the printed book.  parse_hocr therefore returns indent=6 for
-all body-range lines; downstream callers should treat body and genealogy uniformly
-or apply a second-pass content heuristic if needed.
+Vertical position (y) disambiguates indent-0 numbered lines:
 
-The baseline x is estimated as the 5th percentile of x-values on the page,
-excluding right-justified outliers (x > page_width * 0.6).
+    y_frac ≥ FOOTNOTE_Y_FRAC  →  prefer footnote (page-bottom notes)
+    y_frac <  FOOTNOTE_Y_FRAC →  allow footnote→lemma_entry promotion
+
+The body / genealogy distinction (indent 5 vs 6–7 in parse_html) is not
+recoverable from x-coordinates alone.
 
 API mirrors parse_html.parse_page():
 
     from lemma_extractor.parse_hocr import parse_page
     lines = parse_page(hocr_path, corpus="bl")
-    # → list of dicts with keys: zone, text, indent, raw, x_offset, low_conf
+    # → zone, text, indent, raw, x_offset, y0, y_frac, page_h, low_conf
 """
 
 from __future__ import annotations
 
 import re
-import statistics
 from pathlib import Path
 
 from lemma_extractor.parse_html import _classify_line
@@ -42,36 +40,45 @@ from lemma_extractor.parse_html import _classify_line
 
 # x-offset thresholds (pixel distance from page baseline at 2× scan resolution)
 _BODY_THRESHOLD = 30   # offset below this → indent 0
-_SUB_THRESHOLD  = 130  # offset above this → indent 10 (sub_note)
+_SUB_THRESHOLD = 130   # offset above this → indent 10 (sub_note)
+
+# Fraction of page height: lines at or below this band are page-bottom footnotes.
+# Empirically ~0.78 separates body wrap from note blocks (HYBRID_PLAN step 2).
+FOOTNOTE_Y_FRAC = 0.78
 
 # Synthetic indent values passed to _classify_line
 _INDENT_MARGIN = 0
-_INDENT_BODY   = 5   # maps to body in _classify_line (indent ≤ 5 → body)
-_INDENT_SUB    = 10
+_INDENT_BODY = 5   # maps to body in _classify_line (indent ≤ 5 → body)
+_INDENT_SUB = 10
 
 # hOCR regex patterns
 _LINE_SPLIT = re.compile(r"class='ocr_line'")
-_LINE_X_RE  = re.compile(r'title="bbox (\d+)\s+\d+\s+(\d+)')   # x_left, x_right
-_WORD_RE    = re.compile(r"class='ocrx_word'[^>]*title='[^']*x_wconf\s+(\d+)[^']*'>([^<]+)<")
-_PAGE_W_RE  = re.compile(r"class='ocr_page'[^>]*title='[^>]*bbox 0 0 (\d+)")
+_LINE_BBOX_RE = re.compile(r'title="bbox (\d+)\s+(\d+)\s+(\d+)\s+(\d+)')
+_WORD_RE = re.compile(
+    r"class='ocrx_word'[^>]*title='[^']*x_wconf\s+(\d+)[^']*'>([^<]+)<"
+)
+_PAGE_BOX_RE = re.compile(r"class='ocr_page'[^>]*title='[^>]*bbox 0 0 (\d+)\s+(\d+)")
 
 
 # ── internal helpers ──────────────────────────────────────────────────────────
 
-def _parse_lines(raw: str) -> list[tuple[int, str, list[tuple[str, int]]]]:
-    """Return list of (x_left, line_text, word_confs) for every ocr_line in raw."""
-    page_w_m = _PAGE_W_RE.search(raw)
-    page_w = int(page_w_m.group(1)) if page_w_m else 9999
+def _parse_lines(
+    raw: str,
+) -> tuple[int, int, list[tuple[int, int, int, str, list[tuple[str, int]]]]]:
+    """Return (page_w, page_h, lines) with lines as (x0, y0, y1, text, word_confs)."""
+    page_m = _PAGE_BOX_RE.search(raw)
+    page_w = int(page_m.group(1)) if page_m else 9999
+    page_h = int(page_m.group(2)) if page_m else 9999
 
-    result = []
+    result: list[tuple[int, int, int, str, list[tuple[str, int]]]] = []
     for chunk in _LINE_SPLIT.split(raw)[1:]:
-        bm = _LINE_X_RE.search(chunk)
+        bm = _LINE_BBOX_RE.search(chunk)
         if not bm:
             continue
-        x = int(bm.group(1))
+        x0, y0, _x1, y1 = (int(bm.group(i)) for i in range(1, 5))
         # Skip lines whose left edge is in the right 40% of the page
         # (chapter/section headings that are centred or right-justified).
-        if x > page_w * 0.6:
+        if x0 > page_w * 0.6:
             continue
         words_and_conf: list[tuple[str, int]] = [
             (m.group(2).strip(), int(m.group(1)))
@@ -81,13 +88,13 @@ def _parse_lines(raw: str) -> list[tuple[int, str, list[tuple[str, int]]]]:
         if not words_and_conf:
             continue
         line_text = " ".join(w for w, _ in words_and_conf)
-        result.append((x, line_text, words_and_conf))
-    return result
+        result.append((x0, y0, y1, line_text, words_and_conf))
+    return page_w, page_h, result
 
 
-def _baseline_x(lines: list[tuple[int, str, list]]) -> int:
+def _baseline_x(lines: list[tuple[int, int, int, str, list]]) -> int:
     """Estimate the page left-margin as the 5th-percentile x across all lines."""
-    xs = [x for x, _, _ in lines]
+    xs = [x for x, *_ in lines]
     if not xs:
         return 0
     xs.sort()
@@ -101,6 +108,56 @@ def _x_to_indent(offset: int) -> int:
     if offset < _SUB_THRESHOLD:
         return _INDENT_BODY
     return _INDENT_SUB
+
+
+def _followed_by_body(lines: list[dict], i: int) -> bool:
+    for j in range(i + 1, len(lines)):
+        nxt = lines[j]
+        if nxt["zone"] in ("blank", "page_number"):
+            continue
+        return nxt["indent"] >= 5
+    return False
+
+
+def _resolve_entry_footnote(lines: list[dict]) -> None:
+    """Disambiguate indent-0 numbered lines using y-band + lookahead.
+
+    - Above the footnote band: promote footnote→lemma_entry when followed by body
+      (same rule as parse_html), unless the line looks like a typical note.
+    - In the footnote band: force footnote only for note-like wording; keep
+      person entries that merely start near the page bottom.
+    """
+    # Imported lazily to avoid a hard cycle if zone_correct ever imports parse_hocr helpers
+    import re
+
+    note_re = re.compile(
+        r"^\d+[a-z]?\.\s+"
+        r"(?:"
+        r"(?:Zijn|Haar|Hun|Hunne)\s+verbaal"
+        r"|Verbaal\b"
+        r"|(?:Res|Ress|Miss)\.?\s"
+        r"|Zie\s+ook\b"
+        r"|Getuigen\b"
+        r")",
+        re.IGNORECASE,
+    )
+
+    for i, ln in enumerate(lines):
+        y_frac = ln.get("y_frac")
+        in_band = y_frac is not None and y_frac >= FOOTNOTE_Y_FRAC
+        followed = _followed_by_body(lines, i)
+        note_like = bool(note_re.match(ln.get("text", "")))
+
+        if ln["zone"] == "footnote" and ln["indent"] == 0:
+            if followed and not in_band and not note_like:
+                ln["zone"] = "lemma_entry"
+                ln["zone_reason"] = "hocr_promote_entry"
+            elif in_band or note_like:
+                ln["zone_reason"] = "hocr_y_footnote"
+        elif ln["zone"] == "lemma_entry" and ln["indent"] == 0 and in_band:
+            if note_like and not followed:
+                ln["zone"] = "footnote"
+                ln["zone_reason"] = "hocr_y_demote_footnote"
 
 
 # ── public API ────────────────────────────────────────────────────────────────
@@ -124,14 +181,18 @@ def parse_page(path: Path, corpus: str, conf_threshold: int = 80) -> list[dict]:
 
         zone        str   same zone names as parse_html
         text        str   stripped OCR text
-        indent      int   synthetic leading-space count (0, 6, or 10)
+        indent      int   synthetic leading-space count (0, 5, or 10)
         raw         str   the synthetic padded line passed to _classify_line
         x_offset    int   pixel offset from page baseline
+        y0          int   top of line bbox
+        y_frac      float y0 / page_h
+        page_h      int   page height in pixels
         low_conf    list  [(word, confidence), …] for words below threshold
+        zone_reason str   optional; set when y-band overrides zone
     """
     raw = path.read_text(encoding="utf-8", errors="replace")
 
-    hocr_lines = _parse_lines(raw)
+    _page_w, page_h, hocr_lines = _parse_lines(raw)
     if not hocr_lines:
         return []
 
@@ -139,13 +200,16 @@ def parse_page(path: Path, corpus: str, conf_threshold: int = 80) -> list[dict]:
     result: list[dict] = []
     prev_zone = "body"
 
-    for x, text, wconfs in hocr_lines:
-        offset = x - baseline
+    for x0, y0, _y1, text, wconfs in hocr_lines:
+        offset = x0 - baseline
         indent = _x_to_indent(offset)
-        padded = " " * indent + text   # mimic HTML leading-space convention
+        padded = " " * indent + text  # mimic HTML leading-space convention
 
         annotated = _classify_line(padded, corpus, prev_zone)
         annotated["x_offset"] = offset
+        annotated["y0"] = y0
+        annotated["y_frac"] = y0 / page_h if page_h else 0.0
+        annotated["page_h"] = page_h
         annotated["low_conf"] = [
             (w, c) for w, c in wconfs if c < conf_threshold
         ]
@@ -153,15 +217,5 @@ def parse_page(path: Path, corpus: str, conf_threshold: int = 80) -> list[dict]:
         if annotated["zone"] not in ("blank", "page_number"):
             prev_zone = annotated["zone"]
 
-    # Re-use parse_html's second-pass footnote→lemma_entry fix
-    for i, ln in enumerate(result):
-        if ln["zone"] == "footnote" and ln["indent"] == 0:
-            for j in range(i + 1, len(result)):
-                nxt = result[j]
-                if nxt["zone"] in ("blank", "page_number"):
-                    continue
-                if nxt["indent"] >= 5:
-                    ln["zone"] = "lemma_entry"
-                break
-
+    _resolve_entry_footnote(result)
     return result

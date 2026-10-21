@@ -6,14 +6,12 @@ Strategy
 - For each lemma (sorted by schuttenr), find the `start` text in the content
   and wrap it: `<start schuttenr="N">{text}</start>`.
 - Skip lemmas whose tag is already present.
-- Try four match variants (exact / stripped / double-encoded / both) to cope
-  with mixed encoding artefacts in the source files.
+- Try encoding variants (exact / demangled Excel / cp1252+latin-1 mangling)
+  and whitespace-flexible regex, then a lemma-nr + ASCII fingerprint fallback.
 
-Double-encoding artefact: the binnenland XML was saved as a Latin-1 file
-that had already been decoded from UTF-8, producing sequences like
-  é → UTF-8 bytes C3 A9 → read as Latin-1 → "Ã©"
-The `start` column in the Excel has the original correct unicode. We therefore
-also try encoding the search string with this transformation before giving up.
+Encoding artefacts:
+- Excel may already contain mojibake (``FranÃ§ois``) while XML has Unicode.
+- Binnenland tagged XML often has triple mojibake (``latin-1 ×2 + cp1252``).
 """
 from __future__ import annotations
 
@@ -21,13 +19,11 @@ import re
 from pathlib import Path
 from typing import Any
 
+from lemma_extractor.read_excel import schutte_nr_sort_key
+
 
 def _cp1252_mangle(text: str) -> str:
-    """One round of cp1252 mangling: encode as UTF-8, decode as cp1252.
-
-    'é' (U+00E9)  →  UTF-8 C3 A9  →  cp1252 decode  →  'Ã©'
-    This matches files that were saved as UTF-8 but processed through cp1252 once.
-    """
+    """One round of cp1252 mangling: encode as UTF-8, decode as cp1252."""
     try:
         return text.encode("utf-8").decode("cp1252")
     except (UnicodeDecodeError, UnicodeEncodeError):
@@ -35,17 +31,29 @@ def _cp1252_mangle(text: str) -> str:
 
 
 def _cp1252_mangle2(text: str) -> str:
-    """Two rounds of cp1252 mangling.
-
-    'é'  →  'Ã©'  →  'ÃƒÂ©'
-    This matches files processed through cp1252 twice (e.g. binnenland tagged XML).
-    """
+    """Two rounds of cp1252 mangling (``é`` → ``ÃƒÂ©``)."""
     return _cp1252_mangle(_cp1252_mangle(text))
 
 
-def _normalise_ws(text: str) -> str:
-    """Collapse runs of whitespace to a single space."""
-    return re.sub(r"\s+", " ", text).strip()
+def _nl_triple_mangle(text: str) -> str:
+    """Match binnenland tagged XML: latin-1, latin-1, then cp1252."""
+    s = text
+    for codec in ("latin-1", "latin-1", "cp1252"):
+        try:
+            s = s.encode("utf-8").decode(codec)
+        except (UnicodeDecodeError, UnicodeEncodeError):
+            return text
+    return s
+
+
+def _demangle(text: str) -> str:
+    """Reverse one mojibake layer (Excel ``FranÃ§ois`` → ``François``)."""
+    for codec in ("cp1252", "latin-1"):
+        try:
+            return text.encode(codec).decode("utf-8")
+        except (UnicodeDecodeError, UnicodeEncodeError):
+            continue
+    return text
 
 
 def _read_xml(path: Path) -> str:
@@ -59,6 +67,47 @@ def _read_xml(path: Path) -> str:
         return raw.decode("utf-8")
     except UnicodeDecodeError:
         return raw.decode("cp1252", errors="replace")
+
+
+def _start_variants(start_text: str) -> list[str]:
+    """Build unique search strings for a lemma start line."""
+    dem = _demangle(start_text)
+    variants = [
+        start_text,
+        dem,
+        _cp1252_mangle(start_text),
+        _cp1252_mangle2(start_text),
+        _nl_triple_mangle(start_text),
+        _cp1252_mangle(dem),
+        _cp1252_mangle2(dem),
+        _nl_triple_mangle(dem),
+    ]
+    return list(dict.fromkeys(v for v in variants if v))
+
+
+def _ws_flexible_pattern(variant: str) -> str:
+    """Escape *variant* but allow flexible whitespace; digits may be glued."""
+    # Split on whitespace; between tokens allow \\s* (Excel "1644 1249" ↔ XML "16441249")
+    parts = re.split(r"\s+", variant.strip())
+    return r"\s*".join(re.escape(p) for p in parts if p)
+
+
+def _nr_fingerprint_pattern(schuttenr: Any, start_text: str) -> str | None:
+    """Fallback: ``N.\\s+`` + first distinctive ASCII word from the start line."""
+    m = re.match(r"^(\d+)\.\s*(.*)$", start_text.strip())
+    if not m:
+        return None
+    nr, rest = m.group(1), m.group(2)
+    if str(schuttenr) != nr and not str(schuttenr).startswith(nr):
+        # still use Excel nr prefix when present
+        nr = str(schuttenr) if isinstance(schuttenr, int) else nr
+    words = re.findall(r"[A-Za-z]{3,}", rest)
+    if not words:
+        return None
+    # Prefer a name-like token (not Mr/van/de)
+    skip = {"van", "den", "der", "des", "het", "the", "and", "als", "mr", "heer"}
+    pick = next((w for w in words if w.lower() not in skip), words[0])
+    return rf'(?<![0-9"]){re.escape(str(nr))}\.\s+[^\n<]{{0,120}}?{re.escape(pick)}'
 
 
 def tag_corpus(
@@ -78,7 +127,7 @@ def tag_corpus(
     content = _read_xml(xml_path)
     stats: dict[str, Any] = {"tagged": 0, "skipped": 0, "not_found": []}
 
-    for lemma in sorted(lemmas, key=lambda r: r["schuttenr"]):
+    for lemma in sorted(lemmas, key=lambda r: schutte_nr_sort_key(r["schuttenr"])):
         schuttenr = lemma["schuttenr"]
         start_text = (lemma.get("start") or "").strip()
 
@@ -95,15 +144,7 @@ def tag_corpus(
                 print(f"  [skip]  nr {schuttenr}: already tagged")
             continue
 
-        # Build search variants in order of preference.
-        # Each variant is tried as an exact string first (fast path).
-        # Then we try a regex that allows \s+ between tokens (handles extra spaces).
-        _m1 = _cp1252_mangle(start_text)
-        _m2 = _cp1252_mangle2(start_text)
-        exact_variants = list(dict.fromkeys(filter(None, [
-            start_text, _m1, _m2,
-        ])))
-
+        exact_variants = _start_variants(start_text)
         found = False
         for variant in exact_variants:
             if variant in content:
@@ -116,10 +157,8 @@ def tag_corpus(
                 break
 
         if not found:
-            # Whitespace-flexible regex search: replace each run of spaces/tabs
-            # in the escaped pattern with \s+ so "7.   Gideon" matches "7. Gideon".
             for variant in exact_variants:
-                pattern = re.sub(r"\s+", r"\\s+", re.escape(variant))
+                pattern = _ws_flexible_pattern(variant)
                 try:
                     m = re.search(pattern, content)
                 except re.error:
@@ -133,6 +172,36 @@ def tag_corpus(
                         print(f"  [ok-ws] nr {schuttenr}: tagged '{original[:60]}'")
                     found = True
                     break
+
+        if not found:
+            fp = _nr_fingerprint_pattern(schuttenr, start_text)
+            if fp:
+                # Prefer demangled fingerprint search on demangled rest too
+                for seed in (start_text, _demangle(start_text)):
+                    fp = _nr_fingerprint_pattern(schuttenr, seed)
+                    if not fp:
+                        continue
+                    try:
+                        m = re.search(fp, content)
+                    except re.error:
+                        continue
+                    if m:
+                        # Wrap from lemma nr through end of matched span's first line chunk
+                        original = m.group(0)
+                        # Extend to end of line (before <br>) when match is a prefix
+                        end = m.end()
+                        br = content.find("<br", end)
+                        if br != -1 and br - end < 200:
+                            original = content[m.start() : br]
+                        else:
+                            original = content[m.start() : end]
+                        wrapped = f'<start schuttenr="{schuttenr}">{original}</start>'
+                        content = content.replace(original, wrapped, 1)
+                        stats["tagged"] += 1
+                        if verbose:
+                            print(f"  [ok-fp] nr {schuttenr}: tagged '{original[:60]}'")
+                        found = True
+                        break
 
         if not found:
             stats["not_found"].append(schuttenr)

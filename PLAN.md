@@ -116,10 +116,12 @@ uv run python main.py assemble --corpus all      # → *_output_hocr.xml
 
 ## Open issues / known gaps
 
-1. **BL not-found lemmas (nrs 1, 275, 519, 660)**: start lines not matched in source XML.
-   Manual inspection needed.
-2. **NL 26 unextracted lemmas**: start lines missing in tagged XML; may require re-tagging
-   from `schutte_binnenland_output.xml` using the untagged source.
+1. **BL / NL lemma tagging**: improved matcher (encoding demangle, triple mojibake, digit-glue
+   whitespace, nr fingerprint). BL 1/275/519/660 tagged; NL gaps closed including pages
+   **0008** and **0202** inserted from HTML for lemmas 7 and 167. Verify should be complete.
+2. **NL tagged XML page coverage**: many HTML pages still absent from
+   `schutte_binnenland_output_tagged.xml` (sparse legacy assemble); site build uses HTML
+   directly so this mainly affects the `lemmas/` XML extract path.
 3. **hOCR ↔ HTML reconciliation**: OCR quality for some pages may be higher than HTML;
    a future step could diff `*_output_hocr.xml` against HTML source to identify corrections.
 

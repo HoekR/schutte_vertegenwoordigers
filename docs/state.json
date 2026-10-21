@@ -1,0 +1,18 @@
+{
+  "project": "PROJECT_NAME",
+  "last_updated": "",
+  "active_focus": "Set the current focus with `uv run python scripts/svz.py focus \"...\"`.",
+  "tasks": [
+    {
+      "id": "S0",
+      "title": "Project setup",
+      "status": "todo",
+      "notes": "Initialize manifest, data paths, and first reproducible checks."
+    }
+  ],
+  "metrics": [],
+  "blockers": [],
+  "next_actions": [
+    "Run `uv run python -m data_io.check` after editing data_manifest.toml."
+  ]
+}

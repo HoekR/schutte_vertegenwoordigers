@@ -9,10 +9,16 @@ dependencies = [
     "pandas>=2.0",
     "jinja2>=3.1",
     "pyphen>=0.17.2",
+    "pdfplumber>=0.11.10",
+    "matplotlib>=3.11.0",
+    "fuzzy-search==1.3.2",
+    "numpy>=2.4.4",
+    "rapidfuzz>=3.14.6",
 ]
 
 [project.scripts]
 lemma-extractor = "lemma_extractor.main:main"
+schutte-structure-ui = "structure_labeller.app:main"
 
 [tool.uv]
 package = true
@@ -21,5 +27,25 @@ package = true
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
+[project.optional-dependencies]
+llm = [
+    "instructor>=1.7,<1.8",
+    "openai>=1.60,<2",
+    "pydantic>=2.0",
+    "tornado>=6.4",
+]
+review = [
+    "flask>=3.0",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.3.0",
+]
+
 [tool.hatch.build.targets.wheel]
-packages = ["src/lemma_extractor"]
+packages = ["src/lemma_extractor", "structure_labeller"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"structure_labeller/templates" = "structure_labeller/templates"
+"structure_labeller/static" = "structure_labeller/static"

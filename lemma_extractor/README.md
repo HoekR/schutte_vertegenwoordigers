@@ -43,6 +43,7 @@ lemma_extractor/
     export_json.py      Export enriched data to JSON
     extract_lemmas.py   Split tagged XML into individual lemma XML files
     group_lemmas.py     Group annotated lines into per-lemma records (HTML path)
+    lemma_schema.py     Pydantic schema for LLM structured extraction
     linkify_refs.py     Hyperlink N.N.B.W. / Van der Aa citations
     parse_hocr.py       Parse Tesseract hOCR → annotated line objects
     parse_html.py       Parse source HTML pages → annotated line objects
@@ -50,6 +51,7 @@ lemma_extractor/
     read_excel.py       Load lemma metadata from Dijkstra Excel workbooks
     tag_xml.py          Insert <start schuttenr="N"> markers into corpus XML
     verify.py           Smoke-test extracted lemma files against Excel metadata
+  parse_lemmas_instructor.py  Local Ollama + instructor structured parse
 
 schutte_binnenland/     NL HTML source pages + assembled / tagged corpus XMLs
 schutte_buitenland/     BL HTML source pages + assembled / tagged corpus XMLs
@@ -57,6 +59,7 @@ schutte_binnenland_ocr/ NL Tesseract hOCR files (221 pages)
 schutte_buitenland_ocr/ BL Tesseract hOCR files (502 pages)
 lemmas/nl/              Individual lemma XML files, NL corpus (316 files)
 lemmas/bl/              Individual lemma XML files, BL corpus (683 files)
+parsed/                 LLM structured JSON/XML (git-ignored)
 dijkstra_bew/           Excel workbooks with lemma metadata (Dijkstra)
 _site/                  Generated static website (git-ignored)
 ```
@@ -155,6 +158,45 @@ Not-found schuttenrs in BL: 1, 275, 519, 660 (start lines not matched in source 
 
 ---
 
+## Pipeline C — Structured LLM parse (local OpenAI-compatible + instructor)
+
+Optional enrichment: extract birth/death/family/career fields from
+`lemmas/{nl,bl}/*.xml` into JSON (and optionally Dutch XML matching
+`parsed_data_ollama_test.xml`).
+
+Works with **Ollama**, **LM Studio**, **llama.cpp**, or **MLX** — anything that
+exposes an OpenAI-compatible `/v1/chat/completions` endpoint.
+
+```bash
+uv sync --extra llm
+
+# --- LM Studio (often faster / better Metal use on Apple Silicon) ---
+# 1. Open LM Studio, download e.g. Qwen2.5-Coder 7B Instruct
+# 2. Load the model, Developer → Start Server (port 1234)
+# 3. Copy the model id from LM Studio, then:
+uv run python parse_lemmas_instructor.py --provider lmstudio \
+    --model "qwen2.5-coder-7b-instruct" --corpus nl --nr 13 --xml
+
+# --- Ollama ---
+ollama pull qwen2.5-coder:7b
+uv run python parse_lemmas_instructor.py --corpus nl --nr 13 --xml
+
+# Small batch, resume-friendly
+uv run python parse_lemmas_instructor.py --provider lmstudio \
+    --model "qwen2.5-coder-7b-instruct" --corpus nl --limit 10 --resume --xml
+```
+
+| `--provider` | Default URL |
+|--------------|-------------|
+| `ollama` | `http://localhost:11434/v1` |
+| `lmstudio` | `http://localhost:1234/v1` |
+| `llamacpp` / `mlx` | `http://localhost:8080/v1` |
+
+Output: `parsed/nl/nl_0013.json` (+ `.xml` with `--xml`).
+Schema: `src/lemma_extractor/lemma_schema.py` (`ParsedLemma`).
+
+---
+
 ## CLI reference
 
 ```
@@ -172,4 +214,12 @@ uv run python build.py [--site-dir _site] [--pagefind]
 
   Builds the full static website from HTML source pages.
   Use --pagefind to run Pagefind indexing after the build (requires pagefind CLI).
+```
+
+```
+uv run python parse_lemmas_instructor.py [--provider ollama|lmstudio|llamacpp|mlx]
+                                         [--corpus nl|bl|all] [--nr N] [--limit N]
+                                         [--model NAME] [--base-url URL] [--xml] [--resume]
+
+  Structured extraction via local OpenAI-compatible LLM + instructor → parsed/
 ```

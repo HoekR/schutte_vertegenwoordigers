@@ -32,7 +32,7 @@
     <ul class="index-list" style="margin-top:0.5rem; padding-left:1.5rem;">
       {% for p in f.persons %}
       <li>
-        <a href="{{ root }}{{ p.corpus }}/{{ '%04d' % p.nr }}/index.html">{{ p.name }}</a>
+        <a href="{{ root }}{{ p.corpus }}/{{ p.slug }}/index.html">{{ p.name }}</a>
         {% if p.begin or p.end %}
           <span class="ref-label">
             {{ p.begin or '?' }}–{{ p.end or '?' }}

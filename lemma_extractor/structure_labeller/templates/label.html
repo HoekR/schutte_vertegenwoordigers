@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+{% block title %}{{ row.example_id }} — structure{% endblock %}
+{% block content %}
+<nav class="pager">
+  {% if prev_id %}
+  <a class="btn secondary" href="{{ url_for('label_record', example_id=prev_id, mode=mode) }}">← Previous</a>
+  {% else %}
+  <span class="btn secondary disabled">← Previous</span>
+  {% endif %}
+  <span class="position">Lemma {{ index + 1 }} of {{ stats.total }}{% if mode == 'sample' %} <span class="muted">(sample)</span>{% endif %}</span>
+  {% if next_id %}
+  <a class="btn secondary" href="{{ url_for('label_record', example_id=next_id, mode=mode) }}">Next →</a>
+  {% else %}
+  <span class="btn secondary disabled">Next →</span>
+  {% endif %}
+</nav>
+
+<section class="meta card">
+  <div class="meta-grid">
+    <div><span class="label">Lemma</span><code>{{ row.example_id }}</code></div>
+    <div><span class="label">Corpus</span>{{ row.corpus }}</div>
+    <div><span class="label">Chapter</span>{{ row.toc_chapter or "—" }}</div>
+    <div><span class="label">Source page</span>{{ row.source_file or "—" }}</div>
+    <div><span class="label">Excel startregel</span>{{ row.excel_startregel if row.excel_startregel is not none else "—" }}</div>
+    <div><span class="label">Soft breaks</span>{{ soft_n }} whiteline(s)</div>
+    <div><span class="label">State file</span><code class="path">{{ state_file }}</code></div>
+  </div>
+  <p class="notes-hint">
+    Review <b>zone structure</b>. Whitelines (∅) are soft separators — assign exactly one role each.
+    Whole-lemma verdict defaults to <b>ok</b>; switch to <b>issue</b> if something is wrong.
+    Line column: <b>#</b> = preview index, <b>p.L</b> = page.line in HTML parse.
+  </p>
+</section>
+
+<form id="label-form" class="card"
+      data-example-id="{{ row.example_id }}"
+      data-next-id="{{ next_id or '' }}"
+      data-mode="{{ mode }}">
+<section class="structure">
+  <h2>Parsed structure</h2>
+  {% if structure %}
+  <ol class="zone-list">
+    {% for ln in structure %}
+      {% if ln.zone == "soft_break" %}
+      <li class="zone-soft" title="whiteline soft separator">
+        <span class="line-no" title="preview #{{ ln.line_no }}">{{ ln.line_no }}</span>
+        <span class="page-line" title="HTML page {{ ln.page }} line {{ ln.page_line }}">{{ ln.page }}.{{ ln.page_line }}</span>
+        <span class="zone-tag">∅ soft</span>
+        <span class="soft-rule"></span>
+        <label class="sep-role">
+          <span class="muted">role</span>
+          <select name="sep_{{ ln.sep_index }}" data-sep-index="{{ ln.sep_index }}">
+            <option value="">—</option>
+            {% for rid, rlabel in separator_roles %}
+            <option value="{{ rid }}" {{ 'selected' if sep_map.get(ln.sep_index|string) == rid else '' }}>{{ rlabel }}</option>
+            {% endfor %}
+          </select>
+        </label>
+      </li>
+      {% else %}
+      <li class="zone-{{ ln.zone }}">
+        <span class="line-no" title="preview #{{ ln.line_no }}">{{ ln.line_no }}</span>
+        <span class="page-line" title="HTML page {{ ln.page }} line {{ ln.page_line }}">{{ ln.page }}.{{ ln.page_line }}</span>
+        <span class="zone-tag">{{ ln.zone }}</span>
+        <span class="zone-text">{{ ln.text }}</span>
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ol>
+  {% else %}
+  <p class="muted">No structure lines found for this start page (check TOC source / HTML).</p>
+  {% endif %}
+</section>
+
+<section class="headers-side">
+  <h2>Header cross-check <span class="status-pill {{ 'done' if row.header_status == 'pass' else ('pending' if row.header_status == 'warn' else 'fail') }}">{{ row.header_status }}</span></h2>
+  <div class="meta-grid">
+    <div><span class="label">Excel display_name</span>{{ row.display_name or "—" }}</div>
+    <div><span class="label">TOC title</span>{{ row.toc_title or "—" }}</div>
+    <div><span class="label">Persons index</span>{{ row.persons_name or "(no subject entry)" }}</div>
+    <div><span class="label">Functie</span>{{ row.excel_functie or "—" }}</div>
+    <div><span class="label">vs TOC</span>{{ row.header_checks.vs_toc }}</div>
+    <div><span class="label">vs persons</span>{{ row.header_checks.vs_persons if row.header_checks.vs_persons is not none else "—" }}</div>
+  </div>
+  {% if row.header_checks.flags %}
+  <p class="notes-hint">Flags: {% for f in row.header_checks.flags %}<code>{{ f }}</code>{% if not loop.last %}, {% endif %}{% endfor %}</p>
+  {% endif %}
+</section>
+
+  <div class="form-header">
+    <h2>Structure verdict</h2>
+    <span class="status-pill {{ 'done' if row.labelled else 'pending' }}">{{ 'Saved' if row.labelled else 'Unsaved' }}</span>
+  </div>
+
+  <fieldset class="verdict-box">
+    <legend>Verdict</legend>
+    <label class="check"><input type="radio" name="verdict" value="ok" {{ 'checked' if verdict == 'ok' else '' }}>
+      <b>ok</b> — zones / soft breaks look right for this lemma</label>
+    <label class="check"><input type="radio" name="verdict" value="issue" {{ 'checked' if verdict == 'issue' else '' }}>
+      <b>issue</b> — mis-zoned entry/footnote, missing block, bad soft break, …</label>
+    <label class="check"><input type="radio" name="verdict" value="skip" {{ 'checked' if verdict == 'skip' else '' }}>
+      <b>skip</b> — not reviewing now</label>
+  </fieldset>
+
+  <div class="row checks">
+    <label class="check"><input type="checkbox" name="uncertain" id="uncertain" {{ 'checked' if row.uncertain else '' }}> uncertain</label>
+  </div>
+
+  <label>Note
+    <textarea name="note" id="note" rows="3" placeholder="What is wrong with the structure (or why skip)…">{{ row.note }}</textarea>
+  </label>
+
+  <div class="form-actions">
+    <button type="submit" class="btn primary">Save &amp; next</button>
+    <button type="button" class="btn secondary" id="btn-save-stay">Save</button>
+    <span id="save-status" class="save-status"></span>
+  </div>
+</form>
+
+<script src="{{ url_for('static', filename='label.js') }}"></script>
+{% endblock %}

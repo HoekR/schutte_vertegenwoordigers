@@ -1,0 +1,320 @@
+{
+  "format": "schutte_structure_reviews_v1",
+  "updated_at": "2026-10-20T14:34:12.906017+00:00",
+  "annotations": {
+    "nl:1": {
+      "verdict": "issue",
+      "note": "entry: name is \"1. Quintin Taffin, heer van la Pré\" rest is body text\nGenealogy runs from \"Zoon van Denis Taffin, lic. ès lois, heer van la Pré, advocaat, ontvanger der\"\nto \"1563 en 1557, en Catherine Alegambe.\"\nbefore: “career mislabelled as genealogy”\nline \"tractement op/1600 werd vastgesteld1 en hij zijn instructie van de\" : \"vastgesteld1\" is 'vastgesteld' and 1 for footnote\nline \"L. Taffin de Vezon, Généalogie de la Taffin de 1300 à 1926, Pau, 1926, 43.\" is sources\nperiod_header: split between \"1593-1597\" (period) and \"agent\" (function)",
+      "uncertain": false,
+      "labelled": true,
+      "separators": {
+        "0": "page_break",
+        "1": "page_break",
+        "2": "page_break",
+        "3": "page_break",
+        "4": "before_period"
+      },
+      "updated_at": "2026-10-17T14:57:30.208935+00:00"
+    },
+    "nl:2": {
+      "verdict": "issue",
+      "note": "entry: split \"2.\" lemma number \"Lieven Calvart\" name, \", werd verbannen en ging naar Engeland, waar hij\" begin body\nline: \"N.N.B.W. IV, 392.\" source reference\nperiod_header: split  \"1598\" (period) | \"gedeputeerde\" (function)\n",
+      "uncertain": false,
+      "labelled": true,
+      "separators": {
+        "0": "other",
+        "1": "other",
+        "2": "other",
+        "3": "before_period"
+      },
+      "updated_at": "2026-10-17T15:01:09.430133+00:00"
+    },
+    "nl:3": {
+      "verdict": "issue",
+      "note": "Entry: split \"3.\" (lemma number) | \"Justinus van Nassau\" (name) |, \"geb. in 1559\" (birth year), \"student te Leiden 26 febr. 1576\" (life fact),\nline: \"en bracht rapport uit 5 juni 159810a ; werd bij res. 14 juli 1598 be-\" split \"1598\" (year/text) and \"10a\" (probably footnote)\nline: \"stad 11 juni 1625, f Leiden 26 juni 1631, begr. aldaar (Hoogl. k.).\"  \"f Leiden 26 juni 1631\" f = death year cross, rest place and date of death\ngenealogy: \"N.N.B.W. 1,1363 ; Dek, Nassau, 145.\" sources\nsub_note: \"Aerssen, nr. 5.\" reference to lemma number 5",
+      "uncertain": false,
+      "labelled": true,
+      "separators": {
+        "0": "before_period"
+      },
+      "updated_at": "2026-10-17T15:07:45.857487+00:00"
+    },
+    "nl:4": {
+      "verdict": "issue",
+      "note": "Entry: \"4. Mr. Johan van Oldenbarnevelt, (Engels) ridder (17 mei 1611), heer\" split \"4\" (lemma nr) | . |\"Mr. Johan van Oldenbarnevelt\" (name) |, |\"(Engels) ridder (17 mei 1611), heer\" (honorifics continues on next line through \"Guntherstein (1611) en Backum (1613),\"). This is entry_includes_titles\nBody: \"geb. in of bij Amersfoort 14 sept. 1547, woonde te 's-Gravenhage\" split \"geb. in of bij Amersfoort 14 sept. 1547\" (birth place and date), woonde te 's-Gravenhage\" (life fact, but regard as part of body)\nBody_as_genealogy line \"wijk, Noel de Caron, nr. 55, Mr. Jacob Valcke, Mr. Paulus Buys,\" through line \"bestand te Antwerpen op 9 april 1609; hoofdingeland 1589 en\"\n\nfootnote_glue on \"159812\"\n\nGenealogy starts at \"Zoon van Gerrit van\"\n\nGenealogy: \"hoogheemraad van Delfland 10 aug. 1593, f (onthoofd) 's-Graven-\" split \"hoogheemraad van Delfland 10 aug. 1593, \" (body) | \"f (onthoofd) 's-Graven-\" death date and place (continues next line) f is death_f\nsources_as_genealogy: \"N.N.B.W. V, 384; N.L. 1968, 382; Jb. 1973, 335; Jan den Tex, Oldenbarnevelt,\" \nsources_as_genealogy: \"Haarlem-Groningen, 1960-1972.\"\nPeriod_header: split \"1598-1613\" (period) |  \"agent, ordinaris ambassadeur 1609\" (functions)\n\n\n",
+      "uncertain": false,
+      "labelled": true,
+      "separators": {
+        "0": "before_footnote",
+        "1": "before_footnote",
+        "2": "page_break",
+        "3": "page_break",
+        "4": "before_period"
+      },
+      "updated_at": "2026-10-19T06:55:25.408092+00:00"
+    },
+    "nl:5": {
+      "verdict": "skip",
+      "note": "Entry: split \"5. Mr. François (Frans) baron (juli 1636) van Aerssen\" |, \" | \"(Frans) ridder\" is titles_as_body (continues next line)\nSUB__NOTE: \"van der Wolff, die bij res. 16 okt. 1629/500 toegelegd kreeg, en\" \ntill \"sub_note\" part of another lemma body. Not reviewing now",
+      "uncertain": false,
+      "labelled": true,
+      "separators": {
+        "0": "before_footnote",
+        "1": "before_footnote"
+      },
+      "updated_at": "2026-10-19T06:59:41.598322+00:00"
+    },
+    "nl:6": {
+      "verdict": "issue",
+      "note": "ENTRY:  split \"6. \" (lemma_nr) \"Mr. Cornells van der Mijle\" (Name) \", (Frans) ridder (1609), heer van de Mijle,\" (titles_as_body)\nBODY: \"geb. 's-Gravenhage in 1579\" (birth_year and place)\nGENALOGY_AS_BODY : \"genealogy naar Frankrijk, ontving instructie als zodanig 6 maart 1614, was\" through \" Brandenburgse gezant graaf Van Schwarzenberg te overleggen,\"\ngenealogy_as_death: split \"t\" (t_death) \"Parijs (?) 29 jan. 1634\" (death_date_and_place) \", begr. Langerak 7 juni 1634.\" (burial_place_and_date)\ngenealogy starts at: \"Zoon van Rutger van den Boetzelaer, \"\nsources_as_genealogy \"\"N.N.B.W. VIII, 147; J. W. des Tombe en C. W. L. baron van Boetzelaer, Het\" through\n\"geslacht Van den Boetzelaer, Assen, 1969, 206\"\n\nfootnote_glue: \"161027\"; \"162131\"; \"Croessen32.\";\"vermeld33\"; \n\n \n",
+      "uncertain": false,
+      "labelled": true,
+      "separators": {
+        "0": "before_footnote",
+        "1": "before_footnote",
+        "2": "page_break",
+        "3": "page_break"
+      },
+      "updated_at": "2026-10-19T07:12:26.491816+00:00"
+    },
+    "bl:5": {
+      "verdict": "issue",
+      "note": "1: \"geb. op Ie Maurier bij\" (birth_date)\n2: \"La Flèche in aug. 1566\" ((birth_date, continued)\n26: \"f\"  f_death_cross \"op Ie Maurier in \", death_date\n27: \"1636\" death_date continued | \", begr. St. Jean-en-Gréve (k.).\" (burial_date) genealogy_as_body\n28: \"Zoon van Jean Aubéry, \" start_genealogy\n39-42 sub_note_as_genealogy\n\n43: sub_note_as_body\n54: \"161514\" footnote_glue\n57: \"161515\" footnote_glue\n41: \"f 1687.\" f_death_cross\n42: \"f (gesneuveld)\" f_death_cross\n50: \"f in of na \" f_death_cross\n57:\" t (gesneuveld)\" t_death_cross\n",
+      "uncertain": false,
+      "labelled": true,
+      "separators": {
+        "0": "page_break",
+        "1": "page_break",
+        "2": "page_break"
+      },
+      "updated_at": "2026-10-19T08:55:52.372368+00:00"
+    },
+    "bl:15": {
+      "verdict": "issue",
+      "note": "1: \"(1656)33\" footnote_glue",
+      "uncertain": false,
+      "labelled": true,
+      "separators": {
+        "0": "before_footnote",
+        "1": "before_footnote",
+        "2": "page_break",
+        "3": "page_break",
+        "4": "page_break"
+      },
+      "updated_at": "2026-10-19T08:56:36.662184+00:00"
+    },
+    "bl:23": {
+      "verdict": "issue",
+      "note": "#2: \" geb. 1671/1672\" birth_date\n#39: \"f Parijs 1 sept. 1738\" f_death_cross, death_date\n#40: start_genealogy \"Zoon van Salomon d'Usson marquis de Bonna\" through\n#46: \" f Parijs 18 maart 1739\" f_death_cross\n#60: \"raad 1723 tot 6 sept.\"\n\nlemma maybe incomplete\n\n\n\n",
+      "uncertain": false,
+      "labelled": true,
+      "separators": {
+        "0": "page_break",
+        "1": "page_break"
+      },
+      "updated_at": "2026-10-19T09:10:45.063745+00:00"
+    },
+    "bl:52": {
+      "verdict": "issue",
+      "note": "#3: \"geb. Parijs 6 jan. 1759: birth_date\n#22: body_as_footnote\n#29: genealogy_as_body\n#34: genealogy_as_body\n#38: genealogy_as_body\n#43: \"f Lausanne begin 1837.\" f_death_cross, death_date\n#44: \"Zoon van Jean- Frédéric de la Tour\" begin_genealogy through #48\n#49: body_as_sources",
+      "uncertain": false,
+      "labelled": true,
+      "separators": {
+        "0": "before_footnote",
+        "1": "before_footnote",
+        "2": "before_footnote",
+        "3": "page_break",
+        "4": "page_break",
+        "5": "before_period"
+      },
+      "updated_at": "2026-10-19T09:17:17.209157+00:00"
+    },
+    "bl:92": {
+      "verdict": "issue",
+      "note": "#2: \"geb. 8 april 1649\" birth_date\n#6: genealogy_as_body\n#10: genealogy_as_body\n#11: genealogy_as_body\n#21: \"Zoon van George Berkeley lord Berkeley\" start_genealogy through #28\n#29: body_as_sources\n#30: genealogy_as_sub_note\n#13: \"f en\" f_death_cross\n#14: \"f van Gloucester;\" f_death_cross",
+      "uncertain": false,
+      "labelled": true,
+      "separators": {
+        "0": "page_break",
+        "1": "page_break",
+        "2": "before_period"
+      },
+      "updated_at": "2026-10-19T09:23:00.050376+00:00"
+    },
+    "bl:99": {
+      "verdict": "ok",
+      "note": "#2: \"geb. Liscar-\" birth_date\n#3: \"body ton (co. Meath) in 1672\" birth_date continued\n#7: genealogy_as_body\n#14: body_as_footnote\n#24: \"George 11714\" footnote_glue  \"tot f\" f_death_cross\n#41: probably pagenumber, not part of text\n#18: genealogy_as_body - #58\n\nprobably incomplete lemma",
+      "uncertain": false,
+      "labelled": true,
+      "separators": {
+        "0": "before_footnote",
+        "1": "before_footnote",
+        "2": "page_break",
+        "3": "page_break"
+      },
+      "updated_at": "2026-10-19T09:32:37.157966+00:00"
+    },
+    "bl:100": {
+      "verdict": "issue",
+      "note": "#1: \"geb. 18\" birth_date\n#2: \"april, ged. Londen (St. Martin's-in-the-Fields) 2 mei 1675,\" birth_date continued\n#23: \"1730, f 21 juni\" death_date f_death_cross \"begr.\" burial_date\n#24: \"East Raynham 27 juni 1738.\" burial_date continued\n#43: genealogy_as_sources",
+      "uncertain": false,
+      "labelled": true,
+      "separators": {
+        "0": "page_break",
+        "1": "page_break",
+        "2": "page_break",
+        "3": "before_period"
+      },
+      "updated_at": "2026-10-19T09:36:22.444912+00:00"
+    },
+    "bl:117": {
+      "verdict": "ok",
+      "note": "",
+      "uncertain": false,
+      "labelled": true,
+      "separators": {
+        "0": "before_period"
+      },
+      "updated_at": "2026-10-19T09:37:46.147374+00:00"
+    },
+    "bl:119": {
+      "verdict": "issue",
+      "note": "#2: \"geb. in 1744\" birth_date\n#18-#38 genealogy_as_body\n#39: \"Zoon van Sir Robert Eden\" start_genealogy through #42\n#43: genealogy_as_sources",
+      "uncertain": false,
+      "labelled": true,
+      "separators": {
+        "0": "page_break",
+        "1": "page_break"
+      },
+      "updated_at": "2026-10-19T11:32:50.425521+00:00"
+    },
+    "bl:240": {
+      "verdict": "issue",
+      "note": "#1: \"geb. Amsterdam 12\" birth_date\n#2: \"mei\" birth_date continued\n#2: \"1596508\" footnote_glue\n#12: genealogy_as_body\n#16-17: genealogy_as_sources\n\n",
+      "uncertain": false,
+      "labelled": true,
+      "separators": {
+        "0": "other",
+        "1": "before_footnote",
+        "2": "before_period",
+        "3": "before_period",
+        "4": "before_period",
+        "5": "other"
+      },
+      "updated_at": "2026-10-20T14:01:29.171446+00:00"
+    },
+    "bl:250": {
+      "verdict": "issue",
+      "note": "#2: \"geb. in 1736\" birth_date\n#13: body_as_footnote\n#17-#20: genealogy_as_footnote\n#20: \" t Lissabon 4 maart 1798 (1793?).\" t_death_cross death_date\n#26: genealogy_as_sources",
+      "uncertain": false,
+      "labelled": true,
+      "separators": {
+        "0": "before_footnote",
+        "1": "page_break",
+        "2": "page_break",
+        "3": "before_period"
+      },
+      "updated_at": "2026-10-20T14:05:54.371185+00:00"
+    },
+    "bl:274": {
+      "verdict": "skip",
+      "note": "no text available",
+      "uncertain": false,
+      "labelled": true,
+      "separators": {},
+      "updated_at": "2026-10-20T14:05:44.558054+00:00"
+    },
+    "bl:281": {
+      "verdict": "issue",
+      "note": "#1: \"ged. 's-Gravenhage\" birth_date\n#2: \"(Kl.k.) 27 aug. 1734\" birth_date\n#2: \"1734581\" footnote_glue\n",
+      "uncertain": false,
+      "labelled": true,
+      "separators": {
+        "0": "before_period",
+        "1": "before_period",
+        "2": "before_period"
+      },
+      "updated_at": "2026-10-20T14:08:12.664863+00:00"
+    },
+    "bl:294": {
+      "verdict": "issue",
+      "note": "at #10 and #28 new lemma, no header, not well judgeable",
+      "uncertain": false,
+      "labelled": true,
+      "separators": {
+        "0": "before_entry",
+        "1": "before_entry",
+        "2": "before_entry",
+        "3": "before_entry"
+      },
+      "updated_at": "2026-10-20T14:13:01.612053+00:00"
+    },
+    "bl:299": {
+      "verdict": "skip",
+      "note": "not a lemma, no text",
+      "uncertain": false,
+      "labelled": true,
+      "separators": {},
+      "updated_at": "2026-10-20T14:13:26.152304+00:00"
+    },
+    "bl:325": {
+      "verdict": "skip",
+      "note": "lemma incomplete and not reviewable",
+      "uncertain": false,
+      "labelled": true,
+      "separators": {},
+      "updated_at": "2026-10-20T14:14:11.820895+00:00"
+    },
+    "bl:369": {
+      "verdict": "issue",
+      "note": "#1: \"geb. Rhenen in\" birth_date\n#2: \"1601\" birth_date continued\n#2: genealogy_as_body\n#13-#29: genealogy_as_body\n#37-#39: genealogy_as_sources\n",
+      "uncertain": false,
+      "labelled": true,
+      "separators": {
+        "0": "other",
+        "1": "other",
+        "2": "other",
+        "3": "before_period",
+        "4": "before_period"
+      },
+      "updated_at": "2026-10-20T14:18:41.695550+00:00"
+    },
+    "bl:502": {
+      "verdict": "issue",
+      "note": "#2: \"geb. Asbo 25 april 1636\" birth_date\n#12-#13: period_header_as_body\n#16-#40: genealogy_as_body\n#40: \"f Stockholm 19 april,\" f_death_cross, death_date\n#46: genealogy_as_sources\n#48-#58: unclear if this is part of the lemma\n",
+      "uncertain": false,
+      "labelled": true,
+      "separators": {
+        "0": "other",
+        "1": "other",
+        "4": "other"
+      },
+      "updated_at": "2026-10-20T14:23:23.958954+00:00"
+    },
+    "bl:519": {
+      "verdict": "issue",
+      "note": "#1:  \"16441249\" footnote_glue\nunclear whether this lemma is complete",
+      "uncertain": false,
+      "labelled": true,
+      "separators": {
+        "0": "other",
+        "1": "before_period"
+      },
+      "updated_at": "2026-10-20T14:28:27.860825+00:00"
+    },
+    "bl:598": {
+      "verdict": "issue",
+      "note": "#1: \"geb. Florence\" birth_date\n#2: \"1618/1619\" birth_date continued\n#9: \"t na 12 aug. 1695\" t_death_cross death_date\n#19-#21: sub_note_as_genealogy\n#27-#28: period_header_as_footnote\n#29-#32: body_as_footnote\n#33: period_header_as_footnote\n#38-#41: genealogy_as_sources",
+      "uncertain": false,
+      "labelled": true,
+      "separators": {
+        "0": "before_footnote",
+        "1": "before_footnote",
+        "2": "page_break",
+        "3": "before_period",
+        "4": "before_period"
+      },
+      "updated_at": "2026-10-20T14:34:12.905974+00:00"
+    }
+  }
+}

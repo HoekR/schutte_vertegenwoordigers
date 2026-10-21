@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Schutte structure review{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Schutte — lemma structure review</div>
+    <div class="topbar-right">
+      <nav class="mode-toggle" aria-label="Review queue">
+        <a class="mode-link {{ 'active' if mode == 'sample' else '' }}"
+           href="{{ url_for('index', mode='sample') }}">sample (~{{ sample_size }})</a>
+        <a class="mode-link {{ 'active' if mode == 'all' else '' }}"
+           href="{{ url_for('index', mode='all') }}">all</a>
+      </nav>
+      <div class="progress" id="progress"
+           data-mode="{{ mode }}">{{ stats.labelled }} / {{ stats.total }} labelled{% if mode == 'sample' %} (sample){% endif %}</div>
+    </div>
+  </header>
+  <main class="container">
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>

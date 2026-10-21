@@ -1,15 +1,21 @@
 {% extends "base.html" %}
 
-{% block title %}{{ lemma.toc_title }} — Schutte Repertorium{% endblock %}
-{% block description %}{{ lemma.toc_title }}, {{ lemma.period }}. {{ lemma.toc_chapter }}. Schutte Repertorium nr. {{ lemma.schutte_nr }}.{% endblock %}
+{# Header fields from Dijkstra Excel (naam, functie, Schutte nr).
+   The printed entry line stays in .lemma-body as zone-entry. #}
+{% set display_name = (meta.display_name if meta and meta.display_name else lemma.toc_title) %}
+{% set begin_jaar = meta.derived_beginjaar if meta and meta.derived_beginjaar else (meta.schutte_beginjaar if meta else none) %}
+{% set eind_jaar = meta.derived_eindjaar if meta and meta.derived_eindjaar else (meta.schutte_eindjaar if meta else none) %}
+
+{% block title %}{{ display_name }} — Schutte Repertorium{% endblock %}
+{% block description %}{{ display_name }}{% if meta and meta.schutte_functie %}, {{ meta.schutte_functie }}{% endif %}. {{ lemma.toc_chapter }}. Schutte nr. {{ lemma.schutte_nr }}.{% endblock %}
 
 {% block jsonld %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Person",
-  "name": "{{ lemma.toc_title | e }}",
-  "description": "{{ lemma.period | e }}. {{ lemma.toc_chapter | e }}.",
+  "name": "{{ display_name | e }}",
+  "description": "{% if meta and meta.schutte_functie %}{{ meta.schutte_functie | e }}. {% endif %}{{ lemma.toc_chapter | e }}.",
   "identifier": "schutte-{{ lemma.corpus }}-{{ lemma.schutte_nr }}",
   "sameAs": [],
   "isPartOf": {
@@ -33,22 +39,25 @@
 </nav>
 
 <div class="lemma-header">
-  <h2>{{ lemma.toc_title }}</h2>
+  <h2>{{ display_name }}</h2>
   <div class="lemma-meta">
-    <span>Nr. {{ lemma.schutte_nr }}</span>
-    {% if lemma.period %}<span>{{ lemma.period }}</span>{% endif %}
+    <span class="schutte-nr"><strong>Schutte nr.</strong> {{ lemma.schutte_nr }}</span>
     {% if meta and meta.schutte_functie %}<span class="meta-functie">{{ meta.schutte_functie }}</span>{% endif %}
-    <span>{{ lemma.toc_chapter }}</span>
-    {% if lemma.toc_page %}<span>Pag. {{ lemma.toc_page }}</span>{% endif %}
+    {% if lemma.toc_chapter %}<span class="meta-chapter">{{ lemma.toc_chapter }}</span>{% endif %}
   </div>
-  {% if meta %}
+  {% if meta and meta.url %}
+    <div class="retro-link" style="margin-top:0.5em;">
+      <a href="{{ meta.url }}" target="_blank" rel="noopener">Retro page (PDF facsimile)</a>
+    </div>
+  {% endif %}
+  {% if meta and (meta.category or begin_jaar or eind_jaar or meta.pagenr) %}
   <dl class="meta-summary">
-    {% if meta.schutte_functie %}<dt>Functie</dt><dd>{{ meta.schutte_functie }}</dd>{% endif %}
     {% if meta.category %}<dt>Categorie</dt><dd>{{ meta.category }}</dd>{% endif %}
-    {% if meta.schutte_beginjaar or meta.schutte_eindjaar %}
+    {% if begin_jaar or eind_jaar %}
       <dt>Periode</dt>
-      <dd>{{ meta.schutte_beginjaar | int if meta.schutte_beginjaar else '?' }}–{{ meta.schutte_eindjaar | int if meta.schutte_eindjaar else '?' }}</dd>
+      <dd>{{ begin_jaar | int if begin_jaar else '?' }}–{{ eind_jaar | int if eind_jaar else '?' }}</dd>
     {% endif %}
+    {% if meta.pagenr %}<dt>Pagina</dt><dd>{{ meta.pagenr | int }}</dd>{% endif %}
   </dl>
   {% endif %}
 </div>

@@ -45,7 +45,7 @@ from lemma_extractor.linkify_refs import linkify_all
 
 # Regex that matches an opening <start> tag and captures schuttenr + inner text
 _START_RE = re.compile(
-    r'<start\s+schuttenr="(\d+)">(.*?)</start>',
+    r'<start\s+schuttenr="(\d+[a-z]?)">(.*?)</start>',
     re.DOTALL,
 )
 
@@ -157,14 +157,19 @@ def _classify_lines(lines: list[str], schuttenr: int = 0) -> list[tuple[str, str
     return result
 
 
-def _split_at_starts(content: str) -> list[tuple[int, str]]:
-    """Return [(schuttenr, raw_text_from_start_to_next_start), …] sorted by schuttenr."""
-    # Find positions of all <start …> opening tags
-    positions: list[tuple[int, int, str]] = []  # (char_offset, schuttenr, inner_text)
-    for m in _START_RE.finditer(content):
-        positions.append((m.start(), int(m.group(1)), m.group(2)))
+def _split_at_starts(content: str) -> list[tuple[Any, str]]:
+    """Return [(schuttenr, raw_text_from_start_to_next_start), …] in document order."""
+    from lemma_extractor.read_excel import parse_schutte_nr
 
-    segments: list[tuple[int, str]] = []
+    # Find positions of all <start …> opening tags
+    positions: list[tuple[int, Any, str]] = []  # (char_offset, schuttenr, inner_text)
+    for m in _START_RE.finditer(content):
+        nr = parse_schutte_nr(m.group(1))
+        if nr is None:
+            continue
+        positions.append((m.start(), nr, m.group(2)))
+
+    segments: list[tuple[Any, str]] = []
     for i, (offset, schuttenr, first_line_text) in enumerate(positions):
         # The segment text starts at the <start> element itself (we'll use the
         # inner text as the first line) and ends just before the next <start>
@@ -203,7 +208,7 @@ def _parse_lines(raw: str) -> list[str]:
     return lines
 
 
-def _lemma_attrs(schuttenr: int, meta: dict[str, Any], corpus: str) -> str:
+def _lemma_attrs(schuttenr: Any, meta: dict[str, Any], corpus: str) -> str:
     """Build XML attribute string for the <lemma> element."""
     attrs = {
         "schuttenr": str(schuttenr),
@@ -217,8 +222,10 @@ def _lemma_attrs(schuttenr: int, meta: dict[str, Any], corpus: str) -> str:
         "category": meta.get("category") or "",
         "url": meta.get("url") or "",
     }
+    # Escape quotes so attribute values with " (e.g. bentheim functie) stay well-formed.
+    _esc = {'"': "&quot;", "'": "&apos;"}
     return " ".join(
-        f'{k}="{sax.escape(v)}"' for k, v in attrs.items() if v
+        f'{k}="{sax.escape(v, _esc)}"' for k, v in attrs.items() if v
     )
 
 
@@ -306,7 +313,12 @@ def extract_lemmas(
             "</lemma>\n"
         )
 
-        fname = out_dir / f"{prefix}_{schuttenr:04d}.xml"
+        if isinstance(schuttenr, int) or (
+            isinstance(schuttenr, str) and schuttenr.isdigit()
+        ):
+            fname = out_dir / f"{prefix}_{int(schuttenr):04d}.xml"
+        else:
+            fname = out_dir / f"{prefix}_{schuttenr}.xml"
         fname.write_text(xml_out, encoding="utf-8")
         stats["extracted"] += 1
         if verbose:

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ <head>
+  <title></title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <meta name='ocr-system' content='tesseract 5.5.2' />
+  <meta name='ocr-capabilities' content='ocr_page ocr_carea ocr_par ocr_line ocrx_word ocrp_dir ocrp_lang ocrp_wconf'/>
+ </head>
+ <body>
+  <div class='ocr_page' id='page_1' title='image "/var/folders/9y/s7573g1n3q9fz78c71ryxj4m0000gn/T/schutte_restore_bl_mpqii2o4/schutte_buitenlandsevertegenwoordigersinnederland_0548_scaled.png"; bbox 0 0 1620 2564; ppageno 0; scan_res 136 136'>
+   <div class='ocr_carea' id='block_1_1' title="bbox 307 165 1474 196">
+    <p class='ocr_par' id='par_1_1' lang='nld' title="bbox 307 165 1474 196">
+     <span class='ocr_line' id='line_1_1' title="bbox 307 165 1474 196; baseline -0.003 -1; x_size 33.333332; x_descenders 8.333333; x_ascenders 8.333333">
+      <span class='ocrx_word' id='word_1_1' title='bbox 307 165 364 196; x_wconf 96'>548</span>
+      <span class='ocrx_word' id='word_1_2' title='bbox 1366 166 1474 191; x_wconf 96'>POLEN</span>
+     </span>
+    </p>
+   </div>
+   <div class='ocr_carea' id='block_1_2' title="bbox 308 252 1477 328">
+    <p class='ocr_par' id='par_1_2' lang='nld' title="bbox 308 252 1477 328">
+     <span class='ocr_line' id='line_1_2' title="bbox 308 252 1477 292; baseline -0.002 -9; x_size 36; x_descenders 6; x_ascenders 8">
+      <span class='ocrx_word' id='word_1_3' title='bbox 308 256 415 291; x_wconf 95'>(1747)</span>
+      <span class='ocrx_word' id='word_1_4' title='bbox 438 256 508 283; x_wconf 96'>Don</span>
+      <span class='ocrx_word' id='word_1_5' title='bbox 533 256 635 292; x_wconf 94'>Diogo</span>
+      <span class='ocrx_word' id='word_1_6' title='bbox 657 256 775 283; x_wconf 96'>Pereira</span>
+      <span class='ocrx_word' id='word_1_7' title='bbox 798 254 894 283; x_wconf 95'>Floris</span>
+      <span class='ocrx_word' id='word_1_8' title='bbox 910 252 946 289; x_wconf 86'>jr.</span>
+      <span class='ocrx_word' id='word_1_9' title='bbox 969 276 976 288; x_wconf 67'>,</span>
+      <span class='ocrx_word' id='word_1_10' title='bbox 996 253 1043 282; x_wconf 96'>zie</span>
+      <span class='ocrx_word' id='word_1_11' title='bbox 1064 254 1164 282; x_wconf 96'>onder</span>
+      <span class='ocrx_word' id='word_1_12' title='bbox 1185 252 1477 282; x_wconf 96'>Keurvorstendom</span>
+     </span>
+     <span class='ocr_line' id='line_1_3' title="bbox 408 297 848 328; baseline 0 0; x_size 36.955555; x_descenders 5.9555554; x_ascenders 9">
+      <span class='ocrx_word' id='word_1_13' title='bbox 408 297 526 328; x_wconf 96'>Saksen</span>
+      <span class='ocrx_word' id='word_1_14' title='bbox 547 297 577 327; x_wconf 96'>in</span>
+      <span class='ocrx_word' id='word_1_15' title='bbox 598 306 674 328; x_wconf 93'>voce</span>
+      <span class='ocrx_word' id='word_1_16' title='bbox 694 297 848 328; x_wconf 92'>Factoors.</span>
+     </span>
+    </p>
+   </div>
+   <div class='ocr_carea' id='block_1_3' title="bbox 309 386 1479 463">
+    <p class='ocr_par' id='par_1_3' lang='nld' title="bbox 309 386 1479 463">
+     <span class='ocr_line' id='line_1_4' title="bbox 309 386 1479 425; baseline -0.002 -7; x_size 37; x_descenders 7; x_ascenders 10">
+      <span class='ocrx_word' id='word_1_17' title='bbox 309 388 506 425; x_wconf 43'>(1753)}-1758</span>
+      <span class='ocrx_word' id='word_1_18' title='bbox 547 388 636 418; x_wconf 47'>Isaac</span>
+      <span class='ocrx_word' id='word_1_19' title='bbox 672 398 728 417; x_wconf 96'>van</span>
+      <span class='ocrx_word' id='word_1_20' title='bbox 763 387 861 419; x_wconf 94'>Jacob</span>
+      <span class='ocrx_word' id='word_1_21' title='bbox 900 387 979 424; x_wconf 96'>Levy</span>
+      <span class='ocrx_word' id='word_1_22' title='bbox 1016 386 1125 420; x_wconf 96'>Flores,</span>
+      <span class='ocrx_word' id='word_1_23' title='bbox 1162 386 1209 416; x_wconf 96'>zie</span>
+      <span class='ocrx_word' id='word_1_24' title='bbox 1245 386 1345 416; x_wconf 89'>onder</span>
+      <span class='ocrx_word' id='word_1_25' title='bbox 1382 386 1479 416; x_wconf 89'>Keur-</span>
+     </span>
+     <span class='ocr_line' id='line_1_5' title="bbox 409 433 1072 463; baseline 0 -2; x_size 36.991871; x_descenders 6.9918699; x_ascenders 10">
+      <span class='ocrx_word' id='word_1_26' title='bbox 409 433 612 463; x_wconf 96'>vorstendom</span>
+      <span class='ocrx_word' id='word_1_27' title='bbox 632 434 748 463; x_wconf 96'>Saksen</span>
+      <span class='ocrx_word' id='word_1_28' title='bbox 770 434 801 463; x_wconf 90'>in</span>
+      <span class='ocrx_word' id='word_1_29' title='bbox 822 443 898 463; x_wconf 93'>voce</span>
+      <span class='ocrx_word' id='word_1_30' title='bbox 919 433 1072 462; x_wconf 91'>Factoors.</span>
+     </span>
+    </p>
+   </div>
+   <div class='ocr_carea' id='block_1_4' title="bbox 308 520 1478 595">
+    <p class='ocr_par' id='par_1_4' lang='nld' title="bbox 308 520 1478 595">
+     <span class='ocr_line' id='line_1_6' title="bbox 308 520 1478 558; baseline -0.001 -7; x_size 35; x_descenders 5; x_ascenders 10">
+      <span class='ocrx_word' id='word_1_31' title='bbox 308 522 507 556; x_wconf 95'>(1758-1759)</span>
+      <span class='ocrx_word' id='word_1_32' title='bbox 533 521 678 558; x_wconf 95'>Ephraim</span>
+      <span class='ocrx_word' id='word_1_33' title='bbox 701 520 858 552; x_wconf 95'>Abraham</span>
+      <span class='ocrx_word' id='word_1_34' title='bbox 884 522 972 556; x_wconf 96'>Levy,</span>
+      <span class='ocrx_word' id='word_1_35' title='bbox 994 520 1041 550; x_wconf 96'>zie</span>
+      <span class='ocrx_word' id='word_1_36' title='bbox 1062 521 1162 550; x_wconf 96'>onder</span>
+      <span class='ocrx_word' id='word_1_37' title='bbox 1186 520 1478 550; x_wconf 96'>Keurvorstendom</span>
+     </span>
+     <span class='ocr_line' id='line_1_7' title="bbox 407 566 847 595; baseline 0 -1; x_size 33.365852; x_descenders 5.3658538; x_ascenders 8">
+      <span class='ocrx_word' id='word_1_38' title='bbox 407 566 525 594; x_wconf 96'>Saksen</span>
+      <span class='ocrx_word' id='word_1_39' title='bbox 547 566 576 594; x_wconf 94'>in</span>
+      <span class='ocrx_word' id='word_1_40' title='bbox 597 575 674 595; x_wconf 93'>voce</span>
+      <span class='ocrx_word' id='word_1_41' title='bbox 696 567 847 594; x_wconf 92'>Factoors.</span>
+     </span>
+    </p>
+   </div>
+  </div>
+ </body>
+</html>

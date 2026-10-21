@@ -136,20 +136,43 @@ def _overlay_enriched_lines(lemma: dict, lemmas_dir: Path) -> None:
         lemma["footnotes"] = xml_footnotes
 
 
+def _retro_pdf_url(url: str | None) -> str | None:
+    """Rewrite Huygens retro HTML page URLs to the sibling PDF facsimile.
+
+    ``…/schutte_N/html/stem_0001.html`` → ``…/schutte_N/pdf/stem_0001.pdf``
+    """
+    if not url:
+        return None
+    s = str(url).strip()
+    if not s:
+        return None
+    s = re.sub(r"^http://", "https://", s, count=1, flags=re.IGNORECASE)
+    s = s.replace("/html/", "/pdf/")
+    if s.lower().endswith(".html"):
+        s = s[: -len(".html")] + ".pdf"
+    return s
+
+
 def _load_metadata() -> dict:
-    """Load Dijkstra Excel files and return {(corpus, schutte_nr): row_dict}."""
+    """Load Dijkstra Excel files and return {(corpus, schutte_nr): row_dict}.
+
+    schutte_nr is int for normal rows, or str for adapted ids (e.g. ``418a``).
+    Each row gains a computed ``display_name`` (HYBRID_PLAN step 4).
+    ``url`` is rewritten from the retro HTML page to the PDF facsimile.
+    """
+    from lemma_extractor.read_excel import display_name_from_meta, parse_schutte_nr
+
     lookup: dict = {}
     for path, corpus in [(DIJKSTRA_NL, "nl"), (DIJKSTRA_BL, "bl")]:
         df = pd.read_excel(path)
         for _, row in df.iterrows():
-            raw_nr = row.get("schutte_nr")
-            if pd.notna(raw_nr):
-                try:
-                    nr = int(raw_nr)
-                except (ValueError, TypeError):
-                    continue
-                lookup[(corpus, nr)] = {k: (None if pd.isna(v) else v)
-                                        for k, v in row.items()}
+            nr = parse_schutte_nr(row.get("schutte_nr"))
+            if nr is None:
+                continue
+            meta = {k: (None if pd.isna(v) else v) for k, v in row.items()}
+            meta["display_name"] = display_name_from_meta(meta)
+            meta["url"] = _retro_pdf_url(meta.get("url"))
+            lookup[(corpus, nr)] = meta
     return lookup
 
 
@@ -275,6 +298,16 @@ def _build_search_index(lemmas: list[dict], meta_lookup: dict) -> list[dict]:
     return records
 
 
+def _schutte_slug(nr: int | str) -> str:
+    """URL path segment for a Schutte nr (``12`` → ``0012``, ``418a`` → ``0418a``)."""
+    if isinstance(nr, int):
+        return f"{nr:04d}"
+    m = re.match(r"^(\d+)(.*)$", str(nr).strip())
+    if m:
+        return f"{int(m.group(1)):04d}{m.group(2)}"
+    return str(nr)
+
+
 def _build_functie_index(meta_lookup: dict) -> list[dict]:
     """Build a function/title index from the Excel metadata.
 
@@ -283,6 +316,7 @@ def _build_functie_index(meta_lookup: dict) -> list[dict]:
     each normalised role label.  Returns a list sorted alphabetically by role.
     """
     from collections import defaultdict, Counter as _Counter
+    from lemma_extractor.read_excel import schutte_nr_sort_key
 
     _YEAR_RE   = re.compile(r"\b1[0-9]{3}\.?\b")
     _PAREN_RE  = re.compile(r"\([^)]*\)")   # remove parenthetical qualifiers
@@ -370,6 +404,7 @@ def _build_functie_index(meta_lookup: dict) -> list[dict]:
             functie_map[key].append({
                 "name":            name,
                 "nr":              nr,
+                "slug":            _schutte_slug(nr),
                 "corpus":          corpus,
                 "begin":           begin,
                 "end":             end,
@@ -379,8 +414,10 @@ def _build_functie_index(meta_lookup: dict) -> list[dict]:
 
     result = []
     for key in sorted(functie_map.keys()):
-        persons = sorted(functie_map[key],
-                         key=lambda p: (p["begin"] or 9999, p["nr"]))
+        persons = sorted(
+            functie_map[key],
+            key=lambda p: (p["begin"] or 9999, schutte_nr_sort_key(p["nr"])),
+        )
         display = _Counter(p["functie_display"] for p in persons).most_common(1)[0][0]
         result.append({
             "functie": display,
@@ -459,25 +496,55 @@ def _group_lines(lines: list[dict]) -> list[dict]:
     Lines ending with a hyphen (word-break) are joined directly to the next
     line (same zone) without a space, reconstructing the original word.
     pre_html lines are never merged with other lines.
+
+    ``style_spans`` (PDF italic/bold) are carried through on space joins;
+    dropped on hyphen joins (offsets would need re-alignment).
     """
     blocks: list[dict] = []
     for ln in lines:
         pre = ln.get("pre_html", False)
+        spans = list(ln.get("style_spans") or [])
         if (blocks and blocks[-1]["zone"] == ln["zone"]
                 and not pre and not blocks[-1].get("pre_html")):
             prev = blocks[-1]["text"]
             if prev.endswith("-"):
                 blocks[-1]["text"] = _join_hyphen(prev, ln["text"])
+                # hyphen join reshapes text — drop inherited spans
+                blocks[-1].pop("style_spans", None)
             else:
+                offset = len(prev) + 1
                 blocks[-1]["text"] = prev + " " + ln["text"]
+                if spans or blocks[-1].get("style_spans"):
+                    merged = list(blocks[-1].get("style_spans") or [])
+                    for s in spans:
+                        merged.append({
+                            **s,
+                            "start": s["start"] + offset,
+                            "end": s["end"] + offset,
+                        })
+                    blocks[-1]["style_spans"] = merged
         else:
-            blocks.append({"zone": ln["zone"], "text": ln["text"], "pre_html": pre})
+            block = {"zone": ln["zone"], "text": ln["text"], "pre_html": pre}
+            if spans:
+                block["style_spans"] = spans
+            blocks.append(block)
     return blocks
 
 
-def _inline_markup(text: str, corpus: str, root: str, footnotes: dict) -> Markup:
-    """Escape text and insert hyperlinks for nr. refs and footnote markers."""
-    s = str(html_escape(text))
+def _inline_markup(
+    text: str,
+    corpus: str,
+    root: str,
+    footnotes: dict,
+    style_spans: list[dict] | None = None,
+) -> Markup:
+    """Escape text, wrap PDF style spans, insert nr./footnote hyperlinks."""
+    from lemma_extractor.pdf_style import render_styled
+
+    if style_spans:
+        s = render_styled(text, style_spans)
+    else:
+        s = str(html_escape(text))
 
     # 1. "(zie sub nr. N)" and "nr. N" → hyperlinks
     def repl_nr(m: re.Match) -> str:
@@ -527,9 +594,23 @@ def _build_title_lookup(lemmas: list[dict]) -> dict[tuple[str, int], str]:
 # Render helpers
 # ---------------------------------------------------------------------------
 
+# Absolute site prefix for <a href> / CSS. GitHub Pages default; override with --root /
+_ROOT_URL = "/schutte_vertegenwoordigers/"
+
+
+def _normalize_root(root: str) -> str:
+    """Ensure a leading and trailing slash (``/`` stays ``/``)."""
+    root = (root or "/").strip() or "/"
+    if not root.startswith("/"):
+        root = "/" + root
+    if root != "/" and not root.endswith("/"):
+        root += "/"
+    return root
+
+
 def _root_url() -> str:
-    """Return the base URL for GitHub Pages."""
-    return "/schutte_vertegenwoordigers/"
+    """Return the absolute URL prefix baked into pages."""
+    return _ROOT_URL
 
 
 def _render_lemma(tpl, lemma: dict, site_dir: Path, title_lookup: dict,
@@ -550,7 +631,13 @@ def _render_lemma(tpl, lemma: dict, site_dir: Path, title_lookup: dict,
         if block.get("pre_html"):
             block["html_text"] = Markup(block["text"])
         else:
-            block["html_text"] = _inline_markup(block["text"], corpus, root, footnotes)
+            block["html_text"] = _inline_markup(
+                block["text"],
+                corpus,
+                root,
+                footnotes,
+                style_spans=block.get("style_spans"),
+            )
 
     html = tpl.render(
         lemma=lemma,
@@ -578,18 +665,48 @@ def _add_prev_next(lemmas: list[dict]) -> None:
 # Main build
 # ---------------------------------------------------------------------------
 
-def build(site_dir: Path, run_pagefind: bool = False) -> None:
+def build(
+    site_dir: Path,
+    run_pagefind: bool = False,
+    *,
+    use_hocr_zones: bool = True,
+    use_pdf_style: bool = True,
+    use_cache: bool = True,
+    root: str = "/schutte_vertegenwoordigers/",
+) -> None:
     # Lazy import so the script is importable without the venv being active
     # (helpful for editors / linters).
+    global _ROOT_URL
+    _ROOT_URL = _normalize_root(root)
+
     sys.path.insert(0, str(HERE / "src"))
     from lemma_extractor.group_lemmas import group_lemmas
     from lemma_extractor.parse_index import parse_persons, parse_geo
     from lemma_extractor.build_refs import build_refs
     from lemma_extractor.export_json import export
 
-    print("Parsing HTML corpus…")
-    nl_lemmas = group_lemmas(NL_HTML_DIR, TOC_NL, "nl")
-    bl_lemmas = group_lemmas(BL_HTML_DIR, TOC_BL, "bl")
+    extras = []
+    if use_hocr_zones:
+        extras.append("hOCR zones")
+    if use_pdf_style:
+        extras.append("PDF style")
+    if use_cache:
+        extras.append("page cache")
+    print(f"Site root URL: {_ROOT_URL}")
+    print(
+        "Parsing HTML corpus…"
+        + (f" ({', '.join(extras)})" if extras else " (HTML only)")
+    )
+    nl_lemmas = group_lemmas(
+        NL_HTML_DIR, TOC_NL, "nl",
+        use_hocr_zones=use_hocr_zones, use_pdf_style=use_pdf_style,
+        use_cache=use_cache,
+    )
+    bl_lemmas = group_lemmas(
+        BL_HTML_DIR, TOC_BL, "bl",
+        use_hocr_zones=use_hocr_zones, use_pdf_style=use_pdf_style,
+        use_cache=use_cache,
+    )
     print(f"  NL: {len(nl_lemmas)} lemmas, BL: {len(bl_lemmas)} lemmas")
 
     print("Overlaying enriched lemma XML lines…")
@@ -825,8 +942,15 @@ def build(site_dir: Path, run_pagefind: bool = False) -> None:
     if run_pagefind:
         _run_pagefind(site_dir)
 
-    print(f"\nDone! Site is in {site_dir}")
-    print(f"Preview: python3 -m http.server 8000 --directory {site_dir}")
+    print(f"\nDone! Site is in {site_dir}  (links use root={_ROOT_URL!r})")
+    if _ROOT_URL == "/":
+        print(f"Preview: python3 -m http.server 8000 --directory {site_dir}")
+    else:
+        print(
+            f"Local preview needs --root /  "
+            f"(or open under …{_ROOT_URL.rstrip('/')}/)"
+        )
+        print(f"Deploy preview: python3 -m http.server 8000 --directory {site_dir}")
 
 
 def _run_pagefind(site_dir: Path) -> None:
@@ -855,8 +979,45 @@ def main() -> None:
         action="store_true",
         help="Run Pagefind after building (requires npx/pagefind)",
     )
+    parser.add_argument(
+        "--fast",
+        action="store_true",
+        help="Skip PDF style overlay (main cost); keep hOCR zone correction",
+    )
+    parser.add_argument(
+        "--no-hocr",
+        action="store_true",
+        help="Skip hOCR zone correction (HTML parse + structure_checks only)",
+    )
+    parser.add_argument(
+        "--no-pdf-style",
+        action="store_true",
+        help="Skip PDF italic/bold overlay (same PDF skip as --fast)",
+    )
+    parser.add_argument(
+        "--no-cache",
+        action="store_true",
+        help="Disable per-page parse cache under .cache/page_lines/",
+    )
+    parser.add_argument(
+        "--root",
+        default="/schutte_vertegenwoordigers/",
+        help=(
+            "Absolute URL prefix for links/CSS "
+            "(default: /schutte_vertegenwoordigers/ for GitHub Pages; "
+            "use / for local http.server on _site)"
+        ),
+    )
     args = parser.parse_args()
-    build(Path(args.site_dir), run_pagefind=args.pagefind)
+    use_pdf = not (args.fast or args.no_pdf_style)
+    build(
+        Path(args.site_dir),
+        run_pagefind=args.pagefind,
+        use_hocr_zones=not args.no_hocr,
+        use_pdf_style=use_pdf,
+        use_cache=not args.no_cache,
+        root=args.root,
+    )
 
 
 if __name__ == "__main__":

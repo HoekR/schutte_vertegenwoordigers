@@ -12,6 +12,14 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 from typing import Any
 
+from lemma_extractor.read_excel import schutte_nr_sort_key
+
+
+def _lemma_filename(prefix: str, schuttenr: Any) -> str:
+    if isinstance(schuttenr, int):
+        return f"{prefix}_{schuttenr:04d}.xml"
+    return f"{prefix}_{schuttenr}.xml"
+
 
 def verify(
     out_dir: Path,
@@ -35,9 +43,9 @@ def verify(
         "attr_mismatch": [],
     }
 
-    for meta in sorted(lemmas, key=lambda r: r["schuttenr"]):
+    for meta in sorted(lemmas, key=lambda r: schutte_nr_sort_key(r["schuttenr"])):
         schuttenr = meta["schuttenr"]
-        fname = out_dir / f"{prefix}_{schuttenr:04d}.xml"
+        fname = out_dir / _lemma_filename(prefix, schuttenr)
 
         if not fname.exists():
             stats["missing"].append(schuttenr)
