@@ -41,11 +41,13 @@ footer {
   border: 1px solid #bbb; border-radius: 4px;
   font-size: 1rem;
 }
-/* Lemma page */
+/* Lemma page — header from Excel (naam / functie / Schutte nr);
+   entry line remains in .lemma-body .zone-entry */
 .lemma-header { border-bottom: 2px solid #2a3f6f; padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
-.lemma-header h2 { margin: 0 0 0.2rem; font-size: 1.6rem; }
-.lemma-meta { font-size: 0.85rem; color: #555; }
-.lemma-meta span { margin-right: 1.2rem; }
+.lemma-header h2 { margin: 0 0 0.35rem; font-size: 1.6rem; }
+.lemma-meta { font-size: 0.85rem; color: #555; display: flex; flex-wrap: wrap; gap: 0.35rem 1.2rem; }
+.lemma-meta .schutte-nr { color: #2a3f6f; }
+.lemma-meta .meta-functie { font-style: italic; }
 /* Lemma metadata summary (top of page) */
 .meta-summary {
   display: grid; grid-template-columns: max-content 1fr;

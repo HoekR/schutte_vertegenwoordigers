@@ -10,194 +10,199 @@
     "period": "1587-1593 commissaris",
     "lines": [
       {
-        "zone": "entry",
+        "zone": "body",
         "text": "1.   Quintin Taffin, heer van la Pré, geb. te Doornik, aan het Hof in Frank-",
-        "indent": 0
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "rijk, vluchtte naar Genève in 1572, officier in Staatse dienst onder",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "de prins van Espinoy, gedeputeerde van de provincie Mechelen in",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "de Staten van Brabant, commies van de Raad van finantiën, was in",
-        "indent": 5
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "period_header",
         "text": "1584 reeds door de Staten van Brabant afgevaardigd naar Frankrijk,",
-        "indent": 6
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "ontving met Richard van Merode, heer van Oorschot, Joan Hinkaert,",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "heer van Dohain, Cornells Aerssens, zie sub nr. 5, Elbert Leoninus,",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "kanselier, Johan van Gent, heer van Oyen en Dieden, Gerhard Voet,",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "Noel de Caron, heer van Schonewalle, nr. 55, Arend van Dorp, heer",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "van Maasdam, Mr. Jacob Valcke, Joan Rengers, Amelis van Amstel",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "van Mijnden, Jelger Feitsma, Hessel Aysma en Antonie de Lalaing,",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "heer van La Mouilliere en Lieven Calvart, nr. 2, als secretaris",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "instructie als gedeputeerde naar Frankrijk om met de Koning over",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "de bescherming van de Provinciën te onderhandelen en hem de",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "souvereiniteit aan te bieden 3 dec. 1584, vertrok 3 jan. 1585, was",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "terug 17 maart en bracht op 9 april 1585 rapport uit; werd bij ress.",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "10 en 21 febr. 1587 aangesteld tot agent in Frankrijk, waarbij zijn",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "tractement op/1600 werd vastgesteld1 en hij zijn instructie van de",
-        "indent": 5
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "Res. 14 maart 1587.",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
+        "text": "1",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
         "text": "Staten Generaal en de Raad van State ontving 19 maart 1587;",
-        "indent": 7
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "vertrok 16 april 1587 uit Middelburg naar Frankrijk, was 6 mei 1589",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "te Londen en bracht rapport uit 27 mei 1589; bij res. 4 sept. 1589",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "werden Floris van Brederode, Dr. Nicasius de Siïïe en hij gecommit-",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "teerd naar de Koning van Frankrijk om hem geluk te wensen met",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "de aanvaarding der regering en ontving hij verhoging van tracte-",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "ment tot  2000 en  400 tot inkoop van paarden, opdat hij de",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "Koning in alle steden zou kunnen volgen, en kreeg hij opnieuw",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "instructie als commissaris tot het waarnemen der belangen der Unie",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "in Frankrijk; bij res. 10 sept. 1589 werd zijn tractement verhoogd",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "tot  2400; 23 sept. 1589 kreeg hij als zodanig instructie 2 ; hij is in",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "Frankrijk achtergebleven en was o.a. te Chartres 24 febr. 1593 en",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "te Nantes (waar de Koning zich toen bevond) 24 april 1593, f vóór",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "12 juli 15933'4.",
-        "indent": 6
+        "pre_html": false
       },
       {
         "zone": "genealogy",
         "text": "Zoon van Denis Taffin, lic. ès lois, heer van la Pré, advocaat, ontvanger der",
-        "indent": 6
+        "pre_html": false
       },
       {
         "zone": "genealogy",
         "text": "imposten der Staten van het baljuwschap van stad en land Doornik, daarna van",
-        "indent": 6
+        "pre_html": false
       },
       {
         "zone": "genealogy",
         "text": "Mortagne en St. Araand (1570), gezworene en schepen van Doornik tussen",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "period_header",
         "text": "1563 en 1557, en Catherine Alegambe.",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "L. Taffin de Vezon, Généalogie de la Taffin de 1300 à 1926, Pau, 1926, 43.",
-        "indent": 6
+        "pre_html": false
       }
     ],
     "footnotes": {},
@@ -218,6 +223,11 @@
     "source_file": "0002",
     "period": "1593-1597 agent",
     "lines": [
+      {
+        "zone": "body",
+        "text": "2.   Lieven Calvart, werd verbannen en ging naar Engeland, waar hij",
+        "pre_html": false
+      },
       {
         "zone": "body",
         "text": "predikant werd en te Norwich stond in 1569 ; griffier van de Raad",
@@ -349,9 +359,7 @@
         "pre_html": false
       }
     ],
-    "footnotes": {
-      "2": "Lieven Calvart, werd verbannen en ging naar Engeland, waar hij"
-    },
+    "footnotes": {},
     "mentioned_in": [
       {
         "corpus": "nl",
@@ -373,6 +381,11 @@
     "source_file": "0002",
     "period": "1598 gedeputeerde",
     "lines": [
+      {
+        "zone": "body",
+        "text": "3.   Justinus van Nassau, geb. in 1559, student te Leiden 26 febr. 1576,",
+        "pre_html": false
+      },
       {
         "zone": "body",
         "text": "verkeerde daarna aan het Hof van zijn vader, ging in het gevolg van",
@@ -469,9 +482,7 @@
         "pre_html": false
       }
     ],
-    "footnotes": {
-      "3": "Justinus van Nassau, geb. in 1559, student te Leiden 26 febr. 1576,"
-    },
+    "footnotes": {},
     "mentioned_in": [
       {
         "corpus": "nl",
@@ -493,6 +504,11 @@
     "source_file": "0002",
     "period": "1598 gedeputeerde",
     "lines": [
+      {
+        "zone": "body",
+        "text": "4.   Mr. Johan van Oldenbarnevelt, (Engels) ridder (17 mei 1611), heer",
+        "pre_html": false
+      },
       {
         "zone": "body",
         "text": "van Groenevelt (1583-1592), Zuidwind (1583), Hoogland (1590),",
@@ -727,10 +743,40 @@
         "zone": "body",
         "text": "François van Aerssen, nr. 5.",
         "pre_html": false
+      }
+    ],
+    "footnotes": {
+      "9": "Miss. 17 mei/2 juni 1597 en d.d. Parijs 21 aug./20 sept. 1597.",
+      "10": "Ress. 10 en 17 juli 1598."
+    },
+    "mentioned_in": [
+      {
+        "corpus": "nl",
+        "schutte_nr": 3
       },
       {
-        "zone": "period_header",
-        "text": "1598-1613 agent, ordinaris ambassadeur 1609",
+        "corpus": "nl",
+        "schutte_nr": 5
+      },
+      {
+        "corpus": "nl",
+        "schutte_nr": 55
+      }
+    ]
+  },
+  {
+    "schutte_nr": 5,
+    "corpus": "nl",
+    "toc_title": "Aerssen, François van",
+    "full_title": "5. Aerssen, François van",
+    "toc_chapter": "I. Frankrijk",
+    "toc_page": 4,
+    "source_file": "0002",
+    "period": "1598-1613 agent, ordinaris ambassadeur 1609",
+    "lines": [
+      {
+        "zone": "body",
+        "text": "5.   Mr. François (Frans) baron (juli 1636) van Aerssen, (Frans) ridder",
         "pre_html": false
       },
       {
@@ -895,201 +941,6 @@
       }
     ],
     "footnotes": {
-      "4": "Mr. Johan van Oldenbarnevelt, (Engels) ridder (17 mei 1611), heer",
-      "9": "Miss. 17 mei/2 juni 1597 en d.d. Parijs 21 aug./20 sept. 1597.",
-      "10": "Ress. 10 en 17 juli 1598.",
-      "5": "Mr. François (Frans) baron (juli 1636) van Aerssen, (Frans) ridder",
-      "11": "Hun verbaal in arch. S.G., inv. nr. 8299.",
-      "12": "Zie noot 10a.",
-      "13": "Res. 14 juli 1603 en Ordonnantieboek S.G., 33."
-    },
-    "mentioned_in": [
-      {
-        "corpus": "nl",
-        "schutte_nr": 3
-      },
-      {
-        "corpus": "nl",
-        "schutte_nr": 5
-      },
-      {
-        "corpus": "nl",
-        "schutte_nr": 55
-      }
-    ]
-  },
-  {
-    "schutte_nr": 5,
-    "corpus": "nl",
-    "toc_title": "Aerssen, François van",
-    "full_title": "5. Aerssen, François van",
-    "toc_chapter": "I. Frankrijk",
-    "toc_page": 4,
-    "source_file": "0002",
-    "period": "1598-1613 agent, ordinaris ambassadeur 1609",
-    "lines": [
-      {
-        "zone": "entry",
-        "text": "5.   Mr. François (Frans) baron (juli 1636) van Aerssen, (Frans) ridder",
-        "indent": 0
-      },
-      {
-        "zone": "body",
-        "text": "1605), ridder van St. Michiel (1612), heer van Sommelsdijk (1611),",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "de Plaat en Spijk, geb. Brussel in 1572, student te Leuven, te Leiden",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "27 sept. 1588 en te Parijs, in het gevolg van Philippe Dupîessis",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "Mornay, de gouverneur van Saumur, reisde naar Italië 1596/1597,",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "secretaris van de gedeputeerden Van Nassau en Van Oldenbarnevelt",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "naar Frankrijk bij res. 6 jan. 1598, ontving dd. Nantes 26 april 1598",
-        "indent": 5
-      },
-      {
-        "zone": "sub_note",
-        "text": "van der Wolff, die bij res. 16 okt. 1629/500 toegelegd kreeg, en",
-        "indent": 10
-      },
-      {
-        "zone": "sub_note",
-        "text": "Mr. Cornells de Montigny de Glarges, ridder van St. Michiel,",
-        "indent": 10
-      },
-      {
-        "zone": "sub_note",
-        "text": "heer van Eslemmes, zie onder de consuls te Calais.",
-        "indent": 10
-      },
-      {
-        "zone": "sub_note",
-        "text": "Johan van Woestinghoven komt als zijn dienaar, later zijn secre-",
-        "indent": 10
-      },
-      {
-        "zone": "sub_note",
-        "text": "taris voor tussen 29 april 1606 en 13 aug. 1609; deze reisde in",
-        "indent": 10
-      },
-      {
-        "zone": "sub_note",
-        "text": "1606, 1607 en 1609 naar 's-Gravenhage.",
-        "indent": 10
-      },
-      {
-        "zone": "sub_note",
-        "text": "Zijn secretaris tijdens zijn missie naar Venetië in 1620 en Enge-",
-        "indent": 10
-      },
-      {
-        "zone": "sub_note",
-        "text": "land 1621 tot 1623 was Mr. Constantijn Huygens, (Engels) ridder",
-        "indent": 9
-      },
-      {
-        "zone": "sub_note",
-        "text": "(okt. 1622), ridder van St. Michiel (1632), heer van Zuylichem,",
-        "indent": 9
-      },
-      {
-        "zone": "sub_note",
-        "text": "Zeelhem en Monnikenland, geb. 's-Gravenhage 4 sept. 1596,",
-        "indent": 9
-      },
-      {
-        "zone": "sub_note",
-        "text": "juridisch student te Leiden 20 mei 1616, disputeerde aldaar in",
-        "indent": 9
-      },
-      {
-        "zone": "sub_note",
-        "text": "aug. 1617, reisde naar Engeland, secretaris te Venetië 1620 en",
-        "indent": 10
-      },
-      {
-        "zone": "sub_note",
-        "text": "Engeland 1621 tot 1623, reisde opnieuw naar Engeland in jan.",
-        "indent": 9
-      },
-      {
-        "zone": "sub_note",
-        "text": "(?) 1624, secretaris 18 juni 1625 en raad 1630 van de prinsen",
-        "indent": 9
-      },
-      {
-        "zone": "sub_note",
-        "text": "Frederik Hendrik, Willem II en Willem III, eerste raad en reken-",
-        "indent": 9
-      },
-      {
-        "zone": "sub_note",
-        "text": "meester, t 's-Gravenhage 28 maart 1687.",
-        "indent": 9
-      },
-      {
-        "zone": "sub_note",
-        "text": "Zoon van Christiaen Huygens, secretaris van prins Willem I, secretaris van",
-        "indent": 10
-      },
-      {
-        "zone": "sub_note",
-        "text": "de Raad van State 1584, ontving zijn commissie als zodanig 26 april 1588,",
-        "indent": 10
-      },
-      {
-        "zone": "sub_note",
-        "text": "vervulde van nov. 1611 tot febr. 1612 een missie naar Brussel 25 , en Susanna",
-        "indent": 10
-      },
-      {
-        "zone": "sub_note",
-        "text": "Hoefnagel; trouwde Amsterdam (N.k.) 6 april 1627 Susanna van Baerle, ged.",
-        "indent": 10
-      },
-      {
-        "zone": "sub_note",
-        "text": "aldaar (O.k.) 8 maart 1599, f 's-Gravenhage 10 mei 1637, dochter van Jan",
-        "indent": 10
-      },
-      {
-        "zone": "sub_note",
-        "text": "van Baerle Hendricksz. en Jacomina Hoon.",
-        "indent": 10
-      },
-      {
-        "zone": "sub_note",
-        "text": "N.N.B.W. I, 1186; N.P. 1954, 11 ; Constantijn Huygens, Journaal van zijne",
-        "indent": 10
-      },
-      {
-        "zone": "sub_note",
-        "text": "reis naar Venetië in 1620, medeged. door J. A. Worp in: Bijdragen en",
-        "indent": 10
-      },
-      {
-        "zone": "sub_note",
-        "text": "mededelingen van het Historisch genootschap te Utrecht, deel XV (1894).",
-        "indent": 10
-      }
-    ],
-    "footnotes": {
       "11": "Hun verbaal in arch. S.G., inv. nr. 8299.",
       "12": "Zie noot 10a.",
       "13": "Res. 14 juli 1603 en Ordonnantieboek S.G., 33."
@@ -1123,6 +974,11 @@
     "source_file": "0002",
     "period": "1614 extraordinaris ambassadeur",
     "lines": [
+      {
+        "zone": "body",
+        "text": "6.   Mr. Cornells van der Mijle, (Frans) ridder (1609), heer van de Mijle,",
+        "pre_html": false
+      },
       {
         "zone": "body",
         "text": "Dubbeldam, Backum, Alblas, Bleskensgraaf en St. Anthonispolder,",
@@ -1186,6 +1042,229 @@
       {
         "zone": "body",
         "text": "en Jacob van Malderee, eerste edele in de Staten van Zeeland,",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "instructie als extraordinaris ambassadeur naar Frankrijk 31 maart",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "1610, vertrok uit Frankrijk 6 mei, bracht mondeling verslag uit",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "20 mei, vertrok opnieuw 20 juni en bracht schriftelijk verslag uit",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "26 aug. 161028; ontving opnieuw instructie in die hoedanigheid",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "31 mei 1610, vertrok uit 's-Gravenhage 2 juni 1610, had zijn eerste",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "audiëntie 8 juni 1610 en bracht mondeling rapport 1 juli en schrifte-",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "lijk rapport 31 juli 1610 uit 29 ; in de ridderschap van Holland in juli",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "1613; werd bij res. 31 jan. 1614 benoemd en ontving instructie als",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "extraordinaris ambassadeur naar Frankrijk 5 febr. 1614, vertrok",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "uit 's-Gravenhage 10 febr., kwam te Parijs aan 17 febr. en had zijn",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "eerste audiëntie 19 febr. 1614, werd bij res. 12 april aangeschreven",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "om terug te keren, bracht mondeling rapport uit 28 mei en schriftelijk",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "12 juni 161430; gecommitteerde in de Raad van State dec. 1614 tot",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "1618; verbannen naar Goeree in febr. 1620, vestigde zich later te",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "Beverwijk, verkreeg zijn volledige vrijheid 4 juni 1625, opnieuw",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "geadmitteerd in de ridderschap van Holland 1632 en gedeputeerde",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "ter Staten van Holland 7 april 1632 en curator van de Leidse",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "hogeschool 17 april 1640, hoogheemraad van Schieland 1633, ge-",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "committeerde ter Generaliteits Rekenkamer 1635, 1636, 1637,",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "f21 nov., begr. 's-Gravenhage (Hofk.) 25 nov. 1642.",
+        "pre_html": false
+      },
+      {
+        "zone": "genealogy",
+        "text": "Zoon van Mr. Adriaan van der Mijle, heer van Bleskensgraaf en Dubbeldam,",
+        "pre_html": false
+      },
+      {
+        "zone": "genealogy",
+        "text": "student te Leuven 30 okt. 1553, raad in den Hove van Holland 1563, reisde naar",
+        "pre_html": false
+      },
+      {
+        "zone": "genealogy",
+        "text": "Padua en Venetië, was te Heidelberg begin 1573, landraad in aug. 1575, gedepu-",
+        "pre_html": false
+      },
+      {
+        "zone": "genealogy",
+        "text": "teerde ter Staten Generaal, gecommitteerde in de Raad van State 1588 tot 1589,",
+        "pre_html": false
+      },
+      {
+        "zone": "genealogy",
+        "text": "president van den Hove van Holland 1583, en Magdalena van Egmond van de",
+        "pre_html": false
+      },
+      {
+        "zone": "genealogy",
+        "text": "Nijenbwg; trouwde 's-Gravenhage (Gr. k.) 3 febr. 1603 Maria Johanna Petronella",
+        "pre_html": false
+      },
+      {
+        "zone": "genealogy",
+        "text": "van Oldenbarnevelt, geb. Rotterdam omstreeks 1584, begr. 's-Gravenhage (Gr. k.)",
+        "pre_html": false
+      },
+      {
+        "zone": "genealogy",
+        "text": "23 febr. 1657, dochter van Mr. Johan van Oldenbarnevelt, nr. 4, en Maria van",
+        "pre_html": false
+      },
+      {
+        "zone": "genealogy",
+        "text": "Utrecht.",
+        "pre_html": false
+      },
+      {
+        "zone": "bronnen",
+        "text": "<a href=\"https://resources.huygens.knaw.nl/retroboeken/nnbw/#source=8&amp;page=1192\">N.N.B.W. VIII, 1192</a>; N.L. 1968, 383; H. A. W. van der Vecht, Cornells van der",
+        "pre_html": true
+      },
+      {
+        "zone": "body",
+        "text": "Myle, (ac. pr. Leiden), Sappemeer, 1907; J. J. Poelhekke, De H. Stoel en de",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "Venetiaanse ambassade van Cornells van der Myle, in: Bijdragen voor de",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "geschiedenis der Nederlanden, X (1955).",
+        "pre_html": false
+      }
+    ],
+    "footnotes": {
+      "25": "Zijn verbaal 25 nov. 1611-12 febr. 1612 in arch. S.G., inv. nr. 8320.",
+      "26": "Bij De Jonge.",
+      "27": "Zijn verbaal in arch. S.G., inv. nrs. 8313-8314."
+    },
+    "mentioned_in": [
+      {
+        "corpus": "nl",
+        "schutte_nr": 7
+      }
+    ]
+  },
+  {
+    "schutte_nr": 7,
+    "corpus": "nl",
+    "toc_title": "Boetzelaer, Gideon van den",
+    "full_title": "7. Boetzelaer, Gideon van den",
+    "toc_chapter": "I. Frankrijk",
+    "toc_page": 7,
+    "source_file": "0002",
+    "period": "1614-1634 ordinaris ambassadeur",
+    "lines": [
+      {
+        "zone": "body",
+        "text": "7.   Gideon des H.R. Rijksbaron (14 okt. 1612) van den Boetzelaer, heer",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "van Langerak (1598), half-Nieuwpoort (1602), Carnisse (1604) en",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "Willige Langerak (1633), geb. Keulen in 1569, litt, student te Leiden",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "23 dec. 1584, reisde door Duitsland, Zwitserland en Italië, was terug",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "te Asperen in 1596; kapitein van een compagnie voetknechten in",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "Staatse dienst, stedevoogd van Loevestein en Woudrichem 1600,",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "was blijkens res. 3 febr. 1614 gedesigneerd ordinaris ambassadeur",
         "pre_html": false
       },
       {
@@ -1355,29 +1434,10 @@
       }
     ],
     "footnotes": {
-      "6": "Mr. Cornells van der Mijle, (Frans) ridder (1609), heer van de Mijle,",
-      "25": "Zijn verbaal 25 nov. 1611-12 febr. 1612 in arch. S.G., inv. nr. 8320.",
-      "26": "Bij De Jonge.",
-      "27": "Zijn verbaal in arch. S.G., inv. nrs. 8313-8314."
+      "28": "Hun verbaal 8 april 1610-20 mei 1610 in arch. S.G., inv. nrs. 8317-8318.",
+      "29": "Zijn verbaal 2 juni 1610-1 juli 1610 in arch. S.G., inv. nr. 8316.",
+      "30": "Zijn verbaal 1 maart 1614-27 mei 1614 in arch. S.G., inv. nr. 8321."
     },
-    "mentioned_in": [
-      {
-        "corpus": "nl",
-        "schutte_nr": 7
-      }
-    ]
-  },
-  {
-    "schutte_nr": 7,
-    "corpus": "nl",
-    "toc_title": "Boetzelaer, Gideon van den",
-    "full_title": "7. Boetzelaer, Gideon van den",
-    "toc_chapter": "I. Frankrijk",
-    "toc_page": 7,
-    "source_file": "0002",
-    "period": "",
-    "lines": [],
-    "footnotes": {},
     "mentioned_in": [
       {
         "corpus": "nl",
@@ -1403,6 +1463,11 @@
     "source_file": "0002",
     "period": "1634 secretaris van de ambassade",
     "lines": [
+      {
+        "zone": "body",
+        "text": "8.   Johan van Euskercken, secretaris van Van den Boetzelaer, werd bij",
+        "pre_html": false
+      },
       {
         "zone": "body",
         "text": "res. 26 sept. 1631 gelast het Hof te volgen en bij res. 7 jan. 1632 een",
@@ -1460,7 +1525,6 @@
       }
     ],
     "footnotes": {
-      "8": "Johan van Euskercken, secretaris van Van den Boetzelaer, werd bij",
       "31": "Hun verbaal 18 jan. 1621-7 april 1621 in arch. S.G., inv. nr. 8335.",
       "32": "Ordonnantieboek S.G. 1616, 40.",
       "33": "Res. 26 okt. 1618."
@@ -1482,6 +1546,11 @@
     "source_file": "0002",
     "period": "1634-1635 extraordinaris ambassadeur",
     "lines": [
+      {
+        "zone": "body",
+        "text": "9.   Mr. Adriaen Pauw, (Engels) eques auratus (19 okt. 1613), ridder van",
+        "pre_html": false
+      },
       {
         "zone": "body",
         "text": "St. Michiel (1624), heer van Heemstede (1620), Bennebroek (1620-",
@@ -1744,7 +1813,6 @@
       }
     ],
     "footnotes": {
-      "9": "Mr. Adriaen Pauw, (Engels) eques auratus (19 okt. 1613), ridder van",
       "34": "Hun verbaal 22 mei 1618-7 aug. 1618 in arch. S.G., inv. nrs. 8326-8327.",
       "35": "Zie noot 31.",
       "36": "J. G. S. J. van Maarseveen, De Republiek en Frankrijk in het begin van de 17e",
@@ -2447,168 +2515,11 @@
         "zone": "body",
         "text": "Consîantijn Rumpf, nr. 14.",
         "pre_html": false
-      },
-      {
-        "zone": "period_header",
-        "text": "1668-1670 secretaris van de ambassade",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "14. Chrisîiaan Consianiijn Rumpf geb. 's-Gravenhage 7 april 1633, litt,",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "et med. student te Leiden 30 mei 1643, in het gevolg van Van Beunin-",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "gen, nr. 68, naar Parijs 1660, particulier secretaris van Boreel te",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "Parijs 1663 en bij res. 4 okt. 1668 aangesteld tot secretaris van de",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "ambassade te Parijs, wat hij bleef na de aankomst van De Gr ooi ;",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "als vergoeding voor het waarnemen der zaken 1668 tot 1670 ontving",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "hij ƒ2000 eens; na het vertrek van De Grooi werd hem toegestaan in",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "Parijs te blijven als gemachtigde van de prins van Oranje en agent",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "van de Staten Generaal; werd bij res. 21 april 1673 benoemd tot",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "resident in Portugal, waaraan geen uitvoering is gegeven, want hij",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "bleef te Parijs en vertrok van daar naar Holland 28 maart 1674; bij",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "res. 20 april 1674 werd hij benoemd tot resident in Zweden op een",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "tractement van ƒ 6000 en hij nam afscheid ter vergadering 23 juli",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "1674; het schip, waarin zijn meubelen, boeken en goederen, door",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "hem op ƒ 20.000 geschat, geladen waren, werd op de reis van Rouaan",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "naar Vlissingen als inhoudende contrabande 28 juli 1674 opgebracht",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "naar Middelburg; hij kon daarom pas in aug. 1674 vertrekken en",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "kwam te Stockholm aan 2 okt. 1674; bij res. 14 juli 1685 wordt hem",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "verlof naar Holland verleend, maar tengevolge van de wens des",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "Konings kon hij daar eerst 14 juni 1686 gebruik van maken; hij bleef",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "In 1680 was zijn secretaris Bexez, zeer waarschijnlijk een familie-",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "lid van zijn tweede echtgenote.",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "In 1685 was zijn amanuensis Jan van der Straat (e), want bij miss.",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "10 april/6 juni 1685 werd hem voor bewezen diensten 30 rijksd.",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "boven zijn tractement van/150 's jaars toegekend; hij was zaak-",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "gelastigde gedurende het verlof van Rumpf 14 juni 1686 tot",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "20 sept. 1687 en was in 1688 nog in zijn dienst.",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "In 1694 was C. van Muijden waarschijnlijk Rumpfs secretaris63.",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "In 1697 v/as zijn handschrijver Crochel61, in 1700 zijn amanuen-",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "sis Oostbroek'*'*.",
-        "pre_html": false
       }
     ],
     "footnotes": {
       "47": "Hun verbaal 23 Juli 1640-7 nov. 1640 in arch. S.G., inv. nrs. 8387-8390.",
-      "48": "Hun verbalen 19 mei 1641-14 okt. 1641 in arch. S.G., inv. nrs. 8393-8394.",
-      "52": "Ress. 21 juli en 11 aug. 1640.",
-      "53": "Arch. Raad van State, inv. nr. 2110."
+      "48": "Hun verbalen 19 mei 1641-14 okt. 1641 in arch. S.G., inv. nrs. 8393-8394."
     },
     "mentioned_in": [
       {
@@ -2636,297 +2547,159 @@
     "period": "1668-1670 secretaris van de ambassade",
     "lines": [
       {
-        "zone": "entry",
+        "zone": "body",
         "text": "14. Chrisîiaan Consianiijn Rumpf geb. 's-Gravenhage 7 april 1633, litt,",
-        "indent": 0
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "et med. student te Leiden 30 mei 1643, in het gevolg van Van Beunin-",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "gen, nr. 68, naar Parijs 1660, particulier secretaris van Boreel te",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "Parijs 1663 en bij res. 4 okt. 1668 aangesteld tot secretaris van de",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "ambassade te Parijs, wat hij bleef na de aankomst van De Gr ooi ;",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "als vergoeding voor het waarnemen der zaken 1668 tot 1670 ontving",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "hij ƒ2000 eens; na het vertrek van De Grooi werd hem toegestaan in",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "Parijs te blijven als gemachtigde van de prins van Oranje en agent",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "van de Staten Generaal; werd bij res. 21 april 1673 benoemd tot",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "resident in Portugal, waaraan geen uitvoering is gegeven, want hij",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "bleef te Parijs en vertrok van daar naar Holland 28 maart 1674; bij",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "res. 20 april 1674 werd hij benoemd tot resident in Zweden op een",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "tractement van ƒ 6000 en hij nam afscheid ter vergadering 23 juli",
-        "indent": 5
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "1674; het schip, waarin zijn meubelen, boeken en goederen, door",
-        "indent": 6
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "hem op ƒ 20.000 geschat, geladen waren, werd op de reis van Rouaan",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "naar Vlissingen als inhoudende contrabande 28 juli 1674 opgebracht",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "naar Middelburg; hij kon daarom pas in aug. 1674 vertrekken en",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "kwam te Stockholm aan 2 okt. 1674; bij res. 14 juli 1685 wordt hem",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "verlof naar Holland verleend, maar tengevolge van de wens des",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "Konings kon hij daar eerst 14 juni 1686 gebruik van maken; hij bleef",
-        "indent": 5
+        "pre_html": false
       },
       {
-        "zone": "sub_note",
+        "zone": "body",
         "text": "In 1680 was zijn secretaris Bexez, zeer waarschijnlijk een familie-",
-        "indent": 11
+        "pre_html": false
       },
       {
-        "zone": "sub_note",
+        "zone": "body",
         "text": "lid van zijn tweede echtgenote.",
-        "indent": 11
+        "pre_html": false
       },
       {
-        "zone": "sub_note",
+        "zone": "body",
         "text": "In 1685 was zijn amanuensis Jan van der Straat (e), want bij miss.",
-        "indent": 11
+        "pre_html": false
       },
       {
-        "zone": "sub_note",
+        "zone": "body",
         "text": "10 april/6 juni 1685 werd hem voor bewezen diensten 30 rijksd.",
-        "indent": 12
+        "pre_html": false
       },
       {
-        "zone": "sub_note",
+        "zone": "body",
         "text": "boven zijn tractement van/150 's jaars toegekend; hij was zaak-",
-        "indent": 11
+        "pre_html": false
       },
       {
-        "zone": "sub_note",
+        "zone": "body",
         "text": "gelastigde gedurende het verlof van Rumpf 14 juni 1686 tot",
-        "indent": 11
+        "pre_html": false
       },
       {
-        "zone": "sub_note",
+        "zone": "body",
         "text": "20 sept. 1687 en was in 1688 nog in zijn dienst.",
-        "indent": 11
+        "pre_html": false
       },
       {
-        "zone": "sub_note",
+        "zone": "body",
         "text": "In 1694 was C. van Muijden waarschijnlijk Rumpfs secretaris63.",
-        "indent": 11
+        "pre_html": false
       },
       {
-        "zone": "sub_note",
+        "zone": "body",
         "text": "In 1697 v/as zijn handschrijver Crochel61, in 1700 zijn amanuen-",
-        "indent": 11
+        "pre_html": false
       },
       {
-        "zone": "sub_note",
+        "zone": "body",
         "text": "sis Oostbroek'*'*.",
-        "indent": 11
-      },
-      {
-        "zone": "body",
-        "text": "1670-1672 ordinaris ambassadeur",
-        "indent": 1
-      },
-      {
-        "zone": "body",
-        "text": "15. Mr. Pieter de Groot, geb. Rotterdam 28 maart 1615, ging naar",
-        "indent": 1
-      },
-      {
-        "zone": "genealogy",
-        "text": "Frankrijk in 1621 en naar Hamburg in 1632, jur. student te Amster-",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "dam, promoveerde te Orléans in 1637, advocaat te 's-Gravenhage",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "1638 en te Amsterdam 1640; benoemd tot raad en resident van de",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "keurvorst van de Palts, koning van Bohemen, te 's-Gravenhage, had",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "hij zijn eerste audiëntie 30 mei 1651 en werd teruggeroepen 31 maart",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "1660; vermeld als resident van Maria Elizabeth vorstin van Hohen-",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "zollern-Hechingen geb. des H.R. Rijksgravin van den Bergh, mar-",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "kiezin van Bergen op Zoom aldaar sedert 1648, van Oost-Friesland",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "30 dec. 1657 tot 26 maart 1660 en van Oldenburg; benoemd tot",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "resident van Munster 9 april 1659; pensionaris van Amsterdam 1660",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "tot 1667, met Johan Huydecoper, (Zweeds) ridder (10 aug. 1637),",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "heer van Tarnen en Blokland en van Maarseveen en Neerwijk (1640),",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "Cornells van Vlooswijck, heer van Vlooswijk, Wulverhorst, Diemer-",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "broek en Papenkop en Mr. Coenraad van Beuningen, nr. 68, door die",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "stad afgevaardigd naar Karel II koning van Engeland om hem bij",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "zijn troonsbestijging geluk te wensen 1660; werd bij ress. 19 en 21",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "dec. 1667 en 18 febr. 1668 benoemd tot ordinaris ambassadeur in",
-        "indent": 6
-      },
-      {
-        "zone": "body",
-        "text": "Zweden om aldaar gedurende driejaren te resideren en met geloofs-",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "brieven voor de Koning van Denemarken dd. 18 febr. 1668, vertrok",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "23 mei, kwam te Kopenhagen 5 juni, had zijn audiëntie 8 juni, nam",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "afscheid 16 juni en kwam te Stockholm aan 30 juni 1668, was bij",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "res. 5 juni 1669 benoemd tot ordinaris ambassadeur in Frankrijk,",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "waarom hij te Stockholm zijn laatste audiëntie had 10 aug. 1669 en",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "omstreeks 18 aug. vertrok; intussen was hem 29 juni 1669 een missie",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "naar Brunswijk-Lünenburg-Celle ter uitbreiding van Triple alliantie",
-        "indent": 5
+        "pre_html": false
       }
     ],
     "footnotes": {
       "52": "Ress. 21 juli en 11 aug. 1640.",
-      "53": "Arch. Raad van State, inv. nr. 2110.",
-      "62": "Miss. ree. 23 dec. 1680.",
-      "63": "Bijl. B en C van miss. ree. 20 april 1694.",
-      "64": "Miss. ree. 7 okt. 1697."
+      "53": "Arch. Raad van State, inv. nr. 2110."
     },
     "mentioned_in": [
       {
@@ -2951,7 +2724,7 @@
     "toc_chapter": "I. Frankrijk",
     "toc_page": 18,
     "source_file": "0002",
-    "period": "",
+    "period": "1598-1613 agent, ordinaris ambassadeur 1609",
     "lines": [
       {
         "zone": "body",
@@ -3403,7 +3176,10 @@
         "pre_html": true
       }
     ],
-    "footnotes": {},
+    "footnotes": {
+      "66": "Zijn verbaal in arch. S.G., inv. nrs. 8522-8524.",
+      "67": "Hun verbaal 9 febr. 1697-30 dec. 1697 in arch. S.G., inv. nrs. 8639-8640."
+    },
     "mentioned_in": [
       {
         "corpus": "nl",
@@ -3678,7 +3454,7 @@
     "toc_chapter": "I. Frankrijk",
     "toc_page": 23,
     "source_file": "0002",
-    "period": "1678-1679 extraordinaris ambassadeur",
+    "period": "1598-1613 agent, ordinaris ambassadeur 1609",
     "lines": [
       {
         "zone": "body",
@@ -3968,7 +3744,7 @@
     "toc_chapter": "I. Frankrijk",
     "toc_page": 24,
     "source_file": "0002",
-    "period": "1680-1688 ordinaris ambassadeur",
+    "period": "1598-1613 agent, ordinaris ambassadeur 1609",
     "lines": [
       {
         "zone": "body",
@@ -5378,6 +5154,11 @@
     "lines": [
       {
         "zone": "body",
+        "text": "28.   Willem Boreel, geb. Amsterdam 19 maart, ged. aldaar (O.k.) 20",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
         "text": "maart 1675, secretaris 1693 tot 1707, schepen 1708, 1719, 1720",
         "pre_html": false
       },
@@ -5508,7 +5289,6 @@
       }
     ],
     "footnotes": {
-      "28": "Willem Boreel, geb. Amsterdam 19 maart, ged. aldaar (O.k.) 20",
       "102": "Ress. 31 okt. en 20 nov. 1732.",
       "103": "Res. 11 juni 1755.",
       "104": "Zie ook res. 8 juni 1758.",
@@ -6554,96 +6334,6 @@
         "zone": "body",
         "text": "journalist in de Patriottentijd, 1957.",
         "pre_html": false
-      },
-      {
-        "zone": "period_header",
-        "text": "1795-1798 minister plenipotentiaris",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "36. Casparus Meyer, lid van de firma Von Döhren & Meyer te Bor-",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "deaux, werd bij res. 25 mei 1779 benoemd tot commissaris der",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "marine te Bordeaux, bij res. 18 sept. 1780 tot commissaris-generaal",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "in de provincie Guyenne, Bayonne daaronder begrepen met de be-",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "voegdheid vice commissarissen in de zeehavens aan te stellen; 20",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "sept. 1781 werd zijn commissie vernieuwd; werd bij res. 20 febr.",
-        "pre_html": false
-      },
-      {
-        "zone": "period_header",
-        "text": "1795 benoemd tot minister plenipotentiaris in Frankrijk, werd 16",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "mei erkend en 23 mei binnengeleid in de Nationale vergadering,",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "werd bij besl. 30 mei 1797 gerappelleerd, welk besluit bij res. 8 febr.",
-        "pre_html": false
-      },
-      {
-        "zone": "period_header",
-        "text": "1798 nr. 21 werd ingetrokken; werd bij besl. 19 maart 1798 nr. 12",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "gelast zonder verwijl herwaarts te keren, had 26 maart zijn laatste",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "audiëntie, werd bij res. 3 april 1798 nr. 31 tegen 4 april audiëntie",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "verleend en werd bij res. 7 april 1798 nr. 45 finaal gerappelleerd en",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "gedesigneerd tot minister in Spanje; dit laatste besluit werd bij res.",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "20 maart 1799 nr. 60 ingetrokken.",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "Zijn secretaris was (1798) Robertus Valerius van der Hoeven,",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "nr. 37.",
-        "pre_html": false
       }
     ],
     "footnotes": {
@@ -6671,203 +6361,97 @@
     "period": "1634-1635 extraordinaris ambassadeur",
     "lines": [
       {
-        "zone": "entry",
-        "text": "36.   J. G. S. J. van Maarseveen, De Republiek en Frankrijk in het begin van de 17e",
-        "indent": 0
-      },
-      {
-        "zone": "genealogy",
-        "text": "eeuw, een ambassade naar Frankrijk in 1624, in: Spiegel der Historie 1969, 413.",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "geb. in 1583, f Amsterdam 1 mei, begr. aldaar (O.k.) 4 mei 1607, dochter van",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "Claes Seys, koopman te Amsterdam, en (oude) Trijn Claesdr. Check; trouwde",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "2e Amsterdam 7 febr. 1610 Anna (van) Ruytenburgh, ged. aldaar (N.k.) 19 juni",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "1589, t 's-Gravenhage 3 nov., begr. Heemstede (kerk) 10 nov. 1648, dochter van",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "Pieter Gerritsz. (van) Ruytenburgh, heer van Vlaardingen, Vlaardingerambacht",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "(1611) en ter Horst (1615), koopman onder de fa. Pieter Gerritsz. Ruytenburgh",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "en Cie. en commissaris 1616 en weesmeester 1616 tot 1627 van Amsterdam, en",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "Aeltje Pietersdr. van Duyvendrecht.",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "N.N.B.W. X, 714; Elias 192; Jb. 1974, 247.",
-        "indent": 6
-      },
-      {
-        "zone": "sub_note",
-        "text": "Twee van zijn zoons vergezelden hem op zijn missie naar Frank-",
-        "indent": 9
-      },
-      {
-        "zone": "sub_note",
-        "text": "rijk in 1634.",
-        "indent": 9
-      },
-      {
-        "zone": "sub_note",
-        "text": "De secretaris Bartholomeus van Wouw leverde ter vergadering",
-        "indent": 9
-      },
-      {
-        "zone": "sub_note",
-        "text": "10 juni 1635 het met de Koning van Frankrijk gesloten verdrag",
-        "indent": 9
-      },
-      {
-        "zone": "sub_note",
-        "text": "dd. 8 febr. over (zie Addenda, pag. 472).",
-        "indent": 9
-      },
-      {
-        "zone": "sub_note",
-        "text": "Zijn secretaris in 1649 was Mr. Tilleman Aquiliusi2, die instruc-",
-        "indent": 9
-      },
-      {
-        "zone": "sub_note",
-        "text": "ties naar de Franse legers had ontvangen 6 juni 1641 (in het",
-        "indent": 9
-      },
-      {
-        "zone": "sub_note",
-        "text": "bijzonder het leger onder commando van de maarschalk De",
-        "indent": 9
-      },
-      {
-        "zone": "sub_note",
-        "text": "Mailleraye, 3 juni 1642, 30 mei 1643, 17 en 20 mei 1644, 22 en 23",
-        "indent": 9
-      },
-      {
-        "zone": "sub_note",
-        "text": "mei 1645 en 2 juni 1646; 16 nov. 1648 ontving hij commissie als",
-        "indent": 9
-      },
-      {
-        "zone": "sub_note",
-        "text": "ontvanger der verpondingen te Breda.",
-        "indent": 9
-      },
-      {
-        "zone": "entry",
+        "zone": "body",
         "text": "36. Casparus Meyer, lid van de firma Von Döhren & Meyer te Bor-",
-        "indent": 0
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "deaux, werd bij res. 25 mei 1779 benoemd tot commissaris der",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "marine te Bordeaux, bij res. 18 sept. 1780 tot commissaris-generaal",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "in de provincie Guyenne, Bayonne daaronder begrepen met de be-",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "voegdheid vice commissarissen in de zeehavens aan te stellen; 20",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "sept. 1781 werd zijn commissie vernieuwd; werd bij res. 20 febr.",
-        "indent": 5
+        "pre_html": false
       },
       {
-        "zone": "body",
+        "zone": "period_header",
         "text": "1795 benoemd tot minister plenipotentiaris in Frankrijk, werd 16",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "mei erkend en 23 mei binnengeleid in de Nationale vergadering,",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "werd bij besl. 30 mei 1797 gerappelleerd, welk besluit bij res. 8 febr.",
-        "indent": 5
+        "pre_html": false
       },
       {
-        "zone": "body",
+        "zone": "period_header",
         "text": "1798 nr. 21 werd ingetrokken; werd bij besl. 19 maart 1798 nr. 12",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "gelast zonder verwijl herwaarts te keren, had 26 maart zijn laatste",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "audiëntie, werd bij res. 3 april 1798 nr. 31 tegen 4 april audiëntie",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "verleend en werd bij res. 7 april 1798 nr. 45 finaal gerappelleerd en",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "gedesigneerd tot minister in Spanje; dit laatste besluit werd bij res.",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "20 maart 1799 nr. 60 ingetrokken.",
-        "indent": 5
+        "pre_html": false
       },
       {
-        "zone": "sub_note",
+        "zone": "body",
         "text": "Zijn secretaris was (1798) Robertus Valerius van der Hoeven,",
-        "indent": 9
+        "pre_html": false
       },
       {
-        "zone": "sub_note",
+        "zone": "body",
         "text": "nr. 37.",
-        "indent": 9
+        "pre_html": false
       }
     ],
     "footnotes": {
-      "37": "Hun verbaal 25 jan. 1628-27 maart 1629 in arch. S.G., inv. nrs. 8357-8358."
+      "37": "Hun verbaal 25 jan. 1628-27 maart 1629 in arch. S.G., inv. nrs. 8357-8358.",
+      "38": "Hun verbaal 3 juni 1634-26 febr. 1635 in arch. S.G., inv. nr. 8374.",
+      "39": "H u n verbaal 5 dec. 1645-16 sept. 1648 in arch. S.G., inv. nrs. 8411-8453.",
+      "40": "Hun verbaal 24 okt. 1619-12 nov. 1619 in arch. S.G., inv. nr. 8331.",
+      "41": "Hun verbaal 10 aug. 1621-4 nov. 1621 in arch. S.G., inv. nr. 8839."
     },
     "mentioned_in": [
       {
@@ -8301,7 +7885,20 @@
         "pre_html": false
       }
     ],
-    "footnotes": {},
+    "footnotes": {
+      "118": "Groot Placcaatboek II, 1343.",
+      "119": "Zijn verbaal 31 dec. 1697-6 jan. 1700 in arch. S.G., inv. nrs. 8641-8642.",
+      "120": "Res. 1 april 1794.",
+      "121": "Res. van die datum.",
+      "122": "Res. 19 juli 1805, no. 44.",
+      "125": "Res. 20 juni 1690.",
+      "126": "Res. 22 mei 1798, no. 54.",
+      "127": "Secr. miss. Van Reede-Amerongen 15/24 juli 1691.",
+      "128": "Res. 7 sept. 1784.",
+      "129": "Ress. 30 dec. 1778 en 25 mei 1779.",
+      "130": "Ress. 1665 en 2 april 1666.",
+      "131": "Res. 3 juni 1688."
+    },
     "mentioned_in": [
       {
         "corpus": "nl",
@@ -9493,7 +9090,7 @@
       },
       {
         "zone": "bronnen",
-        "text": "N.N.B.W. VÃƒÂƒÃ‚Â�IT, 689.",
+        "text": "N.N.B.W. VÃƒÂƒÃ‚Â?IT, 689.",
         "pre_html": true
       },
       {
@@ -13412,7 +13009,7 @@
     "toc_chapter": "III. Groot-Brittannië",
     "toc_page": 110,
     "source_file": "0002",
-    "period": "1695-1699 ordinaris ambassadeur",
+    "period": "1678-1680 extraordinaris ambassadeur",
     "lines": [
       {
         "zone": "body",
@@ -13568,12 +13165,24 @@
         "zone": "body",
         "text": "der Saan), die vanaf juni 1698 als zaakgelastigde optrad.",
         "pre_html": false
-      },
-      {
-        "zone": "period_header",
-        "text": "1699-1701 extraordinaris envoyé",
-        "pre_html": false
-      },
+      }
+    ],
+    "footnotes": {
+      "253": "Vgl. miss. 9/14 maart 1708.",
+      "254": "Miss. van dat jaar."
+    },
+    "mentioned_in": []
+  },
+  {
+    "schutte_nr": 73,
+    "corpus": "nl",
+    "toc_title": "Borssele van der Hooghe, Adriaan van",
+    "full_title": "73. Borssele van der Hooghe, Adriaan van",
+    "toc_chapter": "III. Groot-Brittannië",
+    "toc_page": 111,
+    "source_file": "0002",
+    "period": "1699-1701 extraordinaris envoyé",
+    "lines": [
       {
         "zone": "body",
         "text": "73. Adriaan van Borsseîe van der Hooghe, heer van Geldermalsen en in",
@@ -13848,302 +13457,6 @@
         "zone": "body",
         "text": "H . H . M , is uit 1721.",
         "pre_html": false
-      }
-    ],
-    "footnotes": {
-      "253": "Vgl. miss. 9/14 maart 1708.",
-      "254": "Miss. van dat jaar.",
-      "255": "Hun    verbaal   in arch. S.G., inv. nr. 8612.",
-      "256": "Hun    verbaal   24 maart 1 7 0 2 ^ april 1702 in arch. S.G., inv. nr. 8651.",
-      "257": "Hun    verbaal   in arch. S.G., inv. nrs. 8675-8679.",
-      "258": "Zijn   verbaal   26 sept. 1657-19 dec. 1657 in arch. S.G., inv. nrs. 8499-8500."
-    },
-    "mentioned_in": []
-  },
-  {
-    "schutte_nr": 73,
-    "corpus": "nl",
-    "toc_title": "Borssele van der Hooghe, Adriaan van",
-    "full_title": "73. Borssele van der Hooghe, Adriaan van",
-    "toc_chapter": "III. Groot-Brittannië",
-    "toc_page": 111,
-    "source_file": "0002",
-    "period": "1699-1701 extraordinaris envoyé",
-    "lines": [
-      {
-        "zone": "entry",
-        "text": "73. Adriaan van Borsseîe van der Hooghe, heer van Geldermalsen en in",
-        "indent": 0
-      },
-      {
-        "zone": "body",
-        "text": "Cleverskerke, ged. 's-Gravenhage 15 mei 1658, edelman van de",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "bedkamer van de prins van Oranje, raad en rentmeester-generaal",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "van Brabant, beschreven in het ambt Tielerwaard 2 april 1678; bij",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "ress. 26 sept. 1684 en 21 april 1685 met Mr. Anthonie Heinsius, Isaac",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "van den Heuvel en Johan Goes als commissarissen-deciseurs, en Mr.",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "Gerard Hooft, Jacob van Hoorn, Salomon van de Blocquery en Mr.",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "Adriaen Paets, nr. 295, als commissarissen-instructeurs vanwege de",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "Oost-Indische Compagnie benoemd tot commissaris-deciseur naar",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "Engeland in de kwestie Bantam, nam hij afscheid 30 april, kwam te",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "Westminster aan 14 mei 1685 en bracht rapport uit 3 april 1686255;",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "gecommitteerde in de Raad van State 24 maart 1692; werd bij res.",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "27 febr. 1699 benoemd tot extraordinaris envoyé naar Engeland,",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "totdat de ordinaris ambassade vervuld zou zijn, nam afscheid 24",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "april, kwam in Engeland 12 mei, had zijn eerste audiëntie 29 mei,",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "was met koning Willem III 'm Holland van ongeveer 15 juni tot 22",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "okt. 1699, was terug in Engeland 27 okt. 1699, vertrok opnieuw met",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "de Koning naar Holland in juli 1700, was terug in Engeland 21 nov.",
-        "indent": 5
-      },
-      {
-        "zone": "genealogy",
-        "text": "1700, vertrok nogmaals met de Koning uit Engeland (vóór) 12 juli",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "1701, werd op zijn verzoek ontslagen bij res. 1 sept. 1701 en bracht",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "rapport uit 14 sept. 1701 ; met Christiaan Carel van Lintelo, nr. 172,",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "en Mr. Barthoui van Slingelandt buitengewoon gedeputeerde naar",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "de Palts 1702256, gedeputeerde te velde 25 aug. 1702, 7 mei 1706,",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "20 april 1707 en 2 mei 1708; werd in 1705 door de Raad van State",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "gecommitteerd naar Frankfort ; ontving rnet Bruno van der Bussen,",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "Adolf Hendrik des H.R. Rijksgraaf van Rechteren, nr. 106, en Scato",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "Ludolf van Gockinga 28 sept. 1714 instructie als extraordinaris",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "ambassadeur en plenipotentiaris naar de conferentie te Antwerpen,",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "waar het tractaat 15 nov. 1715 gesloten werd257 en tekende als ge-",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "volmachtigde 31 jan. 1716 te Antwerpen het tractaat met de Keizer",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "tot liquidatie van het provisionele beheer der Zuidelijke Nederlan-",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "den door de Staten Generaal, f 's-Gravenhage 30 april 1728, begr.",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "Geldermalsen.",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "Zoon van Jacob van der Hooghe, later van Borsseîe van der Hooghe, heer in",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "Cleverskerke (1666) en van Geldermalsen, beschreven in het ambt Tielerwaard,",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "gecommitteerde in de Raad van State, gedeputeerde naar de bisschop en de stad",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "Munster 258 , gedeputeerde te velde 28 jan. 1666; benoemd tot gedeputeerde of",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "extraordinaris envoyé naar het Keizerlijke leger in 1674, bracht hij rapport uit",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "3 sept. 1674; extraordinaris gedeputeerde bij de hertogen van Brunswijk 15 dec.",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "1674, nam hij afscheid 15 dec. 1674 en bracht rapport uit 19 juni 1675, was in",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "maart 1678 te Dusseldorp, en Maria van Varick; trouwde (huwelijksafk. 's-Gra-",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "venhage 19 febr. 1696) Geertruidvan Weideren, ged. Tiel 18 febr. 1674, f 's-Gra-",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "venhage 21 mei 1732, begr. Geldermalsen, dochter van Bernhard van Weideren,",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "heer van Valburg, in de ridderschap van Nijmegen 1655, raad in den Hove van",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "Gelderland 1675, ambtman, richter en dijkgraaf van Nederbetuwe, en Maria",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "Catharina Soudenbalch.",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "N.A. 1940, 427.",
-        "indent": 7
-      },
-      {
-        "zone": "sub_note",
-        "text": "Zijn secretaris was Benjamin Bertin, in 1688 en 1689 amanuensis",
-        "indent": 11
-      },
-      {
-        "zone": "sub_note",
-        "text": "van Van Bilderbeeck, nr. 133, in 1698 secretaris van Von Span-",
-        "indent": 11
-      },
-      {
-        "zone": "sub_note",
-        "text": "heim, nr. 101, zeker sedert 1700 259 ; deze schreef berichten aan de",
-        "indent": 11
-      },
-      {
-        "zone": "sub_note",
-        "text": "Staten Generaal 23 juli tot 16 nov. 1700 en 12 juli tot 12 aug.",
-        "indent": 11
-      },
-      {
-        "zone": "sub_note",
-        "text": "1701, was daarna secretaris van Van Vrijberghe, zaakgelastigde",
-        "indent": 11
-      },
-      {
-        "zone": "sub_note",
-        "text": "mei tot aug. 1705 en van Van Borssele, zaakgelastigde 1 tot 24",
-        "indent": 11
-      },
-      {
-        "zone": "sub_note",
-        "text": "aug. 1714 en 22 juli 1716 tot 31 jan. 1717; zijn laatste brief aan",
-        "indent": 11
-      },
-      {
-        "zone": "sub_note",
-        "text": "H . H . M , is uit 1721.",
-        "indent": 11
       }
     ],
     "footnotes": {
@@ -14841,7 +14154,10 @@
         "pre_html": false
       }
     ],
-    "footnotes": {},
+    "footnotes": {
+      "264": "Res. van die datum.",
+      "265": "Zijn verbaal 4 okt. 1723-8 dec. 1761 in arch. S.G., inv. nrs. 8783-8819a."
+    },
     "mentioned_in": []
   },
   {
@@ -16479,6 +15795,11 @@
     "lines": [
       {
         "zone": "body",
+        "text": "86.    J. C. Hagenbach, secretaris van Mr. Jacob Jan Hamel Bruyninx",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
         "text": "zeker sedert 1736, was zaakgelastigde sinds diens dood op 27 febr.",
         "pre_html": false
       },
@@ -16503,9 +15824,7 @@
         "pre_html": false
       }
     ],
-    "footnotes": {
-      "86": "J. C. Hagenbach, secretaris van Mr. Jacob Jan Hamel Bruyninx"
-    },
+    "footnotes": {},
     "mentioned_in": [
       {
         "corpus": "nl",
@@ -19232,12 +18551,38 @@
         "zone": "body",
         "text": "Schmidt man358.",
         "pre_html": false
+      }
+    ],
+    "footnotes": {},
+    "mentioned_in": [
+      {
+        "corpus": "nl",
+        "schutte_nr": 46
       },
       {
-        "zone": "period_header",
-        "text": "1794 zaakgelastigde",
-        "pre_html": false
+        "corpus": "nl",
+        "schutte_nr": 47
       },
+      {
+        "corpus": "nl",
+        "schutte_nr": 48
+      },
+      {
+        "corpus": "nl",
+        "schutte_nr": 104
+      }
+    ]
+  },
+  {
+    "schutte_nr": 104,
+    "corpus": "nl",
+    "toc_title": "Bangeman Huijgens, Christiaan Diederik Emerens Johan",
+    "full_title": "104. Bangeman Huijgens, Christiaan Diederik Emerens Johan",
+    "toc_chapter": "C. Regensburg",
+    "toc_page": 155,
+    "source_file": "0002",
+    "period": "1794 zaakgelastigde",
+    "lines": [
       {
         "zone": "body",
         "text": "104. Jhr. (K.B. 19 juni 1830 nr. 95) Chrisüaan Diederik Emerens Johan",
@@ -19432,216 +18777,6 @@
         "zone": "body",
         "text": "met die bij de Opperrijnse Kreits of de keurvorsten van de Palts of Mainz.",
         "pre_html": false
-      }
-    ],
-    "footnotes": {
-      "357": "Zie noten 148 en 149.",
-      "358": "Res. 3 mei 1792.",
-      "359": "Besl. 19 febr. 1808 nr. 15."
-    },
-    "mentioned_in": [
-      {
-        "corpus": "nl",
-        "schutte_nr": 46
-      },
-      {
-        "corpus": "nl",
-        "schutte_nr": 47
-      },
-      {
-        "corpus": "nl",
-        "schutte_nr": 48
-      },
-      {
-        "corpus": "nl",
-        "schutte_nr": 104
-      }
-    ]
-  },
-  {
-    "schutte_nr": 104,
-    "corpus": "nl",
-    "toc_title": "Bangeman Huijgens, Christiaan Diederik Emerens Johan",
-    "full_title": "104. Bangeman Huijgens, Christiaan Diederik Emerens Johan",
-    "toc_chapter": "C. Regensburg",
-    "toc_page": 155,
-    "source_file": "0002",
-    "period": "1794 zaakgelastigde",
-    "lines": [
-      {
-        "zone": "entry",
-        "text": "104. Jhr. (K.B. 19 juni 1830 nr. 95) Chrisüaan Diederik Emerens Johan",
-        "indent": 0
-      },
-      {
-        "zone": "body",
-        "text": "Bangeman Huijgens, geb. St. Oedenrode, h. de Hulst, 31 okt., ged.",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "'s-Hertogenbosch 14 nov. 1772, nam na de dood van Gallieris de",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "zaken te Regensburg waar en vertrok van daar vóór 17 juni 1794;",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "werd in aug. 1794 secretaris van de extraordinaris envoyé Eagel,",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "nr. 219, te Kopenhagen en na diens vertrek op 2 april 1795 (bij res.",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "24 april 1795 als zodanig benoemd) zaakgelastigde aldaar, na de",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "aankomst op 28 sept. 1795 secretaris van de extraordinaris envoyé",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "en minister plenipotentiaris Van Lynden, nr. 80, diens secretaris; bij",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "res. 29 jan. 1796 werd hij benoemd tot minister te Regensburg, aan",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "welke benoeming geen uitvoering is gegeven; benoemd tot minister",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "plenipotentiaris in Denemarken, bood hij zijn geloofsbrieven aan",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "25 jan. 1797, ontving bij res. 1 juni 1798 nr. 19 verlof de zomer op",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "een landgoed te mogen doorbrengen, had verlof van na 26 sept. 1801",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "tot vóór 10 juli 1802 en opnieuw na 26 mei 1804, wordt 8 okt. 1805",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "nog in zijn functie vermeld en nam 24 april 1807 afscheid, ridder in",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "de Orde van Verdienste (later van Holland en van de Unie) 1 jan.",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "1807, commandeur in die Orde 1810; was intussen (?) benoemd tot",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "staatsraad en werd bij deer. 26 juni 1807 nr. 6 benoemd tot minister",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "plenipotentiaris bij de prins-regent van Portugal, aan welke be-",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "noeming geen uitvoering is gegeven ; werd bij deer. 8 febr. 1808 nr. 27",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "benoemd tot minister plenipotentiaris en envoyé extraordinaris bij",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "de Koning van Westfalen op een tractement van ƒ 15.000 en ƒ 6000",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "voor reiskosten359, bood zijn geloofsbrieven aan 24 april 1808, werd",
-        "indent": 5
-      },
-      {
-        "zone": "genealogy",
-        "text": "was tot lid van Keur-Palatijnse gereformeerde kerkeraad te Heidel-",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "berg; bleef in functie tot 1 okt. 1750362.",
-        "indent": 7
-      },
-      {
-        "zone": "body",
-        "text": "1750-1763 Ds. Johan Willem (ook: Wolfgang) Muller, tweede predikant",
-        "indent": 1
-      },
-      {
-        "zone": "genealogy",
-        "text": "te Windecken (grf. Hanau), werd bij res. 13 juli 1750 benoemd tot",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "predikant te Regensburg, f aldaar kort vóór 4 aug. 1763.",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "Trouwde Sidonia Henrietta Sanies, 1' vóór 25 febr. 1765, bij wie hij drie zonen",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "en een dochter, waarvan de oudste in 1763 twaalf jaar was, had 3ü3 .",
-        "indent": 7
-      },
-      {
-        "zone": "body",
-        "text": "informator ten huize van Heinrich Karl von Pfau, Anhalts (1745-",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "1773) en Saksen-Meiningens (1745-1778) gezant te Regensburg,",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "werd bij res. 17 aug. 1763 benoemd tot predikant te Regensburg en",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "was dit blijkens de Staten van oorlog in 1785 nog.",
-        "indent": 5
       }
     ],
     "footnotes": {
@@ -21334,12 +20469,48 @@
         "zone": "genealogy",
         "text": "Georg Ernst Lucius, nr. 115.",
         "pre_html": false
+      }
+    ],
+    "footnotes": {
+      "374": "Miss. Gansinot ree. 11 mei 1733."
+    },
+    "mentioned_in": [
+      {
+        "corpus": "nl",
+        "schutte_nr": 113
       },
       {
-        "zone": "period_header",
-        "text": "1778-1789 zaakgelastigde",
-        "pre_html": false
+        "corpus": "nl",
+        "schutte_nr": 127
       },
+      {
+        "corpus": "nl",
+        "schutte_nr": 136
+      },
+      {
+        "corpus": "nl",
+        "schutte_nr": 137
+      },
+      {
+        "corpus": "nl",
+        "schutte_nr": 138
+      },
+      {
+        "corpus": "nl",
+        "schutte_nr": 139
+      }
+    ]
+  },
+  {
+    "schutte_nr": 115,
+    "corpus": "nl",
+    "toc_title": "Lucius, Georg Ernst",
+    "full_title": "115. Lucius, Georg Ernst",
+    "toc_chapter": "F. Keur-Palts",
+    "toc_page": 167,
+    "source_file": "0002",
+    "period": "1805-1808 ordinaris ambassadeur",
+    "lines": [
       {
         "zone": "body",
         "text": "115. Georg Ernst Lucius, ged. Wächtersbach 15 juli 1736, secretaris van",
@@ -21557,183 +20728,8 @@
       }
     ],
     "footnotes": {
-      "374": "Miss. Gansinot ree. 11 mei 1733.",
       "375": "Zijn gedrukte „verbaal\" betreffende het voorgevallene tussen de landgraaf van"
     },
-    "mentioned_in": [
-      {
-        "corpus": "nl",
-        "schutte_nr": 113
-      },
-      {
-        "corpus": "nl",
-        "schutte_nr": 127
-      },
-      {
-        "corpus": "nl",
-        "schutte_nr": 136
-      },
-      {
-        "corpus": "nl",
-        "schutte_nr": 137
-      },
-      {
-        "corpus": "nl",
-        "schutte_nr": 138
-      },
-      {
-        "corpus": "nl",
-        "schutte_nr": 139
-      }
-    ]
-  },
-  {
-    "schutte_nr": 115,
-    "corpus": "nl",
-    "toc_title": "Lucius, Georg Ernst",
-    "full_title": "115. Lucius, Georg Ernst",
-    "toc_chapter": "F. Keur-Palts",
-    "toc_page": 167,
-    "source_file": "0002",
-    "period": "1805-1808 ordinaris ambassadeur",
-    "lines": [
-      {
-        "zone": "entry",
-        "text": "115. Zie noot 111.",
-        "indent": 0
-      },
-      {
-        "zone": "entry",
-        "text": "115. Georg Ernst Lucius, ged. Wächtersbach 15 juli 1736, secretaris van",
-        "indent": 0
-      },
-      {
-        "zone": "body",
-        "text": "de minister plenipotentiaris Von Wartensleben, was na diens dood",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "provisorisch zaakgelastigde van al zijn missies en werd 12 maart",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "1778 benoemd tot zaakgelastigde bij de Opperrijnse Kreits en de",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "keurvorsten van de Palts, Mainz en Trier (tot 1784) tot 1789; sinds",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "23 febr. 1796 wordt hij opnieuw in die hoedanigheid vermeld te",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "Mainz, f aldaar 14 aug. 1800.",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "Zoon van Johann Ludwig Lucius, achtereenvolgens registrator, secretaris en",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "kamerraad aan de kanselarij van de graaf van Ysenburg in Wächtersbach, en",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "Justina Perpetua N.",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "Adolf Bach, Der Satiriker und Diplomat Georg Ernst Lucius (1736/1800), in:",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "Festschrift Josef Quint anlässlich seines 65. Geburtstages überreicht, Bonn, 1964.",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "375.   Zijn gedrukte „verbaal\" betreffende het voorgevallene tussen de landgraaf van",
-        "indent": 0
-      },
-      {
-        "zone": "genealogy",
-        "text": "Hessen-Kassel en hem in 1763 en 1764 in arch. S.G., inv. nr. 8828a; Streit",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "zwischen den General Staten der Vereinigten Niederlande und dem Herrn",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "Landgrafen von Hessen-Kassel über den von der Regierung zu Hessen-Kassel",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "1763 verfügten Personal-Arrest wider den Herrn Grafen von Wartensleben,",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "Gesandten der Vereinigten Niederlanden bei den geistlichen Churfürsten.",
-        "indent": 7
-      },
-      {
-        "zone": "body",
-        "text": "Adolf Hendrik des H.R. Rijksgraaf van Rechteren, nr. 106.",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "Tjaard van Aylva, nr. 107.",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "Carl Friedrich des H.R. Rijksgraaf von Wartensleben, nr. 114.",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "Georg Ernst Lucius, nr. 115.",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "Heinrich August baron von Kinkel, nr. 98.",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "Frederik Hendrik van Bilderbeeck, nr. 113.",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "Carl Friedrich des H.R. Rijksgraaf von Wartensleben, nr. 114.",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "Georg Ernst Lucius, nr. 115.",
-        "indent": 5
-      }
-    ],
-    "footnotes": {},
     "mentioned_in": [
       {
         "corpus": "nl",
@@ -21749,7 +20745,7 @@
     "toc_chapter": "F. Keur-Palts",
     "toc_page": 168,
     "source_file": "0002",
-    "period": "1805-1808 ordinaris ambassadeur",
+    "period": "1784-1796 minister plenipotentiaiis",
     "lines": [
       {
         "zone": "body",
@@ -21818,7 +20814,7 @@
     "toc_chapter": "K. Rijnbond",
     "toc_page": 170,
     "source_file": "0002",
-    "period": "1808-1809 extraordinaris envoyé",
+    "period": "1804 commissie als extraordinaris ambassadeur naar Parijs ter",
     "lines": [
       {
         "zone": "body",
@@ -22591,6 +21587,11 @@
     "lines": [
       {
         "zone": "body",
+        "text": "120.   Dr. Pieter Cornelisz. van Breder ode, geb. 's-Gravenhage omstreeks",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
         "text": "1558, jur. student te Leiden 9 mei 1578 en te Genève 25 juli 1580, in",
         "pre_html": false
       },
@@ -22796,7 +21797,6 @@
       }
     ],
     "footnotes": {
-      "120": "Dr. Pieter Cornelisz. van Breder ode, geb. 's-Gravenhage omstreeks",
       "378": "Besl. 16 okt. 1809 nr. 6."
     },
     "mentioned_in": [
@@ -24215,7 +23215,7 @@
     "toc_chapter": "P. Keur-Keulen",
     "toc_page": 183,
     "source_file": "0002",
-    "period": "1671-1677 correspondent, agent 1673, resident 1673",
+    "period": "1795-1810 David Aiguillé werd bij res. 23 juni 1795 benoemd tot commis-",
     "lines": [
       {
         "zone": "body",
@@ -24243,7 +23243,9 @@
         "pre_html": false
       }
     ],
-    "footnotes": {},
+    "footnotes": {
+      "133": "Miss. 29/30 dec. 1688."
+    },
     "mentioned_in": [
       {
         "corpus": "nl",
@@ -24428,7 +23430,7 @@
     "toc_chapter": "P. Keur-Keulen",
     "toc_page": 183,
     "source_file": "0002",
-    "period": "1738-1751 resident",
+    "period": "1624—(1638) Lodevicq Verssen werd door de Nederlandse kooplieden te",
     "lines": [
       {
         "zone": "body",
@@ -24728,7 +23730,7 @@
     "toc_chapter": "P. Keur-Keulen",
     "toc_page": 185,
     "source_file": "0002",
-    "period": "1755 secretaris",
+    "period": "1624—(1638) Lodevicq Verssen werd door de Nederlandse kooplieden te",
     "lines": [
       {
         "zone": "body",
@@ -24840,7 +23842,7 @@
     "toc_chapter": "P. Keur-Keulen",
     "toc_page": 185,
     "source_file": "0002",
-    "period": "1780-1796 minister plenipotentiaris",
+    "period": "1624—(1638) Lodevicq Verssen werd door de Nederlandse kooplieden te",
     "lines": [
       {
         "zone": "body",
@@ -24878,7 +23880,12 @@
         "pre_html": false
       }
     ],
-    "footnotes": {},
+    "footnotes": {
+      "138": "Ress. 12 maart en 6 juli 1624.",
+      "139": "Res. 27 april 1789.",
+      "140": "Besl. 15 nov. 1807 nr. 24.",
+      "141": "Res. 8 mei 1798 nr. 3."
+    },
     "mentioned_in": [
       {
         "corpus": "nl",
@@ -25187,7 +24194,7 @@
     "toc_chapter": "Q. Luik",
     "toc_page": 187,
     "source_file": "0002",
-    "period": "",
+    "period": "1679-1689 (?) Nicolaes Ruts werd bij res. 28 april 1679 benoemd tot",
     "lines": [
       {
         "zone": "body",
@@ -25276,7 +24283,7 @@
     "toc_chapter": "Q. Luik",
     "toc_page": 187,
     "source_file": "0002",
-    "period": "1780-1781 minister",
+    "period": "1679-1689 (?) Nicolaes Ruts werd bij res. 28 april 1679 benoemd tot",
     "lines": [
       {
         "zone": "body",
@@ -25478,7 +24485,7 @@
     "toc_chapter": "Q. Luik",
     "toc_page": 188,
     "source_file": "0002",
-    "period": "1783-1795 minister",
+    "period": "1798-1810 J. C. Nieiwas 14 febr. 1798144 commissaris van het Uitvoerend",
     "lines": [
       {
         "zone": "body",
@@ -25561,7 +24568,10 @@
         "pre_html": false
       }
     ],
-    "footnotes": {},
+    "footnotes": {
+      "145": "Miss. ree. 24 dec. 1627.",
+      "146": "Res. Dir. 13 mei 1632."
+    },
     "mentioned_in": [
       {
         "corpus": "nl",
@@ -25612,12 +24622,30 @@
         "zone": "body",
         "text": "voor de koperhandel.",
         "pre_html": false
+      }
+    ],
+    "footnotes": {},
+    "mentioned_in": [
+      {
+        "corpus": "nl",
+        "schutte_nr": 144
       },
       {
-        "zone": "period_header",
-        "text": "1664-1670 agent",
-        "pre_html": false
-      },
+        "corpus": "nl",
+        "schutte_nr": 146
+      }
+    ]
+  },
+  {
+    "schutte_nr": 146,
+    "corpus": "nl",
+    "toc_title": "Wachtendonck, François van",
+    "full_title": "146. Wachtendonck, François van",
+    "toc_chapter": "R. Aken",
+    "toc_page": 188,
+    "source_file": "0002",
+    "period": "1664-1670 agent",
+    "lines": [
       {
         "zone": "body",
         "text": "146. François van Wachtendonck ontving 28 maart 1664 met Arnoldus van",
@@ -25677,84 +24705,6 @@
         "zone": "genealogy",
         "text": "H. F. Macco, Geschichte und Genealogie der Familien Peltzer 1901, 192.",
         "pre_html": false
-      }
-    ],
-    "footnotes": {},
-    "mentioned_in": [
-      {
-        "corpus": "nl",
-        "schutte_nr": 144
-      },
-      {
-        "corpus": "nl",
-        "schutte_nr": 146
-      }
-    ]
-  },
-  {
-    "schutte_nr": 146,
-    "corpus": "nl",
-    "toc_title": "Wachtendonck, François van",
-    "full_title": "146. Wachtendonck, François van",
-    "toc_chapter": "R. Aken",
-    "toc_page": 188,
-    "source_file": "0002",
-    "period": "1664-1670 agent",
-    "lines": [
-      {
-        "zone": "entry",
-        "text": "146. François van Wachtendonck ontving 28 maart 1664 met Arnoldus van",
-        "indent": 0
-      },
-      {
-        "zone": "body",
-        "text": "Wachtendonck en Nicolaas van Beeck c.s., kooplieden van de Gere-",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "formeerde religie, octrooi om voor twaalf jaren koperhandel op",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "424. Res. 28 febr. 1798 nr. 55.",
-        "indent": 0
-      },
-      {
-        "zone": "body",
-        "text": "425. Res. 16 okt. 1801 nr. 1.",
-        "indent": 0
-      },
-      {
-        "zone": "body",
-        "text": "426. Res. 11 mei 1807 nr. 25.",
-        "indent": 0
-      },
-      {
-        "zone": "genealogy",
-        "text": "Vaals, Leende en 's-Hertogenrade te mogen plegen427; hij werd bij",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "res. 24 april 1664 benoemd tot agent te Aken, f kort vóór 8 jan. 1671.",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "Zoon van Arnold van Wachtendonck, heer van Hasselholz, en Anna Boon; trouw-",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "de Anna Bessels, t (aan de pest) 4 aug. 1664.",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "H. F. Macco, Geschichte und Genealogie der Familien Peltzer 1901, 192.",
-        "indent": 7
       }
     ],
     "footnotes": {},
@@ -25857,7 +24807,7 @@
     "toc_chapter": "R. Aken",
     "toc_page": 189,
     "source_file": "0002",
-    "period": "1681-1693 agent",
+    "period": "1709-1717 secretaris",
     "lines": [
       {
         "zone": "body",
@@ -26155,12 +25105,12 @@
       },
       {
         "zone": "genealogy",
-        "text": "S. BRUNSWÃƒÂƒÃ‚Â�JK-LÃƒÂƒÃ‚ÂœNENBURG-CALENBERG, BRUNSWIJK-",
+        "text": "S. BRUNSWÃƒÂƒÃ‚Â?JK-LÜNENBURG-CALENBERG, BRUNSWIJK-",
         "pre_html": false
       },
       {
         "zone": "genealogy",
-        "text": "LÃƒÂƒÃ‚ÂœNENBURG-CELLE en BRUNSWÃƒÂƒÃ‚Â�JK-WOLFFENBÃƒÂƒÃ‚ÂœTTEL",
+        "text": "LÃƒÂƒÃ‚ÂœNENBURG-CELLE en BRUNSWÃƒÂƒÃ‚Â?JK-WOLFFENBÜTTEL",
         "pre_html": false
       },
       {
@@ -26749,12 +25699,30 @@
         "zone": "body",
         "text": "Zijn amanuensis tussen 1642435 en 1648 was Isaack van Belle.",
         "pre_html": false
-      },
+      }
+    ],
+    "footnotes": {
+      "431": "Zijn instrcctic van 2 jan. 1630 gedrukt bij Vreede „I\", 1ste gedeelte, bijlagen, 94.",
+      "432": "Res. 1634, 976 vo.",
+      "433": "Res. 21 juli 1640 en miss. 17/25 april 1640."
+    },
+    "mentioned_in": [
       {
-        "zone": "period_header",
-        "text": "1653-1675 resident te Hamburg en Lübeck",
-        "pre_html": false
-      },
+        "corpus": "nl",
+        "schutte_nr": 153
+      }
+    ]
+  },
+  {
+    "schutte_nr": 155,
+    "corpus": "nl",
+    "toc_title": "Römer, Matthias",
+    "full_title": "155. Römer, Matthias",
+    "toc_chapter": "T. Nedersaksische Kreits, Hamburg, Lübeck en Bremen",
+    "toc_page": 193,
+    "source_file": "0002",
+    "period": "1653-1675 resident te Hamburg en Lübeck",
+    "lines": [
       {
         "zone": "body",
         "text": "155. Matthias Römer, resident van de hertog van Paltz-Neuburg te",
@@ -26919,192 +25887,6 @@
         "zone": "body",
         "text": "zie onder nr. 21.",
         "pre_html": false
-      }
-    ],
-    "footnotes": {
-      "431": "Zijn instrcctic van 2 jan. 1630 gedrukt bij Vreede „I\", 1ste gedeelte, bijlagen, 94.",
-      "432": "Res. 1634, 976 vo.",
-      "433": "Res. 21 juli 1640 en miss. 17/25 april 1640.",
-      "434": "Res. 26 mei 1651.",
-      "435": "Miss. ree. 31 maart 1642.",
-      "436": "Gelderland en Holland verklaarden zich tegen deze benoeming."
-    },
-    "mentioned_in": [
-      {
-        "corpus": "nl",
-        "schutte_nr": 153
-      }
-    ]
-  },
-  {
-    "schutte_nr": 155,
-    "corpus": "nl",
-    "toc_title": "Römer, Matthias",
-    "full_title": "155. Römer, Matthias",
-    "toc_chapter": "T. Nedersaksische Kreits, Hamburg, Lübeck en Bremen",
-    "toc_page": 193,
-    "source_file": "0002",
-    "period": "1653-1675 resident te Hamburg en Lübeck",
-    "lines": [
-      {
-        "zone": "entry",
-        "text": "155. Matthias Römer, resident van de hertog van Paltz-Neuburg te",
-        "indent": 0
-      },
-      {
-        "zone": "genealogy",
-        "text": "'s-Gravenhage zeker sedert 1642 tot 1645, werd bij res. 6 jan. 1646",
-        "indent": 6
-      },
-      {
-        "zone": "body",
-        "text": "benoemd als commissaris naar Zweden ter uitwisseling van de",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "ratification van het tractaat van ligue en garantie, 15-25 aug. 1645",
-        "indent": 5
-      },
-      {
-        "zone": "genealogy",
-        "text": "te Suderocra gesloten; was van juli tot 17 nov. 1646 te Stockholm;",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "1 mei 1648 vertrok hij als commissaris ter behartiging van de par-",
-        "indent": 6
-      },
-      {
-        "zone": "body",
-        "text": "ticuliere belangen van enige kooplieden naar Zweden, maar kreeg",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "een credietbrief voor de Koningin mee en hem werd bij res. 11 febr.",
-        "indent": 5
-      },
-      {
-        "zone": "genealogy",
-        "text": "1649 opgedragen om de belangrijkste gebeurtenissen in Zweden aan",
-        "indent": 6
-      },
-      {
-        "zone": "body",
-        "text": "de griffier te melden; was te Stockholm tussen 17 nov. 1649 en 19",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "jan. 1650; verzocht bij ress. 26 mei en 24 nov. 1651 benoemd te",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "worden en werd bij ress. 11 nov. 1652 en 10 mei en 13 juni 1653",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "benoemd tot en ontving op laatstgenoemde datum zijn commissie als",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "resident te Hamburg en Lübeck436 en als gezant in bijzondere missie",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "naar de hertog van Brunswijk-Lünenburg-Calenberg; nam afscheid",
-        "indent": 5
-      },
-      {
-        "zone": "genealogy",
-        "text": "1 aug. 1653, stond 29 sept, op het punt van vertrekken, bood zijn",
-        "indent": 6
-      },
-      {
-        "zone": "body",
-        "text": "geloofsbrieven te Hamburg aan 27 jan. 1654; zijn geloofsbrieven",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "voor Brunswijk-Lünenburg-Calenberg werden pas 31 mei 1654",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "verzonden en hij werd van die missie teruggeroepen 14 sept. 1655;",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "was in 1661 met verlof en terug te Hamburg 6 sept. 1661, werd in",
-        "indent": 5
-      },
-      {
-        "zone": "genealogy",
-        "text": "1669 belast met een missie naar Brunswijk en was 13 juni 1669 terug",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "te 's-Gravenhage om rapport uit te brengen; ontving bij res. 5 sept.",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "1670 een creditief voor de hertogen van Brunswijk; nam afscheid",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "ter vergadering van 13 april 1671, was te Hamburg 26 aug. 1672,",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "f Hamburg 22 (of 18?) juni 1675.",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "Zoon van Lambrecht Römer te Aken en Katharina Amy a; trouwde Anna Düp-",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "pengiesser, die in 1678 te Utrecht woonde, t na 4 mei 1685, dochter van N. Diip-",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "pengiesser en Marie Blanche.",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "N.P. 1963, 259.",
-        "indent": 7
-      },
-      {
-        "zone": "sub_note",
-        "text": "In 1655 was er ook een geheim correspondent te Bremen437.",
-        "indent": 11
-      },
-      {
-        "zone": "sub_note",
-        "text": "Zeker in 1675 was zijn amanuensis of secretaris Gabriel Floris,",
-        "indent": 11
-      },
-      {
-        "zone": "sub_note",
-        "text": "zie onder nr. 21.",
-        "indent": 11
       }
     ],
     "footnotes": {
@@ -27770,7 +26552,7 @@
     "toc_chapter": "T. Nedersaksische Kreits, Hamburg, Lübeck en Bremen",
     "toc_page": 196,
     "source_file": "0002",
-    "period": "1584-1590 agent",
+    "period": "1742-1756 minister bij de Nedersaksische Kreits en resident bij de Hanze-",
     "lines": [
       {
         "zone": "body",
@@ -28482,7 +27264,7 @@
     "toc_chapter": "T. Nedersaksische Kreits, Hamburg, Lübeck en Bremen",
     "toc_page": 199,
     "source_file": "0002",
-    "period": "1795-1800 minister plenipotentiaris bij (de Nedersaksische Kreits en) de",
+    "period": "1591-1624 agent, ordinaris ambassadeur 1609",
     "lines": [
       {
         "zone": "body",
@@ -28635,7 +27417,10 @@
         "pre_html": false
       }
     ],
-    "footnotes": {},
+    "footnotes": {
+      "166": "Zie ook ress. 17 en 22 mei 1586.",
+      "167": "Res. 24 febr. 1587."
+    },
     "mentioned_in": [
       {
         "corpus": "nl",
@@ -28934,6 +27719,207 @@
       },
       {
         "zone": "body",
+        "text": "te verantwoorden wegens het afgeven van certificaten in blanco en",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "verzocht hij naar Bremen te mogen terugkeren om zijn functie te",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "hervatten; in besl. 18 mei 1808 nr. 36 wordt hij consul genoemd; bij",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "S.B. 28 jan. 1814 werd hij benoemd tot consul te Bremen, wat hij",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "bleef tot 1820.",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "W. H. Dunt ze werd bij K.B. 16 april 1819 benoemd tot vice-consul te Bremen",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "en bij K.B. 1 mei 1820 tot consul aldaar.",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "U. PRUISSEN",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "Pas sedert 1679 kan van een min of meer vaste vertegenwoordiging bij de",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "keurvorst van Brandenburg, later Koning in en van Pruissen gesproken",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "worden, sedert 1692 in de rang van extraordinaris envoyé en/of minister",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "(plenipotentiaris).",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "Litt. : J. H. Hora Siccama, Schets van de diplomatieke betrekkingen tusschen Neder-",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "land en Brandenburg 1596-1678, (ac. pr.), Utrecht, 1867.",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "G. J. Rive, Schets der staatkundige betrekkingen tusschen de Republiek der Vereenigde",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "Nederlanden en het Koninkrijk Pruisen, tot het huwelijk van Prins Willem V (1701-",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "1767), (ac. pr. Utrecht), Amsterdam, 1873.",
+        "pre_html": false
+      }
+    ],
+    "footnotes": {
+      "446": "Vreede „I\", deel 2, 2de stuk, bijl. XXIX."
+    },
+    "mentioned_in": []
+  },
+  {
+    "schutte_nr": 167,
+    "corpus": "nl",
+    "toc_title": "Isbrants, Johan",
+    "full_title": "167. Isbrants, Johan",
+    "toc_chapter": "U. Pruissen",
+    "toc_page": 201,
+    "source_file": "0002",
+    "period": "1658-1659 extraordinaris ambassadeur",
+    "lines": [
+      {
+        "zone": "body",
+        "text": "167. Johan Isbrants, hoveling op Ruygewaart, geb. waarschijnlijk te",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "Groningen en waarschijnlijk phil. student aldaar 8 aug. 1636,",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "gedeputeerde ter Staten Generaal, was met Govert van Slingelandt,",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "pensionaris van Dordrecht en gedeputeerde ter Staten van Hol-",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "land, Frederik van Dorp, heer van Maasdam, raad in den Hove",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "van Holland, en Pieter de Huybert, raad van Middelburg, allen",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "gedeputeerden ter Staten Generaal, bij ress. 27 nov., 18 en 21 dec.",
+        "pre_html": false
+      },
+      {
+        "zone": "period_header",
+        "text": "1655 benoemd tot buitengewoon legaat (extraordinaris ambassa-",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "deur) naar Pruissen in verband met bemiddeling tussen de Koningen",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "van Zweden en Polen, embarkeerde in het Vlie 13 maart 1656 en",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "kwam 14 mei 1656 te Marienburgh aan, sloot te Elbingh een tractaat",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "met Zweden tot bescherming van de vrije vaart in de Oost- en",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "Noordzee op 11 sept. 1656449; ontving bij res. 4 aug. 1657 opdracht",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "mede te werken aan de bemiddeling tussen Zweden en Denemar-",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "ken, werd bij res. 9 febr. 1658 als extraordinaris ambassadeur naar",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "Brandenburg gezonden waar hij zijn eerste audiëntie had 14 maart",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "1658, bemiddelde tussen Polen en Zweden in Polen, werd bij res.",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "19 sept. 1658 aangeschreven zich te willen vervoegen omtrent de",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "persoon van de keurvorst, bleef waarschijnlijk te Berlijn tot 17 april",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "449. Hun verbaal 3 maart 1656-13 juni 1656 in arch. S.G., inv. nr. 8493.",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
         "text": "PRUISSEN                                                                          203",
         "pre_html": false
       },
@@ -29103,21 +28089,6 @@
         "pre_html": false
       }
     ],
-    "footnotes": {
-      "446": "Vreede „I\", deel 2, 2de stuk, bijl. XXIX."
-    },
-    "mentioned_in": []
-  },
-  {
-    "schutte_nr": 167,
-    "corpus": "nl",
-    "toc_title": "Isbrants, Johan",
-    "full_title": "167. Isbrants, Johan",
-    "toc_chapter": "U. Pruissen",
-    "toc_page": 201,
-    "source_file": "0002",
-    "period": "",
-    "lines": [],
     "footnotes": {},
     "mentioned_in": [
       {
@@ -29138,7 +28109,7 @@
     "toc_chapter": "U. Pruissen",
     "toc_page": 203,
     "source_file": "0002",
-    "period": "1659-1660 zaakgelastigde",
+    "period": "1591-1624 agent, ordinaris ambassadeur 1609",
     "lines": [
       {
         "zone": "body",
@@ -29171,7 +28142,10 @@
         "pre_html": false
       }
     ],
-    "footnotes": {},
+    "footnotes": {
+      "360": "Besl. 29 dec. 1807 nr. 3.",
+      "361": "Res. 28 juli 1724."
+    },
     "mentioned_in": [
       {
         "corpus": "nl",
@@ -29187,7 +28161,7 @@
     "toc_chapter": "U. Pruissen",
     "toc_page": 203,
     "source_file": "0002",
-    "period": "1679-1685 extraordinaris gedeputeerde, extraordinaris envoyé",
+    "period": "1591-1624 agent, ordinaris ambassadeur 1609",
     "lines": [
       {
         "zone": "body",
@@ -30599,10 +29573,7 @@
     "footnotes": {
       "178": "Res. van die datum.",
       "179": "Res. 23 febr. 1610.",
-      "180": "Miss. 28 april 1621.",
-      "181": "Ordonnantieboek S.G. 1601, 329.",
-      "182": "ld. 1602, 359vo.",
-      "183": "ld. 1600, 221vo. en 305."
+      "180": "Miss. 28 april 1621."
     },
     "mentioned_in": [
       {
@@ -31034,7 +30005,7 @@
     "toc_chapter": "U. Pruissen",
     "toc_page": 216,
     "source_file": "0002",
-    "period": "1758 zaakgelastigde",
+    "period": "1625-1650 ordinaris ambassadeur",
     "lines": [
       {
         "zone": "body",
@@ -31047,7 +30018,10 @@
         "pre_html": false
       }
     ],
-    "footnotes": {},
+    "footnotes": {
+      "182": "ld. 1602, 359vo.",
+      "183": "ld. 1600, 221vo. en 305."
+    },
     "mentioned_in": [
       {
         "corpus": "nl",
@@ -32465,6 +31439,15 @@
       }
     ],
     "footnotes": {
+      "495": "Besl. 4 febr. 1808 nr. 3 en 4.",
+      "496": "Miss. ree. 11 okt. 1709, 30 dec. 1710, 13 juli 1711 en 8 mei 1713.",
+      "497": "Miss. 6/15 april 1712.",
+      "498": "Secr. ress. 17 en 22 mei, 17 aug. 1655 en 26 jan. 1656.",
+      "499": "Res. 1656, 627.",
+      "500": "Miss. 4/14 febr. 1679.",
+      "501": "Bijl. miss. Van Domburgh 13 juli 1711.",
+      "502": "Res. 13 okt. 1725.",
+      "503": "Miss. 25 april/15 mei 1617 tot en met 9/25 april 1618.",
       "504": "Res. 1 aug. 1617.",
       "505": "Res. 18 juni 1638."
     },
@@ -32719,7 +31702,7 @@
     "toc_chapter": "W. Danzig",
     "toc_page": 227,
     "source_file": "0002",
-    "period": "1659-1682 commissaris",
+    "period": "1625-1650 ordinaris ambassadeur",
     "lines": [
       {
         "zone": "body",
@@ -32909,7 +31892,7 @@
     "toc_chapter": "W. Danzig",
     "toc_page": 228,
     "source_file": "0002",
-    "period": "1682-1697 commissaris",
+    "period": "1625-1650 ordinaris ambassadeur",
     "lines": [
       {
         "zone": "body",
@@ -33032,7 +32015,13 @@
         "pre_html": false
       }
     ],
-    "footnotes": {},
+    "footnotes": {
+      "192": "Hun verbaal 19 juni 1622-9 aug. 1622 in arch. S.G., inv. nr. 8430.",
+      "193": "Hun verbaal 16 febr. 1624-6 juli 1624 in arch. S.G., inv. nr. 8344.",
+      "194": "Zie noot 18.",
+      "195": "Ress. 1 en 20 maart, 9 en 10 april 1625.",
+      "196": "Hun verbaal 4 maart 1627-5 aug. 1627 in arch. S.G., inv. nr. 8354."
+    },
     "mentioned_in": [
       {
         "corpus": "nl",
@@ -33593,7 +32582,7 @@
     "toc_chapter": "X. Saksen",
     "toc_page": 231,
     "source_file": "0002",
-    "period": "1691-1692 extraordinaris envoyé",
+    "period": "1625-1650 ordinaris ambassadeur",
     "lines": [
       {
         "zone": "body",
@@ -33861,7 +32850,11 @@
         "pre_html": false
       }
     ],
-    "footnotes": {},
+    "footnotes": {
+      "198": "Res. 20 april 1629 en Ordonnantieboek S.G. 1631.",
+      "199": "Hun verbaal 6 maart 1632-13 aug. 1634 in arch. S.G., inv. nr. 3871.",
+      "200": "Zijn verbaal 18 aug. 1636-17 nov. 1636 in arch. S.G., inv. nr. 8381."
+    },
     "mentioned_in": []
   },
   {
@@ -34258,7 +33251,7 @@
     "toc_chapter": "V. Denemarken en Noorwegen",
     "toc_page": 236,
     "source_file": "0002",
-    "period": "1605-(1610) commissaris in de Sont",
+    "period": "1625-1650 ordinaris ambassadeur",
     "lines": [
       {
         "zone": "body",
@@ -34291,7 +33284,9 @@
         "pre_html": false
       }
     ],
-    "footnotes": {},
+    "footnotes": {
+      "202": "Miss. en bijl. 7/13 okt. 1650."
+    },
     "mentioned_in": [
       {
         "corpus": "nl",
@@ -34426,7 +33421,7 @@
     "toc_chapter": "V. Denemarken en Noorwegen",
     "toc_page": 237,
     "source_file": "0002",
-    "period": "1617-1625 commissaris in de Sont",
+    "period": "1625-1650 ordinaris ambassadeur",
     "lines": [
       {
         "zone": "body",
@@ -35479,129 +34474,159 @@
         "zone": "genealogy",
         "text": "1685-Î7I8 resident, extraordinaris envoyé 1702",
         "pre_html": false
+      }
+    ],
+    "footnotes": {
+      "589": "Miss. Rumpf (Stockholm) 30 dec. 1676/13 april 1677 en miss. Le Maire 1/8",
+      "590": "Miss. Moeringh 14/21 okt. 1684.",
+      "591": "Zie verder Instructieboek S.G. 1680, 11 sqq.",
+      "592": "Zijn verbaal 18 juni 1680-20 april 1686 in arch. S.G., inv. nrs. 8613-8614.",
+      "593": "Miss. 26/30 nov. 1686.",
+      "594": "Bijl. miss. Moeringh 17/27 okt. 1682."
+    },
+    "mentioned_in": [
+      {
+        "corpus": "nl",
+        "schutte_nr": 208
       },
       {
-        "zone": "genealogy",
+        "corpus": "nl",
+        "schutte_nr": 210
+      }
+    ]
+  },
+  {
+    "schutte_nr": 210,
+    "corpus": "nl",
+    "toc_title": "Goes, Robert",
+    "full_title": "210. Goes, Robert",
+    "toc_chapter": "V. Denemarken en Noorwegen",
+    "toc_page": 245,
+    "source_file": "0002",
+    "period": "1654-1660 extraordinaris ambassadeur, ordinaris ambassadeur 1657",
+    "lines": [
+      {
+        "zone": "body",
         "text": "210. Mr. Robert Goes, heer van Boeckhorstenburg en Absmade (vóór",
         "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "1699), geb. Leiden 1652/1653, jur. student te Leiden 21 nov. 1673,",
         "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "26 febr. 1675 en 28 febr. 1678, edelman in het gevolg van Moeringh",
         "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "naar Denemarken (1682)595, daarna waarschijnlijk secretaris van de",
         "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "ambassadeur Van Haren in Zweden in 1683 en 1684596; werd bij res.",
         "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "1 aug. 1685 aangesteld tot resident in Denemarken en ontving die",
         "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "dag zijn commissie als zodanig, nam 17 okt. afscheid, kwam 8 nov.",
         "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "te Hamburg en 21 nov. 1685 te Kopenhagen; wegens een geschil",
         "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "over het ceremonieel had hij zijn eerste audiëntie pas 28 jan. 1686;",
         "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "21 okt. 1688 uit Kopenhagen naar Holland vertrokken voor de",
         "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "behartiging van particuliere belangen, kwam hij in mei 1689 te",
         "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "Kopenhagen terug; bij res. 19 okt. 1691 werd hem, wegens het over-",
         "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "lijden van Van Reede-Amerongen, nr. 169, opgedragen de conferen-",
         "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "tiën op het toltractaat voort te zetten : verlenging van het prelimi-",
         "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "naire tractaat van 1688 of het sluiten van een nieuw; een project-",
         "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "toltractaat werd door hem overgezonden bij miss. 5 febr. 1692597;",
         "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "bij res. 11 mei 1694 werd hem volmacht veileend om te onderhande-",
         "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "len over de geschillen wegens opgebrachte Deense schepen hier te",
         "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "lande alsmede de schepen van Nederlandse onderdanen, in Deense",
         "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "havens gearresteerd598; blijkens zijn miss. 8/21 maart 1695 betreffen-",
         "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "de de rouw voor de overleden Koningin van Engeland, bestond zijn",
         "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "huishouding uit hemzelf, zijn vrouw, twee kinderen, de predikant",
         "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "Sylvius, Johan van Deurs, secretaris te Elseneur, een schrijver, een",
         "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "Françoise of gouvernante der kinderen, een kamenier, drie meisjes,",
         "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "een koetsier, vier lakeien en een hofknecht of portier 599 ; ging 23 april",
         "pre_html": false
       },
@@ -35727,294 +34752,10 @@
       }
     ],
     "footnotes": {
-      "589": "Miss. Rumpf (Stockholm) 30 dec. 1676/13 april 1677 en miss. Le Maire 1/8",
-      "590": "Miss. Moeringh 14/21 okt. 1684.",
-      "591": "Zie verder Instructieboek S.G. 1680, 11 sqq.",
-      "592": "Zijn verbaal 18 juni 1680-20 april 1686 in arch. S.G., inv. nrs. 8613-8614.",
-      "593": "Miss. 26/30 nov. 1686.",
-      "594": "Bijl. miss. Moeringh 17/27 okt. 1682.",
       "595": "Zie noot 594.",
       "596": "Miss. Rumpf (Zweden) ree. 6 maart 1685 en miss. Goes ree. 9 okt. 1723.",
       "597": "Secr. res. 12 febr. en res. 21 okt. 1692.",
       "598": "Instructie bij secr. res. 17 nov. 1694; zie verder secr. ress. 30 mei, 3 aug. en 29",
-      "599": "Verder bijl. miss. ree. 30 april 1695, miss. 22/29 sept. 1699 en 22/29 juli 1704."
-    },
-    "mentioned_in": [
-      {
-        "corpus": "nl",
-        "schutte_nr": 208
-      },
-      {
-        "corpus": "nl",
-        "schutte_nr": 210
-      }
-    ]
-  },
-  {
-    "schutte_nr": 210,
-    "corpus": "nl",
-    "toc_title": "Goes, Robert",
-    "full_title": "210. Goes, Robert",
-    "toc_chapter": "V. Denemarken en Noorwegen",
-    "toc_page": 245,
-    "source_file": "0002",
-    "period": "1654-1660 extraordinaris ambassadeur, ordinaris ambassadeur 1657",
-    "lines": [
-      {
-        "zone": "entry",
-        "text": "210. Zie noot 203.",
-        "indent": 0
-      },
-      {
-        "zone": "entry",
-        "text": "210. Mr. Robert Goes, heer van Boeckhorstenburg en Absmade (vóór",
-        "indent": 0
-      },
-      {
-        "zone": "body",
-        "text": "1699), geb. Leiden 1652/1653, jur. student te Leiden 21 nov. 1673,",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "26 febr. 1675 en 28 febr. 1678, edelman in het gevolg van Moeringh",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "naar Denemarken (1682)595, daarna waarschijnlijk secretaris van de",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "ambassadeur Van Haren in Zweden in 1683 en 1684596; werd bij res.",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "1 aug. 1685 aangesteld tot resident in Denemarken en ontving die",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "dag zijn commissie als zodanig, nam 17 okt. afscheid, kwam 8 nov.",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "te Hamburg en 21 nov. 1685 te Kopenhagen; wegens een geschil",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "over het ceremonieel had hij zijn eerste audiëntie pas 28 jan. 1686;",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "21 okt. 1688 uit Kopenhagen naar Holland vertrokken voor de",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "behartiging van particuliere belangen, kwam hij in mei 1689 te",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "Kopenhagen terug; bij res. 19 okt. 1691 werd hem, wegens het over-",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "lijden van Van Reede-Amerongen, nr. 169, opgedragen de conferen-",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "tiën op het toltractaat voort te zetten : verlenging van het prelimi-",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "naire tractaat van 1688 of het sluiten van een nieuw; een project-",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "toltractaat werd door hem overgezonden bij miss. 5 febr. 1692597;",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "bij res. 11 mei 1694 werd hem volmacht veileend om te onderhande-",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "len over de geschillen wegens opgebrachte Deense schepen hier te",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "lande alsmede de schepen van Nederlandse onderdanen, in Deense",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "havens gearresteerd598; blijkens zijn miss. 8/21 maart 1695 betreffen-",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "de de rouw voor de overleden Koningin van Engeland, bestond zijn",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "huishouding uit hemzelf, zijn vrouw, twee kinderen, de predikant",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "Sylvius, Johan van Deurs, secretaris te Elseneur, een schrijver, een",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "Françoise of gouvernante der kinderen, een kamenier, drie meisjes,",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "een koetsier, vier lakeien en een hofknecht of portier 599 ; ging 23 april",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "1697 met verlof naar Holland, van waar hij 24 okt. weer vertrok en",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "26 nov. 1697 te Kopenhagen aankwam; bij secr. res. 11 april 1701",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "werd hem voor „secrete\" diensten ƒ 500 toegelegd; 15 juni 1701 sloot",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "hij een tractaat; ingevolge res. 18 febr. 1702 vertrok hij 14 juni met",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "verlof naar Holland, was 1 juli te 's-Gravenhage, werd bij ress. 27 en",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "29 nov. 1702 bevorderd tot extraordinaris envoyé op een tractement",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "van ƒ 10.000, nam afscheid 28 febr. 1703, vertrok 7 maart uit Am-",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "sterdam en was 29 maart 1703 te Kopenhagen terug; bij res. 29 dec.",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "1704 werd hem toegestaan ƒ 300 voor een secretaris te declareren;",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "ging in het laatst van juli 1706 voor particuliere belangen naar",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "Holland, ontving 18 okt. de tijding van het overlijden zijner echt-",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "genote, vertrok uit 's-Gravenhage 19 okt. en kwam 1 nov. 1706 weer",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "598.   Instructie bij secr. res. 17 nov. 1694; zie verder secr. ress. 30 mei, 3 aug. en 29",
-        "indent": 0
-      },
-      {
-        "zone": "genealogy",
-        "text": "okt. 1695, 2 jan. en 26 mei 1696.",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "(onderti. 's-Gravenhage 19 aug. 1685) Johanna Hop, geb. Amsterdam 11 okt.,",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "ged. (Rem.) aldaar 21 okt. 1652, f Kopenhagen 10 okt. 1706, begr. Leiden603,",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "dochter van Mr. Corneüs Hop, zie onder nr. 83, en Anthonia Check.",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "Elias 740.",
-        "indent": 7
-      },
-      {
-        "zone": "sub_note",
-        "text": "In 1686 had hij een klerk in dienst604.",
-        "indent": 11
-      },
-      {
-        "zone": "sub_note",
-        "text": "Zijn secretarissen waren in 1689 Gerard Lomanus™5 en sedert",
-        "indent": 11
-      },
-      {
-        "zone": "sub_note",
-        "text": "omstreeks 1692 Willem Opdorp, nr. 211; op grond van res. 12",
-        "indent": 11
-      },
-      {
-        "zone": "sub_note",
-        "text": "sept. 1711 zal hij ook een tweede secretaris in dienst gehad",
-        "indent": 11
-      },
-      {
-        "zone": "sub_note",
-        "text": "hebben.",
-        "indent": 11
-      },
-      {
-        "zone": "sub_note",
-        "text": "Bovendien had hij in 1693 een correspondent te Hamburg 606 .",
-        "indent": 11
-      }
-    ],
-    "footnotes": {
-      "595": "Zie noot 594.",
-      "596": "Miss. Rumpf (Zweden) ree. 6 maart 1685 en miss. Goes ree. 9 okt. 1723.",
-      "597": "Secr. res. 12 febr. en res. 21 okt. 1692.",
       "599": "Verder bijl. miss. ree. 30 april 1695, miss. 22/29 sept. 1699 en 22/29 juli 1704."
     },
     "mentioned_in": [
@@ -36364,12 +35105,30 @@
         "zone": "body",
         "text": "In 1747 had hij een secretaris wiens naam niet bekend is613.",
         "pre_html": false
+      }
+    ],
+    "footnotes": {},
+    "mentioned_in": [
+      {
+        "corpus": "nl",
+        "schutte_nr": 211
       },
       {
-        "zone": "period_header",
-        "text": "1757-1759 zaakgelastigde",
-        "pre_html": false
-      },
+        "corpus": "nl",
+        "schutte_nr": 214
+      }
+    ]
+  },
+  {
+    "schutte_nr": 213,
+    "corpus": "nl",
+    "toc_title": "Grimmelius, Georgius Theodorus",
+    "full_title": "213. Grimmelius, Georgius Theodorus",
+    "toc_chapter": "V. Denemarken en Noorwegen",
+    "toc_page": 248,
+    "source_file": "0002",
+    "period": "1757-1759 zaakgelastigde",
+    "lines": [
       {
         "zone": "body",
         "text": "213. Ds. Georgius Theodorus Grimmeïius, geb. Bentheim omstreeks 1710,",
@@ -36499,12 +35258,26 @@
         "zone": "body",
         "text": "Deutsches Geschlechterbuch 52, 215.",
         "pre_html": false
-      },
+      }
+    ],
+    "footnotes": {},
+    "mentioned_in": [
       {
-        "zone": "period_header",
-        "text": "1759-1781 resident, minister 1766, extraordinaris envoyé 1768",
-        "pre_html": false
-      },
+        "corpus": "nl",
+        "schutte_nr": 212
+      }
+    ]
+  },
+  {
+    "schutte_nr": 214,
+    "corpus": "nl",
+    "toc_title": "Bosc de la Calmette, Charles François",
+    "full_title": "214. Bosc de la Calmette, Charles François",
+    "toc_chapter": "V. Denemarken en Noorwegen",
+    "toc_page": 249,
+    "source_file": "0002",
+    "period": "1759-1781 resident, minister 1766, extraordinaris envoyé 1768",
+    "lines": [
       {
         "zone": "body",
         "text": "214. Charles François Bosc de la Calmette, ged. Voorburg 13 aug. 1710,",
@@ -36764,12 +35537,61 @@
         "zone": "body",
         "text": "In 1760 was zijn hofmeester M. Esmarck621.",
         "pre_html": false
+      }
+    ],
+    "footnotes": {
+      "614": "Res. 5 mei 1744.",
+      "615": "Miss. ree. 13 nov. 1748.",
+      "616": "Zijn verbaal 26 sept. 1748-5 febr. 1752 in arch. S.G., inv. nr. 8773.",
+      "617": "Res. 9 dec. 1757.",
+      "618": "Res. 8 dec. 1755.",
+      "619": "Zijn verbaal 30 nov. 1751-29 aug. 1758 in arch. S.G., inv. nrs. 8780-8782."
+    },
+    "mentioned_in": [
+      {
+        "corpus": "nl",
+        "schutte_nr": 215
       },
       {
-        "zone": "period_header",
-        "text": "1781-1782 zaakgelastigde",
-        "pre_html": false
+        "corpus": "nl",
+        "schutte_nr": 234
       },
+      {
+        "corpus": "nl",
+        "schutte_nr": 235
+      },
+      {
+        "corpus": "nl",
+        "schutte_nr": 320
+      },
+      {
+        "corpus": "nl",
+        "schutte_nr": 321
+      },
+      {
+        "corpus": "nl",
+        "schutte_nr": 335
+      },
+      {
+        "corpus": "nl",
+        "schutte_nr": 336
+      },
+      {
+        "corpus": "nl",
+        "schutte_nr": 337
+      }
+    ]
+  },
+  {
+    "schutte_nr": 215,
+    "corpus": "nl",
+    "toc_title": "Arbin (Arbien), Nicolai Eric",
+    "full_title": "215. Arbin (Arbien), Nicolai Eric",
+    "toc_chapter": "V. Denemarken en Noorwegen",
+    "toc_page": 250,
+    "source_file": "0002",
+    "period": "1781-1782 zaakgelastigde",
+    "lines": [
       {
         "zone": "body",
         "text": "215. Nicolai Eric Arbinß22, „student uit Noorwegen, die de Hollandse",
@@ -36834,558 +35656,6 @@
         "zone": "body",
         "text": "van Denemarken een pensioen van 300 rijksd.625.",
         "pre_html": false
-      }
-    ],
-    "footnotes": {
-      "614": "Res. 5 mei 1744.",
-      "615": "Miss. ree. 13 nov. 1748.",
-      "616": "Zijn verbaal 26 sept. 1748-5 febr. 1752 in arch. S.G., inv. nr. 8773.",
-      "617": "Res. 9 dec. 1757.",
-      "618": "Res. 8 dec. 1755.",
-      "619": "Zijn verbaal 30 nov. 1751-29 aug. 1758 in arch. S.G., inv. nrs. 8780-8782.",
-      "620": "Res. 22 jan. 1756.",
-      "621": "Bijl. miss. ree. 26 aug. 1760.",
-      "622": "Tekende oorspronkelijk : Arbien.",
-      "623": "Miss. ree. 10 dec. 1771."
-    },
-    "mentioned_in": [
-      {
-        "corpus": "nl",
-        "schutte_nr": 211
-      },
-      {
-        "corpus": "nl",
-        "schutte_nr": 214
-      }
-    ]
-  },
-  {
-    "schutte_nr": 213,
-    "corpus": "nl",
-    "toc_title": "Grimmelius, Georgius Theodorus",
-    "full_title": "213. Grimmelius, Georgius Theodorus",
-    "toc_chapter": "V. Denemarken en Noorwegen",
-    "toc_page": 248,
-    "source_file": "0002",
-    "period": "1757-1759 zaakgelastigde",
-    "lines": [
-      {
-        "zone": "entry",
-        "text": "213. Ds. Georgius Theodorus Grimmeïius, geb. Bentheim omstreeks 1710,",
-        "indent": 0
-      },
-      {
-        "zone": "body",
-        "text": "theol. student te Leiden 13 okt. 1732, werd bij res. 3 nov. 1738",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "610. Zie over zijn instructie betreffende de vernieuwing van het in 1721 geëxpireerde",
-        "indent": 0
-      },
-      {
-        "zone": "body",
-        "text": "tol- en commercietractaat onder andere secr. res. 15 nov. 1731.",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "611. Miss. 21/28 okt. 1738, 18/25 okt. 1740, 29 dec. 1744/9 jan. 1745.",
-        "indent": 0
-      },
-      {
-        "zone": "body",
-        "text": "612. Zijn testament in bijl. miss. Grimmeïius ree. 11 mei 1757.",
-        "indent": 0
-      },
-      {
-        "zone": "body",
-        "text": "613. Miss. 2/9 sept. 1747.",
-        "indent": 0
-      },
-      {
-        "zone": "genealogy",
-        "text": "benoemd tot predikant te Stockholm, waar hij aankwam 7 maart",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "1739; bij res. 13 juni 1741 benoemd tot predikant te Kopenhagen,",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "vertrok hij daarheen 30 aug. 1741 en kwam daar 9 sept, aan; van",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "eind mei tot half sept. 1744 was hij met verlof te Steinfurt om zijn",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "oude moeder te bezoeken614; bij miss. 6/10 juli 1745 verzocht hij",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "opnieuw verlof naar Rheinberg om in het huwelijk te treden ; 31 okt.",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "1745 kwam hij met zijn echtgenote te Kopenhagen terug; nam na de",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "ziekte en het overlijden van Coymans op 30 april 1757 de zaken te",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "Kopenhagen waar tot de komst van Bosc 21 april 1759, waarvoor",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "hem bij res. 9 nov. 1759 een gratificatie van ƒ 4000 werd toegelegd;",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "ontving bij res. 28 juni 1762 verlof om zijn zoon naar de academie te",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "Groningen te geleiden, f Kopenhagen 29 dec. 1799.",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "Zoon van Prof. Ds. Johann Bernhard Grimmelius, theol. student te Groningen",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "13 april 1693, candidaat van de classis Bentheim 1695, predikant te Bentheim",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "1699 en Steinfurt 1719, professor in de theologie aan de hogeschool en hof-",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "predikant aldaar, en Magdalena Hoogklimmer; trouwde Rheinberg 14 aug. 1745",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "Maria Gertrud Fredenberg, f Kopenhagen 11 sept. 1776.",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "Deutsches Geschlechterbuch 52, 215.",
-        "indent": 7
-      }
-    ],
-    "footnotes": {},
-    "mentioned_in": [
-      {
-        "corpus": "nl",
-        "schutte_nr": 212
-      }
-    ]
-  },
-  {
-    "schutte_nr": 214,
-    "corpus": "nl",
-    "toc_title": "Bosc de la Calmette, Charles François",
-    "full_title": "214. Bosc de la Calmette, Charles François",
-    "toc_chapter": "V. Denemarken en Noorwegen",
-    "toc_page": 249,
-    "source_file": "0002",
-    "period": "1759-1781 resident, minister 1766, extraordinaris envoyé 1768",
-    "lines": [
-      {
-        "zone": "entry",
-        "text": "214. Charles François Bosc de la Calmette, ged. Voorburg 13 aug. 1710,",
-        "indent": 0
-      },
-      {
-        "zone": "body",
-        "text": "ontvanger der verpondingen over Peelland 1739, schepen en raad",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "van 's-Hertogenbosch 1745; benoemd tot resident in Zwitserland",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "10 april en tot minister bij de protestantse kantons bij secr. res.",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "19 sept. 1748 op een tractement van ƒ 8000 en ƒ 3000 equipagegeld,",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "nam afscheid 23 sept., was in Zwitserland 7 nov.615, bood zijn ge-",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "loofsbrieven aan 1 dec. 1748, ontving ook een commissie voor",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "Graubünden 16 dec. 1748 en ontving zijn recredentiaal 1 nov. 1751",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "resp. 4 febr. 1752616; benoemd tot minister in Portugal bij res. 26",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "aug. 1751, nam afscheid 2 mei 1752, had daar zijn eerste audiëntie",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "10 sept. 1754; werd bij res. 3 okt. 1757 aangesteld tot resident in",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "Denemarken op een tractement van ƒ 6000, waarna hij verzocht om",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "als minister aldaar te worden aangesteld, waarop niet werd beslist617;",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "ontving ƒ6000 618 wegens de aardbeving te Lissabon op 1 nov. 1755;",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "met het oog op de door hem bij de aardbeving geleden verliezen",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "werd zijn tractement bij res. 20 maart 1758 verhoogd met ƒ 2000;",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "had zijn laatste audiëntie te Lissabon 20 juli 1758619, reisde naar",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "Nederland, vertrok 26 maart 1759 uit Utrecht en kwam 21 april te",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "Kopenhagen aan; in 1766 verzocht hij tot extraordinaris envoyé",
-        "indent": 5
-      },
-      {
-        "zone": "genealogy",
-        "text": "bevorderd te worden, maar bij res. 7 febr. 1766 werden hem nieuwe",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "geloofsbrieven als minister gezonden; bij res. 15 febr. 1768 ontving",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "hij verlof voor een reis naar Holland en Spa, vertiok uit Kopen-",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "hagen 8 mei en keerde 10 dec. 1768 te Kopenhagen terug; werd bij",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "res. 15 aug. 1768 tot extraordinaris envoyé bevorderd op een tracte-",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "ment van ƒ 10.000; hij kocht in 1777 het kasteel Marienborg op",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "M o n , f Kopenhagen 13 maart, begr. aldaar (Gei. kerk) 20 maart",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "1781.",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "Zoon van Jean Louis Bosc de la Calmette, lidmaat der Waalse gemeente te",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "'s-Gravenhage jan. 1691, ontvanger der verpondingen over Kempenland 9 maart",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "1723, rentmeester der geestelijke goederen van Peelland 15 aug. 1726, schepen en",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "raad van 's-Hertogenbosch 1728 tot f 1729, en Marguerite Hardy; trouwde",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "Antoinette Jeannette Elisabeth Godin, geb. Utrecht 2 jan. 1719, f (aan de pokken)",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "Kopenhagen 5 dec. 1759, dochter van Pieter Godin, groot-majoor en comman-",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "dant van 's-Hertogenbosch, en Agnes Jeane Sulyard de Leefdael en weduwe van",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "Jacques Antoine Richier de Colombière, heer van Giessendam.",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "Jb. 1959, 185.",
-        "indent": 7
-      },
-      {
-        "zone": "sub_note",
-        "text": "Zijn secretaris in Portugal, Joseph Palsy, had zijn goederen",
-        "indent": 11
-      },
-      {
-        "zone": "sub_note",
-        "text": "tijdens de aardbeving te Lissabon op 1 nov. 1755 achtergelaten,",
-        "indent": 11
-      },
-      {
-        "zone": "sub_note",
-        "text": "was 1 juli 1755 via Engeland naar Holland vertrokken 6 2 0 ; een",
-        "indent": 11
-      },
-      {
-        "zone": "sub_note",
-        "text": "verzoek van hem om schadevergoeding van ƒ 8 à 900 werd",
-        "indent": 11
-      },
-      {
-        "zone": "sub_note",
-        "text": "afgewezen bij res. 6 mei 1756.",
-        "indent": 11
-      },
-      {
-        "zone": "sub_note",
-        "text": "Zijn secretaris was van 1759 tot juli 1760 Joseph Pierre Texier,",
-        "indent": 11
-      },
-      {
-        "zone": "sub_note",
-        "text": "die omstreeks 1762 in Deense dienst overging en waarschijnlijk",
-        "indent": 11
-      },
-      {
-        "zone": "sub_note",
-        "text": "daarna directeur-generaal van de directie van de lotto te Altona",
-        "indent": 11
-      },
-      {
-        "zone": "sub_note",
-        "text": "werd; werd legatieraad en benoemd tot Deens resident en consul",
-        "indent": 11
-      },
-      {
-        "zone": "sub_note",
-        "text": "te Danzig en de omliggende Pruissische steden 20 juni 1777,",
-        "indent": 11
-      },
-      {
-        "zone": "sub_note",
-        "text": "ontving zijn geloofsbrieven als zodanig 5 sept, en legde de eed",
-        "indent": 11
-      },
-      {
-        "zone": "sub_note",
-        "text": "af 7 sept., ontving 7 nov. 1777 een geheime instructie, ontving",
-        "indent": 11
-      },
-      {
-        "zone": "sub_note",
-        "text": "24 dec. 1779 zijn rappel en n a m afscheid.",
-        "indent": 11
-      },
-      {
-        "zone": "sub_note",
-        "text": "Waarschijnlijk sedert 1763 tot 1771 was A. J. Schenk, nr.. 234,",
-        "indent": 11
-      },
-      {
-        "zone": "sub_note",
-        "text": "zijn secretaris, sinds 1771 Nicolai Eric Arbin, nr. 215.",
-        "indent": 11
-      },
-      {
-        "zone": "sub_note",
-        "text": "In 1760 was zijn hofmeester M. Esmarck621.",
-        "indent": 11
-      }
-    ],
-    "footnotes": {
-      "614": "Res. 5 mei 1744.",
-      "615": "Miss. ree. 13 nov. 1748.",
-      "616": "Zijn verbaal 26 sept. 1748-5 febr. 1752 in arch. S.G., inv. nr. 8773.",
-      "617": "Res. 9 dec. 1757.",
-      "618": "Res. 8 dec. 1755.",
-      "619": "Zijn verbaal 30 nov. 1751-29 aug. 1758 in arch. S.G., inv. nrs. 8780-8782."
-    },
-    "mentioned_in": [
-      {
-        "corpus": "nl",
-        "schutte_nr": 215
-      },
-      {
-        "corpus": "nl",
-        "schutte_nr": 234
-      },
-      {
-        "corpus": "nl",
-        "schutte_nr": 235
-      },
-      {
-        "corpus": "nl",
-        "schutte_nr": 320
-      },
-      {
-        "corpus": "nl",
-        "schutte_nr": 321
-      },
-      {
-        "corpus": "nl",
-        "schutte_nr": 335
-      },
-      {
-        "corpus": "nl",
-        "schutte_nr": 336
-      },
-      {
-        "corpus": "nl",
-        "schutte_nr": 337
-      }
-    ]
-  },
-  {
-    "schutte_nr": 215,
-    "corpus": "nl",
-    "toc_title": "Arbin (Arbien), Nicolai Eric",
-    "full_title": "215. Arbin (Arbien), Nicolai Eric",
-    "toc_chapter": "V. Denemarken en Noorwegen",
-    "toc_page": 250,
-    "source_file": "0002",
-    "period": "1781-1782 zaakgelastigde",
-    "lines": [
-      {
-        "zone": "entry",
-        "text": "215. Nicolai Eric Arbinß22, „student uit Noorwegen, die de Hollandse",
-        "indent": 0
-      },
-      {
-        "zone": "body",
-        "text": "taal redelijk machtig was\", werd door Bosc in 1771 als zijn secretaris",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "aangenomen 6 2 3 , zaakgelastigde na Bosc's overlijden op 13 maart",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "1781 bij res. 20 maart 1781 tot de aankomst van Van Rechteren op",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "17 april 1782; hiervoor werd hem bij res. 25 okt. 1782 een gratificatie",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "van ƒ1100 toegelegd; bij miss. ree. 5 febr. en 21 juli 1783 verzocht hij",
-        "indent": 5
-      },
-      {
-        "zone": "genealogy",
-        "text": "een eervol ontslag uit de dienst met een aanbeveling aan het Deense",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "Hof om bij de eerstkomende vacature in zijn vaderland Noorwegen",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "in 's Konings dienst te worden aangesteld, omdat hij zonder een",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "formeel afscheid niet als Deen kon worden aangemerkt; hij ontving",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "zijn ontslag bij res. 25 sept. 1783624; ontving in 1786 van de Koning",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "van Denemarken een pensioen van 300 rijksd.625.",
-        "indent": 7
       }
     ],
     "footnotes": {
@@ -39366,12 +37636,38 @@
         "zone": "body",
         "text": "Kretschmar 15 sept. 1763 ; daarna keerde hij naar Holland terug710.",
         "pre_html": false
+      }
+    ],
+    "footnotes": {},
+    "mentioned_in": [
+      {
+        "corpus": "nl",
+        "schutte_nr": 179
       },
       {
-        "zone": "period_header",
-        "text": "1760-1762 extraordinaris envoyé",
-        "pre_html": false
+        "corpus": "nl",
+        "schutte_nr": 180
       },
+      {
+        "corpus": "nl",
+        "schutte_nr": 231
+      },
+      {
+        "corpus": "nl",
+        "schutte_nr": 232
+      }
+    ]
+  },
+  {
+    "schutte_nr": 231,
+    "corpus": "nl",
+    "toc_title": "Doublet, François",
+    "full_title": "231. Doublet, François",
+    "toc_chapter": "VI. Zweden",
+    "toc_page": 274,
+    "source_file": "0002",
+    "period": "1760-1762 extraordinaris envoyé",
+    "lines": [
       {
         "zone": "body",
         "text": "231. François Doublet, heer van Groenevelt, ged. Delft (O.k.) 16 nov.",
@@ -39456,117 +37752,6 @@
         "zone": "body",
         "text": "David Letocart, nr. 230.",
         "pre_html": false
-      }
-    ],
-    "footnotes": {},
-    "mentioned_in": [
-      {
-        "corpus": "nl",
-        "schutte_nr": 179
-      },
-      {
-        "corpus": "nl",
-        "schutte_nr": 180
-      },
-      {
-        "corpus": "nl",
-        "schutte_nr": 231
-      },
-      {
-        "corpus": "nl",
-        "schutte_nr": 232
-      }
-    ]
-  },
-  {
-    "schutte_nr": 231,
-    "corpus": "nl",
-    "toc_title": "Doublet, François",
-    "full_title": "231. Doublet, François",
-    "toc_chapter": "VI. Zweden",
-    "toc_page": 274,
-    "source_file": "0002",
-    "period": "1760-1762 extraordinaris envoyé",
-    "lines": [
-      {
-        "zone": "entry",
-        "text": "231. François Doublet, heer van Groenevelt, ged. Delft (O.k.) 16 nov.",
-        "indent": 0
-      },
-      {
-        "zone": "genealogy",
-        "text": "1715, geëligeerde raad in de Staten van Utrecht, werd bij res. 27 juni",
-        "indent": 6
-      },
-      {
-        "zone": "body",
-        "text": "1760 aangesteld tot extraordinaris envoyé in Zweden, vertrok 14",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "sept. 1760 uit Utrecht, kwam 14 okt. te Stockholm aan, werd bij res.",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "4 dec. 1761 aangesteld tot extraordinaris envoyé en plenipotentiaris",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "in Spanje, vertrok uit Stockholm 22 mei 1762, was 12 juli te 's-Gra-",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "venhage711, ontving 30 juli zijn commissie als envoyé in Spanje,",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "overhandigde zijn geloofsbrieven daar 13 nov. 1762, had verlof van",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "vóór 6 febr. 1767 tot een onbekende datum, t Madrid (?) 26 okt.",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "1769.",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "Zoon van Mr. François Doublet, heer van Groenevelt, veertigraad 1720 en",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "schepen 1725 van Delft, en Anna Constantia van der Beeke; trouwde (ondertr.",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "'s-Gravenhage (Gr.k.) 17 maart 1743) Constantia Looten.",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "N.L. 1915, 223.",
-        "indent": 5
-      },
-      {
-        "zone": "sub_note",
-        "text": "Zijn secretaris in Zweden was David Letocart, nr. 230.",
-        "indent": 9
-      },
-      {
-        "zone": "body",
-        "text": "David Letocart, nr. 230.",
-        "indent": 5
       }
     ],
     "footnotes": {},
@@ -40016,12 +38201,34 @@
         "zone": "body",
         "text": "Dirk Wolter van Lynden, nr. 80.",
         "pre_html": false
+      }
+    ],
+    "footnotes": {},
+    "mentioned_in": [
+      {
+        "corpus": "nl",
+        "schutte_nr": 95
       },
       {
-        "zone": "period_header",
-        "text": "1781-1782 zaakgelastigde",
-        "pre_html": false
+        "corpus": "nl",
+        "schutte_nr": 215
       },
+      {
+        "corpus": "nl",
+        "schutte_nr": 235
+      }
+    ]
+  },
+  {
+    "schutte_nr": 235,
+    "corpus": "nl",
+    "toc_title": "Duker, Petrus Gerardus",
+    "full_title": "235. Duker, Petrus Gerardus",
+    "toc_chapter": "VI. Zweden",
+    "toc_page": 276,
+    "source_file": "0002",
+    "period": "1781-1782 zaakgelastigde",
+    "lines": [
       {
         "zone": "body",
         "text": "235. Petrus Gerardus Düker, geb. Utrecht 12 okt. 1746, jur. student te",
@@ -40182,190 +38389,6 @@
       "725": "Miss. ree. 6 juli 1778.",
       "726": "Res. 11 sept. 1778 en miss. Van Deurs ree. 27 maart 1781.",
       "727": "Res. 19 juni 1778; de eerste door hem geschreven brief waarschijnlijk van 7/24"
-    },
-    "mentioned_in": [
-      {
-        "corpus": "nl",
-        "schutte_nr": 95
-      },
-      {
-        "corpus": "nl",
-        "schutte_nr": 215
-      },
-      {
-        "corpus": "nl",
-        "schutte_nr": 235
-      }
-    ]
-  },
-  {
-    "schutte_nr": 235,
-    "corpus": "nl",
-    "toc_title": "Duker, Petrus Gerardus",
-    "full_title": "235. Duker, Petrus Gerardus",
-    "toc_chapter": "VI. Zweden",
-    "toc_page": 276,
-    "source_file": "0002",
-    "period": "1781-1782 zaakgelastigde",
-    "lines": [
-      {
-        "zone": "entry",
-        "text": "235. Petrus Gerardus Düker, geb. Utrecht 12 okt. 1746, jur. student te",
-        "indent": 0
-      },
-      {
-        "zone": "body",
-        "text": "Utrecht 1768, promoveerde aldaar 11 sept. 1773, secretaris van Van",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "Lynden, kwam in de zomer van 1778 te Stockholm aan727, zaak-",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "gelastigde na diens vertrek sinds 10 juni 1781 bij res. 12 juni 1781",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "tot de aankomst van Van der Borch 11 mei 1782; 11 juni 1782 vertrok",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "hij over Holland naar Wenen; secretaris van Van Berckel, nr. 339,",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "naar de Verenigde Staten van Amerika 1783, advocaat-fiscaal te",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "Rio Demerary, planter en koopman aldaar, woonde vervolgens in",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "Engeland en in 1802 te Amsterdam, f aldaar 15 febr. 1837.",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "722.   Deze was als Brits minister resident te Kopenhagen aangekomen begin maart",
-        "indent": 0
-      },
-      {
-        "zone": "genealogy",
-        "text": "1766, ontving zijn commissie als extraordinaris envoyé 30 sept. 1766, werd 13",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "april 1771 benoemd tot extraordinaris envoyé en minister plenipotentiaris in",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "Pruissen, had zijn laatste audiëntie te Kopenhagen 26 juni 1771, was in juli 1771",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "te Berlijn, werd 13 dec. 1771 als extraordinaris envoyé en plenipotentiaris naar",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "Rusland (instructie 28 mei 1772) overgeplaatst, kwam begin juni 1772 te",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "St. Petersburg aan, had zijn eerste audiëntie 28 juni 1772 en zijn laatste 7 dec.",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "1775.",
-        "indent": 7
-      },
-      {
-        "zone": "body",
-        "text": "727.   Res. 19 juni 1778; de eerste door hem geschreven brief waarschijnlijk van 7/24",
-        "indent": 0
-      },
-      {
-        "zone": "genealogy",
-        "text": "aug. 1778.",
-        "indent": 7
-      },
-      {
-        "zone": "genealogy",
-        "text": "Zoon van Arnoldus Duker, winkelier te Utrecht, poorter aldaar 16 jan. 1742, en",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "Johanna van Knapen; trouwde Amsterdam 13 maart 1802 Anna Catharina Boode,",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "geb. Rio Demerary 24 febr., ged. aldaar 24 maart 1767, f Amsterdam 18 okt.",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "1808, dochter van Johan Frederick Boode, planter te Essequibo en Demerary,",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "raad van politie en justitie, en Anna Maria Vroom en weduwe van Johan Cornells",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "Bert,ritmeesterin het regiment De Famars, commandeur op Essequibo 1784 tot",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "1787, firmant Boode & Bert te Amsterdam, bezitters der plantages Vrouwenvlijt,",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "de Hulp en Montauban in Suriname, commissaris van de wisselbank te Am-",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "sterdam 1793.",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "Elias 667; NX. 1947, 373 en 1964, 165.",
-        "indent": 6
-      },
-      {
-        "zone": "body",
-        "text": "Jan Car el van der Borch, heer van Langendreir, nr. 143.",
-        "indent": 5
-      }
-    ],
-    "footnotes": {
-      "720": "Request Schenck ree. 11 sept. 1778; miss. Bosc ree. 13 mei en 28 dec. 1768.",
-      "721": "De laatste brief van zijn hand 19/26 nov. 1771.",
-      "723": "Ook miss. Bosc ree. 10 dec. 1771.",
-      "724": "Miss. ree. 7 aug. 1775 en 1 okt. 1776.",
-      "725": "Miss. ree. 6 juli 1778.",
-      "726": "Res. 11 sept. 1778 en miss. Van Deurs ree. 27 maart 1781."
     },
     "mentioned_in": [
       {
@@ -40534,7 +38557,7 @@
     "toc_chapter": "VI. Zweden",
     "toc_page": 277,
     "source_file": "0002",
-    "period": "1802-1805 minister plenipotentiaris",
+    "period": "1674-1679 extraordinaris ambassadeur",
     "lines": [
       {
         "zone": "body",
@@ -40647,7 +38670,11 @@
         "pre_html": true
       }
     ],
-    "footnotes": {},
+    "footnotes": {
+      "238": "Zie noot 76.",
+      "239": "Hun verbaal 15 okt. 1681-17 maart 1683 in arch. S.G., inv. nr. 8604.",
+      "240": "Miss. 4/10 juli 1677."
+    },
     "mentioned_in": [
       {
         "corpus": "nl",
@@ -41101,7 +39128,26 @@
         "zone": "body",
         "text": "(1792)-1796 zaakgelastigde",
         "pre_html": false
-      },
+      }
+    ],
+    "footnotes": {},
+    "mentioned_in": [
+      {
+        "corpus": "nl",
+        "schutte_nr": 241
+      }
+    ]
+  },
+  {
+    "schutte_nr": 241,
+    "corpus": "nl",
+    "toc_title": "Griesheim, C.T.L. von",
+    "full_title": "241. Griesheim, C.T.L. von",
+    "toc_chapter": "VII. Polen",
+    "toc_page": 284,
+    "source_file": "0002",
+    "period": "1791 extraordinaris envoyé",
+    "lines": [
       {
         "zone": "body",
         "text": "241. C. T. L. von Griesheim, luitenant-kolonel, wordt als chargé d'affaires",
@@ -41156,37 +39202,6 @@
         "zone": "body",
         "text": "betrekkingen, Amsterdam, 1817-1819.",
         "pre_html": false
-      }
-    ],
-    "footnotes": {
-      "751": "Miss. 7/13 nov. 1714."
-    },
-    "mentioned_in": [
-      {
-        "corpus": "nl",
-        "schutte_nr": 241
-      }
-    ]
-  },
-  {
-    "schutte_nr": 241,
-    "corpus": "nl",
-    "toc_title": "Griesheim, C.T.L. von",
-    "full_title": "241. Griesheim, C.T.L. von",
-    "toc_chapter": "VII. Polen",
-    "toc_page": 284,
-    "source_file": "0002",
-    "period": "1791 extraordinaris envoyé",
-    "lines": [
-      {
-        "zone": "entry",
-        "text": "241. C. T. L. von Griesheim, luitenant-kolonel, wordt als chargé d'affaires",
-        "indent": 0
-      },
-      {
-        "zone": "body",
-        "text": "in Polen vermeld sedert 29 aug. 1792 en werd 27 jan. 1796 ontslagen.",
-        "indent": 5
       }
     ],
     "footnotes": {
@@ -42466,21 +40481,6 @@
         "zone": "body",
         "text": "Mr. Daniel de Dieu, nr. 248.",
         "pre_html": false
-      },
-      {
-        "zone": "period_header",
-        "text": "1760 zaakgelastigde",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "249. Johan Isaac de Swart, secretaris op een tractement van ƒ 300 van",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "zijn vader Mar cells de Swart, tijdens diens verlof vanaf juli 1756 en",
-        "pre_html": false
       }
     ],
     "footnotes": {
@@ -42488,10 +40488,7 @@
       "770": "Miss. 13 juli/2 aug. 1734.",
       "771": "Bijl. miss. De Swart 3/25 okt. 1737.",
       "772": "Miss. 21 sept./ll okt. 1751.",
-      "773": "Zijn verbaal 20 juni 1729-27 nov. 1732 in arch. S.G., inv. nr. 8734.",
-      "774": "Zie noot 151.",
-      "775": "Zijn recredentiebrief 22 febr./23 mei 1746.",
-      "776": "Zijn verbaal 24 dec. 1744-5 maart 1746 in arch. S.G., inv. nr. 8755."
+      "773": "Zijn verbaal 20 juni 1729-27 nov. 1732 in arch. S.G., inv. nr. 8734."
     },
     "mentioned_in": [
       {
@@ -42515,14 +40512,14 @@
     "period": "1760 zaakgelastigde",
     "lines": [
       {
-        "zone": "entry",
+        "zone": "body",
         "text": "249. Johan Isaac de Swart, secretaris op een tractement van ƒ 300 van",
-        "indent": 0
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "zijn vader Mar cells de Swart, tijdens diens verlof vanaf juli 1756 en",
-        "indent": 5
+        "pre_html": false
       }
     ],
     "footnotes": {
@@ -43678,7 +41675,17 @@
         "pre_html": false
       }
     ],
-    "footnotes": {},
+    "footnotes": {
+      "800": "Miss. Haga 5 jan. en 24 maart/21 mei 1612.",
+      "801": "Miss. Haga 6 juli/4 dec. 1612.",
+      "802": "Vernieuwd in 1622; zie res. 27 mei 1622.",
+      "803": "Commissieboek S.G., 302.",
+      "804": "Akteboek S.G., 190 sqq.; Gr. placcaatboek II, 1333.",
+      "805": "Miss. Haga ree. 26 mei 1626.",
+      "806": "Miss. Haga 3 april/13 juni en bijl. miss. Haga 20 juli 1624.",
+      "807": "Bijl. miss. Haga 30 maart 1633; res. 13 aug. 1643.",
+      "808": "Bijl. miss. Haga 30 maart 1633."
+    },
     "mentioned_in": [
       {
         "corpus": "nl",
@@ -43951,7 +41958,7 @@
     "toc_chapter": "IX. Turkije",
     "toc_page": 307,
     "source_file": "0002",
-    "period": "1712-1722 extraordinaris envoyé, extraordinaris ambassadeur 1714-1716",
+    "period": "1655-1665 zaakgelastigde, resident 1657",
     "lines": [
       {
         "zone": "body",
@@ -44034,7 +42041,7 @@
     "toc_chapter": "IX. Turkije",
     "toc_page": 307,
     "source_file": "0002",
-    "period": "1712-1722 extraordinaris envoyé, extraordinaris ambassadeur 1714-1716",
+    "period": "1665-1668 waarnemend resident",
     "lines": [
       {
         "zone": "body",
@@ -44126,7 +42133,7 @@
     "toc_chapter": "IX. Turkije",
     "toc_page": 307,
     "source_file": "0002",
-    "period": "1724-1761 extraordinaris envoyé, extraordinaris envoyé en minister ple-",
+    "period": "1668-1682 resident, ambassadeur 1680",
     "lines": [
       {
         "zone": "body",
@@ -45124,7 +43131,7 @@
     "toc_chapter": "IX. Turkije",
     "toc_page": 311,
     "source_file": "0002",
-    "period": "1764-1765 zaakgelastigde",
+    "period": "1761-1780 extraordinaris envoyé en minister plenipotentiaris",
     "lines": [
       {
         "zone": "body",
@@ -45554,7 +43561,7 @@
     "toc_chapter": "IX. Turkije",
     "toc_page": 313,
     "source_file": "0002",
-    "period": "1785-1808 ambassadeur",
+    "period": "1643-1645 Ds. Jacobus Lydius, ged. Dordrecht in mei 1610, phil. student",
     "lines": [
       {
         "zone": "body",
@@ -46135,7 +44142,7 @@
     "toc_chapter": "X. Marokko",
     "toc_page": 382,
     "source_file": "0002",
-    "period": "1636-1638 consul",
+    "period": "1666-1667, 1672—(1686) Johan van Wachtendonck, heer van Hasselholtz",
     "lines": [
       {
         "zone": "body",
@@ -46183,7 +44190,27 @@
         "pre_html": false
       }
     ],
-    "footnotes": {},
+    "footnotes": {
+      "280": "Res. 10 april 1679.",
+      "281": "Miss. Van Vrijberghe 6/17 jan. 1711.",
+      "282": "Miss. dd. Londen 10/24 okt. 1704.",
+      "283": "Miss. Hop 20 nov./4 dec. 1691.",
+      "284": "Bijl. miss. Joachimi 5/21 dec. 1635.",
+      "285": "Res. 6 maart 1636.",
+      "286": "Bijl. miss. Van Aerssen 7 april 1640.",
+      "287": "Zijn instructie als bijl. miss. Joachimi 8 jan./13 febr. 1638.",
+      "288": "Miss. ambass. 21/29 april 1645 en miss. Joachimi 14/22 april 1645.",
+      "289": "Miss. 24/27 juni 1687.",
+      "290": "Miss. Van Lynden 27 april/9 mei 1787.",
+      "291": "Zie noot 290.",
+      "292": "Miss. Joachimi 6/15 juni 1636.",
+      "293": "Miss. 25 jan./4 febr. 1802.",
+      "294": "Zie noot 292.",
+      "295": "Res. 5 juli 1762 en zijn miss. 1/8 febr. 1763.",
+      "296": "Miss. Van Weideren 30 mei/5 juni 1780 en zijn miss. 7/23 febr. 1780.",
+      "297": "Res. 21 juli 1789.",
+      "298": "Miss. Van Weideren 12/17 febr. 1779."
+    },
     "mentioned_in": []
   },
   {
@@ -46920,126 +44947,6 @@
         "zone": "body",
         "text": "25",
         "pre_html": false
-      },
-      {
-        "zone": "period_header",
-        "text": "1771-1777 consul-generaal",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "291. François Rossignol werd op grond van res. 26 juni 1758 door",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "Colletty aangesteld tot vice-consul te Salee in 17591079 en in 1770",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "tevens te Larache; bij res. 18 febr. 1771 aangesteld tot consul-",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "generaal 'm Marokko, ontving hij die dag ook zijn commissie als",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "zodanig; bij res. 22 okt. 1771 werd bepaald, dat de vice-consulaten",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "te Tanger, Salee, Sari en St. Cruz werden opgeheven en de zaken",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "voortaan gedirigeerd zouden worden door een consul-generaal te",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "Larache, die de consulaten van Tanger en Salee zou waarnemen, en",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "een vice-consul te Mogador, die de consulaten van Safi en St. Cruz",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "zou waarnemen en die tevens het consulaatshuis te Mogador zou",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "bewonen; in 1774 berichtte hij, dat de Keizer de presenten had",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "teruggezonden en de oorlog verklaard had tegen 1 jan. 17751080,",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "waarna acht oorlogsschepen werden uitgerust1081; 3 juni 1775",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "meldde hij, dat de Keizer gedurende drie jaren de oorlog zou be-",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "proeven om H.H.M, te doen oordelen, of het meer in hun belang",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "was om een jaarlijks tribuut van 30.000 piasters te zenden en dat hij",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "niet mocht vertrekken1082; door de schout bij nacht Pichot werd",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "onderhandeld over de vrede en deze werd in 1777 op de voet van",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "die van 1752 gesloten1083; Rossignol vroeg hersteld te worden als",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "consul-generaal, maar werd gepensioneerd1084; bij res. 10 jan. 1799",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "nr. 25 verzocht hij nog een half jaar pensioen ad ƒ 2000 's jaars.",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "Trouwde N.N., die wegens een beweerde pretensie van 6000 piasters in Marokko",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "teruggehouden was, maar in 1781 ontslagen werd1085.",
-        "pre_html": false
       }
     ],
     "footnotes": {
@@ -47065,119 +44972,119 @@
     "period": "1771-1777 consul-generaal",
     "lines": [
       {
-        "zone": "entry",
+        "zone": "body",
         "text": "291. François Rossignol werd op grond van res. 26 juni 1758 door",
-        "indent": 0
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "Colletty aangesteld tot vice-consul te Salee in 17591079 en in 1770",
-        "indent": 6
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "tevens te Larache; bij res. 18 febr. 1771 aangesteld tot consul-",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "generaal 'm Marokko, ontving hij die dag ook zijn commissie als",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "zodanig; bij res. 22 okt. 1771 werd bepaald, dat de vice-consulaten",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "te Tanger, Salee, Sari en St. Cruz werden opgeheven en de zaken",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "voortaan gedirigeerd zouden worden door een consul-generaal te",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "Larache, die de consulaten van Tanger en Salee zou waarnemen, en",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "een vice-consul te Mogador, die de consulaten van Safi en St. Cruz",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "zou waarnemen en die tevens het consulaatshuis te Mogador zou",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "bewonen; in 1774 berichtte hij, dat de Keizer de presenten had",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "teruggezonden en de oorlog verklaard had tegen 1 jan. 17751080,",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "waarna acht oorlogsschepen werden uitgerust1081; 3 juni 1775",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "meldde hij, dat de Keizer gedurende drie jaren de oorlog zou be-",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "proeven om H.H.M, te doen oordelen, of het meer in hun belang",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "was om een jaarlijks tribuut van 30.000 piasters te zenden en dat hij",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "niet mocht vertrekken1082; door de schout bij nacht Pichot werd",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "onderhandeld over de vrede en deze werd in 1777 op de voet van",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "die van 1752 gesloten1083; Rossignol vroeg hersteld te worden als",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "consul-generaal, maar werd gepensioneerd1084; bij res. 10 jan. 1799",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "nr. 25 verzocht hij nog een half jaar pensioen ad ƒ 2000 's jaars.",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "Trouwde N.N., die wegens een beweerde pretensie van 6000 piasters in Marokko",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "teruggehouden was, maar in 1781 ontslagen werd1085.",
-        "indent": 5
+        "pre_html": false
       }
     ],
     "footnotes": {},
@@ -47710,12 +45617,34 @@
         "zone": "body",
         "text": "Frederik Valckenier, nr. 294.",
         "pre_html": false
+      }
+    ],
+    "footnotes": {},
+    "mentioned_in": [
+      {
+        "corpus": "nl",
+        "schutte_nr": 73
       },
       {
-        "zone": "period_header",
-        "text": "1675-1679 extraordinaris envoyé",
-        "pre_html": false
+        "corpus": "nl",
+        "schutte_nr": 293
       },
+      {
+        "corpus": "nl",
+        "schutte_nr": 294
+      }
+    ]
+  },
+  {
+    "schutte_nr": 296,
+    "corpus": "nl",
+    "toc_title": "Chièze, Sébastien de",
+    "full_title": "296. Chièze, Sébastien de",
+    "toc_chapter": "XI. Spanje",
+    "toc_page": 392,
+    "source_file": "0002",
+    "period": "1675-1679 extraordinaris envoyé",
+    "lines": [
       {
         "zone": "body",
         "text": "296. Dr. Sébastien de Chièze, graaf van Stroppo en Servignasco 1 0 \", ged.",
@@ -47825,138 +45754,6 @@
         "zone": "body",
         "text": "Mr. Coenraaddes H.R. Rijksgraaf van Heemskerk,              nr. 21.",
         "pre_html": false
-      }
-    ],
-    "footnotes": {},
-    "mentioned_in": [
-      {
-        "corpus": "nl",
-        "schutte_nr": 73
-      },
-      {
-        "corpus": "nl",
-        "schutte_nr": 293
-      },
-      {
-        "corpus": "nl",
-        "schutte_nr": 294
-      }
-    ]
-  },
-  {
-    "schutte_nr": 296,
-    "corpus": "nl",
-    "toc_title": "Chièze, Sébastien de",
-    "full_title": "296. Chièze, Sébastien de",
-    "toc_chapter": "XI. Spanje",
-    "toc_page": 392,
-    "source_file": "0002",
-    "period": "1675-1679 extraordinaris envoyé",
-    "lines": [
-      {
-        "zone": "entry",
-        "text": "296. Dr. Sébastien de Chièze, graaf van Stroppo en Servignasco 1 0 \", ged.",
-        "indent": 0
-      },
-      {
-        "zone": "body",
-        "text": "(R.K.) Orange 16 febr. 1625, jur. doctor, rechter te Orange 1658,",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "raad in het parlement van Orange als opvolger van zijn vader 1664,",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "intendant van de domeinen en finantiën van de prins van Oranje in",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "Orange 22 aug. 1664 en in Bourgondië en Franche-Comté 3 dec.",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "1664, door prins Willem III van Oranje aangesteld tot zijn vertegen-",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "woordiger aan het Hof te Madrid 28 febr. 1670 (vertrok via Brussel),",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "ontving commissie als extraordinaris envoyé van de Republiek te",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "Madrid 12 nov. 1675, testeerde 19 aug. 1679, f Madrid 13 s e p t 1679.",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "Zoon van Dr. Jérôme Chièze, jur. doctor, als protestant teruggeroepen uit",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "ballingschap 1619, advocaat bij het parlement van Orange, pachter van de",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "inkomsten van het prinsdom 1654, admodiateur van het prinsdom en de daartoe",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "behorende domeinen (1654), procureur d'office 1658, als katholiek benoemd tot",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "(Rooms katholiek) raad in het parlement van Orange 1658-tl 664, en Mar-",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "guerite de Vassous; trouwde 9 sept. 1664 Claude Marie de Lapie, vrouwe van",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "Crament, testeerde 24 maart 1694, dochter van Georges de Lapie, heer van",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "Crament, en Eleonore de la Vigne.",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "N.N.B.W. IV, 426; W. F. Leemans et Elisabeth Leemans née Prins, La noblesse",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "de Ia Principauté d'Orange, La Haye, 1974, 381.",
-        "indent": 5
-      },
-      {
-        "zone": "sub_note",
-        "text": "Zijn secretaris was Johan Hotton, nr. 208.",
-        "indent": 10
-      },
-      {
-        "zone": "body",
-        "text": "Mr. Coenraaddes H.R. Rijksgraaf van Heemskerk,              nr. 21.",
-        "indent": 5
       }
     ],
     "footnotes": {},
@@ -48343,7 +46140,7 @@
     "toc_chapter": "XI. Spanje",
     "toc_page": 394,
     "source_file": "0002",
-    "period": "1715-1718 extraordinaris envoyé, extraordinaris ambassadeur 1715",
+    "period": "1802 Abraham Titsingh, geb. Amsterdam 17 aug., ged. aldaar (N.Z.k.)",
     "lines": [
       {
         "zone": "body",
@@ -48544,41 +46341,6 @@
         "zone": "body",
         "text": "In 1718 was zijn secretaris Mr. François Ham, nr. 300.",
         "pre_html": false
-      },
-      {
-        "zone": "period_header",
-        "text": "1718-1719 zaakgelastigde",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "300. Mr. François Ham, geb. Arnhem ca. 1680, jur. student te Leiden",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "16 sept. 1701, secretaris van Ripperda, werd bij res. 3 jan. 1718 gelast",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "de zaken na diens vertrek waar te nemen; bij res. 14 maart 1720",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "werd hij benoemd als raadsheer in de Raad van Vlaanderen ; hij was",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "in 1721 secretaris van Van Cats, f (vermoord in zijn stal) Madrid",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "juli/aug. 17231105.",
-        "pre_html": false
       }
     ],
     "footnotes": {},
@@ -48605,37 +46367,37 @@
     "toc_chapter": "XI. Spanje",
     "toc_page": 395,
     "source_file": "0002",
-    "period": "1718-1719 zaakgelastigde",
+    "period": "1765-1789 Thomas Gordon, wonende te Leith bij Edinburgh, werd bij res.",
     "lines": [
       {
-        "zone": "entry",
+        "zone": "body",
         "text": "300. Mr. François Ham, geb. Arnhem ca. 1680, jur. student te Leiden",
-        "indent": 0
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "16 sept. 1701, secretaris van Ripperda, werd bij res. 3 jan. 1718 gelast",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "de zaken na diens vertrek waar te nemen; bij res. 14 maart 1720",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "werd hij benoemd als raadsheer in de Raad van Vlaanderen ; hij was",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "in 1721 secretaris van Van Cats, f (vermoord in zijn stal) Madrid",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "juli/aug. 17231105.",
-        "indent": 5
+        "pre_html": false
       }
     ],
     "footnotes": {},
@@ -48769,17 +46531,30 @@
         "zone": "body",
         "text": "Zijn secretaris in 1721 was Mr. François Ham, nr. 300.",
         "pre_html": false
+      }
+    ],
+    "footnotes": {},
+    "mentioned_in": [
+      {
+        "corpus": "nl",
+        "schutte_nr": 300
       },
       {
-        "zone": "period_header",
-        "text": "1722-1723 Mr. François Ham, zaakgelastigde, nr. 300.",
-        "pre_html": false
-      },
-      {
-        "zone": "period_header",
-        "text": "1724-1743 ambassadeur",
-        "pre_html": false
-      },
+        "corpus": "nl",
+        "schutte_nr": 302
+      }
+    ]
+  },
+  {
+    "schutte_nr": 302,
+    "corpus": "nl",
+    "toc_title": "Meer, Frans van der",
+    "full_title": "302. Meer, Frans van der",
+    "toc_chapter": "XI. Spanje",
+    "toc_page": 395,
+    "source_file": "0002",
+    "period": "1724-1743 ambassadeur",
+    "lines": [
       {
         "zone": "body",
         "text": "302. Mr. Frans van der Meer, heer van Boxbergen (1735), geb. Genève 29",
@@ -48914,154 +46689,6 @@
         "zone": "body",
         "text": "onder nr. 198, en Maurits Greflein, nr. 303.",
         "pre_html": false
-      }
-    ],
-    "footnotes": {},
-    "mentioned_in": [
-      {
-        "corpus": "nl",
-        "schutte_nr": 300
-      },
-      {
-        "corpus": "nl",
-        "schutte_nr": 302
-      }
-    ]
-  },
-  {
-    "schutte_nr": 302,
-    "corpus": "nl",
-    "toc_title": "Meer, Frans van der",
-    "full_title": "302. Meer, Frans van der",
-    "toc_chapter": "XI. Spanje",
-    "toc_page": 395,
-    "source_file": "0002",
-    "period": "1724-1743 ambassadeur",
-    "lines": [
-      {
-        "zone": "entry",
-        "text": "302. Mr. Frans van der Meer, heer van Boxbergen (1735), geb. Genève 29",
-        "indent": 0
-      },
-      {
-        "zone": "body",
-        "text": "dec, ged. aldaar (St. Pierre) 30 dec. 1681, jur. student te Leiden",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "29 maart 1700, veertigraad aldaar 11 jan. 1716, gedeputeerde ter",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "dagvaart en ter Staten Generaal; bij res. 4 okt. 1723 benoemd tot",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "ambassadeur in Spanje, ontving hij zijn commissie 8 nov. 1723, nam",
-        "indent": 5
-      },
-      {
-        "zone": "genealogy",
-        "text": "afscheid 4 febr. 1724, was o.a. te Gent 13 febr., Parijs 25 febr.,",
-        "indent": 8
-      },
-      {
-        "zone": "genealogy",
-        "text": "17 maart, Bordeaux 15 april, Hortalezza 15 mei en te Madrid 29 mei",
-        "indent": 8
-      },
-      {
-        "zone": "genealogy",
-        "text": "1724, tekende als minister plenipotentiaris de verdragen van El",
-        "indent": 8
-      },
-      {
-        "zone": "genealogy",
-        "text": "Pardo betreffende het uitwisselen der ratificaties der vredesprelimi-",
-        "indent": 8
-      },
-      {
-        "zone": "genealogy",
-        "text": "nairen van 1727 op 6 maart J728 en van Sevilla betreffende de toe-",
-        "indent": 8
-      },
-      {
-        "zone": "genealogy",
-        "text": "treding van de Republiek tot het verdrag van Sevilla van 1729 op",
-        "indent": 8
-      },
-      {
-        "zone": "genealogy",
-        "text": "21 nov. 1729; ontving verlof om zijn vrouw en dochter herwaarts te",
-        "indent": 8
-      },
-      {
-        "zone": "genealogy",
-        "text": "geleiden, was te 's-Gravenhage 10 okt. 1737 1107 , nam afscheid 19",
-        "indent": 8
-      },
-      {
-        "zone": "genealogy",
-        "text": "april 1738; ontving in 1741 een extra toelage van ƒ 5000, f Grenoble",
-        "indent": 8
-      },
-      {
-        "zone": "genealogy",
-        "text": "1 mei 1743, begr. Leiden.",
-        "indent": 8
-      },
-      {
-        "zone": "genealogy",
-        "text": "Zoon van Mr. Albert van der Meer, nr. 105, en Jeanne de Mérode; trouwde",
-        "indent": 8
-      },
-      {
-        "zone": "genealogy",
-        "text": "Rijswijk 26 nov. 1713 Sara Johanna du Faget van Assendeïft, ged. 's-Gravenhage",
-        "indent": 8
-      },
-      {
-        "zone": "genealogy",
-        "text": "(Hoogd.k.) 21 dec. 1673, f Leiden 10 febr. 1741, dochter van Johan du Faget van",
-        "indent": 8
-      },
-      {
-        "zone": "genealogy",
-        "text": "Assendeïft, heer van Kralingen en Heinenoord, kolonel van een regiment",
-        "indent": 8
-      },
-      {
-        "zone": "genealogy",
-        "text": "cavalerie 1701, luitenant-generaal der cavalerie 1727, commandeur van Geer-",
-        "indent": 8
-      },
-      {
-        "zone": "genealogy",
-        "text": "truidenberg, en Sara Silvercroon.",
-        "indent": 8
-      },
-      {
-        "zone": "genealogy",
-        "text": "Ned. Her. 1892, 230; N.L. 1937, 273.",
-        "indent": 8
-      },
-      {
-        "zone": "genealogy",
-        "text": "1724 tot 1733 was zijn secretaris Leonardus Henricus van Aalst,",
-        "indent": 13
-      },
-      {
-        "zone": "sub_note",
-        "text": "zie onder consuls te Cadiz, in 1737 tot 1743 Alexander Smits, zie",
-        "indent": 12
-      },
-      {
-        "zone": "sub_note",
-        "text": "onder nr. 198, en Maurits Greflein, nr. 303.",
-        "indent": 13
       }
     ],
     "footnotes": {},
@@ -49271,7 +46898,7 @@
     "toc_chapter": "XI. Spanje",
     "toc_page": 397,
     "source_file": "0002",
-    "period": "1769-1770 zaakgelastigde",
+    "period": "1765-1789 Thomas Gordon, wonende te Leith bij Edinburgh, werd bij res.",
     "lines": [
       {
         "zone": "body",
@@ -49299,7 +46926,10 @@
         "pre_html": false
       }
     ],
-    "footnotes": {},
+    "footnotes": {
+      "306": "Miss. van zijn kleinzoon Justinus Johan Hill dd. Cork 1711.",
+      "307": "Ress. 30 sept, en 23 nov. 1779, 24 okt. 1780."
+    },
     "mentioned_in": [
       {
         "corpus": "nl",
@@ -49730,7 +47360,7 @@
     "toc_chapter": "XI. Spanje",
     "toc_page": 399,
     "source_file": "0002",
-    "period": "1796-1798 extraordinaris envoyé en minister plenipotentiaris",
+    "period": "1733-1781 Francisco Butler werd bij res. 26 maart 1733 aangesteld tot",
     "lines": [
       {
         "zone": "body",
@@ -50048,7 +47678,7 @@
     "toc_chapter": "XI. Spanje",
     "toc_page": 400,
     "source_file": "0002",
-    "period": "1798-1799 zaakgelastigde",
+    "period": "1733-1781 Francisco Butler werd bij res. 26 maart 1733 aangesteld tot",
     "lines": [
       {
         "zone": "body",
@@ -50127,7 +47757,7 @@
     "toc_chapter": "XI. Spanje",
     "toc_page": 400,
     "source_file": "0002",
-    "period": "1799 zaakgelastigde",
+    "period": "1733-1781 Francisco Butler werd bij res. 26 maart 1733 aangesteld tot",
     "lines": [
       {
         "zone": "body",
@@ -50284,7 +47914,7 @@
     "toc_chapter": "XI. Spanje",
     "toc_page": 401,
     "source_file": "0002",
-    "period": "1806-1807 zaakgelastigde",
+    "period": "1733-1781 Francisco Butler werd bij res. 26 maart 1733 aangesteld tot",
     "lines": [
       {
         "zone": "body",
@@ -50666,7 +48296,7 @@
     "toc_chapter": "XII. Portugal",
     "toc_page": 426,
     "source_file": "0002",
-    "period": "1664-1672 resident",
+    "period": "1733-1781 Francisco Butler werd bij res. 26 maart 1733 aangesteld tot",
     "lines": [
       {
         "zone": "body",
@@ -50729,7 +48359,14 @@
         "pre_html": false
       }
     ],
-    "footnotes": {},
+    "footnotes": {
+      "316": "Het verbaal van hem en zijn broeder Francisco, zie noot 314.",
+      "317": "Ress. 12 en 30 aug., 14 en 18 okt. en 17 dec. 1756.",
+      "318": "Res. 26 juni 1758.",
+      "319": "Geapprobeerd bij res. 29 okt. 1779.",
+      "320": "Res. 8 nov. 1785.",
+      "321": "Zie noot 319."
+    },
     "mentioned_in": [
       {
         "corpus": "nl",
@@ -51440,7 +49077,10 @@
     ],
     "footnotes": {
       "323": "Miss. ree. 29 juni 1676.",
-      "324": "Miss. 31 mei/12 juni 1682."
+      "324": "Miss. 31 mei/12 juni 1682.",
+      "325": "Zijn verbaal 31 aug. 1687-29 sept. 1688 in arch. S.G., inv. nr. 8622.",
+      "326": "Zijn verbaal 20 sept. 1688-10 aug. 1689 in arch. S.G., inv. nr. 8623.",
+      "327": "Ress. 16 en 18 mei 1691."
     },
     "mentioned_in": [
       {
@@ -52181,12 +49821,30 @@
         "zone": "body",
         "text": "Mr. Albert van der Meer, nr. 105.",
         "pre_html": false
+      }
+    ],
+    "footnotes": {},
+    "mentioned_in": [
+      {
+        "corpus": "nl",
+        "schutte_nr": 328
       },
       {
-        "zone": "period_header",
-        "text": "1713-1726 zaakgelastigde",
-        "pre_html": false
-      },
+        "corpus": "nl",
+        "schutte_nr": 334
+      }
+    ]
+  },
+  {
+    "schutte_nr": 328,
+    "corpus": "nl",
+    "toc_title": "le Plat, Adriaan François",
+    "full_title": "328. le Plat, Adriaan François",
+    "toc_chapter": "XIII. Sardinië",
+    "toc_page": 437,
+    "source_file": "0002",
+    "period": "1688-1689 extraordinaris envoyé",
+    "lines": [
       {
         "zone": "body",
         "text": "328. Mr. Adriaan François le Plat, secretaris van Van der Meer in 1710 en",
@@ -52228,45 +49886,9 @@
         "pre_html": false
       }
     ],
-    "footnotes": {},
-    "mentioned_in": [
-      {
-        "corpus": "nl",
-        "schutte_nr": 328
-      },
-      {
-        "corpus": "nl",
-        "schutte_nr": 334
-      }
-    ]
-  },
-  {
-    "schutte_nr": 328,
-    "corpus": "nl",
-    "toc_title": "le Plat, Adriaan François",
-    "full_title": "328. le Plat, Adriaan François",
-    "toc_chapter": "XIII. Sardinië",
-    "toc_page": 437,
-    "source_file": "0002",
-    "period": "1713-1726 zaakgelastigde",
-    "lines": [
-      {
-        "zone": "entry",
-        "text": "328. Mr. Adriaan François le Plat, secretaris van Van der Meer in 1710 en",
-        "indent": 0
-      },
-      {
-        "zone": "body",
-        "text": "later, ontving 18 sept. 1713 zijn commissie als zaakgelastigde ad",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "interim en nam afscheid 18 april 17261190.",
-        "indent": 5
-      }
-    ],
-    "footnotes": {},
+    "footnotes": {
+      "329": "Zijn verbaal 4 nov. 1692-17 maart 1693 in arch. S.G., inv. nr. 8636."
+    },
     "mentioned_in": [
       {
         "corpus": "nl",
@@ -53105,7 +50727,7 @@
     "toc_chapter": "XX. Zwitserland",
     "toc_page": 466,
     "source_file": "0002",
-    "period": "1704-1720 gezantschapssecretaris te Schaffhausen",
+    "period": "1688-1689 extraordinaris envoyé",
     "lines": [
       {
         "zone": "body",
@@ -53161,12 +50783,26 @@
         "zone": "body",
         "text": "467",
         "pre_html": false
-      },
+      }
+    ],
+    "footnotes": {},
+    "mentioned_in": [
       {
-        "zone": "period_header",
-        "text": "1707-1709 commissaris te Neuchâtel en Basel",
-        "pre_html": false
-      },
+        "corpus": "nl",
+        "schutte_nr": 101
+      }
+    ]
+  },
+  {
+    "schutte_nr": 335,
+    "corpus": "nl",
+    "toc_title": "Raboulet, Daniel",
+    "full_title": "335. Raboulet, Daniel",
+    "toc_chapter": "XX. Zwitserland",
+    "toc_page": 467,
+    "source_file": "0002",
+    "period": "1707-1709 commissaris te Neuchâtel en Basel",
+    "lines": [
       {
         "zone": "body",
         "text": "335. Daniel Ràboalet werd bij res. 9 sept. 1706 naar Zwitserland en",
@@ -53201,7 +50837,30 @@
         "zone": "body",
         "text": "1740-(1747) zaakwaarnemer",
         "pre_html": false
+      }
+    ],
+    "footnotes": {},
+    "mentioned_in": [
+      {
+        "corpus": "nl",
+        "schutte_nr": 336
       },
+      {
+        "corpus": "nl",
+        "schutte_nr": 337
+      }
+    ]
+  },
+  {
+    "schutte_nr": 336,
+    "corpus": "nl",
+    "toc_title": "Hirzel (von Wülflingen), Salomon",
+    "full_title": "336. Hirzel (von Wülflingen), Salomon",
+    "toc_chapter": "XX. Zwitserland",
+    "toc_page": 467,
+    "source_file": "0002",
+    "period": "1740-(1747) zaakwaarnemer",
+    "lines": [
       {
         "zone": "body",
         "text": "336. Salomon Hirzel (von Wülflingen), geb. in 1719, luitenant bij de",
@@ -53261,128 +50920,6 @@
         "zone": "body",
         "text": "bünden",
         "pre_html": false
-      }
-    ],
-    "footnotes": {},
-    "mentioned_in": [
-      {
-        "corpus": "nl",
-        "schutte_nr": 101
-      }
-    ]
-  },
-  {
-    "schutte_nr": 335,
-    "corpus": "nl",
-    "toc_title": "Raboulet, Daniel",
-    "full_title": "335. Raboulet, Daniel",
-    "toc_chapter": "XX. Zwitserland",
-    "toc_page": 467,
-    "source_file": "0002",
-    "period": "1707-1709 commissaris te Neuchâtel en Basel",
-    "lines": [
-      {
-        "zone": "entry",
-        "text": "335. Daniel Ràboalet werd bij res. 9 sept. 1706 naar Zwitserland en",
-        "indent": 0
-      },
-      {
-        "zone": "body",
-        "text": "Neuchâtel als commissaris gezonden om de zaken van de Koning",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "van Pruissen aldaar te appuyeren; zijn eerste briefis uit Basel 24",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "nov./2 dec. 1706; sinds 25 juli 1707 wordt hij vermeld als commis-",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "saris bij de Evangelische kantons te Basel en hij was 29 mei 1709",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "terug te 's-Gravenhage, f 2 juli 1711.",
-        "indent": 5
-      }
-    ],
-    "footnotes": {},
-    "mentioned_in": [
-      {
-        "corpus": "nl",
-        "schutte_nr": 336
-      },
-      {
-        "corpus": "nl",
-        "schutte_nr": 337
-      }
-    ]
-  },
-  {
-    "schutte_nr": 336,
-    "corpus": "nl",
-    "toc_title": "Hirzel (von Wülflingen), Salomon",
-    "full_title": "336. Hirzel (von Wülflingen), Salomon",
-    "toc_chapter": "XX. Zwitserland",
-    "toc_page": 467,
-    "source_file": "0002",
-    "period": "1740-(1747) zaakwaarnemer",
-    "lines": [
-      {
-        "zone": "entry",
-        "text": "336. Salomon Hirzel (von Wülflingen), geb. in 1719, luitenant bij de",
-        "indent": 0
-      },
-      {
-        "zone": "body",
-        "text": "garde (1747), kolonel titulair in Staatse dienst, nam sedert 1740 de",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "belangen van de staat te Zürich waar1248, | in 1791.",
-        "indent": 5
-      },
-      {
-        "zone": "genealogy",
-        "text": "Zoon van Johan Salomon Hirzel, baron van Wülflingen, generaal der infanterie",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "in Staatse dienst 1747, kolonel van het regiment Zwitsers nr. 1 1736 tot f 1755,",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "Zwölfter en gerichtsheer te Wülflingen, en Anna Margaretha Meiss von Wülf-",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "lingen; trouwde Anna KÖferli.",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "Sch. G. VI (1936), 289.",
-        "indent": 6
-      },
-      {
-        "zone": "body",
-        "text": "Charles François Bosc de la Calmette, nr. 214.",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "bünden",
-        "indent": 5
       }
     ],
     "footnotes": {},
@@ -53913,7 +51450,7 @@
     "toc_chapter": "XXI. Verenigde Staten van Amerika",
     "toc_page": 470,
     "source_file": "0002",
-    "period": "1782-1784 extraordinaris envoyé en minister plenipotentiaris; 1785-1786",
+    "period": "1789-1795 (1796) resident (minister plenipotentiaris)",
     "lines": [
       {
         "zone": "body",
@@ -53966,7 +51503,7 @@
     "toc_chapter": "XXI. Verenigde Staten van Amerika",
     "toc_page": 470,
     "source_file": "0002",
-    "period": "1782-1784 extraordinaris envoyé en minister plenipotentiaris; 1785-1786",
+    "period": "1796-1803 minister resident",
     "lines": [
       {
         "zone": "body",

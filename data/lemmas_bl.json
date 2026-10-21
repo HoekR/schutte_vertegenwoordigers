@@ -10,194 +10,199 @@
     "period": "1590-1607 zonder rang, ordinaris ambassadeur 1592, gedeputeerde",
     "lines": [
       {
-        "zone": "entry",
+        "zone": "body",
         "text": "1.   Paul Choart, heer van Grandchamp en Grange-le-Roi en",
-        "indent": 0
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "voor een deel van Buzenval en Magry-Saint-Loup, gewoon",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "kamerheer van het Huis van de koning van Navarre, de la-",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "tere Hendrik IV; raad in diens staats- en privéraden; ambas-",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "sadeur naar Engeland; werd in 1590 naar de Staten Generaal",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "gezonden, verbleef hier vanaf 1591 regelmatig, kreeg 23 april",
-        "indent": 5
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "period_header",
         "text": "1592 de rang van ordinaris ambassadeur, ontving bij res. 20",
-        "indent": 6
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "jan. 1598 een gouden keten met verschillende penningen, in",
-        "indent": 5
+        "pre_html": false
       },
       {
-        "zone": "body",
+        "zone": "period_header",
         "text": "1600 een keten ter waarde van ƒ 4900 en bij res. 17 okt. 1601",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "een keten van ƒ 5000 met een penning van de slag bij",
-        "indent": 5
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "Nieuwpoort; was in 1602 enige tijd afwezig, nam 27",
-        "indent": 5
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "1 N.L. 1893, 72.",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "2 H. G. Bom jr., Brand in het Fransche gezantschap te 's-Gravenhage, 1782 - 26",
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "maart - 1932, in: Vuur en Water, jrg. 1932, 44.",
-        "indent": 2
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "nov. 1606 afscheid, ontving toen een lijfrente van ƒ 1500",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "'s jaars3, woonde enige tijd in het huis van Naaldwijk aan het",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "Voorhout; tezamen met Pierre Jeannin, nr. 2, en Elie de la",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "Place, heer van Russy, nr. 3, gedeputeerde naar de Republiek",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "tot bemiddeling in het sluiten van een bestand, was hier te",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "lande 24 mei 1607, logeerde in Zeeland in het logement van",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "de prins van Oranje, werd bij de Hoornbrug door Frederik",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "Hendrik ontvangen, had 28 mei 1607 audiëntie, woonde",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "in het Oude Hof4 tijdens de afwezigheid van Louise de Co-",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "ligny, f 's-Gravenhage 31 aug., begr. aldaar (Gr.k.) 6 sept.",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "16075.",
-        "indent": 7
+        "pre_html": false
       },
       {
         "zone": "genealogy",
         "text": "Zoon van Robert Choart, heer van Buzenval, advocaat bij het parlement van",
-        "indent": 6
+        "pre_html": false
       },
       {
         "zone": "genealogy",
         "text": "Parijs, en Françoise de Grené.",
-        "indent": 6
+        "pre_html": false
       },
       {
         "zone": "genealogy",
         "text": "De la Chenaye-Desbois 5, 633 ; Courcelles 11 ; Lettres et negotiations de Paul",
-        "indent": 6
+        "pre_html": false
       },
       {
         "zone": "genealogy",
         "text": "Choart, seigneur de Buzenval, ambassadeur ordinaire de Henri IV en Hol-",
-        "indent": 6
+        "pre_html": false
       },
       {
         "zone": "genealogy",
         "text": "lande, et de François d'Aerssen, agent des Provinces-Unies en France",
-        "indent": 6
+        "pre_html": false
       },
       {
         "zone": "genealogy",
         "text": "(1598-1599) suivies de quelques pièces diplomatiques concernants les années",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "period_header",
         "text": "1593-1596 et 1602-1606, publ. par G. G. Vreede, Leide, 1846. G. W. Vreede.",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "Lettres de M. de Buzenval à M. de Villeroy, 4 Juni - 26 Sept. 1600 in:",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "Aanteekeningen van het verhandelde in de Sectie-vergaderingen van het",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "Prov. Utrechtsche Genootschap 1849, 84; G. W. Vreede, Lettres et négocia-",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "tions de Paul Choart, Seigneur de Buzenval, ambassadeur ordinaire de Henri",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "IV en Hollande, 1600, in: Historisch Genootschap, Codex diplomaticus",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "Neerlandicus, 2e st., I, II, 164.",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "sub_note",
+        "zone": "body",
         "text": "In 1605 was zijn secretaris Franchimont, die bij res. 21 okt.",
-        "indent": 9
-      },
-      {
-        "zone": "sub_note",
-        "text": "1605 een verering van ƒ 100 ontving.",
-        "indent": 9
+        "pre_html": false
       }
     ],
     "footnotes": {
@@ -225,6 +230,11 @@
     "source_file": "0001",
     "period": "1607-1609 gedeputeerde",
     "lines": [
+      {
+        "zone": "body",
+        "text": "2.   Pierre Jeannin, heer van Montjeu, geb. Autun in 1540, ad-",
+        "pre_html": false
+      },
       {
         "zone": "body",
         "text": "vocaat 1569; gedeputeerde van de derde stand van Dijon",
@@ -492,7 +502,9 @@
       }
     ],
     "footnotes": {
-      "2": "Pierre Jeannin, heer van Montjeu, geb. Autun in 1540, ad-"
+      "3": "Res. Holl. 1 nov. 1606 en res. 27 nov. 1606.",
+      "4": "Res Holl. 5 jan. 1607.",
+      "5": "N.L. 1902, 182; op kosten van de Staat begraven (ƒ6118)."
     },
     "mentioned_in": [
       {
@@ -511,6 +523,11 @@
     "source_file": "0001",
     "period": "1607-1611 gedeputeerde, ambassadeur 1609",
     "lines": [
+      {
+        "zone": "body",
+        "text": "3.   Elie de la Place, heer van Russy, tezamen met Pierre Jeannin,",
+        "pre_html": false
+      },
       {
         "zone": "body",
         "text": "nr. 2, en Paul Choart, heer van Buzenval, nr. 1, gedeputeerde",
@@ -593,7 +610,9 @@
       }
     ],
     "footnotes": {
-      "3": "Elie de la Place, heer van Russy, tezamen met Pierre Jeannin,"
+      "6": "Zie noot 4.",
+      "15": "juni 1689 volmacht tot onderhandelingen met Anhalt-Zerbst over",
+      "2": "sept, zijn instructies, 14 okt. zijn aanstelling tot raad en resident, zond"
     },
     "mentioned_in": [
       {
@@ -616,6 +635,11 @@
     "source_file": "0001",
     "period": "1611-1614 extraordinaris ambassadeur",
     "lines": [
+      {
+        "zone": "body",
+        "text": "4.   Eustache de Refuge, heer van Précy en Courcelle, geb. in",
+        "pre_html": false
+      },
       {
         "zone": "body",
         "text": "1564, raad in het parlement van Parijs 20 maart 1592; re-",
@@ -783,7 +807,9 @@
       }
     ],
     "footnotes": {
-      "4": "Eustache de Refuge, heer van Précy en Courcelle, geb. in"
+      "7": "Zie noot 4.",
+      "8": "Ress. 13 en 29 dec. 1614 en 2 jan. 1615.",
+      "9": "Res. 14 dec. 1614."
     },
     "mentioned_in": []
   },
@@ -797,6 +823,11 @@
     "source_file": "0001",
     "period": "1613-1624 ordinaris ambassadeur",
     "lines": [
+      {
+        "zone": "body",
+        "text": "5.   Benjamin Aubéry, heer van Ie Maurier, geb. op Ie Maurier bij",
+        "pre_html": false
+      },
       {
         "zone": "body",
         "text": "La Flèche in aug. 1566, student te Genève 9 juni 1584;",
@@ -1024,7 +1055,9 @@
       }
     ],
     "footnotes": {
-      "5": "Benjamin Aubéry, heer van Ie Maurier, geb. op Ie Maurier bij"
+      "10": "Onder andere ress. 17 maart 1614, fo. 262 vo., 1615, fo.57, 1622, fo. 296 en 418a.",
+      "11": "Res. 19 juni 1617.",
+      "12": "Ress. 1619, fo. 38, 40 vo., 181."
     },
     "mentioned_in": []
   },
@@ -1136,6 +1169,11 @@
       {
         "zone": "period_header",
         "text": "1624-1628 ordinaris ambassadeur",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
+        "text": "6.   Charles Faye, heer van Espesses, raad in het parlement van",
         "pre_html": false
       },
       {
@@ -1270,7 +1308,12 @@
       }
     ],
     "footnotes": {
-      "6": "Charles Faye, heer van Espesses, raad in het parlement van"
+      "13": "Getuigen: Louise de Coligny, prinses-douairière van Oranje, en de Staten Gene-",
+      "14": "Getuige: Maurits prins van Oranje.",
+      "15": "Getuigen: Frederik Hendrik graaf van Nassau en Eleonore de Bourbon.",
+      "16": "Getuigen: Emilia gravin van Nassau en Floris van Pallandt graaf van Culemborg.",
+      "17": "Getuige: Lodewijk XIII koning van Frankrijk.",
+      "18": "Res. 1627, fo. 36."
     },
     "mentioned_in": []
   },
@@ -1284,6 +1327,11 @@
     "source_file": "0001",
     "period": "1628-1634 ambassadeur",
     "lines": [
+      {
+        "zone": "body",
+        "text": "7.   Nicolas de Baugy, raad van de koning; ambassadeur sedert",
+        "pre_html": false
+      },
       {
         "zone": "body",
         "text": "1628, tekende een of- en defensief verbond, waarvoor hij als",
@@ -1326,7 +1374,8 @@
       }
     ],
     "footnotes": {
-      "7": "Nicolas de Baugy, raad van de koning; ambassadeur sedert"
+      "9": "aug.), gecommitteerde ter Admiraliteit te Amsterdam 1654 tot 1657,",
+      "16": "aug. 1654. f Amsterdam 2 dec. 1728, dochter van Ds. Cornells de"
     },
     "mentioned_in": [
       {
@@ -1349,6 +1398,11 @@
     "source_file": "0001",
     "period": "1634-1635 secretaris van ambassade",
     "lines": [
+      {
+        "zone": "body",
+        "text": "8.   Henri Brasset, geb. in 1591, secretaris van Péricard, de Franse",
+        "pre_html": false
+      },
       {
         "zone": "body",
         "text": "resident te Brussel, 1616 tot 1627, verbleef aldaar tijdens het",
@@ -1455,9 +1509,7 @@
         "pre_html": false
       }
     ],
-    "footnotes": {
-      "8": "Henri Brasset, geb. in 1591, secretaris van Péricard, de Franse"
-    },
+    "footnotes": {},
     "mentioned_in": [
       {
         "corpus": "bl",
@@ -1481,8 +1533,13 @@
     "toc_chapter": "I. Frankrijk",
     "toc_page": 7,
     "source_file": "0001",
-    "period": "1634-1635 extraordinaris ambassadeur",
+    "period": "1635-1637 ambassadeur",
     "lines": [
+      {
+        "zone": "body",
+        "text": "9.   Hercule baron de Charnacé^2, ridder in de orde des konings;",
+        "pre_html": false
+      },
       {
         "zone": "body",
         "text": "19   Getuigen: de Staten Generaal die hem als pillegift ƒ 1200 gaven.",
@@ -1619,9 +1676,7 @@
         "pre_html": false
       }
     ],
-    "footnotes": {
-      "9": "Hercule baron de Charnacé^2, ridder in de orde des konings;"
-    },
+    "footnotes": {},
     "mentioned_in": [
       {
         "corpus": "bl",
@@ -2193,7 +2248,8 @@
       }
     ],
     "footnotes": {
-      "25": "Res. 9 jan. 1640."
+      "25": "Res. 9 jan. 1640.",
+      "26": "Ress. 17 en 26 okt. 1668."
     },
     "mentioned_in": [
       {
@@ -2295,6 +2351,11 @@
     "lines": [
       {
         "zone": "body",
+        "text": "13.   Pomponne de Bellièvre, ridder heer van Grignon, geb. in",
+        "pre_html": false
+      },
+      {
+        "zone": "body",
         "text": "1606, raad in het parlement van Parijs 22 febr. 1629; request-",
         "pre_html": false
       },
@@ -2369,9 +2430,7 @@
         "pre_html": false
       }
     ],
-    "footnotes": {
-      "13": "Pomponne de Bellièvre, ridder heer van Grignon, geb. in"
-    },
+    "footnotes": {},
     "mentioned_in": [
       {
         "corpus": "bl",
@@ -3139,10 +3198,7 @@
       }
     ],
     "footnotes": {
-      "37": "Res. 3 juni 1669.",
-      "78": "Zie res. van die datum.",
-      "79": "Zie noot 72.",
-      "80": "Zijn verbaal 2 aug. 1680-17 dec. 1688 in arch. S.G., inv. nr. 8624."
+      "37": "Res. 3 juni 1669."
     },
     "mentioned_in": []
   },
@@ -3274,7 +3330,14 @@
     ],
     "footnotes": {
       "38": "Not. arch. 's-Gravenhage, inv. nr. 291, 247.",
-      "39": "Volgens zijn eigen memorie dd. 19 aug. 1682 en ress. 19 en 20 aug. 1682 en 23"
+      "39": "Volgens zijn eigen memorie dd. 19 aug. 1682 en ress. 19 en 20 aug. 1682 en 23",
+      "40": "Not. arch. 's-Gravenhage, inv. nr. 290, 484, dd. 8 nov. 1685.",
+      "41": "Id., inv. nr. 464, 554, dd. 23 sept. 1683.",
+      "42": "Zie noot 40.",
+      "43": "Zie noot 41.",
+      "44": "Not. arch. 's-Gravenhage, inv. nr. 291, 241, dd. 4 nov. 1688.",
+      "45": "Zie noot 41.",
+      "46": "Not. arch. 's-Gravenhage, inv. nr. 291, 25, dó. 3 april 1687."
     },
     "mentioned_in": [
       {
@@ -4818,7 +4881,11 @@
       }
     ],
     "footnotes": {
-      "49": "Miss. Hop 2/6 juni 1724."
+      "49": "Miss. Hop 2/6 juni 1724.",
+      "50": "Getuigen: Jacques-Louis le Peletier de Montmeliant, honorair president van het",
+      "51": "Getuigen: Léon de Beaumont, bisschop van Saintes, en Susanne Catharine de",
+      "52": "Getuigen: Charles-Etienne le Peletier de Beaupré, intendant van Champagne, en",
+      "53": "Getuigen: François-Barthelemi de Salignac de la Mothe Fénelon, bisschop van"
     },
     "mentioned_in": [
       {
@@ -5353,7 +5420,7 @@
     "toc_chapter": "I. Frankrijk",
     "toc_page": 27,
     "source_file": "0001",
-    "period": "1634-1635 extraordinaris ambassadeur",
+    "period": "1752-1756 ambassadeur",
     "lines": [
       {
         "zone": "body",
@@ -5477,7 +5544,6 @@
       }
     ],
     "footnotes": {
-      "37": "Hun verbaal 25 jan. 1628-27 maart 1629 in arch. S.G., inv. nrs. 8357-8358.",
       "58": "Cf. miss. Calkoen 2/13 febr. en 2/10 maart 1755.",
       "59": "Elias, 1065."
     },
@@ -9597,9 +9663,7 @@
         "pre_html": false
       }
     ],
-    "footnotes": {
-      "222": "Zie noot 221."
-    },
+    "footnotes": {},
     "mentioned_in": [
       {
         "corpus": "bl",
@@ -9910,12 +9974,7 @@
         "pre_html": false
       }
     ],
-    "footnotes": {
-      "224": "Zie noot 221.",
-      "225": "Secr. miss. 7/17 en 20/24 juli, 5/15, 18/26 okt. en 29 okt./10 nov. 1665.",
-      "226": "Miss. Meerman 15 okt. 1667.",
-      "227": "Ress. 17 en 21 sept. 1667."
-    },
+    "footnotes": {},
     "mentioned_in": [
       {
         "corpus": "bl",
@@ -10043,7 +10102,31 @@
         "pre_html": false
       }
     ],
-    "footnotes": {},
+    "footnotes": {
+      "75": "Ress. Holl. 8 en 25 maart en 17 mei 1628.",
+      "76": "Ress. 20 maart, 1 april, 29 juni en 14 sept. 1649.",
+      "77": "Getuigen: Dominicus Daguerre en Anna Maria Bloemert, weduwe van J. van",
+      "78": "Getuigen: Rolandus da Guerre en Anna Maria Bloemert, weduwe van J. van",
+      "79": "Getuigen: Dominicus Daguerre en Anna Papenbroeck, weduwe Schaep.",
+      "80": "Not. arch. 's-Gravenhage, inv. nr. 496, 636, dd. 18 mei 1677.",
+      "81": "Id., inv. nr. 735, 375 sq., dd. 3 dec. 1686.",
+      "82": "Id., inv. nr. 679, 223, dd. 27 juni 1702, waar hij als \"vroeger raad enz.\" genoemd",
+      "83": "Kinderen begr. Amsterdam (N.k.) 14 sept. 1683 en 2 sept, en 10 nov. 1687.",
+      "84": "Getuigen: Charles Aubert de la Chenaye en Anne Blanpignon.",
+      "85": "Getuigen: Louis Aubert, resident van de hertog van Brunswijk in de Spaanse",
+      "86": "Getuigen: Louis François Aubert en Marie Anne Aubert.",
+      "87": "Getuigen: Petrus Talion en Charlotte Aubert",
+      "88": "Getuige: Louise de Chabert",
+      "89": "Getuigen: Henry de Rogissart en Christine Lamb.",
+      "90": "Getuigen: de vader en Marie Gabrielle Félicité Laugier.",
+      "91": "Getuigen: André Benoist Astier, consul van Frankrijk op Cyprus, en Laure",
+      "92": "Getuigen: Pierre Astier de la Blache, majoor in het regiment Saksen-Gotha in",
+      "93": "Archief buitenlandse zaken 1796-1810, inv. nr. 238.",
+      "94": "Getuigen: Michel Crosset en Marie Josephe Petit.",
+      "95": "Zie noot 93.",
+      "96": "Zie noot 93.",
+      "97": "Getuigen: Carolus Huguet Semonville en Maria Aimé Rosting de      Sémonville."
+    },
     "mentioned_in": []
   },
   {
@@ -10272,12 +10355,7 @@
         "pre_html": false
       }
     ],
-    "footnotes": {
-      "233": "Zie ook ress. 22 aug. en 23 sept. 1669 en 5 jan. 1673.",
-      "234": "Ress. 22 sept, en 5 okt. 1673.",
-      "235": "Res. 12 aug. 1670.",
-      "236": "Zijn verbaal 23 aug. 1652-22 mei 1654 in arch. S.G., inv. nrs. 8478-8479."
-    },
+    "footnotes": {},
     "mentioned_in": []
   },
   {
@@ -10842,7 +10920,8 @@
       }
     ],
     "footnotes": {
-      "105": "Zie noot 102."
+      "105": "Zie noot 102.",
+      "107": "Zie noot 102."
     },
     "mentioned_in": []
   },
@@ -11002,10 +11081,7 @@
         "pre_html": false
       }
     ],
-    "footnotes": {
-      "253": "Vgl. miss. 9/14 maart 1708.",
-      "254": "Miss. van dat jaar."
-    },
+    "footnotes": {},
     "mentioned_in": [
       {
         "corpus": "bl",
@@ -11350,10 +11426,7 @@
         "pre_html": false
       }
     ],
-    "footnotes": {
-      "259": "Miss. 29 juni/2 juli 1700.",
-      "260": "Miss. dd. Londen 1/5 febr. 1707."
-    },
+    "footnotes": {},
     "mentioned_in": []
   },
   {
@@ -12752,7 +12825,10 @@
       "130": "Getuigen: Mevrouw Howard, dame gouvernante van Zijne Hoogheid, in plaats",
       "131": "Res. 14 febr. 1641.",
       "132": "Not. archief 's-Gravenhage, inv. nr. 118, 237.",
-      "133": "Res. 22 okt. 1646."
+      "133": "Res. 22 okt. 1646.",
+      "134": "Res. 23 maart 1651.",
+      "135": "Als gravin van Pembroke wordt zij vermeld in het begraafregister van de Oude",
+      "136": "Not. archief 's-Gravenhage, inv. nr. 117, 367; hierin vermaakt zij aan haar"
     },
     "mentioned_in": []
   },
@@ -13163,9 +13239,7 @@
       }
     ],
     "footnotes": {
-      "137": "Op grond van een koninklijk besluit van 9 sept. 1661.",
-      "271": "Zijn verbaal 13 sept. 1777-5 okt. 1781 in arch. S.G., inv. nr. 8838.",
-      "272": "Ress. 24 juli en 14 aug. 1795."
+      "137": "Op grond van een koninklijk besluit van 9 sept. 1661."
     },
     "mentioned_in": [
       {
@@ -13256,7 +13330,8 @@
       }
     ],
     "footnotes": {
-      "138": "Res. 23 aug. 1650."
+      "138": "Res. 23 aug. 1650.",
+      "139": "Zie noot 134."
     },
     "mentioned_in": []
   },
@@ -13843,7 +13918,9 @@
     "footnotes": {
       "141": "Res. 7 jan. 1672.",
       "142": "Ress. 7 en 23 jan. 1672.",
-      "143": "Not. archief 's-Gravenhage, inv. nr. 514, 82."
+      "143": "Not. archief 's-Gravenhage, inv. nr. 514, 82.",
+      "144": "Ress. 11 en 15 sept. 1668.",
+      "145": "Ress. 11 en 12 sept. 1668."
     },
     "mentioned_in": [
       {
@@ -13899,9 +13976,7 @@
       }
     ],
     "footnotes": {
-      "146": "Not. archief \"s-Gravenhage, inv. nr. 877, 261.",
-      "335": "Gothaisches Genealogisches Taschenbuch der Freiherrlichen Häuser 1853, 398.",
-      "336": "Miss. rec. 2 jan. 1731."
+      "146": "Not. archief \"s-Gravenhage, inv. nr. 877, 261."
     },
     "mentioned_in": []
   },
@@ -14266,10 +14341,7 @@
         "pre_html": false
       }
     ],
-    "footnotes": {
-      "337": "Hun verbaal in arch. S.G., inv. nr. 8667.",
-      "338": "Zijn verbaal 24 jan. 1734-15 okt. 1738 in arch. S.G., inv. nr. 8736."
-    },
+    "footnotes": {},
     "mentioned_in": [
       {
         "corpus": "bl",
@@ -15190,10 +15262,7 @@
         "pre_html": false
       }
     ],
-    "footnotes": {
-      "339": "Res. 7 aug. 1766.",
-      "340": "Gewezen secretaris genoemd in res. 12 sept. 1780."
-    },
+    "footnotes": {},
     "mentioned_in": [
       {
         "corpus": "bl",
@@ -15807,13 +15876,7 @@
         "pre_html": false
       }
     ],
-    "footnotes": {
-      "345": "Hun verbaal 10 febr. 1746-2 juni 1747 in arch. S.G., inv. nr. 8758.",
-      "346": "Res. 20 febr. 1786.",
-      "347": "Miss. 21 juni/3 juli 1786.",
-      "348": "Zijn verbaal 8 juli 1763-22 april 1767 in arch. S.G., inv. nr. 8829.",
-      "349": "Zijn verbaal 24 sept. 1777-12 mei 1785 in arch. S.G., inv. nr. 8845."
-    },
+    "footnotes": {},
     "mentioned_in": []
   },
   {
@@ -16121,7 +16184,9 @@
       }
     ],
     "footnotes": {
-      "161": "Res. 31 maart 1702."
+      "161": "Res. 31 maart 1702.",
+      "23": "juni 1692; kamerheer 1689; commandant van de Engelse",
+      "3": "dec. 1698, 2 juni tot 18 okt. 1699 en 27 juni tot 18 okt. 1700;"
     },
     "mentioned_in": [
       {
@@ -16827,7 +16892,10 @@
     ],
     "footnotes": {
       "164": "Hij ontving geloofsbrieven als extraordinaris envoyé naar Pruissen 17 okt.",
-      "165": "Res. 15 nov. 1706."
+      "165": "Res. 15 nov. 1706.",
+      "166": "Res. 20 nov. 1714.\"044",
+      "167": "Res. 7 okt. 1716.",
+      "167a": "E. M. C. M. Janson, Wassenaar, historische verkenningen, Bussum, 1967, 43."
     },
     "mentioned_in": [
       {
@@ -17485,8 +17553,7 @@
       }
     ],
     "footnotes": {
-      "173": "Res. 2 jan. 1715.",
-      "356": "Res. van die datum."
+      "173": "Res. 2 jan. 1715."
     },
     "mentioned_in": []
   },
@@ -17875,7 +17942,9 @@
       }
     ],
     "footnotes": {
-      "174": "Res. 23 febr. 1717."
+      "174": "Res. 23 febr. 1717.",
+      "175": "Res. 19 april 1717.",
+      "176": "Res. 18 mei 1717."
     },
     "mentioned_in": [
       {
@@ -18096,11 +18165,7 @@
       }
     ],
     "footnotes": {
-      "177": "Res. 19 dec. 1724.",
-      "362": "Zie ook res. 7 nov. 1740.",
-      "363": "Res. 4 aug. 1763.",
-      "364": "Z ijn verbaal 29 maart 1690-1 febr. 1698 in arch. S.G., inv. nrs. 8643-8646.",
-      "365": "Zijn verbaal in arch. S.G., inv. nrs. 8645-8646."
+      "177": "Res. 19 dec. 1724."
     },
     "mentioned_in": [
       {
@@ -18220,7 +18285,10 @@
         "pre_html": false
       }
     ],
-    "footnotes": {},
+    "footnotes": {
+      "182": "Res. van die datum.",
+      "183": "Res. 18 mei 1745."
+    },
     "mentioned_in": [
       {
         "corpus": "bl",
@@ -18453,7 +18521,9 @@
         "pre_html": false
       }
     ],
-    "footnotes": {},
+    "footnotes": {
+      "13": "aug. 1727, was afwezig van 23 jan. 1728 tot 24 maart, toen"
+    },
     "mentioned_in": [
       {
         "corpus": "bl",
@@ -18808,7 +18878,9 @@
         "pre_html": false
       }
     ],
-    "footnotes": {},
+    "footnotes": {
+      "30": "april 1733; veldmaarschalk 18 maart 1742; ontving ge-"
+    },
     "mentioned_in": [
       {
         "corpus": "bl",
@@ -18994,7 +19066,8 @@
     ],
     "footnotes": {
       "184": "Res. 23 nov. 1746.",
-      "185": "Res. 14 jan. 1749."
+      "185": "Res. 14 jan. 1749.",
+      "186": "Waarschijnlijk identiek met Gis, als secretaris van de koning van Groot-"
     },
     "mentioned_in": []
   },
@@ -19688,7 +19761,12 @@
       }
     ],
     "footnotes": {
-      "191": "Res. 20 dec. 1751."
+      "191": "Res. 20 dec. 1751.",
+      "192": "Volgens anderen: in 1795.",
+      "193": "Zie ook: secr. res. 17 febr. 1744.",
+      "194": "Zijn verbaal in archief S.G., inv. nr. 8753.",
+      "195": "Zijn verbaal in archief S.G., inv. nr. 8757.",
+      "196": "Als zodanig vermeld in het Neues Genealogisches Reichs Staats-Hand-Buch"
     },
     "mentioned_in": [
       {
@@ -21010,9 +21088,7 @@
         "pre_html": false
       }
     ],
-    "footnotes": {
-      "378": "Besl. 16 okt. 1809 nr. 6."
-    },
+    "footnotes": {},
     "mentioned_in": []
   },
   {
@@ -21276,12 +21352,7 @@
         "pre_html": false
       }
     ],
-    "footnotes": {
-      "381": "Miss. 29 aug. 1624.",
-      "382": "Een Lodewijk de Knibberch was zwager van Van Brederode, res. 31 mei 1618.",
-      "383": "Res. 12 sept. 1618.",
-      "384": "Oorspronkelijk Cornelis Reyersz. alias Cornelisz. de Lange genaamd."
-    },
+    "footnotes": {},
     "mentioned_in": [
       {
         "corpus": "bl",
@@ -21441,7 +21512,72 @@
       }
     ],
     "footnotes": {
-      "391": "Res. 16 aug. 1635."
+      "5": "juli, zijn geloofsbrieven aanbood (vóór) 16 juli 1803, zijn",
+      "30": "mei 1792 nieuwe geloofsbrieven, die hij 6 juli aanbood,",
+      "19": "juni 1621 werd vastgesteld. 7 dec. 1634 kreeg de stapel een",
+      "4": "nov. ; werd benoemd tot extraordinaris envoyé en minister",
+      "199": "Nav. 1897, 6.",
+      "200": "Res. 1 mei 1747.",
+      "201": "Res. 1 juni 1758.",
+      "202": "Not. archief Amsterdam, inv. nr. 8986, 1110, dd. 20 okt. 1748.",
+      "1": "Z.Z.                                                  GROOT-BRITTANNIE",
+      "203": "Groot-Placcaetboek, Den Haag, 1638-1801, dl. I, 756.",
+      "204": "Te Lintum, op. cit., 237.",
+      "205": "Doopgetuige Nieuwe kerk te Delft 6 aug. 1632.",
+      "206": "Laten op die datum twee kinderen in de Nieuwe kerk te Delft dopen.",
+      "207": "Doopgetuige Oude kerk te Delft 2 april 1634.",
+      "208": "Thomas Mc Crie, The life of Andrew Melville, Edinburgh, 1819, torn. II, 310.",
+      "209": "Res. 31 juli 1602.",
+      "210": "Res. 7 jan. 1605.",
+      "211": "Ress. 1 juli en 18 dec. 1610.",
+      "25": "dec. 1697218, geamplieerd in 1697219, geratificeerd door de Staten",
+      "212": "Archief 1903, 100; Davidson 420.",
+      "213": "Archief 1903, 110; Rooseboom nr. 111.",
+      "214": "Rooseboom nr. 148.",
+      "216": "Archief 1911, 1.",
+      "217": "Archief 1905, 96; Davidson 428.",
+      "218": "Archief 1905, 120.",
+      "219": "Id., 147.",
+      "220": "Id., 149.",
+      "221": "Id., 149.",
+      "222": "Id., 156.",
+      "223": "Id., 160.",
+      "224": "Id., 167.",
+      "225": "Id., 168.",
+      "226": "Rooseboom nrs. 137 en 138.",
+      "227": "Vgl. res. 16 mei 1662.",
+      "228": "Maandbl. Amstelod. 1965, 36.",
+      "229": "Zijn testament geregistreerd Edinburgh 6 juli 1692.",
+      "230": "Res. 26 aug. 1686.",
+      "231": "Miss. des konings 22 okt., bijl. ree. 28 nov. 1697 en res. 3 maart 1691.",
+      "232": "Getuige: David Edmiston,   grootvader.",
+      "233": "Getuigen: Guillame Lapaert en Franchijntgen Claeyssens, haar nicht.",
+      "234": "In zijn grafschrift ook conservator genoemd.",
+      "235": "Hun verbaal in het archief der S.G., inv. nrs. 8480-8482.",
+      "236": "In het graf van Louis Houwen.",
+      "237": "Getuige: Aerjaen ter Welburch.",
+      "238": "Zie noot 236.",
+      "239": "Getuige: Elias ter Welburch.",
+      "240": "Zie noot 236.",
+      "241": "Not. archief 's-Gravenhage, inv. nr. 547, 215, dd. 1 nov. 1678.",
+      "242": "Id., inv. nr. 487, 875, dd. 28 dec. 1678.",
+      "243": "Res. 8 maart 1680.",
+      "244": "Res. 17 jan. 1681; not. archief 's-Gravenhage, inv. nr. 539, 285, dd. 22 sept.",
+      "246": "Getuigen: Johannes van der Hoeven en Maria van Eswijler.",
+      "247": "Getuigen: Joannes van der Hoeven en Anna Rijst.",
+      "248": "Getuigen: M. Reijst en Johannes van der Hoeven.",
+      "249": "Not. archief Amsterdam, inv. nr. 5135, 351, dd. 30 okt. 1686.",
+      "250": "Brief van Van Vrijberghe aan Heinsius dd. 25 jan. 1704, Heinsius-archief inv.",
+      "251": "Getuigen: Daniel de la Feuille en Marianne de la Haye, vrouw van Pierre du",
+      "252": "Getuigen: Louis Renard en Jeanne de la Feuille.",
+      "253": "Getuigen: Paul de la Feuille en Jeanne de la Feuille.",
+      "254": "Getuigen: Daniel Gongoux en Jeanne de la Feuille.",
+      "256": "Getuigen: de vader en moeder.",
+      "257": "Getuigen: Daniel Gorgeux en Jeanne de la Feuille.",
+      "258": "Getuigen: Louis Renard, agent enz., en Marie van Segveld.",
+      "259": "Getuigen: Pieter van Segveld en Louise Charlotte Renard.",
+      "260": "Getuigen: Charles Pye, Esq., gerepresenteerd door Ch. Wilkieson, Esq., Lewis",
+      "261": "Ress. 28 maart 1690 en 29 april 1692."
     },
     "mentioned_in": []
   },
@@ -21718,10 +21854,7 @@
         "pre_html": false
       }
     ],
-    "footnotes": {
-      "392": "Res. 19 sept. 1676.",
-      "393": "Miss. 31 maart/11 april 1674."
-    },
+    "footnotes": {},
     "mentioned_in": [
       {
         "corpus": "bl",
@@ -22079,9 +22212,7 @@
         "pre_html": false
       }
     ],
-    "footnotes": {
-      "400": "Res. 17 febr. 1693."
-    },
+    "footnotes": {},
     "mentioned_in": []
   },
   {
@@ -22456,7 +22587,6 @@
       }
     ],
     "footnotes": {
-      "266": "Aan zijn oom Peter kardinaal Freiherr von Goess verleend met toestemming",
       "267": "De koning was zelf hier te lande 5 nov. 1703 (res. van die datum), vertrok 19",
       "268": "Res. 27 nov. 1703."
     },
@@ -23143,7 +23273,8 @@
       }
     ],
     "footnotes": {
-      "272": "Doopgetuige Ev. Luth, kerk te 's-Gravenhage."
+      "272": "Doopgetuige Ev. Luth, kerk te 's-Gravenhage.",
+      "10": "febr. 1712, tekende 2 april 1713 tezamen met Michael"
     },
     "mentioned_in": [
       {
@@ -24078,7 +24209,22 @@
         "pre_html": false
       }
     ],
-    "footnotes": {},
+    "footnotes": {
+      "278": "Getuigen: Jacobus   Willam, dienaar van de Portugese envoyé, en     Catharina",
+      "279": "Getuigen: Christianus Hencks, Franciscus Verbeek, Anna Maria Kippel en Jo-",
+      "280": "Getuigen: Helena Hencks, Margretha Rothal en Paulus Kippel.",
+      "281": "Getuigen: Christianus Kippel en Anna Maria (Kippel).",
+      "282": "Getuigen: Jacobus Simmenhoff tn Catharina Kons.",
+      "283": "Getuigen: Joannes van Reusch en Joannes Mariet.",
+      "284": "Getuigen: Joannes Tappeser en Emerentia Baro.",
+      "285": "Getuigen: Klosina van Nort en Cornelius Rois.",
+      "286": "Getuigen: Maria Magneris, Henricus Ottho en Amerentia van der Poel.",
+      "287": "Getuigen: Joannes van Reusel en Amarentia van der Poel.",
+      "288": "Zie noot 287.",
+      "289": "Getuigen: Juliana der Hag en Henricus Otto.",
+      "290": "Getuigen: Franciscus en Adriana van der Poel.",
+      "291": "Getuigen: Joannes Gessels, Cornelia van der Hoeven."
+    },
     "mentioned_in": [
       {
         "corpus": "bl",
@@ -24965,7 +25111,13 @@
     ],
     "footnotes": {
       "295": "Res. 10 maart 1741.",
-      "296": "Res. 13 okt. 1745."
+      "296": "Res. 13 okt. 1745.",
+      "297": "Res. 29 juli 1761.",
+      "298": "Res. 23 sept. 1765.",
+      "299": "Ress. 27 juli en 3 nov. 1766.",
+      "300": "Die Haghe 1933, 58.",
+      "302": "Getuigen: Carolus graaf van Konigsegg Erps, geheimraad van de koningin en",
+      "303": "Getuigen: Franciscus Otto liber baro de Schönau in Seggingen en Joanna baro-"
     },
     "mentioned_in": [
       {
@@ -26063,7 +26215,9 @@
         "pre_html": false
       }
     ],
-    "footnotes": {},
+    "footnotes": {
+      "30": "juli 1757 bevorderd tot ambassadeur; ridder Gulden Vlies 1759; ontving"
+    },
     "mentioned_in": []
   },
   {
@@ -26138,7 +26292,7 @@
     "toc_chapter": "A. De Keizer en Oostenrijk",
     "toc_page": 171,
     "source_file": "0001",
-    "period": "1688-1709 resident",
+    "period": "1802-1808 extraordinaris envoyé en minister plenipotentiaris",
     "lines": [
       {
         "zone": "body",
@@ -26565,7 +26719,31 @@
         "pre_html": false
       }
     ],
-    "footnotes": {},
+    "footnotes": {
+      "310": "Getuigen: Dna. de Fuen Maior et Hyacynthus de Fuen Maior, ejus filius.",
+      "311": "Getuigen: Anna Gerdrute Ostendorb geb. Volckers en Philippus van Collen.",
+      "313": "Getuigen: Joannes Bürgers en Maria Foret.",
+      "314": "Getuigen: Theodorus van Deenen en Anna van Deenen.",
+      "315": "Getuigen: Gerardus van Deenen en Joanna Maria Schatelijn.",
+      "316": "Getuigen: Matthias Schatelijn en Elizabeth Steverding.",
+      "317": "Getuigen: Matthias Schatelijn en Henrica Cornelia Bloemers.",
+      "318": "Getuigen: Matthias Schatelijn en Helena van Deenen.",
+      "319": "Getuigen: Joseph van Deenen en Adriana Pels.",
+      "320": "Getuigen: Mathias Schatelijn en Helena van Deenen.",
+      "321": "Getuigen: Antonius van Deenen en Anna de Nennie.",
+      "322": "Getuigen: Simon Baldis en Gertrudis Emmeke.",
+      "323": "Getuigen'. Nicolaus Biermans en Cornelia Biermans.",
+      "324": "Getuige: Baro de Buol-Schauenstein, secretarius et legati vice-legatus.",
+      "325": "Getuigen: Joannes Henricus Berredig en Maria Mulder.",
+      "326": "Getuige: Maria Catharina Koehenhouck.",
+      "327": "Getuigen: Petronella van Uchelen, Paulus van Uchelen, in wiens plaats stond",
+      "328": "Wordt in de Amsterdamse Herenboekjes tot 1758 vermeld, wonende te 's-Gra-",
+      "329": "Getuigen: Bereut de Harde en Elisabeth Hamsteden.",
+      "330": "Archief buitenlandse zaken 1796-1810, inv. nr. 283.",
+      "331a": "Miss. Hamel Bruininx aan Heinsius, Heinsius-archief, inv. nr. 843.",
+      "331b": "Het doopboek geeft als datum 6 sept. 1697.",
+      "332": "Getuigen: Antoni Lion, Neeltie van Schaick, Cornelis de Groot en Adriana    Lion."
+    },
     "mentioned_in": []
   },
   {
@@ -26576,7 +26754,7 @@
     "toc_chapter": "B. Bohemen",
     "toc_page": 182,
     "source_file": "0001",
-    "period": "1608-1653 agent",
+    "period": "1772(?)-(1794) agent, consul generaal",
     "lines": [
       {
         "zone": "body",
@@ -26731,7 +26909,6 @@
     ],
     "footnotes": {
       "333": "Getuigen: Huybert van Schaick en de weduwe Van der Parre geb. Lion.",
-      "334": "Getuigen: Huibregt van Schaik en Adriana Lion, weduwe van Willem van der",
       "335": "Getuigen: Huybregt van Schaick en Catharina Clasina Krooswijk.",
       "336": "Getuigen: Dirk Crooswijck, Petronella Mackfarland.",
       "337": "Res. 25 juni 1599.",
@@ -27778,7 +27955,6 @@
       }
     ],
     "footnotes": {
-      "350": "Verzameling der graf- en gedenkschriften van de provincie Antwerpen, Ie deel,",
       "351": "Not. archief 's-Gravenhage, inv. nr. 1777, 21, dd. 19 jan. 1743."
     },
     "mentioned_in": [
@@ -28223,7 +28399,7 @@
     "toc_chapter": "C. Beieren",
     "toc_page": 188,
     "source_file": "0001",
-    "period": "1584-1590 agent",
+    "period": "1787-(1806?) chargé d'affaires       (resident?)",
     "lines": [
       {
         "zone": "body",
@@ -28372,8 +28548,6 @@
       }
     ],
     "footnotes": {
-      "357": "Getuigen: Michael Torcia, secretaris van de legatie van de koning der Beide",
-      "358": "Getuigen: Catharina Boutmy geb. de Katzman, gerepresenteerd door Maria",
       "359": "Getuigen: Petrus da Costa Salema, envoyé, en Henrica Speet, echtgenote van",
       "360": "Not. archief 's-Gravenhage, inv. nr. 4396, 325, dd. 18 juni 1787.",
       "361": "id., nr. 4160, 344, dd. 28 juni 1804.",
@@ -28394,7 +28568,7 @@
     "toc_chapter": "C. Beieren",
     "toc_page": 189,
     "source_file": "0001",
-    "period": "1584-1590 agent",
+    "period": "1801-(1806) minister plenipotentiaris",
     "lines": [
       {
         "zone": "body",
@@ -30153,7 +30327,6 @@
       }
     ],
     "footnotes": {
-      "381": "Getuigen: Johan Fridrich van Mashorst, marschall van Zijne Hoogv. Doorl., de",
       "382": "Not. archief 's-Gravenhage, inv. nr. 688, 175."
     },
     "mentioned_in": []
@@ -30335,8 +30508,6 @@
       }
     ],
     "footnotes": {
-      "383": "Getuigen: Simon Chastelain en Anne le Boulanger, echtgenote van Nicolas Le",
-      "384": "Getuigen: Nicolas Le Monnier en Judith Moreau, echtgenote van Simon",
       "385": "Getuigen: Simon Chastelain en Anne Le Boulanger, weduwe van Nicolas le",
       "386": "Getuigen: Jean le Monnier en Esther Chastelain.",
       "387": "Getuigen: Nicolas le Monnier en Marianne Chastelain."
@@ -30555,8 +30726,6 @@
       }
     ],
     "footnotes": {
-      "388": "Komt als zodanig vanaf 1756 in de Herenboekjes voor, maar ook reeds in 1752",
-      "389": "Getuige: Caret Frederich regerend markgraaf van Baden-Durlach en Hochberg,",
       "390": "Getuige: Ludwig landgraaf van Hessen(-Darmstadt), vorst te Hersfeld, graaf te"
     },
     "mentioned_in": [
@@ -30867,7 +31036,6 @@
       }
     ],
     "footnotes": {
-      "391": "Getuigen: Carolina markgravin van Hessen-Darmstadt (geb. landgravin van",
       "392": "Archief buitenlandse zaken 1796-1810, inv. nr. 270.",
       "393": "Wegens schulden ten bedrage van ƒ 50.000."
     },
@@ -34664,12 +34832,7 @@
         "pre_html": false
       }
     ],
-    "footnotes": {
-      "548": "Res. 30 okt. 1615.",
-      "549": "Zie ook ress. 5 febr. en 1 juli 1616.",
-      "550": "Sententie Hof van Holland 15 nov. 1624.",
-      "551": "Miss. 16 okt./12 nov. 1618, niet meer aanwezig."
-    },
+    "footnotes": {},
     "mentioned_in": [
       {
         "corpus": "bl",
@@ -34891,7 +35054,6 @@
       }
     ],
     "footnotes": {
-      "433": "Getuigen: Andreas Eckhart, raadsheer van Zijne Hoogheid, en Susanna     Schel-",
       "434": "Not. archief 's-Gravenhage, inv. nr. 653, 33, dd. 21 jan. 1676.",
       "435": "Id., inv. nr. 680, 377, dd. 6 aug. 1703.",
       "436": "Id., inv. nr. 682, 253, dd. 9 mei 1705",
@@ -35146,7 +35308,6 @@
     ],
     "footnotes": {
       "440": "Id., 1968, 120.",
-      "441": "Huwelijkse voorwaarden dd. 27 april 1690, not. arch. 's-Gravenhage, inv. nr.",
       "442": "Getuigen: Reinier Brackman, Sophia van der Meulen en Clasina Brakman.",
       "443": "Getuigen: Reijnier Brakman en Sophia van der Meulen.",
       "444": "Getuigen: Johan van der Wissel en Clasina Brakman.",
@@ -35461,7 +35622,7 @@
     "toc_chapter": "N. Keurvorstendom Palts",
     "toc_page": 218,
     "source_file": "0001",
-    "period": "1654-1660 extraordinaris ambassadeur, ordinaris ambassadeur 1657",
+    "period": "1720(-1724) extraordinaris envoyé (1724)",
     "lines": [
       {
         "zone": "body",
@@ -35519,7 +35680,7 @@
     "toc_chapter": "N. Keurvorstendom Palts",
     "toc_page": 218,
     "source_file": "0001",
-    "period": "1654-1660 extraordinaris ambassadeur, ordinaris ambassadeur 1657",
+    "period": "1726-1729 resident",
     "lines": [
       {
         "zone": "body",
@@ -35836,7 +35997,6 @@
       }
     ],
     "footnotes": {
-      "450": "Getuigen: Joannes Petrus Suter, Anna Eijlerts, Euphrosina Contsen, in wier",
       "451": "Getuigen: Mr. Gaspard Théodore [François] Suter, [geb. Dusseldorp, student",
       "452": "Getuigen: Joannes Crol, Maria de Bruijn en Agneten Verschouten."
     },
@@ -36065,12 +36225,7 @@
         "pre_html": false
       }
     ],
-    "footnotes": {
-      "620": "Res. 22 jan. 1756.",
-      "621": "Bijl. miss. ree. 26 aug. 1760.",
-      "622": "Tekende oorspronkelijk : Arbien.",
-      "623": "Miss. ree. 10 dec. 1771."
-    },
+    "footnotes": {},
     "mentioned_in": [
       {
         "corpus": "bl",
@@ -37164,10 +37319,12 @@
       }
     ],
     "footnotes": {
-      "465": "Id., inv. nr. 596, 575, dd. 19 juni 1682; Jacob van Daeïen is dan curator over",
       "466": "Id., inv. nr. 710, 96, dd. 28 mei 1680.",
       "467": "Id., inv. nr. 664, 156, dd. 25 febr. 1687.",
-      "468": "In okt. 1677 minister genoemd, in 1678 extraordinaris envoyé, maar ook agent"
+      "468": "In okt. 1677 minister genoemd, in 1678 extraordinaris envoyé, maar ook agent",
+      "469": "Getuigen: Joannes van Menstad en Margreta van Florij.",
+      "470": "Getuigen: princeps Colonienses {Maximilian Heinrich hertog van Beieren) en",
+      "471": "Zijn benoeming zal hij wel te danken hebben aan zijn toen in Mainz wonend"
     },
     "mentioned_in": [
       {
@@ -37224,7 +37381,7 @@
     "toc_chapter": "T. Nassau-(Diez-)Oranje",
     "toc_page": 226,
     "source_file": "0001",
-    "period": "1774-1777 minister plenipotentiaris",
+    "period": "1713-(1717) resident",
     "lines": [
       {
         "zone": "body",
@@ -37252,10 +37409,7 @@
         "pre_html": false
       }
     ],
-    "footnotes": {
-      "692": "Ress. 10 juli, 19 en 31 aug. 1669.",
-      "693": "Miss. Rumpf ree. 17 jan. 1696."
-    },
+    "footnotes": {},
     "mentioned_in": [
       {
         "corpus": "bl",
@@ -37271,7 +37425,7 @@
     "toc_chapter": "U. Nassau-Dillenburg",
     "toc_page": 226,
     "source_file": "0001",
-    "period": "1774-1777 minister plenipotentiaris",
+    "period": "1713-(1717) resident",
     "lines": [
       {
         "zone": "body",
@@ -37923,7 +38077,6 @@
     ],
     "footnotes": {
       "474": "Not. archief 's-Gravenhage, inv. nr. 998, 100, dd. 13 sept. 1706.",
-      "475": "Getuigen: Abraham van Lis, schout van Maassluis, en Joh. Brustens, bur-",
       "476": "Getuigen: Cornelis Dircksz. Backer en Lijsbeth Cornelis.",
       "478": "Not. archief's-Gravenhage, inv. nr. 1778, 127, dd. 16 febr. 1706: volmacht van",
       "479": "Zie noot 478."
@@ -39026,7 +39179,13 @@
       }
     ],
     "footnotes": {
-      "489": "Herenboekjes Den Haag."
+      "489": "Herenboekjes Den Haag.",
+      "490": "Getuigen: Johannes van den Corput en Antonetta Hijnemans.",
+      "491": "Getuigen: Joannes Malhebber en Antoinetta van den Corput.",
+      "492": "Getuigen: Joannes Adrianus Janse en Cornelia Catharina van den Corput.",
+      "493": "Getuigen: Johannes Franc. Cornells van den Corput en Johanna van Blomberg.",
+      "494": "Voerde vanaf 1782 het predikaat von of de.",
+      "495": "Not. archief 's-Gravenhage, inv. nr. 3915, 81, dd. 7 april 1783."
     },
     "mentioned_in": [
       {
@@ -39688,9 +39847,10 @@
       }
     ],
     "footnotes": {
-      "752": "Miss. Pels ree. 25 juni 1675.",
-      "753": "Miss. Le Maire 22/29 okt. 1678.",
-      "754": "Zie res. 5 febr. 1677."
+      "510": "Getuigen: Maria Amelia landgravin van Hessen-Kassel (geb. hertogin van",
+      "511": "Getuigen: de landgravin van Hessen-Kassel, vorstin tot Hartzfeldt en Semigal-",
+      "512": "Getuigen: (Alida) van Ruytenburg, vrouwe van Vlaardingen, huisvrouw van",
+      "513": "Getuigen: Elisabetha van Colyear en Sophia baronesse van Meijsenbrugh tot"
     },
     "mentioned_in": [
       {
@@ -39711,7 +39871,7 @@
     "toc_chapter": "CC. Hessen-Kassel",
     "toc_page": 238,
     "source_file": "0001",
-    "period": "1617-1625 commissaris in de Sont",
+    "period": "1702-1720 extraordinaris envoyé",
     "lines": [
       {
         "zone": "body",
@@ -41000,7 +41160,10 @@
         "pre_html": false
       }
     ],
-    "footnotes": {},
+    "footnotes": {
+      "520": "Geïntroduceerd 1776.",
+      "521": "Miss. Preis van dat jaar."
+    },
     "mentioned_in": [
       {
         "corpus": "bl",
@@ -41440,10 +41603,23 @@
       }
     ],
     "footnotes": {
-      "524": "Kinderen begr. 's-Gravenhage (Gr.k.) 29 aug. 1656 en (N.k) 18 sept. 1656, 22",
-      "525": "Getuigen: de trésorier Jacob van der Mast, Elisabeth Dollon en Elisabeth Mac-",
       "526": "Getuigen: Jacob van der Burch, Pieter de Graeff en Margriet Clercx.",
-      "527": "Getuigen: Pieter de Graeff, Pieter la Croij, Pieter Hulsman, de vrouwe van"
+      "527": "Getuigen: Pieter de Graeff, Pieter la Croij, Pieter Hulsman, de vrouwe van",
+      "528": "Getuigen: Pieter de Graeff, Pieter Hulsman en joffr. De Wilde.",
+      "529": "Getuigen: Pieter Hulsman, Margareta Pesijn en Margareta Clercqs.",
+      "530": "Getuigen: Davith van Hattum en Sebina de Clerck.",
+      "531": "Zie noot 524.",
+      "532": "Getuigen: Mons. Hartman Hartmans, juffr. Sabina de Clercq in plaats van",
+      "533": "Getuigen: Hieronimus de Rouck en joffr. Susanna Rockates.",
+      "535": "Zie noot 534.",
+      "536": "Getuigen: Anthoni Reinout van der Mast en Olivira Françoise van der Mast.",
+      "537": "Getuigen: Jacob van der Mast en Maria van Groenestein.",
+      "538": "Getuigen: Jeronimus de Rouck en Anna Cornelia van der Mast.",
+      "539": "Getuigen: Mr. Lambert de Rouck en zijn huisvrouw.",
+      "540": "Getuigen: Majoor Verecy, vrouwe Anna van der Strenge en vrouwe Cornelia",
+      "541": "Getuigen: Zijne Exe. grave van Waldeck Piermont en Cuylenburch, veld-",
+      "542": "Getuigen: Dirck de Wilde en Anna Cornelia van der Mast.",
+      "543": "Getuigen: de hooggeb. heer Charles Gustavis van Waldeck, graaf van Kuijlen-"
     },
     "mentioned_in": []
   },
@@ -41455,7 +41631,7 @@
     "toc_chapter": "EE. Waldeck",
     "toc_page": 248,
     "source_file": "0001",
-    "period": "1718-1721 secretaris van staat",
+    "period": "1809-1810 extraordinaris envoyé en minister plenipotentiaris",
     "lines": [
       {
         "zone": "body",
@@ -41983,7 +42159,12 @@
       "556": "Getuigen: Frans Johan van Motzjildt en jonkvr. Johanna Geertruida Mauren-",
       "557": "Getuige: jonkvr. Elisabeth Geertruida Zanders.",
       "558": "Getuige: vrouwe Maria Elisabeth Wittens, weduwe Coning; peter: Zijne Doorl.",
-      "559": "Getuigen: Carel Bernhard van Schwärm en Charlotta Louisa van Schwärm."
+      "559": "Getuigen: Carel Bernhard van Schwärm en Charlotta Louisa van Schwärm.",
+      "560": "Getuigen: de vader en Mr. Jean Gabriel Zander, grootvader, en Mme. Jeanne",
+      "561": "Getuigen: Charles Chrétien Zanders, vader, Everard Jean Post en Marie",
+      "562": "Getuigen: Charles Chrétien Zanders, Leonard Lacoudré, Elisabeth Marie Re-",
+      "563": "Getuigen: Charles August Frederic Zanders en Gabrielle Wilhelmine Elizabeth",
+      "564": "Getuige: Charles August Frederic Zanders."
     },
     "mentioned_in": []
   },
@@ -41995,7 +42176,7 @@
     "toc_chapter": "GG. Keurvorstendom Keulen",
     "toc_page": 251,
     "source_file": "0001",
-    "period": "1781-1782 zaakgelastigde",
+    "period": "1793-1804 agent",
     "lines": [
       {
         "zone": "body",
@@ -42023,15 +42204,7 @@
         "pre_html": false
       }
     ],
-    "footnotes": {
-      "809": "Miss. Haga 7 nov. 1637/26 jan. 1638; miss. Cops ree. 15 aug. 1639.",
-      "810": "Ress. 2 en 15 dec. 1637 en 16 jan. 1638.",
-      "811": "Res. 18 april 1647.",
-      "812": "Miss. Cops 30 dec. 1642/6 maart 1643, geapprobeerd bij res. 6 maart 1643.",
-      "813": "Miss. ree. 17 mei 1647 en miss. Ghijsberti 30 mei 1654.",
-      "814": "Oom van Thomas Cletcher, zie onder nr. 225, die zijn erfgenaam was.",
-      "815": "Miss. 18 juni 1654."
-    },
+    "footnotes": {},
     "mentioned_in": [
       {
         "corpus": "bl",
@@ -42067,7 +42240,7 @@
     "toc_chapter": "GG. Keurvorstendom Keulen",
     "toc_page": 251,
     "source_file": "0001",
-    "period": "1781-1782 zaakgelastigde",
+    "period": "1793-1804 agent",
     "lines": [
       {
         "zone": "body",
@@ -42131,7 +42304,7 @@
     "toc_chapter": "GG. Keurvorstendom Keulen",
     "toc_page": 251,
     "source_file": "0001",
-    "period": "1781-1782 zaakgelastigde",
+    "period": "1793-1804 agent",
     "lines": [
       {
         "zone": "body",
@@ -42336,7 +42509,7 @@
     "toc_chapter": "GG. Keurvorstendom Keulen",
     "toc_page": 252,
     "source_file": "0001",
-    "period": "1781-1782 zaakgelastigde",
+    "period": "1793-1804 agent",
     "lines": [
       {
         "zone": "body",
@@ -43199,7 +43372,6 @@
     "footnotes": {
       "570": "Doopgetuige Spaanse legatiekapel te 's-Gravenhage.",
       "571": "Not. archief 's-Gravenhage, inv. nr. 4425, 1064.",
-      "572": "Getuigen: Isidorus Casado marchio de Monteieone et ser. principessa Everer-",
       "573": "Not. archief 's-Gravenhage, inv. nr. 4425, 1029.",
       "574": "Getuigen: Franciscus Paulus Emilius comes ab Outremont et Warfusée en Isa-",
       "575": "Huwelijkse voorwaarden in not. archief 's-Gravenhage, inv. nr. 4425, 1036."
@@ -44062,7 +44234,21 @@
         "zone": "body",
         "text": "(1598-1605) agent",
         "pre_html": false
-      },
+      }
+    ],
+    "footnotes": {},
+    "mentioned_in": []
+  },
+  {
+    "schutte_nr": 275,
+    "corpus": "bl",
+    "toc_title": "Snoeck, François",
+    "full_title": "275. Snoeck, François",
+    "toc_chapter": "KK. Luik",
+    "toc_page": 258,
+    "source_file": "0001",
+    "period": "1780-1797 agent",
+    "lines": [
       {
         "zone": "body",
         "text": "275. François Snoeck, agent van de prins-bisschop van Luik; ver-",
@@ -44129,55 +44315,6 @@
         "pre_html": false
       }
     ],
-    "footnotes": {},
-    "mentioned_in": []
-  },
-  {
-    "schutte_nr": 275,
-    "corpus": "bl",
-    "toc_title": "Snoeck, François",
-    "full_title": "275. Snoeck, François",
-    "toc_chapter": "KK. Luik",
-    "toc_page": 258,
-    "source_file": "0001",
-    "period": "1780-1797 agent",
-    "lines": [
-      {
-        "zone": "entry",
-        "text": "275. François Snoeck, agent van de prins-bisschop van Luik; ver-",
-        "indent": 0
-      },
-      {
-        "zone": "body",
-        "text": "zocht bij res. 9 jan. 1598 de tolvrije uitvoer van provision",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "voor de hofhouding van de keurvorst van Keulen en wordt",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "in res. 17 dec. 1605 nog als agent vermeld.",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "Jr. Adriaen van Renesse, nr. 260.",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "Jr. Pieter van Renesse van Baer, nr. 261.",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "Mr. Johan van der Veecken, nr. 262.",
-        "indent": 5
-      }
-    ],
     "footnotes": {
       "580": "Ress. 18 sept., 16 okt., 14 nov. en 16 dec. 1592."
     },
@@ -44224,12 +44361,7 @@
         "pre_html": false
       }
     ],
-    "footnotes": {
-      "1050": "Ordonnantieboek S.G. 1605, 83 en 87 vo.",
-      "1051": "Res. 9 april 1609.",
-      "1052": "Over zijn salaris voor 4^- jaar res. 22 juni 1612.",
-      "1053": "Res. 18 dec. 1629; over zijn tractement Remonstrantieboek I, 69 en 111."
-    },
+    "footnotes": {},
     "mentioned_in": [
       {
         "corpus": "bl",
@@ -45540,7 +45672,6 @@
     ],
     "footnotes": {
       "587": "Getuigen: Alida Boers en Clara Dellemans.",
-      "588": "Getuigen: Clara Dellemans, weduwe van Arent van Hardenbergh, en Petrus",
       "589": "Getuigen: Johan Stuurman en Sara van Olen.",
       "590": "Getuige: Agatha van Hardenbergh.",
       "591": "Res 5 april 1607.",
@@ -45654,7 +45785,29 @@
         "pre_html": false
       }
     ],
-    "footnotes": {},
+    "footnotes": {
+      "24": "febr., overluid aldaar 5 maart 1669, begr. aldaar (Gr. k.).",
+      "593": "De Vrije Vries 1978, 23.",
+      "594": "Not. archief 's-Gravenhage, inv. nr. 1015, 102, dd. 21 aug. 1684.",
+      "595": "Zie onder andere een accoord betreffende regimentsgelden met Willem Jacob",
+      "596": "Id., inv. nr. 394, 39, dd. 26 maart 1674.",
+      "597": "W. Wijnaendts van Resandt, Geschiedenis en genealogie van het geslacht Van",
+      "598": "Huwehjkscontract in not. archief 's-Gravenhage, inv. nr. 459, 207 vo., dd. 25",
+      "599": "Getuigen: Jan en Lysbeth van Teijlingen.",
+      "600": "Not. archief 's-Gravenhage, inv. nr. 551, 413, dd. 7 jan. 1697.",
+      "601": "Getuigen: Michiel de Bye, Gerrit van Teylingen en Elisabeth van Teylingen.",
+      "602": "Getuigen: Michiel de Bije, Pieter de Ruyt en Judith van Teylingen.",
+      "603": "Getuigen: Michiel de Bije, Gerrit van Teijlingen en Judith van Teijlingen.",
+      "604": "Not. archief 's-Gravenhage, inv. nr. 774, 237, dd. 2 sept. 1669.",
+      "605": "Id., inv. nr. 1015, 102 en 103, dd. 21 aug. 1684.",
+      "606": "Id., inv. nr. 247, 372, dd. 12 okt. 1651.",
+      "607": "Id., inv. nr. 325, 202, dd. 2 febr. 1665.",
+      "608": "Id., inv. nr. 451, 149 vo. en 199 vo., dd. 4 juli en 12 sept. 1675.",
+      "609": "Broeder van Aitzema's concubine.",
+      "610": "Getuigen: Leo van Witsema ( = Aitzema) en Susanna van Harsholt.",
+      "611": "Getuigen: Leon Exsema ( = Aitzema) en Cornelia de Hem.",
+      "612": "Not. archief 's-Gravenhage, inv. nr. 169, 106 vo. en 267, dd. 8 aug. 1651."
+    },
     "mentioned_in": [
       {
         "corpus": "bl",
@@ -46141,7 +46294,8 @@
       }
     ],
     "footnotes": {
-      "615": "Not. archief 's-Gravenhage, inv. nr. 1764, 137."
+      "615": "Not. archief 's-Gravenhage, inv. nr. 1764, 137.",
+      "23": "sept.-3 okt. 1671, zond zijn laatste bericht uit Zweden 29"
     },
     "mentioned_in": [
       {
@@ -46848,8 +47002,6 @@
       "616": "Getuigen: Mr. Arent Vinck en deszelfs huisvrouw Amea Nieuwpoort.",
       "617": "Getuigen: Johan Vinck, kapitein van een compagnie voetknechten, en Odilia",
       "618": "Getuigen: Mr. Johan Maire en Maria Niepoort.",
-      "619": "Not. archief Amsterdam, inv. nr. 6236, 901, dd. 27 sept. 1701; cf. id., inv. nr.",
-      "620": "Kinderen begr. Amsterdam (N.k.) 14 en 21 mei 1697, 24 jan. en 21 aug. 1698;",
       "621": "Getuigen: Pieter Carel en Geertruijt de Vries.",
       "622": "Getuigen: Justus van Huijsem (volgens de ondertrouwakte zijn zwager) en Elij-",
       "623": "Getuigen: Johanna Lingen van Lennep, Justus van Huijsum."
@@ -47187,698 +47339,365 @@
     "period": "1739-1754 raad en agent",
     "lines": [
       {
-        "zone": "entry",
+        "zone": "body",
         "text": "298. Mr. Godfried Backman, geb. Emmerik in 1640, student te",
-        "indent": 0
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "Meurs 1658/1659 en te Duisburg 1660; kapitein in Staatse",
-        "indent": 6
+        "pre_html": false
       },
       {
         "zone": "body",
         "text": "dienst (1673); commandeur van Bellingwolde 1675; kapitein",
-        "indent": 5
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "in de garde van de stadhouder van Friesland (1681); werd",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "belast met het bevorderen en waarnemen der zaken van de",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "\"jonge heren graven van Bentheim\"639; sergeant-majoor in",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "het regiment Nassau-Friesland 14 dec. 1690; luitenant-",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "kolonel in het regiment infanterie Limburg Stirum 1 mei",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "1693; was in 1703 vertegenwoordiger van de graaf van",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "Bentheim-Steinfurt te 's-Gravenhage640, f (vóór 31 nov.)",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "genealogy",
+        "zone": "body",
         "text": "1711641.",
-        "indent": 6
+        "pre_html": false
       },
       {
         "zone": "genealogy",
         "text": "Zoon van Dr. Reinhard Bachman, jur. student te Leiden 1 juni 1634, litt,",
-        "indent": 6
+        "pre_html": false
       },
       {
         "zone": "genealogy",
         "text": "student te Groningen 14 mei 1635, I.U.D.; advocaat-fiscaal van Kleef en",
-        "indent": 6
+        "pre_html": false
       },
       {
         "zone": "genealogy",
         "text": "richter te Kleverham, en van Johanna Raab (Raef): trouwde (ondertrouw",
-        "indent": 6
+        "pre_html": false
       },
       {
         "zone": "genealogy",
         "text": "Didam 4 nov. 1674) Anna van Wildenraet, ged. Doetinchem 1 jan. 1649, f",
-        "indent": 6
+        "pre_html": false
       },
       {
         "zone": "genealogy",
         "text": "in 1719, dochter van Willem Adamsz. van Wildenraet, stadhouder van het",
-        "indent": 6
+        "pre_html": false
       },
       {
         "zone": "genealogy",
         "text": "richterambt Doetinchem, en Johanna van Zeist.",
-        "indent": 6
+        "pre_html": false
       },
       {
         "zone": "genealogy",
         "text": "Uit dit huwelijk:",
-        "indent": 6
+        "pre_html": false
       },
       {
         "zone": "genealogy",
         "text": "1. Reinhard Willem Bachman, vermeld 1711 en 1712642, richter te Ul-",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "sub_note",
+        "zone": "genealogy",
         "text": "sen (1723 tot 1726), f in 1726(7), trouwde Helena Elisabeth van Buyten-",
-        "indent": 10
+        "pre_html": false
       },
       {
-        "zone": "sub_note",
+        "zone": "genealogy",
         "text": "dijck, ged. Neuenhaus 17 juni 1674, f in 1751, dochter van Mr. Gerhard",
-        "indent": 10
+        "pre_html": false
       },
       {
-        "zone": "body",
+        "zone": "genealogy",
+        "text": "633 Getuigen: Susanna Oorth, Madalena Verhorst en Gerhardt de Greeff.",
+        "pre_html": false
+      },
+      {
+        "zone": "genealogy",
+        "text": "634 Getuigen: Ds. Johan Priese namens Johannes Campman en Jacobus Havius",
+        "pre_html": false
+      },
+      {
+        "zone": "genealogy",
         "text": "namens Eduart Oorth.",
-        "indent": 4
+        "pre_html": false
       },
       {
-        "zone": "body",
+        "zone": "genealogy",
         "text": "635 Getuigen: Philip Macdonald de Bowie, Wilhelmina de Merode, de weduwe",
-        "indent": 0
+        "pre_html": false
       },
       {
-        "zone": "body",
+        "zone": "genealogy",
         "text": "Oorth.",
-        "indent": 5
+        "pre_html": false
       },
       {
-        "zone": "body",
+        "zone": "genealogy",
+        "text": "636 Getuigen: Franciscus Romswinckel, Henry van Maerle, Elisabeth Thornton.",
+        "pre_html": false
+      },
+      {
+        "zone": "genealogy",
+        "text": "637 Getuige: de weduwe Oorth.",
+        "pre_html": false
+      },
+      {
+        "zone": "genealogy",
+        "text": "638 Getuigen: Johannes Campman, Oorth, de heer Lucas Gex en de hooggeboren",
+        "pre_html": false
+      },
+      {
+        "zone": "genealogy",
         "text": "juffrouw Gerhardina van Arnehem.",
-        "indent": 4
+        "pre_html": false
       },
       {
-        "zone": "body",
+        "zone": "genealogy",
+        "text": "639 De zoons van de gevluchte Gertrud des H.R. Rijksgravin van Zeist, sedert 1678",
+        "pre_html": false
+      },
+      {
+        "zone": "genealogy",
         "text": "gescheiden van Ernst Wilhelm graaf van Bentheim-Steinfurt, res. 22 juli 1681.",
-        "indent": 4
+        "pre_html": false
       },
       {
-        "zone": "body",
+        "zone": "genealogy",
+        "text": "640 Brief van Ernst graaf van Bentheim-Steinfurt aan Heinsius dd. 29 sept. 1703",
+        "pre_html": false
+      },
+      {
+        "zone": "genealogy",
         "text": "1703, Heinsius-archief, inv. nr. 886.",
-        "indent": 4
+        "pre_html": false
       },
       {
-        "zone": "sub_note",
+        "zone": "genealogy",
+        "text": "641 Schepenprotocol Doetinchem.",
+        "pre_html": false
+      },
+      {
+        "zone": "genealogy",
+        "text": "642 Zie noot 641.",
+        "pre_html": false
+      },
+      {
+        "zone": "genealogy",
+        "text": "OOST-FRIESLAND EN EMDEN                                                       277",
+        "pre_html": false
+      },
+      {
+        "zone": "genealogy",
         "text": "van Buytendijck, I.U.D., student le Duisberg 22 sept. 1663, advocaat te",
-        "indent": 10
+        "pre_html": false
       },
       {
-        "zone": "sub_note",
+        "zone": "genealogy",
         "text": "Neuenhaus; richter te Ulsen 1696 tot 1707, en van Aleid Lohman Jo-",
-        "indent": 9
+        "pre_html": false
       },
       {
-        "zone": "sub_note",
+        "zone": "genealogy",
         "text": "hansdr. en weduwe van Ds. Jan Leonard Speekman, predikant te Veld-",
-        "indent": 9
+        "pre_html": false
       },
       {
-        "zone": "sub_note",
+        "zone": "genealogy",
         "text": "hausen.",
-        "indent": 9
+        "pre_html": false
       },
       {
         "zone": "genealogy",
         "text": "2. Johanna Geertruid Bachman, ged. in 1678, f in 1756, trouwde in 1694",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "sub_note",
+        "zone": "genealogy",
         "text": "Frederik Hendrik Goddaeus, te Schipborg, waarsch. zoon van Prof. Joh.",
-        "indent": 9
+        "pre_html": false
       },
       {
-        "zone": "sub_note",
+        "zone": "genealogy",
         "text": "Heinr. Goddaeus, hoogleraar te Burgsteinfurt 1661 tot 1680.",
-        "indent": 9
+        "pre_html": false
       },
       {
         "zone": "genealogy",
         "text": "3. Amelia Maria Bachman, ged. Doetinchem 29 juni 1679, f in 1694.",
-        "indent": 6
+        "pre_html": false
       },
       {
         "zone": "genealogy",
         "text": "4. Catharina Elisabeth Bachman, ged. 's-Gravenhage (Hoogd.k.) 26 okt.",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "sub_note",
+        "zone": "genealogy",
         "text": "1681 , t in 1750, trouwde in mei 1704 Jan Hartger          Schimmelpen-",
-        "indent": 10
+        "pre_html": false
       },
       {
-        "zone": "sub_note",
+        "zone": "genealogy",
         "text": "ninck, geb. Doetinchem 9 juli 1661, kapitein in het regiment infanterie",
-        "indent": 9
+        "pre_html": false
       },
       {
-        "zone": "sub_note",
+        "zone": "genealogy",
         "text": "Zoutelande, f (gesneuveld) Ramillies in 1706, zoon van Mr. Johan",
-        "indent": 9
+        "pre_html": false
       },
       {
-        "zone": "sub_note",
+        "zone": "genealogy",
         "text": "Schimmelpenninck, student te Deventer 19 mei 1652, jur. student te Har-",
-        "indent": 9
+        "pre_html": false
       },
       {
-        "zone": "sub_note",
+        "zone": "genealogy",
         "text": "derwijk 3 april 1658, promoveerde aldaar 8 april 1658, en van Anna van",
-        "indent": 9
+        "pre_html": false
       },
       {
-        "zone": "sub_note",
+        "zone": "genealogy",
         "text": "Zeist.",
-        "indent": 9
+        "pre_html": false
       },
       {
         "zone": "genealogy",
         "text": "5. Johanna Wilhelmina Bachman, geb. in 1684, f in 1755, trouwde Prof. Mr.",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "sub_note",
+        "zone": "genealogy",
         "text": "Augustus (Johannes) Houck, geb. 15 sept. 1677, jur. doctor; professor",
-        "indent": 9
+        "pre_html": false
       },
       {
-        "zone": "sub_note",
+        "zone": "genealogy",
         "text": "juris te Burgsteinfurt 1704, f aldaar in 1716, zoon van Prof. (Georg)",
-        "indent": 9
+        "pre_html": false
       },
       {
-        "zone": "sub_note",
+        "zone": "genealogy",
         "text": "Friedrich Houck, professor medicinae te Burgsteinfurt 1677 tot 1681;",
-        "indent": 9
+        "pre_html": false
       },
       {
-        "zone": "sub_note",
+        "zone": "genealogy",
         "text": "burgemeester en archiater te Lippstadt, en van Cornelia Pagenstecher.",
-        "indent": 9
+        "pre_html": false
       },
       {
         "zone": "genealogy",
         "text": "6. Reynetta Christiana Bachman, geb. in 1686, t in 1777, trouwde Doetin-",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "sub_note",
+        "zone": "genealogy",
         "text": "chem 31 aug. 1738 Michiel de Haes (Hase), geb. in 1678, koopman te",
-        "indent": 9
+        "pre_html": false
       },
       {
-        "zone": "sub_note",
+        "zone": "genealogy",
         "text": "Doetinchem, f in 1771, weduwnaar van Catharina Bongaarts.",
-        "indent": 9
+        "pre_html": false
       },
       {
         "zone": "genealogy",
         "text": "7. Fredrik Hendrik Casimir Bachman, geb. in 1688, kapitein in Staatse",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "sub_note",
+        "zone": "genealogy",
         "text": "dienst, f (gesneuveld) in 1711.",
-        "indent": 9
+        "pre_html": false
       },
       {
         "zone": "genealogy",
         "text": "A.N.F. 1901, 60; Nav. 1890, 373 en 605; Wap. 1914, 125; Hora Siccama 35;",
-        "indent": 6
+        "pre_html": false
       },
       {
         "zone": "genealogy",
         "text": "mededeling Jhr. Mr. R.C.C, de Savornin Lohman.",
-        "indent": 6
+        "pre_html": false
+      },
+      {
+        "zone": "genealogy",
+        "text": "UU. LINGEN",
+        "pre_html": false
+      },
+      {
+        "zone": "genealogy",
+        "text": "(1670)-1678 agent",
+        "pre_html": false
       },
       {
         "zone": "genealogy",
         "text": "Gerard Bulsingh. nr. 284.",
-        "indent": 6
+        "pre_html": false
       },
       {
-        "zone": "body",
+        "zone": "genealogy",
+        "text": "(1682) agent",
+        "pre_html": false
+      },
+      {
+        "zone": "genealogy",
         "text": "Mr. Bernhard Sluerman, nr. 285.",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "299. N.N., vermeld als agent van Oost-Friesland in res. 28 okt.",
-        "indent": 0
+        "pre_html": false
       },
       {
         "zone": "genealogy",
-        "text": "1592.",
-        "indent": 6
-      },
-      {
-        "zone": "body",
-        "text": "Raab.",
-        "indent": 4
-      },
-      {
-        "zone": "entry",
-        "text": "298. Francisco (Spaans, Karel III) markies (22 maart 1709) de Schonen-",
-        "indent": 0
-      },
-      {
-        "zone": "body",
-        "text": "berg, alias Jacob (de) Abraham Belmonte, geb. Lissabon in 1653,",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "verbleef sedert 1656 te Madrid bij zijn verwante donna Francisca de",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "los Rios Cabrera en bleef Rooms katholiek, commissaris van de",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "Admiraliteit te Amsterdam te Madrid 1678 tot (na 21 okt.) 1680,",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "ontving commissie als extraordinaris envoyé van Willem III prins",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "van Oranje te Madrid 16 jan. 1680, welke functie hij aanvaardde",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "vóór 15 juli 1680 en hij bleef dit tot 1687 1101 ; benoemd tot zaak-",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "gelastigde van de Republiek te Madrid bij res. 10 maart 1690, had hij",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "zijn eerste audiëntie 21 maart 1690, werd tevens extraordinaris",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "envoyé van Engeland aldaar, in welke functie hij zijn geloofsbrieven",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "overhandigde in juni 1690 (van wege het protest van Stanhope",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "oefende hij deze functie pas na diens vertrek uit), werd vóór okt.",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "1695 het land uitgewezen 1102 , werd wederom toegelaten en had in",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "beide functies weer een eerste audiëntie in aug. 1700 1103 , ontving het",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "karakter van extraordinaris envoyé 7 dec. 1700 en wordt in beide",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "functies het laatst vermeld 6 april 1702; zijn tractement, secretaris,",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "klerk enz. was geregeld bij ress. 2 en 5 juli 1701; n a de oorlogs-",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "verklaring in 1702 week hij uit naar Lissabon, kwam daar aan om-",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "streeks 28 mei 1702 en werd benoemd tot minister plenipotentiaris",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "van de Republiek in Portugal; bij res. 23 aug. 1706 werd hem op-",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "gedragen naar Madrid te gaan, maar hij bleef te Lissabon, f Lissa-",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "bon 13 maart 1717.",
-        "indent": 5
+        "text": "VV. OOST-FRIESLAND EN EMDEN",
+        "pre_html": false
       },
       {
         "zone": "genealogy",
-        "text": "Zoon van Miguel Rodrigues Nunes, alias Bartholomeu de Schonenberg, alias",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "Abraham de Belmonte, koopman te Lissabon en Amsterdam (1672), en Violanta,",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "alias Sara Carvalho.",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "Bij res. 9 dec. 1718 diende Elvire de Schonenberg, alias Rachel de Belmonte, zijn",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "enige zuster en erfgename, een declaratie in van twee maanden tractement na zijn",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "overlijden en wegens het balsemen en transporteren van het lichaam van",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "ƒ2201.5.-.",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "N.L. 1892, 42; Julio Caro Baroja, Los Judios in Espana moderna y contempo-",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "ranea, Madrid, 1962; Julio Atienza, Nobiliario espanol, Diccionario heraldico",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "de apellidos espanoles y titulos nobiliaros, Madrid, 1954; Gemeente-archief",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "Amsterdam, Notarieel archief, inv. nr. 2905, fol. 867 dd. 22 febr. 1672 en inv. nr.",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "4075, fol. 123 dd. 25 aug. 1672.",
-        "indent": 6
-      },
-      {
-        "zone": "sub_note",
-        "text": "Zijn secretaris te Madrid in 1701/1702 was Justus Pecquin, zie",
-        "indent": 11
-      },
-      {
-        "zone": "sub_note",
-        "text": "onder nr. 133.",
-        "indent": 11
-      },
-      {
-        "zone": "genealogy",
-        "text": "inv. nr. 603, 15 vo.",
-        "indent": 6
-      },
-      {
-        "zone": "body",
-        "text": "Mr. Arnout van Citters, heer van Gapinge, nr. 70.",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "Francisco markies de Schonenberg, nr. 298.",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "299. Jan Willem (Spaans) hertog de (2 febr. 1726) Ripperda, grande van",
-        "indent": 0
-      },
-      {
-        "zone": "body",
-        "text": "Spanje der 1ste klasse (2 febr. 1726), heer van Poelgeest en Koude-",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "kerke (1717), t o Winsum en Jensema, geb. Oldenhove 7 maart 1682,",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "bezocht het Jesuïtencollege te Keulen, werd gereformeerd, gedepu-",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "teerde in de Staten van Groningen febr. 1705, grietman van Hum-",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "sterland en Langewold Oosterdeel, gecommitteerde raad 1711,",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "gedeputeerde ter Staten Generaal 3 okt. 1711; benoemd tot extra-",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "ordinaris envoyé naar Spanje 28 jan. 1715, n a m hij afscheid 2 april,",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "kwam daar aan 16 juli 1715, ontving zijn commissie als extra-",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "ordinaris ambassadeur in Spanje 30 okt. 1715, verzocht rappel bij",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "res. 31 dec. 1717, werd bij res. 3 jan. 1718 ontslagen en had zijn laat-",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "ste audiëntie 15 febr. 1718 1104 , vertrok 5 maart naar Holland en",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "bracht 20 april 1718 rapport uit, vertrok weer naar Spanje en kwam",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "14 juli 1718 te Madrid aan, werd Rooms katholiek en benoemd tot",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "superintendant der lakenfabrieken te Guadalajara, hieruit ontzet en",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "weer hersteld in dec. 1719; benoemd tot geheim agent van Spanje te",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "Wenen, kwam hij daar aan in jan. 1725, ontving commissie als extra-",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "ordinaris ambassadeur en plenipotentiaris 5 mei 1725 en vertrok in",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "die functie uit Wenen 8 nov. 1725; eerste staatsminister in Spanje,",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "ridder Gulden Vlies, beschuldigd van hoogverraad en gevangen",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "genomen 25 mei 1726, ontvluchtte 30 aug. 1728, ging naar Engeland",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "en daarna naar M a r o k k o , waar hij 7 nov. 1731 in Tanger aankwam,",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "M o h a m m e d a a n en koopman in schapen werd en f Tetuan 5 nov.",
-        "indent": 5
-      },
-      {
-        "zone": "body",
-        "text": "1737.",
-        "indent": 5
-      },
-      {
-        "zone": "genealogy",
-        "text": "Zoon van Ludolf Luird Ripperda to Winsum en Jensema, kolonel van een regi-",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "ment infanterie 1703, brigadier der infanterie 1709, commandeur van het kasteel",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "van Namen 1713, en Marie Isabelle van Diest; trouwde Ie Oldenhove 3 juli 1704",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "Alida van Schellingwouw, vrouwe van Poelgeest en Koudekerke, f in mei 1717,",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "begr. Koudekerke, dochter van Nicolaas van Schellingwouw en Maria Commer-",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "steyn, vrouwe van Poelgeest en Koudekerke; trouwde 2e 19 aug. 1721 Francisca",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "Eusebia Jaraba (Xarava) del Castillo.",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "N.N.B.W. II, 1212; W. A. van Verschuer, Het staatkundig bedrijf van Joan",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "Willem baron van Ripperda 1715-1726, (ac. pr.) Leiden, 1861 ; J. I. D. Nepveu,",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "Eene bijdrage tot het leven van Johan Willem van Ripperda, in: Bijdragen en",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "mededeelingen van het Historisch Genootschap te Utrecht, deel VII (1883);",
-        "indent": 6
-      },
-      {
-        "zone": "genealogy",
-        "text": "Enciclopedia universal ilustrada, Barcelona, LI (1926), 769.",
-        "indent": 6
-      },
-      {
-        "zone": "sub_note",
-        "text": "Zie over zijn klerk en translateur res. 26 maart 1715.",
-        "indent": 10
-      },
-      {
-        "zone": "sub_note",
-        "text": "In 1718 was zijn secretaris Mr. François Ham, nr. 300.",
-        "indent": 10
+        "text": "(1592) agent",
+        "pre_html": false
       }
     ],
     "footnotes": {
       "633": "Getuigen: Susanna Oorth, Madalena Verhorst en Gerhardt de Greeff.",
-      "634": "Getuigen: Ds. Johan Priese namens Johannes Campman en Jacobus Havius",
       "636": "Getuigen: Franciscus Romswinckel, Henry van Maerle, Elisabeth Thornton.",
       "637": "Getuige: de weduwe Oorth.",
-      "638": "Getuigen: Johannes Campman, Oorth, de heer Lucas Gex en de hooggeboren",
-      "639": "De zoons van de gevluchte Gertrud des H.R. Rijksgravin van Zeist, sedert 1678",
       "640": "Brief van Ernst graaf van Bentheim-Steinfurt aan Heinsius dd. 29 sept. 1703",
       "641": "Schepenprotocol Doetinchem.",
       "642": "Zie noot 641.",
@@ -49671,7 +49490,16 @@
         "pre_html": false
       }
     ],
-    "footnotes": {},
+    "footnotes": {
+      "666": "Not. archief Amsterdam, inv. nr. 7209, 889, dd. 27 mei 1705.",
+      "667": "Archief buitenlandse zaken 1796-1810, inv. nr. 283.",
+      "669": "Zie noot 667.",
+      "670": "Zie noot 667.",
+      "671": "Archief buitenlandse zaken, inv. nr. 310.",
+      "672": "Zie noot 667.",
+      "673": "Zie noot 667.",
+      "674": "Zie noot 667."
+    },
     "mentioned_in": [
       {
         "corpus": "bl",
@@ -51480,7 +51308,7 @@
     "toc_chapter": "YY. Brunswijk-Lünenburg-Calenberg/Hannover",
     "toc_page": 295,
     "source_file": "0001",
-    "period": "1688-1689 extraordinaris envoyé",
+    "period": "1696-1714 extraordinaris envoyé",
     "lines": [
       {
         "zone": "body",
@@ -51828,10 +51656,7 @@
         "pre_html": false
       }
     ],
-    "footnotes": {
-      "323": "Miss. ree. 29 juni 1676.",
-      "324": "Miss. 31 mei/12 juni 1682."
-    },
+    "footnotes": {},
     "mentioned_in": [
       {
         "corpus": "bl",
@@ -52524,7 +52349,13 @@
     ],
     "footnotes": {
       "692": "Komt in de Herenboekjes Den Haag ten onrechte voor als agent van de koning",
-      "693": "Getuige: Zijne Kon. Maj. van Groot-Brittannië, vertegenwoordigd door Hora-"
+      "693": "Getuige: Zijne Kon. Maj. van Groot-Brittannië, vertegenwoordigd door Hora-",
+      "694": "Getuigen: Matthias graaf van Schulenburg, generaal-veldmaarschalk der Vene-",
+      "695": "Getuige: de prins van Wales.",
+      "696": "Getuigen: Simon van Slingelandt, raadpensionaris van Holland en West-",
+      "697": "Getuigen: Hare Maj. de koningin van Groot-Brittannië, prins Willem van Hes-",
+      "698": "Getuigen: Prins Charles van Brunswijck- Wolfenbuttel-Bevern en Louise von",
+      "699": "Getuigen: Hare Kon. Hoogh. de prinses en Zijne Hoogh. de prins van Oranje."
     },
     "mentioned_in": [
       {
@@ -52771,7 +52602,10 @@
     ],
     "footnotes": {
       "700": "Nav. 1896, 142.",
-      "701": "Not. archief's-Gravenhage, inv. nr. 694, 123, dd. 18 maart 1717."
+      "701": "Not. archief's-Gravenhage, inv. nr. 694, 123, dd. 18 maart 1717.",
+      "702": "Doopgetuige Ev. Luth. k. 's-Gravenhage 6 april 1741.",
+      "703": "Doopgetuige Ev. Luth. k. 's-Gravenhage dd. 15 dec. 1769; afwezig zijnde werd",
+      "704": "Komt als agent van Z.K.M, van Groot-Brittannië als keurvorst van Bruns-"
     },
     "mentioned_in": [
       {
@@ -52944,7 +52778,16 @@
         "pre_html": false
       }
     ],
-    "footnotes": {},
+    "footnotes": {
+      "705": "Not. archief Amsterdam, inv. nr. 5391, 557, dd. 29 maart 1701.",
+      "706": "Een kind begr. Amsterdam (O.k.) 22 sept. 1689.",
+      "707": "Getuigen: Gabriel Verbeek en Geertruyd Salms.",
+      "708": "Getuigen: Willem Herincx voor Jan Buken en Barbara Lost, weduwe van",
+      "709": "Getuigen: Adriaen van Lienenburgh en Maria Fremondt.",
+      "710": "Getuigen: Pieter Boomhouwer en Maria Verbeek.",
+      "711": "Getuigen: Abraham Heldewier en Geertruyt Boomhouwer.",
+      "712": "Getuigen: Poulis Boomhowert en Maria Verbeek."
+    },
     "mentioned_in": [
       {
         "corpus": "bl",
@@ -54723,7 +54566,7 @@
     "toc_chapter": "EEE. Hamburg",
     "toc_page": 316,
     "source_file": "0001",
-    "period": "1782-1784 extraordinaris envoyé en minister plenipotentiaris; 1785-1786",
+    "period": "1752-1754 chargé d'affaires",
     "lines": [
       {
         "zone": "body",
@@ -54981,7 +54824,7 @@
     "toc_chapter": "GGG. Holstein-Gottorp, na 1773 Holstein-Oldenburg",
     "toc_page": 317,
     "source_file": "0001",
-    "period": "1782-1784 extraordinaris envoyé en minister plenipotentiaris; 1785-1786",
+    "period": "1626-(1628) agent, envoyé 1628",
     "lines": [
       {
         "zone": "body",
@@ -55095,7 +54938,7 @@
     "toc_chapter": "GGG. Holstein-Gottorp, na 1773 Holstein-Oldenburg",
     "toc_page": 318,
     "source_file": "0001",
-    "period": "1782-1784 extraordinaris envoyé en minister plenipotentiaris; 1785-1786",
+    "period": "1632-1665 agent, resident 1661",
     "lines": [
       {
         "zone": "body",
@@ -55398,7 +55241,7 @@
     "toc_chapter": "GGG. Holstein-Gottorp, na 1773 Holstein-Oldenburg",
     "toc_page": 319,
     "source_file": "0001",
-    "period": "1782-1784 extraordinaris envoyé en minister plenipotentiaris; 1785-1786",
+    "period": "1677-1698 resident",
     "lines": [
       {
         "zone": "body",
@@ -55843,7 +55686,6 @@
     ],
     "footnotes": {
       "745": "Getuigen: Haroldus Appeldoorn en Catharina Vegelman.",
-      "746": "Getuigen: Hendrik van Nispen, baljuw, drossaart en dijkgraaf van Woudrichem",
       "747": "Not. archief 's-Gravenhage, inv. nr. 919, 609, dd. 25 nov. 1694.",
       "748": "Id., inv. nr. 927, 45, dd. 29 jan. 1711.",
       "749": "Id., inv. nr. 1022, 203 sq., dd. 16 febr. 1700.",
@@ -57178,7 +57020,17 @@
       "770": "Getuigen: Hubertus van Wijn en Christina Drom.",
       "771": "Getuigen: Geertruyd van Dijk, huisvrouw van David François Peill, absent,",
       "772": "Getuigen: Louissa Bloteling en Hendrik van Dijk.",
-      "773": "Getuigen: de maternelle grootouders Mr. Johannes Schopman, advocaat voor"
+      "773": "Getuigen: de maternelle grootouders Mr. Johannes Schopman, advocaat voor",
+      "775": "Getuigen: Hendrik van Wijn en Suzanna     Bloteling.",
+      "776": "Archief buitenlandse zaken 1796-1810, inv. nr. 282.",
+      "777": "Getuige: Maria Bosselaar.",
+      "778": "Getuigen: Frans Smeer en Maria van der Meede.",
+      "779": "Getuige: Jan Veth jr..",
+      "780": "Getuige: Pieter Smeer.",
+      "781": "Zie noot 780.",
+      "782": "Zie noot 776.",
+      "783": "Zie noot 776.",
+      "784": "Zie noot 776."
     },
     "mentioned_in": [
       {
@@ -57195,7 +57047,7 @@
     "toc_chapter": "HHH. Mecklenburg-Güstrow",
     "toc_page": 329,
     "source_file": "0001",
-    "period": "1782-(1806) agent",
+    "period": "1804-? vice-agent",
     "lines": [
       {
         "zone": "body",
@@ -58061,7 +57913,6 @@
     ],
     "footnotes": {
       "789": "Getuigen: Guillelmus de Sellier en Antonius Bertine.",
-      "790": "Getuige: Philips ^ k o n i n g van Spanje en Indien, gerepresenteerd door Nicolaus",
       "791": "Getuigen: Gabriel Jacobus de Salignac marchio de Fenelon en Francisca Ludo-",
       "792": "Getuige: prins Carel infant van Spanje, koning der Beide Sicilien, Jeruzalem"
     },
@@ -59228,7 +59079,12 @@
         "pre_html": false
       }
     ],
-    "footnotes": {},
+    "footnotes": {
+      "809": "Zie noot 808.",
+      "810": "Res. 29 jan. 1663.",
+      "811": "Ress. 3 en 15 aug. 1665.",
+      "812": "Res. 23 maart 1673."
+    },
     "mentioned_in": [
       {
         "corpus": "bl",
@@ -59398,7 +59254,11 @@
     ],
     "footnotes": {
       "813": "Res. 8 juni 1673.",
-      "814": "Zie noot 881."
+      "814": "Zie noot 881.",
+      "815": "Kinderen begr. 's-Gravenhage (N.k.) 17 aug. en 15 nov. 1676.",
+      "816": "Hoge Raad van Adel, collectie Van Spaen, inv. nr. 248, nr. 68.",
+      "818": "Getuigen: Simon van de Water, de weduwe De Vroue te Wezel, de huisvrouw",
+      "819": "Getuigen: Adolph Blancken, gedeputeerde van het kwartier Nijmegen, Adrian"
     },
     "mentioned_in": [
       {
@@ -59871,7 +59731,10 @@
         "pre_html": false
       }
     ],
-    "footnotes": {},
+    "footnotes": {
+      "821": "P.L. Muller, Een Brandenburgse zending in Nederland in 1685, in: (Nijhoffs)",
+      "823": "Doopgetuige Hoogd. kerk te 's-Gravenhage 30 nov. 1710."
+    },
     "mentioned_in": [
       {
         "corpus": "bl",
@@ -60703,7 +60566,6 @@
       }
     ],
     "footnotes": {
-      "827": "Getuigen: Jean van Stockum, doctor in de rechten en schepen te Wezel, Jean",
       "828": "Getuigen: Louise de Vigy en Gerhart Meinertzhagen.",
       "829": "Getuigen: Hedwigh Maria Magdalena Hijmmen, geb. van Seybelstorff, huis-"
     },
@@ -62760,7 +62622,7 @@
     "toc_chapter": "LLL. Brandenburg/Pruissen",
     "toc_page": 359,
     "source_file": "0001",
-    "period": "1683-1688 correspondent",
+    "period": "1795-1796(7) chargé d'affaires",
     "lines": [
       {
         "zone": "body",
@@ -62839,9 +62701,6 @@
       }
     ],
     "footnotes": {
-      "395": "Bekrachtigd 23 maart 1663.",
-      "396": "Zijn verbaal, zie res. 14 aug. 1665.",
-      "397": "Zijn verbaal 16 jan. 1670-21 juli 1670 in arch. S.G., inv. nr. 8550.",
       "845": "Getuige: Hare Kon. Hoogheid de erfstadhouderesse Frederica Sophia            Wil-"
     },
     "mentioned_in": [
@@ -63251,7 +63110,7 @@
     "toc_chapter": "LLL. Brandenburg/Pruissen",
     "toc_page": 361,
     "source_file": "0001",
-    "period": "1683-1688 correspondent",
+    "period": "1808-1809 chargé d'affaires ad interim",
     "lines": [
       {
         "zone": "body",
@@ -63419,9 +63278,7 @@
         "pre_html": false
       }
     ],
-    "footnotes": {
-      "399": "Miss. Rumpf res. 27 juli 1675."
-    },
+    "footnotes": {},
     "mentioned_in": [
       {
         "corpus": "bl",
@@ -63585,7 +63442,41 @@
         "pre_html": false
       }
     ],
-    "footnotes": {},
+    "footnotes": {
+      "851": "aW.F.H. Oldewelt, Amsterdamsche archiefvondsten, 1942, 207.",
+      "852": "Een zoon Matheus Dogen werd burger van Amsterdam 16 jan. 1680.",
+      "856": "N.N.B.W. VII, 374; De Bie 2, 517; Van der Aa IV, 238.",
+      "858": "Wonende op de Herengracht bij de Romeyn Armsteeg.",
+      "861": "Getuige: Maretje Jans.",
+      "863": "Maandbl. Amstelod. 1955, 53.",
+      "864": "Getuigen: Philip Hack en Henrietta Charlotta Alsteijn geb. Pheifferin.",
+      "865": "Not. archief Amsterdam, inv. nr. 11275, 83, dd. 8 febr. 1742.",
+      "866": "Getuigen: Jean David Lafreté, Hélène Marie de Trepsac, vertegenwoordigend",
+      "867": "Komt in de Haagse Herenboekjes met twee jaartallen van benoeming voor:",
+      "868": "Jaarb. Amstelod. 1933, 241",
+      "869": "Getuigen: Nicolas Le Normani en Elisabeih Prestiot, weduwe van Jean Pierre",
+      "870": "Getuigen: Prof. Vignes te Berlijn en Elisabeth Le Normant née Ferrand.",
+      "871": "Getuige: Marie Elisabeth Le Normant.",
+      "872": "Getuigen: Samuel Bocquet, predikant van de Franse kerk te Berlijn, en Marie",
+      "873": "Getuigen: Louis Pierre Le Normant en Susanne Emilie Le Normant née L'Ho-",
+      "874": "Getuigen: Jan Hoofden Angenieta Prins vertegenwoordigende Gozewijnus van",
+      "875": "Getuigen: Adrianus Dubbeldemuts en Hester Coster.",
+      "876": "Getuigen de weduwe van Franco Duhbeldemuts en Adrianus       Duhbeldemuts.",
+      "877": "Getuigen: R.D.D. d'Arcy en huisvrouw te St.-Germain-en-Laye.",
+      "878": "Getuigen: Agnes Catharina Engels, Caspar Hendrik Schot.",
+      "879": "Getuigen: Matheus Smits, Agnes Catharina Bussingh.",
+      "880": "Getuigen: Caspar Hendrik Schott, Anna Maria Elizabeth Raap.",
+      "881": "Getuige: Willem Engels.",
+      "882": "Getuigen: Johann Paul Hess te Eberstadt, Georg Paul Schott.",
+      "883": "Getuigen: Mattheus Smits, Agnes Catharina Bussingh",
+      "884": "Getuige: Johan Willem Weijmar.",
+      "886": "Getuigen: Johan Willem Engels, Cornelia Christina Johanna van Hogenhui-",
+      "887": "Getuige: Johann Hendrik Philipp Schott te Frankfort.",
+      "888": "Getuige: Johann Rudolph Schott te Frankfort.",
+      "889": "Not. archief VGravenhage, inv. nr. 4432, 83, dd. 23 maart 1784.",
+      "890": "Id., inv. nrs. 4444, 113, en 4447, 429.",
+      "891": "Huwelijkse voorwaarden voor notaris W. Boon te Rotterdam dd. 25 dec. 1749."
+    },
     "mentioned_in": []
   },
   {
@@ -63659,7 +63550,7 @@
     "toc_chapter": "MMM. Brandenburg-Ansbach",
     "toc_page": 377,
     "source_file": "0001",
-    "period": "1608-1653 agent",
+    "period": "1745-? resident",
     "lines": [
       {
         "zone": "body",
@@ -63787,7 +63678,7 @@
     "toc_chapter": "MMM. Brandenburg-Ansbach",
     "toc_page": 377,
     "source_file": "0001",
-    "period": "1608-1653 agent",
+    "period": "1748-1750 resident",
     "lines": [
       {
         "zone": "body",
@@ -63900,7 +63791,7 @@
     "toc_chapter": "MMM. Brandenburg-Ansbach",
     "toc_page": 378,
     "source_file": "0001",
-    "period": "1608-1653 agent",
+    "period": "1755-1789 agent",
     "lines": [
       {
         "zone": "body",
@@ -63959,7 +63850,7 @@
     "toc_chapter": "MMM. Brandenburg-Ansbach",
     "toc_page": 378,
     "source_file": "0001",
-    "period": "1608-1653 agent",
+    "period": "1755-1789 agent",
     "lines": [
       {
         "zone": "body",
@@ -64165,7 +64056,6 @@
     "footnotes": {
       "892": "Not. archief 's-Gravenhage, inv. nr. 3907, 127, dd. 21 juli 1759.",
       "893": "Id., inv. nr. 4529, 521, dd. 27 nov. 1780.",
-      "894": "Id., inv. nr. 2458, no. 4, dd. 17 febr. 1762, waaruit mede blijkt dat zij mutueel",
       "895": "Id., not. A. Cortebrand, dd. 18 febr. 1762.",
       "896": "Id., inv. nr. 3979, 138 sqq..",
       "897": "Getuigen: Johan Balthasar Kraut en Johanna Salomona van Diest getrouwd",
@@ -64187,7 +64077,7 @@
     "toc_chapter": "MMM. Brandenburg-Ansbach",
     "toc_page": 379,
     "source_file": "0001",
-    "period": "1608-1653 agent",
+    "period": "1770-1773 envoyé",
     "lines": [
       {
         "zone": "body",
@@ -64506,7 +64396,9 @@
       }
     ],
     "footnotes": {
-      "900": "Getuige: de vader."
+      "900": "Getuige: de vader.",
+      "902": "Hij komt althans in het Herenboekje van dat jaar voor en daarna pas weer",
+      "903": "Mem. Gersdorff 7 juli 1705."
     },
     "mentioned_in": []
   },
@@ -64518,7 +64410,7 @@
     "toc_chapter": "QQQ. Keurvorstendom Saksen",
     "toc_page": 382,
     "source_file": "0001",
-    "period": "1608-1653 agent",
+    "period": "1683 extraordinaris envoyé",
     "lines": [
       {
         "zone": "body",
@@ -64612,7 +64504,7 @@
     "toc_chapter": "QQQ. Keurvorstendom Saksen",
     "toc_page": 383,
     "source_file": "0001",
-    "period": "1608-1653 agent",
+    "period": "1683-1685 legatiesecretaris",
     "lines": [
       {
         "zone": "body",
@@ -64681,7 +64573,7 @@
     "toc_chapter": "QQQ. Keurvorstendom Saksen",
     "toc_page": 383,
     "source_file": "0001",
-    "period": "1608-1653 agent",
+    "period": "1691-1719 resident, extraordinaris envoyé 1697",
     "lines": [
       {
         "zone": "body",
@@ -64849,7 +64741,14 @@
         "pre_html": false
       }
     ],
-    "footnotes": {},
+    "footnotes": {
+      "904": "Hun verbaal 9 sept. 1647-6 nov. 1648 in archief S.G., inv. nr. 8454-8456; Proe-",
+      "905": "N.L. 1915, 119.",
+      "906": "Getuigen: Willem Paats, raad, vroedschap en oud-schepen te Leiden, en Maria",
+      "907": "Getuigen: Mr. Will. Paats, raad en schepen van Leiden, vervangen door Mr.",
+      "908": "Doopgetuigen: Fredericus Augustus koning (sic!) van Saksen, gepresenteerd",
+      "909": "Zie noot 908."
+    },
     "mentioned_in": [
       {
         "corpus": "bl",
@@ -65507,7 +65406,11 @@
         "pre_html": false
       }
     ],
-    "footnotes": {},
+    "footnotes": {
+      "14": "april zijn geloofsbrieven als plenipotentiaris op het",
+      "25": "aug. en de laatste 14 okt. gehouden werd; bracht de winter",
+      "20": "aug. 1719; rijkserfkamerdeurwachter, f Dresden 4 febr."
+    },
     "mentioned_in": [
       {
         "corpus": "bl",
@@ -65755,7 +65658,16 @@
       "915": "Miss. Rumpf 19/26 okt. 1737.",
       "916": "Miss. Rumpf 10/17 nov. 1742.",
       "917": "Door hem gekocht van de erven van Mr. Johan Gerard Tulling voor ƒ 10.333,6",
-      "918": "Getuige bij de doop van Anna Coenradina Trensch in de Ev. Luth. k. 's-Gra-"
+      "918": "Getuige bij de doop van Anna Coenradina Trensch in de Ev. Luth. k. 's-Gra-",
+      "919": "Getuigen: Rudolph Ulrich baron van Spörcke, kamerheer en extraordina-",
+      "920": "Getuigen: Johan Adolph Christoph Heijman en Maria Jacoba van Bremen.",
+      "921": "Getuigen: Joh. Bernhard Heinzelman, legatiesecretaris van Hare Czaarse Maj.,",
+      "922": "Getuigen: Casse Friederica Siemen en Friedrich Christoph Hoijer, legatiese-",
+      "923": "Getuigen: Jonas Christoph van Berndis, legationssecretaris van Hare Rus-Keiz.",
+      "924": "Getuigen: Gottfried Andreas Adriani, Hoogvorstelijk Holsteins minister, en",
+      "925": "Getuigen: mevrouw Janssen, mijnheer Laurenzi, agent van Zijne Maj. de ko-",
+      "926": "Miss. Marteville 19 sept./2 okt. 1747.",
+      "927": "Miss. Calkoen 29 j a n . / 7 febr. 1752, 27 mei/3 juni 1752 en 31 mei/6 juni 1752."
     },
     "mentioned_in": []
   },
@@ -66327,7 +66239,23 @@
       "937": "Getuige: de vader.",
       "938": "Zie noot 937.",
       "939": "Zie noot 937.",
-      "940": "Zie noot 937."
+      "940": "Zie noot 937.",
+      "941": "Zie noot 937.",
+      "942": "Zie noot 937.",
+      "943": "Zie noot 937.",
+      "944": "Zie noot 937.",
+      "945": "Zie noot 937.",
+      "946": "Brief van Goes aan Heinsius dd. 13 okt. 1703, Heinsiusarchief inv. nr. 838.",
+      "947": "Not. archief Amsterdam, inv. nr. 6202, 161, dd. 6 febr. 1706.",
+      "948": "Getuige: Catharina Struijs.",
+      "949": "Getuige: Anna Maria van der Hoeve.",
+      "950": "Getuigen: Hermanus Wevers en Petronilla van der Hoeve.",
+      "951": "Getuigen: Franc. Antonio Brinsano en Anna Maria van der Hoeven.",
+      "952": "Getuigen: Herman Wevers en Maria de Vos.",
+      "953": "Getuigen: Pieter Nuijts en juffrouw Schoen van Hondselaersdick.",
+      "954": "Getuigen: Bertram Nedermeijer en Elizabeth Hendrina Nedermeijer.",
+      "955": "Getuigen: Susanna Elisabeth Lacoste en Etienne Lespinasse.",
+      "956": "Getuigen: Bertram Nedermeijer en Valentin Nedermeijer."
     },
     "mentioned_in": [
       {
@@ -66791,126 +66719,6 @@
         "zone": "genealogy",
         "text": "(1620) agent",
         "pre_html": false
-      },
-      {
-        "zone": "genealogy",
-        "text": "418a. Simon Wijnhouts de Vries (Frisius), geb. Harlingen in 1580",
-        "pre_html": false
-      },
-      {
-        "zone": "genealogy",
-        "text": "(?), graveur en calligraaf te Parijs; ,calcographe et graveur de",
-        "pre_html": false
-      },
-      {
-        "zone": "genealogy",
-        "text": "lettres ordinaire du Roi'; koopman onder andere in zijde en",
-        "pre_html": false
-      },
-      {
-        "zone": "genealogy",
-        "text": "geschut te Amsterdam; woonde reeds in begin 1611 te 's-Gra-",
-        "pre_html": false
-      },
-      {
-        "zone": "genealogy",
-        "text": "venhage; gildebroeder van het St. Lucasgilde 1614 en ka-",
-        "pre_html": false
-      },
-      {
-        "zone": "genealogy",
-        "text": "pitein der schutterij 10 jan. 1620 tot 1621 aldaar; wordt in",
-        "pre_html": false
-      },
-      {
-        "zone": "genealogy",
-        "text": "1620964 vermeld als agent van Johan Ernst hertog van",
-        "pre_html": false
-      },
-      {
-        "zone": "genealogy",
-        "text": "Saksen-Eisenach, maakte vóór aug. 1617 een reis naar Spanje",
-        "pre_html": false
-      },
-      {
-        "zone": "genealogy",
-        "text": "en in nov. 1620 een reis naar Parijs; woonde sedert 1614 in",
-        "pre_html": false
-      },
-      {
-        "zone": "genealogy",
-        "text": "een door hem voor ƒ 2500 gekocht huis in de Vlamingstraat",
-        "pre_html": false
-      },
-      {
-        "zone": "genealogy",
-        "text": "zuidzijde, sedert 1623 in een door hem voor ƒ 4350 gekocht",
-        "pre_html": false
-      },
-      {
-        "zone": "genealogy",
-        "text": "huis bezuiden de Nieuwe Groenmarkt aan de Warmoesstraat",
-        "pre_html": false
-      },
-      {
-        "zone": "genealogy",
-        "text": "en sedert 1627 op de Lutherse Burgwal het eerste huis van de",
-        "pre_html": false
-      },
-      {
-        "zone": "genealogy",
-        "text": "Groenmarkt, f (overluid) 's-Gravenhage 13 aug. 1629, begr.",
-        "pre_html": false
-      },
-      {
-        "zone": "genealogy",
-        "text": "aldaar (Gr.k.).",
-        "pre_html": false
-      },
-      {
-        "zone": "genealogy",
-        "text": "Trouwde 's-Gravenhage (Gr.k.) 6 maart 1611 Elisabeth Staets, wonende al-",
-        "pre_html": false
-      },
-      {
-        "zone": "genealogy",
-        "text": "daar (1611), f Leiden tussen 21 jan. en 6 juni 1670; zij hertrouwde (ondertr.",
-        "pre_html": false
-      },
-      {
-        "zone": "genealogy",
-        "text": "964 Ress. 27 april en 2 juni 1620.",
-        "pre_html": false
-      },
-      {
-        "zone": "genealogy",
-        "text": "SAKSEN-(WEIMAR)E1SENACH                                                      399",
-        "pre_html": false
-      },
-      {
-        "zone": "genealogy",
-        "text": "'s-Gravenhage 9 okt. 1634) Johan van Groenewegen Jansz., secretaris van",
-        "pre_html": false
-      },
-      {
-        "zone": "genealogy",
-        "text": "Delft 18 dec. 1629 tot 1645, weduwnaar van Ie Geertruit Robrechtsdr. van",
-        "pre_html": false
-      },
-      {
-        "zone": "genealogy",
-        "text": "Schilperoori en 2e Margreta Camerling.",
-        "pre_html": false
-      },
-      {
-        "zone": "genealogy",
-        "text": "Oud Holland 1936, 219.",
-        "pre_html": false
-      },
-      {
-        "zone": "genealogy",
-        "text": "(1701-1702) geauthoriseerde",
-        "pre_html": false
       }
     ],
     "footnotes": {
@@ -67338,7 +67146,10 @@
     "footnotes": {
       "965": "Not. archief 's-Gravenhage, inv. nr. 1022, 273.",
       "966": "Id., inv. nr. 678, 217.",
-      "967": "Getuige: de vader namens Etienne Lion, Anne de la Garrignes en Jacoba Philip-"
+      "967": "Getuige: de vader namens Etienne Lion, Anne de la Garrignes en Jacoba Philip-",
+      "968": "Getuigen: Ds. Jacob Gerard Staring, predikant te Gouderak, en Anna Bovie.",
+      "969": "Getuige: Eva Lont, weduwe Johannes de Jager.",
+      "970": "Getuigen: Johan Christiaan Maltz en Anna Christina Weerman."
     },
     "mentioned_in": [
       {
@@ -68937,7 +68748,9 @@
     ],
     "footnotes": {
       "982": "Not. archief 's-Gravenhage, inv. nr. 4468, 449, dd. 12 mei 1812.",
-      "982b": "Voor de collatérale successie getaxeerd op ƒ 2000, —."
+      "982b": "Voor de collatérale successie getaxeerd op ƒ 2000, —.",
+      "28": "dec. 1735; trouwde 2e Amsterdam (N.k.) 19 april 1739 Geertmij (Giertje)",
+      "14": "okt. 1758, dochter van Jacob Jongbloet en Maria Jacobs Magnus, en"
     },
     "mentioned_in": []
   },
@@ -75651,7 +75464,9 @@
         "pre_html": false
       }
     ],
-    "footnotes": {},
+    "footnotes": {
+      "27": "maart toestemming tot een reis naar Frankrijk en Zwit-"
+    },
     "mentioned_in": [
       {
         "corpus": "bl",
@@ -75820,7 +75635,14 @@
         "pre_html": false
       }
     ],
-    "footnotes": {},
+    "footnotes": {
+      "31": "aug. gerappelleerd uit Stockholm met de toestemming",
+      "9": "okt. benoemd tot extraordinaris envoyé te Berlijn, ontving",
+      "23": "okt. zijn brieven van rappel in Rusland en 18 maart 1796",
+      "6": "dec. zijn geloofsbrieven in, vertrok 1 jan. 1801, ontving 16",
+      "15": "juni zijn pas, had zijn eerste audiëntie 19-29 aug., ontving",
+      "22": "april 1803 verlof van vier maanden in de zomer, kwam"
+    },
     "mentioned_in": [
       {
         "corpus": "bl",
@@ -76669,7 +76491,10 @@
         "pre_html": false
       }
     ],
-    "footnotes": {},
+    "footnotes": {
+      "8": "mei 1770, f 's-Gravenhage 14 sept. 1845, dochter van Jobst Gerhard von",
+      "9": "mei 1747, ged. aldaar (Garnizoensk.), vaandrig reformé bij"
+    },
     "mentioned_in": [
       {
         "corpus": "bl",
@@ -77272,7 +77097,10 @@
         "pre_html": false
       }
     ],
-    "footnotes": {},
+    "footnotes": {
+      "12": "okt.; werd 14 dec. aangesteld tot gezant in Holland, ont-",
+      "27": "sept. 1815 ter complimentering van tsaar Alexander I te"
+    },
     "mentioned_in": [
       {
         "corpus": "bl",
@@ -83109,7 +82937,10 @@
         "pre_html": false
       }
     ],
-    "footnotes": {},
+    "footnotes": {
+      "31": "mei en zond zijn laatste bericht 10 juli 1805, f op",
+      "22": "mei 1801 in dezelfde functie te 's-Gravenhage en 27"
+    },
     "mentioned_in": []
   },
   {
@@ -83740,21 +83571,6 @@
         "zone": "body",
         "text": "(1644) agent",
         "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "519. N.N., vermeld als agent in 16441249.",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "(1651)-1669, gedeputeerde, correspondent (1656)",
-        "pre_html": false
-      },
-      {
-        "zone": "body",
-        "text": "Dr. Lieuwe van Aitzema, nr. 287.",
-        "pre_html": false
       }
     ],
     "footnotes": {},
@@ -83920,7 +83736,7 @@
     "toc_chapter": "IX. Koerland",
     "toc_page": 551,
     "source_file": "0001",
-    "period": "1251 Miss. Pels ree. 4 okt. 1656.",
+    "period": "1252 Getuigen: A. Wilmson Roosewinge, koninklijk Deens extraordinaris gedepu-",
     "lines": [
       {
         "zone": "body",
@@ -84109,7 +83925,7 @@
     "toc_chapter": "IX. Koerland",
     "toc_page": 551,
     "source_file": "0001",
-    "period": "1251 Miss. Pels ree. 4 okt. 1656.",
+    "period": "1252 Getuigen: A. Wilmson Roosewinge, koninklijk Deens extraordinaris gedepu-",
     "lines": [
       {
         "zone": "body",
@@ -84203,7 +84019,7 @@
     "toc_chapter": "IX. Koerland",
     "toc_page": 552,
     "source_file": "0001",
-    "period": "1251 Miss. Pels ree. 4 okt. 1656.",
+    "period": "1252 Getuigen: A. Wilmson Roosewinge, koninklijk Deens extraordinaris gedepu-",
     "lines": [
       {
         "zone": "body",
@@ -85992,7 +85808,7 @@
     "toc_chapter": "X. Rusland",
     "toc_page": 566,
     "source_file": "0001",
-    "period": "1731-1760 extraordinaris ambassadeur en plenipotentiaris",
+    "period": "1315 Getuigen: Johann Christoph Berge en Anna Elisabetta Vogtin.",
     "lines": [
       {
         "zone": "body",
@@ -86062,7 +85878,7 @@
     "toc_chapter": "X. Rusland",
     "toc_page": 566,
     "source_file": "0001",
-    "period": "1731-1760 extraordinaris ambassadeur en plenipotentiaris",
+    "period": "1315 Getuigen: Johann Christoph Berge en Anna Elisabetta Vogtin.",
     "lines": [
       {
         "zone": "body",
@@ -88027,7 +87843,7 @@
     "toc_chapter": "B. Algerië",
     "toc_page": 577,
     "source_file": "0001",
-    "period": "1617-1625 commissaris in de Sont",
+    "period": "1680-1683 resident",
     "lines": [
       {
         "zone": "body",
@@ -88085,9 +87901,7 @@
         "pre_html": false
       }
     ],
-    "footnotes": {
-      "553": "Miss. van zijn schoonzoon Jan Etterssen, ree. 16 okt. 1625."
-    },
+    "footnotes": {},
     "mentioned_in": []
   },
   {
@@ -93582,7 +93396,7 @@
     "toc_chapter": "XIV. Portugal",
     "toc_page": 616,
     "source_file": "0001",
-    "period": "1680-1686 extraordinaris envoyé",
+    "period": "1641 extraordinaris ambassadeur",
     "lines": [
       {
         "zone": "body",
@@ -93750,13 +93564,7 @@
         "pre_html": false
       }
     ],
-    "footnotes": {
-      "590": "Miss. Moeringh 14/21 okt. 1684.",
-      "591": "Zie verder Instructieboek S.G. 1680, 11 sqq.",
-      "592": "Zijn verbaal 18 juni 1680-20 april 1686 in arch. S.G., inv. nrs. 8613-8614.",
-      "593": "Miss. 26/30 nov. 1686.",
-      "594": "Bijl. miss. Moeringh 17/27 okt. 1682."
-    },
+    "footnotes": {},
     "mentioned_in": [
       {
         "corpus": "bl",
@@ -95819,7 +95627,7 @@
     "toc_chapter": "XIV. Portugal",
     "toc_page": 626,
     "source_file": "0001",
-    "period": "1718-1721 secretaris van staat",
+    "period": "1720-1722 resident",
     "lines": [
       {
         "zone": "body",
@@ -95832,11 +95640,7 @@
         "pre_html": false
       }
     ],
-    "footnotes": {
-      "604": "Miss. ree. 6 juli 1686.",
-      "605": "Res. 5 mei 1689.",
-      "606": "Miss. 26 sept./3 okt. 1693."
-    },
+    "footnotes": {},
     "mentioned_in": [
       {
         "corpus": "bl",
@@ -96261,7 +96065,7 @@
     "toc_chapter": "XIV. Portugal",
     "toc_page": 628,
     "source_file": "0001",
-    "period": "1718-1721 secretaris van staat",
+    "period": "1748 minister of extraordinaris envoyé",
     "lines": [
       {
         "zone": "body",
@@ -96319,10 +96123,7 @@
         "pre_html": false
       }
     ],
-    "footnotes": {
-      "608": "Res. 13 april 1729.",
-      "609": "Res. van die datum."
-    },
+    "footnotes": {},
     "mentioned_in": [
       {
         "corpus": "bl",
@@ -102118,7 +101919,7 @@
     "toc_chapter": "XX. Toskane",
     "toc_page": 665,
     "source_file": "0001",
-    "period": "1709-1714 extraordinaris envoyé",
+    "period": "1556 Getuige: Philippe Louis comte de Sinzendorf et Thanhausen.",
     "lines": [
       {
         "zone": "body",
@@ -102162,7 +101963,7 @@
     "toc_chapter": "XX. Toskane",
     "toc_page": 665,
     "source_file": "0001",
-    "period": "1709-1714 extraordinaris envoyé",
+    "period": "1556 Getuige: Philippe Louis comte de Sinzendorf et Thanhausen.",
     "lines": [
       {
         "zone": "body",
@@ -102306,7 +102107,7 @@
     "toc_chapter": "XXI. Napels en Sicilië",
     "toc_page": 667,
     "source_file": "0001",
-    "period": "1557 Ress. van die data.",
+    "period": "1738-1772 agent",
     "lines": [
       {
         "zone": "body",
@@ -103195,7 +102996,21 @@
         "zone": "body",
         "text": "(1688) agent",
         "pre_html": false
-      },
+      }
+    ],
+    "footnotes": {},
+    "mentioned_in": []
+  },
+  {
+    "schutte_nr": 660,
+    "corpus": "bl",
+    "toc_title": "Bettenbourg, S. de",
+    "full_title": "660. Bettenbourg, S. de",
+    "toc_chapter": "XXII. Malta",
+    "toc_page": 671,
+    "source_file": "0001",
+    "period": "1808-1810 extraordinaris envoyé en minister plenipotentiaris",
+    "lines": [
       {
         "zone": "body",
         "text": "660. S. de Beîtenbourg wordt vermeld als agent van de Orde van",
@@ -103230,30 +103045,6 @@
         "zone": "body",
         "text": "derlanden van 1600-1795, (R.G.P., Grote Serie 7), 's-Gravenhage, 1909.",
         "pre_html": false
-      }
-    ],
-    "footnotes": {},
-    "mentioned_in": []
-  },
-  {
-    "schutte_nr": 660,
-    "corpus": "bl",
-    "toc_title": "Bettenbourg, S. de",
-    "full_title": "660. Bettenbourg, S. de",
-    "toc_chapter": "XXII. Malta",
-    "toc_page": 671,
-    "source_file": "0001",
-    "period": "1808-1810 extraordinaris envoyé en minister plenipotentiaris",
-    "lines": [
-      {
-        "zone": "entry",
-        "text": "660. S. de Beîtenbourg wordt vermeld als agent van de Orde van",
-        "indent": 0
-      },
-      {
-        "zone": "body",
-        "text": "Malta 1 nov. 1688.",
-        "indent": 5
       }
     ],
     "footnotes": {},
@@ -106879,7 +106670,9 @@
         "pre_html": false
       }
     ],
-    "footnotes": {},
+    "footnotes": {
+      "19": "april 1710, f (imp. bet.) 's-Gravenhage 29 april 1779, begr. aldaar (Kik.),"
+    },
     "mentioned_in": []
   },
   {
